@@ -1,9 +1,13 @@
 name: Check results source
 
 # Run this by hand any time to confirm GitHub can reach the Elections Committee.
-# It downloads the current files and prints a summary. Nothing is published.
+# It downloads the current files and writes a short report to the "diagnostics" branch.
+# Nothing on the site changes.
 on:
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   check:
@@ -13,4 +17,27 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: mkdir -p /tmp/out && python scripts/fetch_results.py --out /tmp/out && ls -la /tmp/out
+      - name: Try the Elections Committee
+        run: |
+          mkdir -p /tmp/out
+          {
+            echo "run at $(date -u)"
+            echo "runner ip: $(curl -s -m 10 https://api.ipify.org || echo unknown)"
+            for u in https://votes26.bechirot.gov.il/ https://media26.bechirot.gov.il/files/expc.csv; do
+              echo "== $u"
+              curl -sS -m 30 -o /dev/null -w 'http %{http_code}, %{size_download} bytes, %{time_total}s\n' -A 'Mozilla/5.0' "$u" 2>&1 || true
+            done
+            echo "== fetch_results.py"
+            python scripts/fetch_results.py --out /tmp/out 2>&1 || echo "fetch_results.py exited with an error"
+          } | tee /tmp/report.txt
+      - name: Save report
+        if: always()
+        run: |
+          git config user.name "election-watcher-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch --orphan diagnostics
+          git rm -rq --cached . || true
+          cp /tmp/report.txt report.txt
+          git add report.txt
+          git commit -qm "Source check $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -qf origin diagnostics
