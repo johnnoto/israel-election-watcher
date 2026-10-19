@@ -1,0 +1,56 @@
+name: Publish results
+
+# Runs whenever the election-night script on John's Mac uploads a new
+# raw/results.tgz (the Elections Committee's files). Converts them for the
+# page, saves the converted data, and republishes the site.
+on:
+  push:
+    branches: [main]
+    paths: ['raw/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Convert the Committee's files
+        run: |
+          mkdir -p /tmp/raw
+          tar -xzf raw/results.tgz -C /tmp/raw
+          python scripts/fetch_results.py --local /tmp/raw --guard
+      - name: Save converted data
+        run: |
+          git config user.name "election-watcher-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/live.json data/boxes.json
+          if git commit -qm "Converted results $(date -u +%H:%M) UTC"; then
+            for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 3; done
+          fi
+      - name: Build page
+        run: |
+          python3 scripts/build_page.py
+          mkdir -p _site
+          cp -r index.html config.json data _site/
+          if [ -f og-image.png ]; then cp og-image.png _site/; fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

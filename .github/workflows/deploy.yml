@@ -3,6 +3,7 @@ name: Deploy site
 on:
   push:
     branches: [main]
+    paths-ignore: ['raw/**']
   workflow_dispatch:
 
 permissions:

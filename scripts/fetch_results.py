@@ -57,7 +57,8 @@ def num(x):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--local', help='read expc.csv/expb.csv from this folder instead of downloading')
+    ap.add_argument('--local', help='read expc.csv/expb.csv (and page.html if present) from this folder instead of downloading')
+    ap.add_argument('--guard', action='store_true', help='with --local: apply the polls-closed and test-site checks, as for real downloads')
     ap.add_argument('--out', default=os.path.join(ROOT, 'data'))
     a = ap.parse_args()
 
@@ -70,6 +71,12 @@ def main():
         expc = open(os.path.join(a.local, 'expc.csv'), 'rb').read()
         expb = open(os.path.join(a.local, 'expb.csv'), 'rb').read()
         test_env = os.path.exists(os.path.join(a.local, 'TEST'))
+        page = os.path.join(a.local, 'page.html')
+        if os.path.exists(page):
+            html = open(page, encoding='utf-8', errors='replace').read()
+            test_env = test_env or 'סביבת בדיקות' in html
+            m = re.search(r'תוצאות נכון ל-\s*([0-9/]+\s+[0-9:]+)', html)
+            cec_time = m.group(1) if m else None
     else:
         try:
             html = get(SITE).decode('utf-8', 'replace')
@@ -112,7 +119,7 @@ def main():
         nat['v'] = [p + q for p, q in zip(nat['v'], v)]
     nat['boxes'] = sum(nb.values())
     unknown = sorted(set(pc) - set(tracked))
-    if not a.local:
+    if not a.local or a.guard:
         # Anything published before polls close is test data, whatever the page says.
         if before_close:
             test_env = True
