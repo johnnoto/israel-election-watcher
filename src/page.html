@@ -1,0 +1,1221 @@
+<title>Israel Election Watcher</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Hebrew:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+[hidden] { display: none !important; }
+/* Layout: a results desk. Masthead, national tally strip, then a tall narrow map of the
+   country beside the Knesset hemicycle and party table, then a locality explorer down to the ballot box. */
+:root {
+  --bg: #f3f5f8;
+  --surface: #ffffff;
+  --ink: #10151c;
+  --ink-2: #48515d;
+  --muted: #747d8a;
+  --rule: #dce1e8;
+  --rule-strong: #b9c1cc;
+  --land: #f1f2f3;
+  --land-near: #e2e5e9;
+  --sea: #d3dee8;
+  --water: #b9cde0;
+  --border-line: #9aa5b3;
+  --zone-pa: #9a8c7c;
+  --zone-pa-fill: rgb(154 140 124 / .16);
+  --label: #2a313b;
+  --halo: rgb(241 242 243 / .92);
+  --hs-blend: hard-light;
+  --hs-op: .9;
+  --bloc-n: #2a78d6;   /* Netanyahu bloc - categorical slot 1 */
+  --bloc-c: #eb6834;   /* Change bloc - slot 2 */
+  --bloc-a: #1baf7a;   /* Arab parties - slot 3 */
+  --bloc-o: #9aa1ab;   /* everything else */
+  --seq-1: #cde2fb; --seq-2: #9ec5f4; --seq-3: #6da7ec; --seq-4: #3987e5; --seq-5: #256abf; --seq-6: #184f95; --seq-7: #0d366b;
+  --pending: #b9c1cc;
+  --focus: #2a78d6;
+  --good: #1f7a4d;
+  --critical: #c0392b;
+  --display: "Frank Ruhl Libre", "Times New Roman", Georgia, serif;
+  --body: "IBM Plex Sans", "IBM Plex Sans Hebrew", -apple-system, "Segoe UI", Arial, sans-serif;
+  --hebrew: "IBM Plex Sans Hebrew", "IBM Plex Sans", "Arial Hebrew", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1216; --surface: #161a20; --ink: #eef1f5; --ink-2: #b6bdc8; --muted: #8b94a1;
+    --rule: #262c35; --rule-strong: #3a424d; --land: #262c34; --land-near: #1a1e24; --sea: #10161d; --water: #1f3a52; --border-line: #4f5a68; --zone-pa: #8f8476; --zone-pa-fill: rgb(143 132 118 / .14); --label: #dfe4ea; --halo: rgb(22 26 32 / .85); --hs-blend: hard-light; --hs-op: .75;
+    --bloc-n: #3987e5; --bloc-c: #d95926; --bloc-a: #199e70; --bloc-o: #7c8592;
+    --seq-1: #1c3350; --seq-2: #184f95; --seq-3: #256abf; --seq-4: #3987e5; --seq-5: #6da7ec; --seq-6: #9ec5f4; --seq-7: #cde2fb;
+    --pending: #3a424d; --focus: #6da7ec; --good: #4cc38a; --critical: #ff7a6b;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1216; --surface: #161a20; --ink: #eef1f5; --ink-2: #b6bdc8; --muted: #8b94a1;
+  --rule: #262c35; --rule-strong: #3a424d; --land: #262c34; --land-near: #1a1e24; --sea: #10161d; --water: #1f3a52; --border-line: #4f5a68; --zone-pa: #8f8476; --zone-pa-fill: rgb(143 132 118 / .14); --label: #dfe4ea; --halo: rgb(22 26 32 / .85); --hs-blend: hard-light; --hs-op: .75;
+  --bloc-n: #3987e5; --bloc-c: #d95926; --bloc-a: #199e70; --bloc-o: #7c8592;
+  --seq-1: #1c3350; --seq-2: #184f95; --seq-3: #256abf; --seq-4: #3987e5; --seq-5: #6da7ec; --seq-6: #9ec5f4; --seq-7: #cde2fb;
+  --pending: #3a424d; --focus: #6da7ec; --good: #4cc38a; --critical: #ff7a6b;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.num { font-variant-numeric: tabular-nums; }
+.he { font-family: var(--hebrew); direction: rtl; unicode-bidi: isolate; }
+h1, h2, h3 { text-wrap: balance; margin: 0; }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+/* Masthead */
+.masthead { border-bottom: 1px solid var(--rule); background: var(--surface); }
+.masthead .wrap { padding-block: 22px 18px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 14px 24px; }
+.eyebrow { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.masthead h1 { font-family: var(--display); font-weight: 800; font-size: clamp(30px, 4.4vw, 46px); line-height: 1.02; letter-spacing: -.01em; margin-top: 6px; }
+.masthead h1 .he { font-size: .5em; font-weight: 500; color: var(--muted); margin-left: .4em; letter-spacing: 0; }
+.status { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+.pill { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--rule-strong); border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
+.pill .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+.status small { color: var(--muted); font-size: 13px; }
+
+/* Replay bar */
+.replay { border-bottom: 1px solid var(--rule); background: var(--surface); }
+.replay .wrap { padding-block: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; }
+.replay label { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--ink-2); }
+.replay input[type=range] { flex: 1 1 220px; min-width: 0; accent-color: var(--ink); }
+.btn { border: 1px solid var(--rule-strong); background: var(--surface); border-radius: 6px; padding: 6px 14px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.btn:hover { border-color: var(--ink-2); }
+.btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.replay .readout { font-family: var(--mono); font-size: 13px; color: var(--ink-2); min-width: 11ch; }
+
+/* Tally strip */
+.tally { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; margin-block: 22px; border-top: 2px solid var(--ink); }
+.tally > div { padding: 12px 16px 4px 0; border-right: 1px solid var(--rule); padding-left: 16px; }
+.tally > div:first-child { padding-left: 0; }
+.tally > div:last-child { border-right: 0; }
+.tally .k { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.tally .v { font-family: var(--display); font-weight: 700; font-size: clamp(26px, 3.2vw, 36px); line-height: 1.15; }
+.tally .s { font-size: 13px; color: var(--ink-2); }
+
+/* Main grid */
+.main { display: grid; grid-template-columns: minmax(300px, 430px) minmax(0, 1fr); gap: 28px; align-items: start; }
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; min-width: 0; }
+.panel-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; padding: 14px 16px 10px; border-bottom: 1px solid var(--rule); }
+.panel-head h2 { font-family: var(--display); font-weight: 700; font-size: 21px; }
+.panel-head .note { font-size: 13px; color: var(--muted); }
+
+/* Map */
+.seg { display: inline-flex; border: 1px solid var(--rule-strong); border-radius: 7px; overflow: hidden; }
+.seg button { border: 0; background: transparent; padding: 5px 11px; font-size: 13px; font-weight: 500; cursor: pointer; color: var(--ink-2); }
+.seg button + button { border-left: 1px solid var(--rule-strong); }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.map-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 10px 16px 0; }
+.map-controls select { border: 1px solid var(--rule-strong); background: var(--surface); border-radius: 7px; padding: 4px 8px; font-size: 13px; }
+.map-box { position: relative; padding: 6px 8px 8px; }
+#map { display: block; width: 100%; height: auto; touch-action: none; cursor: crosshair; }
+#map .sea-label { font-family: var(--display); font-style: italic; fill: var(--muted); font-size: 13px; }
+#map .ctry-label { font-size: 10px; letter-spacing: .14em; text-transform: uppercase; fill: var(--muted); font-weight: 600; }
+.zoom { position: absolute; right: 16px; top: 14px; display: flex; flex-direction: column; gap: 4px; }
+.zoom button { width: 30px; height: 30px; border: 1px solid var(--rule-strong); background: var(--surface); border-radius: 6px; cursor: pointer; font-size: 16px; line-height: 1; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; padding: 0 16px 14px; font-size: 13px; color: var(--ink-2); }
+.legend .sw { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
+.ramp { display: flex; align-items: center; gap: 8px; width: 100%; }
+.ramp .bars { display: flex; gap: 2px; flex: 1; max-width: 260px; }
+.ramp .bars span { flex: 1; height: 10px; border-radius: 2px; }
+.ramp .ends { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.tip { position: absolute; pointer-events: none; background: var(--surface); border: 1px solid var(--rule-strong); border-radius: 8px; padding: 9px 11px; font-size: 13px; box-shadow: 0 6px 20px rgb(0 0 0 / .12); width: 220px; z-index: 5; }
+.tip b { font-family: var(--display); font-size: 16px; font-weight: 700; display: block; line-height: 1.2; }
+.tip .he { color: var(--muted); font-size: 12px; display: block; margin-bottom: 6px; }
+.tip .row { display: flex; justify-content: space-between; gap: 10px; }
+.tip .row span:last-child { font-family: var(--mono); }
+.tip .sub { color: var(--muted); font-size: 12px; margin-top: 4px; }
+
+/* Hemicycle + table */
+.right { display: grid; gap: 22px; min-width: 0; }
+.hemi-wrap { padding: 8px 16px 6px; }
+#hemi { display: block; width: 100%; max-width: 560px; height: auto; margin: 0 auto; }
+.blocs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; padding: 4px 16px 16px; }
+.bloc { border-top: 3px solid var(--c); padding-top: 6px; }
+.bloc .n { font-family: var(--display); font-size: 30px; font-weight: 700; line-height: 1.1; }
+.bloc .l { font-size: 13px; color: var(--ink-2); }
+.bloc .p { font-size: 12px; color: var(--muted); }
+.majority { text-align: center; font-size: 13px; color: var(--ink-2); padding: 0 16px 4px; }
+.majority strong { font-weight: 600; color: var(--ink); }
+.tbl-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding: 8px 10px; border-bottom: 1px solid var(--rule-strong); white-space: nowrap; }
+td { padding: 7px 10px; border-bottom: 1px solid var(--rule); vertical-align: middle; }
+td.r, th.r { text-align: right; font-variant-numeric: tabular-nums; }
+tr.below td { color: var(--muted); }
+.party { display: flex; align-items: center; gap: 9px; min-width: 180px; }
+.chip { width: 12px; height: 12px; border-radius: 3px; flex: none; }
+.party .name { font-weight: 600; }
+.party .lead { font-size: 12px; color: var(--muted); display: block; line-height: 1.2; font-weight: 400; }
+.letters { font-family: var(--hebrew); font-size: 12px; border: 1px solid var(--rule-strong); border-radius: 4px; padding: 0 5px; color: var(--ink-2); direction: rtl; }
+.sharebar { position: relative; height: 10px; min-width: 110px; }
+.sharebar .fill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 0 3px 3px 0; }
+.sharebar .thr { position: absolute; top: -4px; bottom: -4px; width: 0; border-left: 1px dashed var(--ink-2); }
+.seats { font-family: var(--display); font-weight: 700; font-size: 18px; }
+
+/* Locality explorer */
+.explorer { margin-block: 28px 18px; }
+.ex-top { display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center; padding: 14px 16px; border-bottom: 1px solid var(--rule); }
+.ex-top label { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+#search { flex: 1 1 260px; min-width: 0; max-width: 420px; border: 1px solid var(--rule-strong); background: var(--bg); border-radius: 7px; padding: 8px 12px; }
+.ex-body { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 0; }
+.ex-summary { padding: 18px 16px; border-right: 1px solid var(--rule); min-width: 0; }
+.ex-summary h3 { font-family: var(--display); font-weight: 800; font-size: 30px; line-height: 1.1; }
+.ex-summary .he { font-size: 17px; color: var(--ink-2); display: block; margin-top: 2px; }
+.ex-meta { font-size: 13px; color: var(--muted); margin-top: 4px; }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 16px 0; }
+.stats .k { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.stats .v { font-family: var(--mono); font-size: 15px; font-weight: 500; }
+.blocbar { display: flex; gap: 2px; height: 14px; margin: 6px 0 4px; }
+.blocbar span { display: block; height: 100%; }
+.blocbar span:first-child { border-radius: 4px 0 0 4px; }
+.blocbar span:last-child { border-radius: 0 4px 4px 0; }
+.blockey { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 12px; color: var(--ink-2); }
+.plist { display: grid; gap: 7px; margin-top: 18px; }
+.prow { display: grid; grid-template-columns: minmax(0, 150px) minmax(0, 1fr) 54px; gap: 10px; align-items: center; font-size: 13px; }
+.prow .pn { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.prow .track { height: 10px; }
+.prow .track span { display: block; height: 100%; border-radius: 0 3px 3px 0; }
+.prow .pv { text-align: right; font-family: var(--mono); }
+.ex-boxes { min-width: 0; padding: 12px 0 0; }
+.ex-boxes .bh { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 0 16px 8px; }
+.ex-boxes h4 { margin: 0; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); }
+.ex-boxes .bh span { font-size: 12px; color: var(--muted); }
+.box-scroll { max-height: 470px; overflow: auto; border-top: 1px solid var(--rule); }
+.box-scroll table { font-size: 13px; }
+.box-scroll th { position: sticky; top: 0; background: var(--surface); cursor: pointer; user-select: none; z-index: 1; }
+.box-scroll th[aria-sort] { color: var(--ink); }
+.mini { display: flex; gap: 1px; height: 8px; width: 90px; }
+.mini span { display: block; height: 100%; }
+tr.pending td { color: var(--muted); }
+
+/* Map labels and zone key */
+#map .zone-label { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; fill: var(--ink-2); font-weight: 600; paint-order: stroke; stroke: var(--halo); stroke-width: 3px; }
+#map .water-label { font-family: var(--display); font-style: italic; font-size: 10px; fill: var(--muted); }
+#map .cities text { font-family: var(--body); font-weight: 600; fill: var(--label); paint-order: stroke; stroke: var(--halo); stroke-linejoin: round; }
+.zone-key { display: grid; gap: 8px; padding: 12px 16px 16px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--ink-2); }
+.zone-key h3 { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin: 0 0 2px; }
+.zk { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 10px; align-items: start; line-height: 1.4; }
+.zk b { color: var(--ink); font-weight: 600; }
+.zk .s { height: 14px; border-radius: 3px; margin-top: 2px; }
+.zk .s.land { background: var(--land); border: 1px solid var(--border-line); }
+.zk .s.pa { background: repeating-linear-gradient(45deg, var(--zone-pa) 0 1px, var(--zone-pa-fill) 1px 3.5px); border: 1px solid var(--zone-pa); }
+.zk .s.green { height: 0; border-top: 2px dashed var(--ink-2); margin-top: 9px; border-radius: 0; }
+.zk .s.annex { height: 0; border-top: 2px dotted var(--ink-2); margin-top: 9px; border-radius: 0; }
+.zk .s.dots { background: radial-gradient(circle at 30% 50%, var(--bloc-n) 0 3px, transparent 3.5px), radial-gradient(circle at 72% 50%, var(--bloc-c) 0 4px, transparent 4.5px); }
+
+/* Scenarios and surplus agreements */
+.scen { padding: 0 16px 14px; display: grid; gap: 8px; }
+.scen .seg { flex-wrap: wrap; width: fit-content; max-width: 100%; }
+.scen-note { font-size: 13px; color: var(--ink-2); min-height: 1.4em; }
+.scen-note strong { color: var(--ink); font-weight: 600; }
+.agree { border-top: 1px solid var(--rule); padding: 12px 16px 16px; }
+.agree h3, .gov-col h3 { font-family: var(--display); font-weight: 700; font-size: 17px; margin: 0 0 4px; }
+.hint { font-size: 13px; color: var(--ink-2); margin: 0 0 10px; max-width: 62ch; }
+.agree table td { padding: 6px 8px; font-size: 13px; }
+.agree table td:first-child { padding-left: 0; }
+.tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; border-radius: 4px; padding: 1px 6px; border: 1px solid var(--rule-strong); color: var(--ink-2); white-space: nowrap; }
+.tag.on { border-color: var(--good); color: var(--good); }
+.tag.void { color: var(--muted); }
+.tag.crit { border-color: var(--critical); color: var(--critical); }
+.tag.king { border-color: var(--ink); background: var(--ink); color: var(--bg); }
+.delta { font-family: var(--mono); font-size: 13px; }
+
+/* Government formation */
+.formation { margin-top: 28px; }
+.timeline { list-style: none; margin: 0; padding: 16px; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0; counter-reset: step; border-bottom: 1px solid var(--rule); }
+.timeline li { counter-increment: step; padding: 0 12px 0 0; position: relative; min-width: 0; }
+.timeline li::before { content: counter(step); display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--ink); color: var(--bg); font-family: var(--mono); font-size: 12px; margin-bottom: 8px; position: relative; z-index: 1; }
+.timeline li::after { content: ""; position: absolute; left: 24px; right: 0; top: 11px; border-top: 1px solid var(--rule-strong); }
+.timeline li:last-child::after { display: none; }
+.timeline li:last-child::before { background: var(--surface); color: var(--ink); border: 1px solid var(--ink); }
+.timeline b { display: block; font-size: 14px; line-height: 1.3; }
+.timeline .d { font-family: var(--mono); font-size: 12px; color: var(--ink-2); margin-top: 4px; line-height: 1.45; }
+.timeline .d span { color: var(--muted); }
+.timeline p { font-size: 12px; color: var(--muted); margin: 4px 0 0; line-height: 1.4; }
+.gov-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.gov-col { padding: 16px; min-width: 0; display: grid; gap: 10px; align-content: start; }
+.gov-col + .gov-col { border-left: 1px solid var(--rule); }
+.gov-col h3 + .hint { margin-top: -2px; }
+.gov-col section + section { border-top: 1px solid var(--rule); padding-top: 14px; margin-top: 8px; }
+.stack { position: relative; display: flex; gap: 2px; height: 26px; }
+.stack span { display: block; height: 100%; }
+.stack span:first-child { border-radius: 4px 0 0 4px; }
+.stack span:last-child { border-radius: 0 4px 4px 0; }
+.stack .line { position: absolute; top: -5px; bottom: -5px; left: calc(61 / 120 * 100%); border-left: 2px solid var(--ink); }
+.stack-axis { position: relative; height: 16px; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.stack-axis span { position: absolute; transform: translateX(-50%); }
+.recs { display: grid; gap: 6px; font-size: 13px; }
+.rec-row { display: grid; grid-template-columns: 12px minmax(0, 1fr) auto; gap: 8px; align-items: baseline; }
+.rec-row .sw { width: 10px; height: 10px; border-radius: 2px; }
+.rec-row small { color: var(--muted); }
+.rec-row .n { font-family: var(--display); font-weight: 700; font-size: 18px; }
+.lev { display: grid; gap: 8px; }
+.lev-row { display: grid; grid-template-columns: minmax(0, 140px) minmax(0, 1fr) 46px; gap: 10px; align-items: center; font-size: 13px; }
+.lev-row .bars { display: grid; gap: 2px; }
+.lev-row .bars span { display: block; height: 7px; border-radius: 0 2px 2px 0; }
+.lev-row .bars .seat { background: var(--rule-strong); height: 4px; }
+.lev-row .v { font-family: var(--mono); text-align: right; }
+.lev-key { display: flex; gap: 14px; font-size: 12px; color: var(--muted); }
+.lev-key i { display: inline-block; width: 14px; height: 6px; border-radius: 1px; margin-right: 5px; vertical-align: 1px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips button { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--rule-strong); background: var(--surface); border-radius: 999px; padding: 5px 11px 5px 8px; font-size: 13px; cursor: pointer; }
+.chips button .chip { width: 10px; height: 10px; border-radius: 50%; }
+.chips button .k { font-family: var(--mono); color: var(--muted); }
+.chips button[aria-pressed="true"] { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); font-weight: 600; }
+.chips button[aria-pressed="true"] .k { color: var(--ink); }
+.presets { display: flex; flex-wrap: wrap; gap: 6px; }
+.presets .btn { font-size: 12px; padding: 4px 10px; font-weight: 500; }
+.coal-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 14px; }
+.coal-head .total { font-family: var(--display); font-weight: 800; font-size: 34px; line-height: 1; }
+.coal-head .total small { font-family: var(--body); font-size: 14px; font-weight: 500; color: var(--ink-2); margin-left: 6px; }
+.coal-msgs { display: grid; gap: 6px; font-size: 13px; }
+.coal-msgs div { display: flex; gap: 8px; align-items: baseline; }
+.check { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--ink-2); }
+.check input { accent-color: var(--ink); width: 16px; height: 16px; }
+.paths { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.paths button { width: 100%; text-align: left; display: flex; justify-content: space-between; gap: 10px; border: 1px solid var(--rule); background: var(--bg); border-radius: 7px; padding: 7px 10px; font-size: 13px; cursor: pointer; }
+.paths button:hover { border-color: var(--ink-2); }
+.paths .s { font-family: var(--mono); color: var(--ink-2); white-space: nowrap; }
+@media (max-width: 900px) {
+  .timeline { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .timeline li { display: grid; grid-template-columns: 24px minmax(0, 1fr); column-gap: 12px; padding: 0; }
+  .timeline li::before { margin: 0; grid-row: span 4; }
+  .timeline li::after { left: 11px; right: auto; top: 26px; bottom: -14px; border-top: 0; border-left: 1px solid var(--rule-strong); }
+  .gov-grid { grid-template-columns: minmax(0, 1fr); }
+  .gov-col + .gov-col { border-left: 0; border-top: 1px solid var(--rule); }
+}
+
+/* Kingmaker watch */
+.kv { display: grid; gap: 4px; border: 1px solid var(--rule-strong); border-radius: 8px; padding: 12px 14px; background: var(--bg); }
+.kv .tag { justify-self: start; }
+.kv b { font-family: var(--display); font-size: 19px; line-height: 1.25; }
+.kv span:last-child { font-size: 13px; color: var(--ink-2); }
+.kv.king { border-color: var(--ink); }
+.kv.dead { border-color: var(--critical); }
+.camps { display: grid; gap: 12px; }
+.camp { display: grid; gap: 6px; }
+.camp-h { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.camp small { font-size: 12px; color: var(--ink-2); line-height: 1.45; }
+.stack.thin { height: 12px; }
+.stack .reach { background: repeating-linear-gradient(45deg, var(--rule-strong) 0 2px, transparent 2px 5px); border: 1px solid var(--rule-strong); }
+.swing-tbl { font-size: 13px; }
+.swing-tbl td, .swing-tbl th { padding: 6px 8px; }
+.swing-tbl td:first-child, .swing-tbl th:first-child { padding-left: 0; }
+.swing-tbl .party { min-width: 0; }
+.swing-tbl .tag { white-space: normal; }
+.swing-tbl small { color: var(--muted); font-size: 11px; }
+.yes { font-weight: 600; color: var(--good); }
+.no { font-weight: 600; color: var(--muted); }
+.broken h4 { margin: 4px 0 6px; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); }
+.broken ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: 13px; }
+.broken li { display: flex; gap: 8px; align-items: baseline; }
+.broken li .tag { flex: none; }
+.swing-ctl { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; font-size: 13px; }
+.swing-ctl label { font-weight: 600; }
+.swing-ctl input { flex: 1 1 140px; min-width: 0; max-width: 260px; accent-color: var(--ink); }
+.swing-ctl .readout { font-family: var(--mono); }
+
+.km-band { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0; border-bottom: 1px solid var(--rule); }
+.km-left, .km-right { padding: 16px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.km-right { border-left: 1px solid var(--rule); }
+.km-left h3 { font-family: var(--display); font-weight: 700; font-size: 20px; margin: 0; }
+.kv strong { font-weight: 600; color: var(--ink); }
+@media (max-width: 900px) { .km-band { grid-template-columns: minmax(0, 1fr); } .km-right { border-left: 0; border-top: 1px solid var(--rule); } }
+
+.pill .dot { transition: background .2s; }
+.pill[data-state="live"] .dot { background: var(--critical); animation: pulse 1.6s ease-in-out infinite; }
+.pill[data-state="test"] .dot { background: var(--bloc-c); }
+.pill[data-state="wait"] .dot { background: var(--bloc-c); animation: pulse 1.6s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: .3; } }
+.poll-note { margin: 0; padding: 0 16px 12px; font-size: 12px; color: var(--muted); }
+.poll-note a, .src a { color: var(--ink-2); }
+.src { font-size: 12px; color: var(--muted); margin: -4px 0 0; line-height: 1.5; }
+.replay .readout { min-width: 0; font-size: 12px; }
+
+footer { border-top: 1px solid var(--rule); margin-top: 18px; }
+footer .wrap { padding-block: 18px 30px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px 30px; font-size: 13px; color: var(--ink-2); }
+footer h5 { margin: 0 0 4px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+footer p { margin: 0; max-width: 62ch; }
+footer a { color: var(--ink); }
+
+@media (max-width: 900px) {
+  .main { grid-template-columns: minmax(0, 1fr); }
+  .ex-body { grid-template-columns: minmax(0, 1fr); }
+  .ex-summary { border-right: 0; border-bottom: 1px solid var(--rule); }
+}
+@media (max-width: 620px) {
+  .tally { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tally > div { padding-left: 0; border-right: 0; border-bottom: 1px solid var(--rule); padding-bottom: 10px; }
+  .tally > div:nth-child(2n) { padding-left: 14px; border-left: 1px solid var(--rule); }
+  .status { align-items: flex-start; }
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .blocs .n { font-size: 24px; }
+  .prow { grid-template-columns: minmax(0, 110px) minmax(0, 1fr) 50px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<header class="masthead">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">The Globe in Brief · Knesset Results Desk</div>
+      <h1>Israel Election Watcher <span class="he" lang="he">בחירות לכנסת</span></h1>
+    </div>
+    <div class="status">
+      <span class="pill" id="status-pill" data-state="pre"><span class="dot"></span><span id="status-text">Loading…</span></span>
+      <small id="status-sub"></small>
+    </div>
+  </div>
+</header>
+
+<section class="replay" aria-label="What this page shows">
+  <div class="wrap">
+    <label>Showing</label>
+    <div class="seg" role="group" aria-label="Data source" id="view-seg"></div>
+    <span class="readout" id="updated"></span>
+  </div>
+</section>
+
+<main class="wrap">
+  <section class="tally" aria-label="National summary">
+    <div><div class="k">Ballot Boxes Counted</div><div class="v num" id="k-boxes">–</div><div class="s" id="k-boxes-s"></div></div>
+    <div><div class="k">Turnout</div><div class="v num" id="k-turnout">–</div><div class="s" id="k-turnout-s"></div></div>
+    <div><div class="k" id="k-bloc-k">Netanyahu Bloc</div><div class="v num" id="k-bloc">–</div><div class="s" id="k-bloc-s"></div></div>
+    <div><div class="k">Electoral Threshold</div><div class="v num" id="k-thr">3.25%</div><div class="s" id="k-thr-s"></div></div>
+  </section>
+
+  <div class="main">
+    <section class="panel" aria-labelledby="map-h">
+      <div class="panel-head"><h2 id="map-h">Results By Locality</h2><span class="note" id="map-note"></span></div>
+      <div class="map-controls">
+        <div class="seg" role="group" aria-label="Map shows" id="map-modes">
+          <button type="button" data-mode="bloc" aria-pressed="true">Leading Bloc</button>
+          <button type="button" data-mode="share" aria-pressed="false">Party Share</button>
+          <button type="button" data-mode="turnout" aria-pressed="false">Turnout</button>
+        </div>
+        <select id="share-party" aria-label="Party to map" hidden></select>
+      </div>
+      <div class="map-box" id="map-box">
+        <svg id="map" viewBox="0 0 400 760" role="img" aria-label="Map of Israel with a dot for each locality, colored by result"></svg>
+        <div class="zoom"><button type="button" id="zin" aria-label="Zoom in">+</button><button type="button" id="zout" aria-label="Zoom out">−</button><button type="button" id="zreset" aria-label="Reset zoom" style="font-size:12px">⟲</button></div>
+        <div class="tip" id="tip" hidden></div>
+      </div>
+      <div class="legend" id="legend"></div>
+      <div class="zone-key" aria-label="Who votes where">
+        <h3>Who Votes Where</h3>
+        <div class="zk"><span class="s dots"></span><span><b>Israeli localities.</b> Every dot is a town, city, kibbutz or settlement whose residents vote, including settlements in Area C of the West Bank.</span></div>
+        <div class="zk"><span class="s pa"></span><span><b>Palestinian-administered areas.</b> Areas A and B of the West Bank and the Gaza Strip. Residents are not Israeli citizens and do not vote for the Knesset. No Israelis have lived in Gaza since 2005.</span></div>
+        <div class="zk"><span class="s green"></span><span><b>Green Line.</b> The 1949 armistice line around the West Bank and Gaza.</span></div>
+        <div class="zk"><span class="s annex"></span><span><b>East Jerusalem and the Golan Heights.</b> Annexed by Israel. Most Palestinian and Druze residents hold permanent residency rather than citizenship, so most cannot vote for the Knesset.</span></div>
+        <div class="zk"><span class="s land"></span><span><b>Empty dot-free land.</b> The Negev, the Arava and the Judean Desert are sparsely settled, and large parts are military firing zones.</span></div>
+      </div>
+    </section>
+
+    <div class="right">
+      <section class="panel" aria-labelledby="hemi-h">
+        <div class="panel-head"><h2 id="hemi-h">Projected Knesset</h2><span class="note">120 seats · 61 for a majority</span></div>
+        <div class="hemi-wrap"><svg id="hemi" viewBox="0 0 520 290" role="img" aria-label="Hemicycle of 120 Knesset seats by party"></svg></div>
+        <div class="majority" id="majority"></div>
+        <div class="blocs" id="blocs"></div>
+        <p class="poll-note" id="poll-note" hidden></p>
+        <div class="scen" id="scen-wrap" hidden>
+          <div class="seg" role="group" aria-label="Seat scenario" id="scen"></div>
+          <div class="swing-ctl" id="swing-ctl" hidden><label for="swing">Move</label><input type="range" id="swing" min="0" max="8" step="0.25" value="2"><span class="readout" id="swing-out">2.0 points</span><span class="hint" style="margin:0" id="swing-note"></span></div>
+          <div class="scen-note" id="scen-note"></div>
+        </div>
+        <div class="agree">
+          <h3>Surplus-Vote Agreements</h3>
+          <p class="hint">Two lists that sign a deal are counted as one list for the last seats, then split whatever they win. A deal only counts if both lists pass 3.25%.</p>
+          <div class="tbl-scroll"><table id="atable"><tbody></tbody></table></div>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="party-h">
+        <div class="panel-head"><h2 id="party-h">National Vote</h2><span class="note" id="party-note"></span></div>
+        <div class="tbl-scroll">
+          <table id="ptable">
+            <thead><tr><th>Party</th><th>Ballot</th><th class="r">Votes</th><th class="r">Share</th><th></th><th class="r">Seats</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <section class="panel formation" aria-labelledby="gov-h">
+    <div class="panel-head"><h2 id="gov-h">From Ballots To A Government</h2><span class="note" id="gov-note">Uses the seats shown above</span></div>
+    <ol class="timeline" id="timeline"></ol>
+    <div class="km-band">
+      <div class="km-left">
+        <h3>Kingmaker Watch</h3>
+        <p class="hint">Each candidate for prime minister starts with the parties expected to recommend him. Everyone else is a swing party. A swing party is a kingmaker only if its choice decides whether a camp reaches 61.</p>
+        <p class="src">Red lines as stated during the campaign: <span id="pledge-sources"></span></p>
+        <div class="km-verdict" id="km-verdict"></div>
+        <div class="camps" id="camps"></div>
+      </div>
+      <div class="km-right">
+        <div class="tbl-scroll"><table class="swing-tbl" id="swing-tbl"></table></div>
+        <div class="broken" id="broken"></div>
+      </div>
+    </div>
+    <div class="gov-grid">
+      <div class="gov-col">
+        <section>
+          <h3>Recommendations To The President</h3>
+          <p class="hint" id="rec-hint"></p>
+          <div class="stack" id="rec-stack"></div>
+          <div class="stack-axis"><span style="left:0;transform:none">0</span><span style="left:calc(61 / 120 * 100%)">61</span><span style="right:0;transform:none">120</span></div>
+          <div class="recs" id="recs"></div>
+        </section>
+        <section>
+          <h3>Paths To 61</h3>
+          <p class="hint">Every majority where no party could leave without losing it, smallest first. Tap one to load it.</p>
+          <ul class="paths" id="paths"></ul>
+        </section>
+      </div>
+      <div class="gov-col">
+        <section>
+          <h3>Build A Coalition</h3>
+          <p class="hint">Tap parties to add or remove them. Kingmaker tags come from the Kingmaker Watch, not from this coalition.</p>
+          <div class="presets" id="presets"></div>
+          <div class="coal-head"><div class="total num" id="coal-total">0</div><div class="note" id="coal-pm" style="font-size:13px;color:var(--ink-2)"></div></div>
+          <div class="stack" id="coal-stack"></div>
+          <div class="stack-axis"><span style="left:0;transform:none">0</span><span style="left:calc(61 / 120 * 100%)">61</span><span style="right:0;transform:none">120</span></div>
+          <div class="chips" id="chips"></div>
+          <label class="check" for="pledges"><input type="checkbox" id="pledges" checked>Enforce campaign red lines</label>
+          <div class="coal-msgs" id="coal-msgs"></div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel explorer" id="explorer" aria-labelledby="ex-h">
+    <div class="panel-head"><h2 id="ex-h">Locality Explorer</h2><span class="note">Click any dot on the map, or search</span></div>
+    <div class="ex-top">
+      <label for="search">Find A Locality</label>
+      <input id="search" list="loc-list" placeholder="Jerusalem, Bnei Brak, רהט…" autocomplete="off">
+      <datalist id="loc-list"></datalist>
+    </div>
+    <div class="ex-body">
+      <div class="ex-summary" id="ex-summary"></div>
+      <div class="ex-boxes">
+        <div class="bh"><h4>Ballot Boxes</h4><span id="box-count"></span></div>
+        <div class="box-scroll">
+          <table id="btable">
+            <thead><tr>
+              <th data-k="id">Box</th><th class="r" data-k="r">Registered</th><th class="r" data-k="t">Voted</th><th class="r" data-k="to">Turnout</th><th data-k="lead">Leading Party</th><th class="r" data-k="lp">Share</th><th>Blocs</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><h5>Sources</h5><p>Results: Central Elections Committee for the 26th Knesset (<a href="https://votes26.bechirot.gov.il/" target="_blank" rel="noopener">votes26.bechirot.gov.il</a>), checked automatically about every two minutes on election night. Locality positions: Central Bureau of Statistics. Terrain: Mapzen/AWS Terrain Tiles. Oslo areas: OCHA via the Humanitarian Data Exchange. Borders: Natural Earth.</p></div>
+    <div><h5>Seat Method</h5><p>Seats use the Bader–Ofer (D'Hondt) method among lists above 3.25%, with the five 2026 surplus-vote agreements: Likud–Religious Zionism, Shas–United Torah Judaism, Yashar–The Democrats, Together–Yisrael Beiteinu and Joint List–Ra'am. Projections before the count ends are not official; the Elections Committee certifies seats on Nov 4.</p></div>
+    <div><h5>Camps And Red Lines</h5><p>Camps reflect each party's declared alignment before the vote. Red lines are simplified from public statements in the campaign. Both update after the President's consultations.</p></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+(async function () {
+  const fmt = d3.format(',');
+  const pct = (a, b, d = 1) => b > 0 ? (100 * a / b).toFixed(d) + '%' : '–';
+  const esc = s => String(s).replace(/[&<>"]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]));
+  const fetchJSON = (u, fresh) => fetch(fresh ? `${u}?t=${Date.now()}` : u, { cache: fresh ? 'no-store' : 'default' })
+    .then(r => { if (!r.ok) throw new Error(`${u}: ${r.status}`); return r.json(); });
+  const statusText = document.getElementById('status-text');
+
+  let CFG, BASE, GEO, LIVE = null;
+  try {
+    [CFG, BASE, GEO] = await Promise.all([fetchJSON('config.json', true), fetchJSON('data/localities.json'), fetchJSON('data/geo.json')]);
+  } catch (e) {
+    statusText.textContent = 'The page data did not load. Refresh to try again.';
+    console.error(e);
+    return;
+  }
+  LIVE = await fetchJSON('data/live.json', true).catch(() => null);
+  const CFG_TEXT = JSON.stringify(CFG);
+
+  // ---- Election config ----
+  const TRACKED = CFG.parties.map(p => p.code);
+  const CODES = TRACKED.concat(['OTHER']);
+  const NP = CODES.length;
+  const META = {};
+  CFG.parties.forEach(p => { META[p.code] = { en: p.name, lead: p.leader, bloc: p.bloc }; });
+  META.OTHER = { en: 'Other lists', lead: CFG.other_label || 'Smaller lists', bloc: 'O' };
+  const BLOCS = CFG.blocs;
+  const BLOC_ORDER = ['N', 'C', 'A', 'O'];
+  const AGREEMENTS = CFG.agreements.filter(([a, b]) => META[a] && META[b]);
+  const SEAT_ORDER = CFG.seat_order.filter(c => META[c]);
+  TRACKED.forEach(c => { if (!SEAT_ORDER.includes(c)) SEAT_ORDER.push(c); });
+  const THR = CFG.threshold || 0.0325;
+  const THR_PCT = +(THR * 100).toFixed(2);
+  const idx = {}; CODES.forEach((c, i) => { idx[c] = i; });
+  const blocOf = i => META[CODES[i]].bloc;
+  const tone = {};
+  BLOC_ORDER.forEach(b => { let k = 0; SEAT_ORDER.concat(['OTHER']).forEach(c => { if (META[c].bloc === b) tone[c] = (k++ % 2) ? 0.55 : 1; }); });
+  const NB = BLOCS.N.name;
+  const pollsClose = new Date(CFG.polls_close_utc);
+  const ilTime = iso => new Date(iso).toLocaleTimeString('en-GB', { timeZone: 'Asia/Jerusalem', hour: '2-digit', minute: '2-digit' });
+  const ilDay = iso => new Date(iso).toLocaleDateString('en-US', { timeZone: 'Asia/Jerusalem', month: 'short', day: 'numeric' });
+
+  // Static copy from config
+  document.getElementById('status-sub').textContent = `Polls close ${CFG.polls_close_label}`;
+  document.getElementById('timeline').innerHTML = CFG.timeline.map(s => `<li><b>${esc(s.t)}</b><div class="d">${esc(s.d)}</div><p>${esc(s.p)}</p></li>`).join('');
+  document.getElementById('presets').innerHTML = CFG.presets.map((p, i) => `<button class="btn" type="button" data-p="${i}">${esc(p.label)}</button>`).join('');
+  document.getElementById('swing-note').textContent = `from the ${BLOCS.N.name} to the ${BLOCS.C.name}`;
+  document.getElementById('pledge-sources').innerHTML = (CFG.pledge_sources || []).map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join(' · ');
+
+  // ---- Localities and results ----
+  const locs = BASE.locs.map((l, i) => Object.assign({}, l, { i }));
+  const byCode = new Map(locs.map(l => [l.c, l]));
+  const TOTAL_BOXES_BASE = d3.sum(locs, l => l.nb || 0);
+  let agg = [], usableLive = false, BOXES = null, boxesLoading = null;
+  const liveUsable = L => !!(L && L.locs && L.locs.length && (!L.test_env || CFG.allow_test_data));
+  function ingest() {
+    usableLive = liveUsable(LIVE);
+    agg = locs.map(l => ({ r: 0, t: 0, x: 0, v: new Array(NP).fill(0), n: 0, N: l.nb || 0, valid: 0 }));
+    if (!usableLive) return;
+    const map = LIVE.codes.map(c => (idx[c] !== undefined ? idx[c] : idx.OTHER));
+    LIVE.locs.forEach(row => {
+      const [c, he, r, t, x, nb, v] = row;
+      let l = byCode.get(c);
+      if (!l) {
+        l = { c, he, en: c === 9999 ? 'Double envelopes (soldiers, diplomats, prisoners, patients)' : he, lat: null, lon: null, dist: '', r: row[7] || r, nb, i: locs.length };
+        locs.push(l); byCode.set(c, l);
+        agg.push({ r: 0, t: 0, x: 0, v: new Array(NP).fill(0), n: 0, N: nb, valid: 0 });
+      }
+      const a = agg[l.i];
+      a.r = r; a.t = t; a.x = x; a.n = nb; a.N = Math.max(l.nb || 0, nb);
+      v.forEach((n, k) => { a.v[map[k]] += n; });
+      a.valid = d3.sum(a.v);
+    });
+  }
+  ingest();
+  const totalBoxes = () => Math.max(TOTAL_BOXES_BASE, d3.sum(agg, a => a.n));
+  const countedBoxes = () => d3.sum(agg, a => a.n);
+
+  function dhondt(votes, seats) {
+    const keys = Object.keys(votes), alloc = {}; keys.forEach(k => { alloc[k] = 0; });
+    for (let s = 0; s < seats; s++) {
+      let best = null, bq = -1;
+      keys.forEach(k => { const q = votes[k] / (alloc[k] + 1); if (q > bq) { bq = q; best = k; } });
+      if (best === null) break; alloc[best]++;
+    }
+    return alloc;
+  }
+  function allocate(nat, valid, agreements) {
+    const q = {}; TRACKED.forEach(c => { const v = nat[idx[c]]; if (valid > 0 && v >= THR * valid) q[c] = v; });
+    const units = {}, members = {}, used = new Set();
+    agreements.forEach(([a, b]) => { if (q[a] && q[b]) { units[a + '+' + b] = q[a] + q[b]; members[a + '+' + b] = [a, b]; used.add(a); used.add(b); } });
+    Object.keys(q).forEach(c => { if (!used.has(c)) { units[c] = q[c]; members[c] = [c]; } });
+    const out = {}; CODES.forEach(c => { out[c] = 0; });
+    if (!Object.keys(units).length) return out;
+    const ua = dhondt(units, 120);
+    Object.keys(ua).forEach(u => {
+      if (members[u].length === 1) out[members[u][0]] = ua[u];
+      else { const sub = {}; members[u].forEach(m => { sub[m] = q[m]; }); Object.assign(out, dhondt(sub, ua[u])); }
+    });
+    return out;
+  }
+
+  // ---- Views: live count or a poll ----
+  let view = null, userPicked = false;
+  function views() {
+    const v = [];
+    if (usableLive) v.push({ id: 'live', label: LIVE.test_env ? 'Test Count' : 'Live Count' });
+    (CFG.polls || []).forEach((p, i) => v.push({ id: 'poll:' + i, label: p.label }));
+    if (!v.length) v.push({ id: 'live', label: 'Live Count' });
+    return v;
+  }
+  function buildViews() {
+    const vs = views();
+    if (!view || !vs.some(v => v.id === view) || (!userPicked && usableLive)) view = vs[0].id;
+    document.getElementById('view-seg').innerHTML = vs.map(v => `<button type="button" data-v="${v.id}" aria-pressed="${v.id === view}">${esc(v.label)}</button>`).join('');
+  }
+  document.getElementById('view-seg').addEventListener('click', e => {
+    const b = e.target.closest('button[data-v]'); if (!b) return;
+    view = b.dataset.v; userPicked = true; buildViews(); update();
+  });
+  const isPoll = () => view && view.startsWith('poll:');
+  const curPoll = () => CFG.polls[+view.split(':')[1]];
+
+  function updateStatus() {
+    const pill = document.getElementById('status-pill');
+    const now = new Date();
+    let txt, state;
+    if (usableLive) {
+      const share = pct(countedBoxes(), totalBoxes(), 0);
+      txt = LIVE.test_env ? `Test Data · ${share} Of Ballot Boxes` : `Live Count · ${share} Of Ballot Boxes`;
+      state = LIVE.test_env ? 'test' : 'live';
+    } else if (now >= pollsClose) { txt = 'Polls Closed · Waiting For First Results'; state = 'wait'; }
+    else { txt = `Before The Vote · ${CFG.election}`; state = 'pre'; }
+    statusText.textContent = txt;
+    pill.dataset.state = state;
+    const up = document.getElementById('updated');
+    if (LIVE && LIVE.fetched_at) up.textContent = `Checked ${ilDay(LIVE.fetched_at)}, ${ilTime(LIVE.fetched_at)} Israel time${LIVE.cec_time ? ` · Committee data as of ${LIVE.cec_time}` : ''}`;
+    else up.textContent = `Results load here automatically from ${CFG.polls_close_label.split(' (')[0].replace(/^\w+, /, '')}`;
+  }
+
+  // ---- Map ----
+  const W = 400, H = 760;
+  const svg = d3.select('#map');
+  const proj = d3.geoMercator().fitExtent([[14, 12], [W - 14, H - 8]], { type: 'MultiPoint', coordinates: [[34.22, 29.47], [35.9, 33.34]] });
+  const path = d3.geoPath(proj);
+  const zoneF = k => GEO.zones.features.find(f => f.properties.k === k);
+  const defs = svg.append('defs');
+  const hatch = defs.append('pattern').attr('id', 'hatch-pa').attr('patternUnits', 'userSpaceOnUse').attr('width', 3.2).attr('height', 3.2).attr('patternTransform', 'rotate(45)');
+  hatch.append('rect').attr('width', 3.2).attr('height', 3.2).attr('fill', 'var(--zone-pa-fill)');
+  hatch.append('line').attr('x1', 0.5).attr('y1', 0).attr('x2', 0.5).attr('y2', 3.2).attr('stroke', 'var(--zone-pa)').attr('stroke-width', 0.9);
+  const root = svg.append('g');
+  const baseG = root.append('g').style('isolation', 'isolate');
+  baseG.append('rect').attr('x', -W).attr('y', -H).attr('width', 3 * W).attr('height', 3 * H).attr('fill', 'var(--sea)');
+  GEO.land.features.forEach(f => baseG.append('path').attr('d', path(f)).attr('fill', (f.properties.n === 'Israel' || f.properties.n === 'Palestine') ? 'var(--land)' : 'var(--land-near)'));
+  baseG.append('path').attr('d', path(zoneF('golan'))).attr('fill', 'var(--land)');
+  const hb = GEO.hs.b, [hx0, hy0] = proj([hb.w, hb.n]), [hx1, hy1] = proj([hb.e, hb.s]);
+  baseG.append('image').attr('href', GEO.hs.src).attr('x', hx0).attr('y', hy0).attr('width', hx1 - hx0).attr('height', hy1 - hy0)
+    .attr('preserveAspectRatio', 'none').style('mix-blend-mode', 'var(--hs-blend)').style('opacity', 'var(--hs-op)');
+  root.append('path').attr('d', path(GEO.lakes)).attr('fill', 'var(--water)');
+  const lineG = root.append('g').attr('fill', 'none');
+  GEO.land.features.filter(f => f.properties.n !== 'Palestine').forEach(f => lineG.append('path').attr('d', path(f)).attr('stroke', 'var(--border-line)').attr('stroke-width', 0.8).attr('vector-effect', 'non-scaling-stroke'));
+  const zoneG = root.append('g');
+  [GEO.ab, zoneF('gaza')].forEach(f => zoneG.append('path').attr('d', path(f)).attr('fill', 'url(#hatch-pa)').attr('stroke', 'var(--zone-pa)').attr('stroke-width', 0.5).attr('vector-effect', 'non-scaling-stroke'));
+  ['westbank', 'gaza'].forEach(k => zoneG.append('path').attr('d', path(zoneF(k))).attr('fill', 'none').attr('stroke', 'var(--ink-2)').attr('stroke-width', 1.1).attr('stroke-dasharray', '5 3').attr('vector-effect', 'non-scaling-stroke'));
+  ['golan', 'ejer'].forEach(k => zoneG.append('path').attr('d', path(zoneF(k))).attr('fill', 'none').attr('stroke', 'var(--ink-2)').attr('stroke-width', 1.2).attr('stroke-dasharray', '1 2.5').attr('stroke-linecap', 'round').attr('vector-effect', 'non-scaling-stroke'));
+  const labels = root.append('g').attr('class', 'labels');
+  const lab = (lon, lat, txt, cls, rot, anchor) => { const [x, y] = proj([lon, lat]); labels.append('text').attr('x', x).attr('y', y).attr('class', cls).attr('text-anchor', anchor || 'middle').attr('transform', rot ? `rotate(${rot} ${x} ${y})` : null).text(txt); };
+  lab(34.42, 32.62, 'Mediterranean Sea', 'sea-label', -68);
+  lab(35.82, 30.75, 'Jordan', 'ctry-label');
+  lab(34.38, 30.2, 'Egypt', 'ctry-label');
+  lab(35.36, 32.33, 'West Bank', 'zone-label');
+  lab(34.31, 31.38, 'Gaza', 'zone-label', 0, 'end');
+  lab(35.76, 33.13, 'Golan', 'zone-label');
+  lab(34.86, 30.55, 'Negev', 'zone-label');
+  lab(35.53, 31.47, 'Dead Sea', 'water-label');
+
+  const mapped = locs.filter(l => l.lat != null);
+  mapped.forEach(l => { const [x, y] = proj([l.lon, l.lat]); l.x = x; l.y = y; });
+  const rScale = d3.scaleSqrt().domain([0, d3.max(mapped, l => l.r)]).range([0, 15]);
+  const dotsG = root.append('g');
+  const dots = dotsG.selectAll('circle').data(mapped.slice().sort((a, b) => b.r - a.r)).join('circle')
+    .attr('cx', d => d.x).attr('cy', d => d.y).attr('stroke', 'var(--surface)').attr('vector-effect', 'non-scaling-stroke');
+  const selRing = root.append('circle').attr('fill', 'none').attr('stroke', 'var(--ink)').attr('stroke-width', 2).attr('vector-effect', 'non-scaling-stroke').attr('pointer-events', 'none').attr('opacity', 0);
+  const CITIES = [['Jerusalem', 35.2137, 31.7683, 'start'], ['Tel Aviv', 34.7818, 32.0853, 'end'], ['Haifa', 34.9896, 32.794, 'end'], ["Be'er Sheva", 34.7913, 31.2518, 'start'],
+    ['Eilat', 34.9519, 29.5577, 'start'], ['Nazareth', 35.3035, 32.6996, 'start'], ['Ashdod', 34.6553, 31.8044, 'end'], ['Netanya', 34.8532, 32.3215, 'end'], ['Tiberias', 35.5312, 32.7922, 'start']];
+  const cityT = root.append('g').attr('class', 'cities').attr('pointer-events', 'none').selectAll('text').data(CITIES).join('text').attr('text-anchor', d => d[3]).text(d => d[0]);
+  let zk = 1, zt = d3.zoomIdentity, selected = null;
+  function placeCities() {
+    const off = 7 / zk;
+    cityT.attr('x', d => proj([d[1], d[2]])[0] + (d[3] === 'start' ? off : -off)).attr('y', d => proj([d[1], d[2]])[1] + 3.5 / zk)
+      .attr('font-size', 11 / zk).attr('stroke-width', 3 / zk);
+  }
+  const delaunay = d3.Delaunay.from(mapped, d => d.x, d => d.y);
+  function sizeDots() {
+    dots.attr('r', d => Math.max(1.3, rScale(d.r)) / Math.pow(zk, 0.65)).attr('stroke-width', 0.8);
+    const s = selected && selected.x != null ? selected : null;
+    selRing.attr('opacity', s ? 1 : 0);
+    if (s) selRing.attr('cx', s.x).attr('cy', s.y).attr('r', (Math.max(1.3, rScale(s.r)) + 3) / Math.pow(zk, 0.65));
+  }
+  const zoom = d3.zoom().scaleExtent([1, 8]).translateExtent([[0, 0], [W, H]]).on('zoom', e => {
+    zt = e.transform; zk = zt.k; root.attr('transform', zt); labels.attr('opacity', zk > 2.2 ? 0 : 1); sizeDots(); placeCities();
+  });
+  svg.call(zoom);
+  d3.select('#zin').on('click', () => svg.transition().duration(250).call(zoom.scaleBy, 1.8));
+  d3.select('#zout').on('click', () => svg.transition().duration(250).call(zoom.scaleBy, 1 / 1.8));
+  d3.select('#zreset').on('click', () => svg.transition().duration(250).call(zoom.transform, d3.zoomIdentity));
+
+  let mode = 'bloc', shareParty = TRACKED[0];
+  const SEQ = [1, 2, 3, 4, 5, 6, 7].map(i => `var(--seq-${i})`);
+  const SHARE_BINS = [5, 10, 20, 30, 40, 50];
+  const TURN_BINS = [50, 60, 65, 70, 75, 80];
+  const binColor = (v, bins) => { let k = 0; while (k < bins.length && v >= bins[k]) k++; return SEQ[k]; };
+  function blocTotals(v) { const t = { N: 0, C: 0, A: 0, O: 0 }; v.forEach((n, p) => { t[blocOf(p)] += n; }); return t; }
+  function leadBloc(v) { const t = blocTotals(v); return BLOC_ORDER.reduce((a, b) => t[b] > t[a] ? b : a, 'N'); }
+  function leadParty(v) { let m = 0; v.forEach((n, p) => { if (n > v[m]) m = p; }); return m; }
+  const showLive = () => usableLive && !isPoll();
+
+  function colorDots() {
+    dots.attr('fill', d => {
+      const a = agg[d.i];
+      if (!showLive() || !a.n || !a.valid) return 'var(--pending)';
+      if (mode === 'bloc') return `var(${BLOCS[leadBloc(a.v)].v})`;
+      if (mode === 'share') return binColor(100 * a.v[idx[shareParty]] / a.valid, SHARE_BINS);
+      return binColor(a.r ? 100 * a.t / a.r : 0, TURN_BINS);
+    }).attr('fill-opacity', d => (showLive() && agg[d.i].n) ? 0.92 : 0.55);
+    const n = showLive() ? mapped.filter(l => agg[l.i].n).length : 0;
+    document.getElementById('map-note').textContent = showLive() ? `${fmt(n)} of ${fmt(mapped.length)} localities reporting` : `${fmt(mapped.length)} localities`;
+    renderLegend();
+  }
+  function renderLegend() {
+    const L = document.getElementById('legend');
+    const pend = '<span><span class="sw" style="background:var(--pending)"></span>Not yet counted</span>';
+    if (!showLive()) {
+      L.innerHTML = `${pend}<span style="flex-basis:100%;color:var(--muted);font-size:12px">${isPoll() ? 'Polls give national seats only. ' : ''}Locality results fill in as ballot boxes are counted, from ${esc(CFG.polls_close_label)}.</span>`;
+      return;
+    }
+    const partial = countedBoxes() < totalBoxes();
+    if (mode === 'bloc') {
+      L.innerHTML = BLOC_ORDER.map(b => `<span><span class="sw" style="background:var(${BLOCS[b].v})"></span>${esc(BLOCS[b].name)}</span>`).join('') + (partial ? pend : '') +
+        '<span style="flex-basis:100%;color:var(--muted);font-size:12px">Dot size shows registered voters. Scroll or pinch to zoom into Gush Dan.</span>';
+    } else {
+      const bins = mode === 'share' ? SHARE_BINS : TURN_BINS;
+      const lbl = mode === 'share' ? `${esc(META[shareParty].en)} share of valid votes` : 'Turnout, voted ÷ registered';
+      L.innerHTML = `<div class="ramp"><span class="ends">&lt;${bins[0]}%</span><span class="bars">${SEQ.map(c => `<span style="background:${c}"></span>`).join('')}</span><span class="ends">${bins[bins.length - 1]}%+</span></div><span style="color:var(--ink-2)">${lbl}</span>` + (partial ? pend : '');
+    }
+  }
+
+  const tip = document.getElementById('tip');
+  const mapBox = document.getElementById('map-box');
+  function pick(ev) {
+    const rect = svg.node().getBoundingClientRect();
+    const sx = (ev.clientX - rect.left) * W / rect.width, sy = (ev.clientY - rect.top) * H / rect.height;
+    const [ux, uy] = zt.invert([sx, sy]);
+    const d = mapped[delaunay.find(ux, uy)];
+    return Math.hypot(d.x - ux, d.y - uy) * zk * rect.width / W < 18 ? d : null;
+  }
+  function tipHtml(d) {
+    const a = agg[d.i];
+    let h = `<b>${esc(d.en)}</b><span class="he" lang="he">${esc(d.he)}</span>`;
+    if (!showLive() || !a.n) return h + `<div class="sub">${fmt(d.r)} registered voters · ${fmt(d.nb || a.N)} ballot boxes${showLive() ? ' · none counted yet' : ''}</div>`;
+    const top = a.v.map((n, p) => [p, n]).sort((x, y) => y[1] - x[1]).slice(0, 3);
+    h += top.map(([p, n]) => `<div class="row"><span>${esc(META[CODES[p]].en)}</span><span>${pct(n, a.valid)}</span></div>`).join('');
+    return h + `<div class="sub">Turnout ${pct(a.t, a.r)} · ${a.n} of ${a.N} boxes counted</div>`;
+  }
+  svg.on('pointermove', ev => {
+    const d = pick(ev);
+    if (!d) { tip.hidden = true; return; }
+    tip.innerHTML = tipHtml(d); tip.hidden = false;
+    const br = mapBox.getBoundingClientRect();
+    let x = ev.clientX - br.left + 14, y = ev.clientY - br.top + 14;
+    if (x + 230 > br.width) x = ev.clientX - br.left - 234;
+    if (y + tip.offsetHeight > br.height) y = Math.max(4, br.height - tip.offsetHeight - 4);
+    tip.style.left = Math.max(4, x) + 'px'; tip.style.top = y + 'px';
+  }).on('pointerleave', () => { tip.hidden = true; })
+    .on('click', ev => { const d = pick(ev); if (d) { select(d.i); if (window.innerWidth < 900) document.getElementById('explorer').scrollIntoView({ behavior: 'smooth' }); } });
+
+  document.querySelectorAll('#map-modes button').forEach(b => b.addEventListener('click', () => {
+    mode = b.dataset.mode;
+    document.querySelectorAll('#map-modes button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    document.getElementById('share-party').hidden = mode !== 'share';
+    colorDots();
+  }));
+  const sp = document.getElementById('share-party');
+  sp.innerHTML = TRACKED.map(c => `<option value="${c}">${esc(META[c].en)}</option>`).join('');
+  sp.addEventListener('change', () => { shareParty = sp.value; colorDots(); });
+
+  // ---- Hemicycle ----
+  const hemi = d3.select('#hemi');
+  const HC = { cx: 260, cy: 272, r0: 92, r1: 240, rows: 7 };
+  const seatsPos = (() => {
+    const radii = d3.range(HC.rows).map(i => HC.r0 + (HC.r1 - HC.r0) * i / (HC.rows - 1));
+    const tot = d3.sum(radii); const counts = radii.map(r => Math.round(120 * r / tot));
+    let diff = 120 - d3.sum(counts), k = HC.rows - 1;
+    while (diff !== 0) { counts[k] += Math.sign(diff); diff -= Math.sign(diff); k = (k - 1 + HC.rows) % HC.rows; }
+    const pos = [];
+    radii.forEach((r, ri) => { const n = counts[ri]; for (let j = 0; j < n; j++) { const th = Math.PI * (1 - j / (n - 1)); pos.push({ th, r, x: HC.cx + r * Math.cos(th), y: HC.cy - r * Math.sin(th) }); } });
+    return pos.sort((a, b) => b.th - a.th || a.r - b.r);
+  })();
+  hemi.append('line').attr('x1', HC.cx).attr('x2', HC.cx).attr('y1', HC.cy - HC.r1 - 14).attr('y2', HC.cy - HC.r0 + 12).attr('stroke', 'var(--ink-2)').attr('stroke-dasharray', '3 3');
+  hemi.append('text').attr('x', HC.cx).attr('y', HC.cy - HC.r1 - 20).attr('text-anchor', 'middle').attr('fill', 'var(--ink-2)').attr('font-size', 12).attr('font-family', 'var(--mono)').text('61');
+  const seatSel = hemi.append('g').selectAll('circle').data(seatsPos).join('circle').attr('cx', d => d.x).attr('cy', d => d.y).attr('r', 9.2);
+  seatSel.append('title');
+  const hemiCenter = hemi.append('text').attr('x', HC.cx).attr('y', HC.cy - 22).attr('text-anchor', 'middle').attr('font-family', 'var(--display)').attr('font-weight', 700).attr('font-size', 46).attr('fill', 'var(--ink)');
+  const hemiSub = hemi.append('text').attr('x', HC.cx).attr('y', HC.cy).attr('text-anchor', 'middle').attr('font-size', 12).attr('fill', 'var(--muted)').attr('letter-spacing', '.1em');
+
+  // ---- National picture ----
+  const blocSeats = s => { const b = { N: 0, C: 0, A: 0, O: 0 }; CODES.forEach(c => { b[META[c].bloc] += s[c] || 0; }); return b; };
+  const signed = n => (n > 0 ? '+' : n < 0 ? '−' : '') + Math.abs(n);
+  function seatDiff(a, b) {
+    return CODES.filter(c => (a[c] || 0) !== (b[c] || 0)).sort((x, y) => (b[y] - a[y]) - (b[x] - a[x]))
+      .map(c => `${esc(META[c].en)} ${b[c] || 0} (${signed((b[c] || 0) - (a[c] || 0))})`).join(', ');
+  }
+  let scen = 'actual', swingPts = 2, lastSeats = null;
+  function nearThreshold(nat, valid) {
+    return TRACKED.filter(c => nat[idx[c]] < THR * valid && nat[idx[c]] >= 0.015 * valid).sort((a, b) => nat[idx[b]] - nat[idx[a]]).slice(0, 2);
+  }
+  function renderScenarioButtons(nat, valid) {
+    const near = showLive() && valid ? nearThreshold(nat, valid) : [];
+    const want = ['actual', 'noagree'].concat(near.map(c => 'cross:' + c), ['swing']);
+    if (!want.includes(scen)) scen = 'actual';
+    const label = s => s === 'actual' ? 'Current Count' : s === 'noagree' ? 'No Surplus Deals' : s === 'swing' ? 'Swing The Vote' : `If ${META[s.slice(6)].en} Crossed`;
+    const box = document.getElementById('scen');
+    const html = want.map(s => `<button type="button" data-s="${s}" aria-pressed="${s === scen}">${esc(label(s))}</button>`).join('');
+    if (box.innerHTML !== html) box.innerHTML = html;
+    document.getElementById('scen-wrap').hidden = !showLive();
+    document.getElementById('swing-ctl').hidden = !(showLive() && scen === 'swing');
+  }
+  document.getElementById('scen').addEventListener('click', e => { const b = e.target.closest('button[data-s]'); if (!b) return; scen = b.dataset.s; renderNational(); });
+  document.getElementById('swing').addEventListener('input', e => { swingPts = +e.target.value; document.getElementById('swing-out').textContent = swingPts.toFixed(1) + ' points'; renderNational(); });
+
+  function renderNational() {
+    const natReal = new Array(NP).fill(0); let reg = 0, vot = 0;
+    if (showLive()) agg.forEach(a => { reg += a.r; vot += a.t; for (let p = 0; p < NP; p++) natReal[p] += a.v[p]; });
+    const validReal = d3.sum(natReal);
+    renderScenarioButtons(natReal, validReal);
+    let seats, seatsReal, nat = natReal, valid = validReal;
+    const poll = isPoll() ? curPoll() : null;
+    if (poll) {
+      seats = {}; CODES.forEach(c => { seats[c] = poll.seats[c] || 0; }); seatsReal = seats;
+    } else {
+      seatsReal = allocate(natReal, validReal, AGREEMENTS);
+      nat = natReal.slice();
+      let need = 0, boost = null;
+      if (scen.startsWith('cross:') && validReal) {
+        boost = scen.slice(6);
+        need = Math.max(0, Math.floor((THR * validReal - natReal[idx[boost]]) / (1 - THR)) + 1);
+        nat[idx[boost]] += need;
+      }
+      if (scen === 'swing' && validReal) {
+        const Np = TRACKED.filter(c => META[c].bloc === 'N'), Cp = TRACKED.filter(c => META[c].bloc === 'C');
+        const mv = validReal * swingPts / 100, nT = d3.sum(Np, c => natReal[idx[c]]) || 1, cT = d3.sum(Cp, c => natReal[idx[c]]) || 1;
+        Np.forEach(c => { nat[idx[c]] -= mv * natReal[idx[c]] / nT; }); Cp.forEach(c => { nat[idx[c]] += mv * natReal[idx[c]] / cT; });
+      }
+      valid = d3.sum(nat);
+      seats = allocate(nat, valid, scen === 'noagree' ? [] : AGREEMENTS);
+      const bsS = blocSeats(seats), d = seatDiff(seatsReal, seats), sn = document.getElementById('scen-note');
+      if (!validReal) sn.innerHTML = '';
+      else if (scen === 'actual') sn.innerHTML = countedBoxes() < totalBoxes() ? `Projection from <strong>${pct(countedBoxes(), totalBoxes(), 0)}</strong> of ballot boxes. Seats can still move as the count fills in, and double envelopes are counted last.` : 'All ballot boxes counted. Final results are certified on ' + esc(CFG.official_results_date) + '.';
+      else if (scen === 'swing') sn.innerHTML = `Hypothetical. ${d || 'No seat changes'}. <strong>${esc(NB)} ${bsS.N}</strong>.`;
+      else if (scen === 'noagree') sn.innerHTML = d ? `Without the deals: ${d}. <strong>${esc(NB)} ${bsS.N}</strong>.` : 'The deals do not move any seat at this point in the count.';
+      else sn.innerHTML = need > 0 ? `${esc(META[boost].en)} is <strong>${fmt(need)} votes</strong> short of ${THR_PCT}%. With them: ${d || 'no seat changes'}. <strong>${esc(NB)} ${bsS.N}</strong>.` : `${esc(META[boost].en)} is above the threshold at this point in the count.`;
+    }
+    lastSeats = seats;
+    const bs = blocSeats(seats), bsReal = blocSeats(seatsReal), bv = blocTotals(nat);
+    const anySeats = d3.sum(CODES, c => seats[c]) > 0;
+
+    // Tally strip
+    const cb = countedBoxes(), tb = totalBoxes();
+    if (showLive()) {
+      d3.select('#k-boxes').text(pct(cb, tb, cb === tb ? 0 : 1));
+      d3.select('#k-boxes-s').text(`${fmt(cb)} of ${fmt(tb)} boxes`);
+      d3.select('#k-turnout').text(pct(vot, reg));
+      d3.select('#k-turnout-s').text(`${fmt(vot)} votes counted so far`);
+      d3.select('#k-thr-s').text(`${fmt(Math.ceil(THR * validReal))} votes at current count`);
+    } else {
+      d3.select('#k-boxes').text('0%');
+      d3.select('#k-boxes-s').text(`Counting starts ${CFG.polls_close_label.split(' (')[0].replace(/^\w+, /, '')}`);
+      d3.select('#k-turnout').text('–');
+      d3.select('#k-turnout-s').text(`${fmt(CFG.eligible_voters)} eligible voters · 2022 turnout 70.6%`);
+      d3.select('#k-thr-s').text('About 4 seats, roughly 160,000 votes');
+    }
+    d3.select('#k-bloc-k').text(NB);
+    d3.select('#k-bloc').text(anySeats ? `${bsReal.N} seats` : '–');
+    d3.select('#k-bloc-s').text(anySeats ? (poll ? `${poll.label.split(' · ')[0]}, ` : '') + (bsReal.N >= 61 ? `majority, ${bsReal.N - 60} above the line` : `${61 - bsReal.N} short of 61`) : 'Waiting for first results');
+    d3.select('#k-thr').text(`${THR_PCT}%`);
+
+    // Hemicycle
+    const seatList = []; SEAT_ORDER.forEach(c => { for (let s = 0; s < (seats[c] || 0); s++) seatList.push(c); });
+    seatSel.attr('fill', (d, i) => seatList[i] ? `var(${BLOCS[META[seatList[i]].bloc].v})` : 'none')
+      .attr('fill-opacity', (d, i) => seatList[i] ? tone[seatList[i]] : 1)
+      .attr('stroke', (d, i) => seatList[i] ? 'var(--surface)' : 'var(--rule-strong)').attr('stroke-width', (d, i) => seatList[i] ? 2 : 1);
+    seatSel.select('title').text((d, i) => seatList[i] ? `${META[seatList[i]].en}: ${seats[seatList[i]]} seats` : 'Unallocated');
+    hemiCenter.text(anySeats ? bs.N : '–');
+    hemiSub.text(anySeats ? NB.toUpperCase() : 'NO RESULTS YET');
+    document.getElementById('hemi-h').textContent = poll ? 'Knesset In This Poll' : 'Projected Knesset';
+    document.getElementById('majority').innerHTML = anySeats
+      ? (bs.N >= 61 ? `<strong>${esc(NB)} holds a majority</strong> with ${bs.N} of 120 seats` : `<strong>No bloc at 61.</strong> ${esc(NB)} ${bs.N}, ${esc(BLOCS.C.name.toLowerCase())} ${bs.C}, Arab parties ${bs.A}, unaligned ${bs.O}`)
+      : 'Seats appear once the first ballot boxes report';
+    document.getElementById('blocs').innerHTML = ['N', 'C', 'A'].map(b => `<div class="bloc" style="--c:var(${BLOCS[b].v})"><div class="n num">${bs[b]}</div><div class="l">${esc(BLOCS[b].name)}</div><div class="p num">${poll ? 'seats in poll' : `${pct(bv[b], valid)} of the vote`}</div></div>`).join('');
+    document.getElementById('poll-note').innerHTML = poll ? `${esc(poll.note)}${poll.url ? ` <a href="${esc(poll.url)}" target="_blank" rel="noopener">Source</a>` : ''}` : '';
+    document.getElementById('poll-note').hidden = !poll;
+
+    // Party table
+    const tbody = document.querySelector('#ptable tbody');
+    document.getElementById('party-note').textContent = poll ? 'Seats as published by the pollster' : `Dashed line marks the ${THR_PCT}% threshold`;
+    if (poll) {
+      const order = TRACKED.slice().sort((a, b) => (seats[b] || 0) - (seats[a] || 0));
+      tbody.innerHTML = order.map(c => {
+        const m = META[c], s = seats[c] || 0;
+        return `<tr class="${s ? '' : 'below'}"><td><div class="party"><span class="chip" style="background:var(${BLOCS[m.bloc].v});opacity:${tone[c]}"></span><span><span class="name">${esc(m.en)}</span><span class="lead">${esc(m.lead)}${s ? '' : ' · below threshold in this poll'}</span></span></div></td>` +
+          `<td><span class="letters" lang="he">${c}</span></td><td class="r">–</td><td class="r">–</td>` +
+          `<td><div class="sharebar"><div class="fill" style="width:${100 * s / 30}%;background:var(${BLOCS[m.bloc].v});opacity:${tone[c]}"></div></div></td><td class="r"><span class="seats">${s || '–'}</span></td></tr>`;
+      }).join('');
+    } else {
+      const order = CODES.map((c, p) => ({ c, p, v: nat[p] })).sort((a, b) => (a.c === 'OTHER') - (b.c === 'OTHER') || b.v - a.v || TRACKED.indexOf(a.c) - TRACKED.indexOf(b.c));
+      const maxShare = Math.max(25, d3.max(order, o => valid ? 100 * o.v / valid : 0));
+      tbody.innerHTML = order.map(o => {
+        const m = META[o.c], s = valid ? 100 * o.v / valid : 0, isOther = o.c === 'OTHER';
+        const below = !isOther && valid && s < THR_PCT;
+        return `<tr class="${below ? 'below' : ''}"><td><div class="party"><span class="chip" style="background:var(${BLOCS[m.bloc].v});opacity:${tone[o.c]}"></span><span><span class="name">${esc(m.en)}</span><span class="lead">${esc(m.lead)}${below ? ' · below threshold' : ''}</span></span></div></td>` +
+          `<td>${isOther ? '' : `<span class="letters" lang="he">${o.c}</span>`}</td>` +
+          `<td class="r">${valid ? fmt(Math.round(o.v)) : '–'}</td><td class="r">${valid ? s.toFixed(2) + '%' : '–'}</td>` +
+          `<td><div class="sharebar"><div class="fill" style="width:${100 * s / maxShare}%;background:var(${BLOCS[m.bloc].v});opacity:${tone[o.c]}"></div>${isOther ? '' : `<div class="thr" style="left:${100 * THR_PCT / maxShare}%"></div>`}</div></td>` +
+          `<td class="r"><span class="seats">${isOther ? '' : (seats[o.c] || '–')}</span></td></tr>`;
+      }).join('');
+    }
+    renderAgreements(natReal, validReal);
+    renderGov();
+  }
+
+  function renderAgreements(nat, valid) {
+    const tb = document.querySelector('#atable tbody');
+    if (!showLive() || !valid) {
+      tb.innerHTML = AGREEMENTS.map(([a, b]) => `<tr><td><b>${esc(META[a].en)}</b> ⇄ <b>${esc(META[b].en)}</b></td><td><span class="tag">Signed</span></td><td class="delta" style="color:var(--muted)">Effect shows once votes are counted</td></tr>`).join('');
+      return;
+    }
+    const full = allocate(nat, valid, AGREEMENTS);
+    const passes = c => nat[idx[c]] >= THR * valid;
+    tb.innerHTML = AGREEMENTS.map(pair => {
+      const [a, b] = pair, on = passes(a) && passes(b);
+      const without = allocate(nat, valid, AGREEMENTS.filter(p => p !== pair));
+      const moved = CODES.filter(c => (full[c] || 0) !== (without[c] || 0));
+      const failed = [a, b].filter(c => !passes(c)).map(c => META[c].en).join(' and ');
+      return `<tr><td><b>${esc(META[a].en)}</b> ⇄ <b>${esc(META[b].en)}</b></td>` +
+        `<td>${on ? '<span class="tag on">Active</span>' : '<span class="tag void">Void for now</span>'}</td>` +
+        `<td class="delta">${on ? (moved.length ? moved.map(c => `${esc(META[c].en)} ${signed(full[c] - without[c])}`).join(', ') : 'No seat moved') : `${esc(failed)} below ${THR_PCT}%`}</td></tr>`;
+    }).join('');
+  }
+
+  // ---- Government formation ----
+  const CANDS = CFG.candidates;
+  const REC = CFG.camps || {};
+  const REC_NAMES = {}; CANDS.forEach(c => { REC_NAMES[c.id] = [c.name, c.v]; }); REC_NAMES.X = ['No recommendation', '--bloc-o'];
+  const PLEDGES = (CFG.pledges || []).filter(p => META[p.a]);
+  const VETO_GROUPS = CFG.veto_groups || [];
+  const candParty = {}; CANDS.forEach(C => { candParty[C.id] = Object.keys(REC).find(c => REC[c] === C.id && META[c] && META[c].lead.includes(C.name.split(' ').pop())); });
+  let coal = new Set((CFG.presets[0] || { parties: [] }).parties);
+  const pledgesBox = document.getElementById('pledges');
+  const violWith = (set, pl) => pl.filter(p => set.has(p.a) && (p.never || (p.x && set.has(p.x)) || (p.req && !set.has(p.req))));
+  const violations = set => violWith(set, PLEDGES).map(p => p.t);
+  const feasible = set => violWith(set, PLEDGES).length === 0;
+  function minimalMajorities(parties, seats, usePl) {
+    const n = parties.length, out = [];
+    for (let m = 1; m < (1 << n); m++) {
+      let s = 0; const set = new Set();
+      for (let i = 0; i < n; i++) if (m & (1 << i)) { s += seats[parties[i]]; set.add(parties[i]); }
+      if (s < 61 || (usePl && !feasible(set))) continue;
+      let all = true;
+      for (let i = 0; i < n && all; i++) if (m & (1 << i)) {
+        const p = parties[i]; set.delete(p);
+        if (s - seats[p] >= 61 && (!usePl || feasible(set))) all = false;
+        set.add(p);
+      }
+      if (all) out.push({ set: [...set], s });
+    }
+    return out;
+  }
+  let kingSet = new Set();
+  const listNames = arr => arr.map(c => esc(META[c].en)).join(arr.length > 2 ? ', ' : ' and ').replace(/, ([^,]*)$/, ', and $1');
+  function analyseCamps(seated, seats, pl) {
+    const open = seated.filter(c => !REC[c]);
+    const sum = set => { let s = 0; set.forEach(c => { s += seats[c] || 0; }); return s; };
+    return CANDS.map(C => {
+      const core = seated.filter(c => REC[c] === C.id);
+      const coreSeats = d3.sum(core, c => seats[c]);
+      const paths = []; let best = { S: [], s: coreSeats };
+      const coreOk = core.length > 0 && violWith(new Set(core), pl).length === 0;
+      if (coreOk) for (let m = 0; m < (1 << open.length); m++) {
+        const S = open.filter((c, i) => m & (1 << i));
+        const set = new Set(core.concat(S));
+        if (violWith(set, pl).length) continue;
+        const s = sum(set);
+        if (s > best.s) best = { S, s };
+        if (s < 61) continue;
+        if (S.every(x => { set.delete(x); const ok = sum(set) >= 61 && !violWith(set, pl).length; set.add(x); return !ok; })) paths.push({ S, s });
+      }
+      const canJoin = {}; open.forEach(x => { canJoin[x] = coreOk ? violWith(new Set(core.concat([x])), pl) : [{ t: 'No camp' }]; });
+      return { C, core, coreSeats, coreOk, paths, best, canJoin };
+    });
+  }
+  function why(p, x) {
+    if (p.a !== x) return `Vetoed by ${META[p.a].en}`;
+    if (p.never) return 'Never joins';
+    const cand = CANDS.find(C => candParty[C.id] === p.x);
+    if (cand) return `Won't serve under ${cand.name.split(' ').pop()}`;
+    if (p.x) return `Refuses ${META[p.x].en}`;
+    return 'Pledged elsewhere';
+  }
+  function renderKingmakers(seated, seats) {
+    const V = document.getElementById('km-verdict'), CP = document.getElementById('camps'), ST = document.getElementById('swing-tbl'), BR = document.getElementById('broken');
+    kingSet = new Set();
+    if (!seated.length) { V.innerHTML = '<p class="hint">Waiting for seats.</p>'; CP.innerHTML = ''; ST.innerHTML = ''; BR.innerHTML = ''; return; }
+    const camps = analyseCamps(seated, seats, PLEDGES);
+    const open = seated.filter(c => !REC[c]);
+    const outright = camps.find(r => r.coreOk && r.coreSeats >= 61);
+    const live = camps.filter(r => r.paths.length);
+    const crowns = {};
+    camps.forEach(r => { if (r.coreSeats < 61) r.paths.forEach(p => p.S.forEach(x => { (crowns[x] = crowns[x] || new Set()).add(r.C.id); })); });
+    if (outright) {
+      V.innerHTML = `<div class="kv none"><span class="tag on">No Kingmaker</span><b>${esc(outright.C.camp)} has ${outright.coreSeats} seats on its own.</b><span>The parties expected to back ${esc(outright.C.name)} already pass 61, so no swing party decides the outcome. The leverage moves inside the coalition: any partner whose exit drops it below 61 can make demands.</span></div>`;
+    } else if (live.length) {
+      Object.keys(crowns).forEach(x => kingSet.add(x));
+      const ks = Object.keys(crowns).sort((a, b) => crowns[b].size - crowns[a].size || seats[b] - seats[a]);
+      const both = ks.filter(x => crowns[x].size > 1);
+      V.innerHTML = `<div class="kv king"><span class="tag king">${ks.length === 1 ? 'Kingmaker' : 'Kingmakers'}</span><b>${listNames(ks)} ${ks.length === 1 ? 'decides' : 'decide'} who governs.</b><span>${both.length ? `${listNames(both)} could put either candidate over 61.` : live.map(r => `${esc(r.C.name)} reaches 61 only with ${r.paths.map(p => listNames(p.S)).join(', or with ')}.`).join(' ')}</span></div>`;
+    } else {
+      V.innerHTML = `<div class="kv dead"><span class="tag crit">Deadlock</span><b>No camp can reach 61 while every party keeps its word.</b><span>Someone has to break a campaign pledge, or Israel goes back to the polls.</span></div>`;
+    }
+    CP.innerHTML = camps.map(r => {
+      const extra = r.best.s - r.coreSeats;
+      const status = r.coreSeats >= 61 && r.coreOk ? '<span class="tag on">Majority alone</span>' : r.paths.length ? '<span class="tag">Needs a kingmaker</span>' : `<span class="tag void">${r.best.s ? `${61 - r.best.s} short at best` : 'No path'}</span>`;
+      return `<div class="camp"><div class="camp-h"><b>${esc(r.C.camp)}</b>${status}</div>` +
+        `<div class="stack thin"><span style="flex:0 0 calc(${r.coreSeats} / 120 * 100% - 2px);background:var(${r.C.v})" title="Expected to back ${esc(r.C.name)}: ${r.coreSeats}"></span>${extra > 0 ? `<span class="reach" style="flex:0 0 calc(${extra} / 120 * 100% - 2px)" title="Willing swing parties: ${extra}"></span>` : ''}<i class="line"></i></div>` +
+        `<small>Core ${r.coreSeats}: ${r.core.map(c => `${esc(META[c].en)} ${seats[c]}`).join(' · ') || 'none'}${extra > 0 && r.coreSeats < 61 ? `. Best reach with willing swing parties: <b>${r.best.s}</b> (+${listNames(r.best.S)})` : ''}</small></div>`;
+    }).join('');
+    const keyHolders = new Set();
+    BR.innerHTML = '';
+    if (!live.length && !outright) {
+      const relax = [];
+      PLEDGES.forEach((p, i) => { if (seats[p.a]) relax.push({ text: p.b, keys: [p.a], pl: PLEDGES.filter((_, j) => j !== i), n: 1 }); });
+      [...new Set(PLEDGES.map(p => p.a))].forEach(a => { if (seats[a] && PLEDGES.filter(p => p.a === a).length > 1) relax.push({ text: `${META[a].en} drops all its red lines`, keys: [a], pl: PLEDGES.filter(p => p.a !== a), n: 2 }); });
+      VETO_GROUPS.forEach(g => { if (seats[g.x]) relax.push({ text: g.b, keys: [g.x], pl: PLEDGES.filter(p => p.x !== g.x), n: 2 }); });
+      const items = [];
+      relax.forEach(R => analyseCamps(seated, seats, R.pl).forEach(r => r.paths.forEach(path => items.push({ R, r, path }))));
+      const seen = new Set();
+      const uniq = items.sort((a, b) => a.R.n - b.R.n || a.path.S.length - b.path.S.length || a.path.s - b.path.s)
+        .filter(it => { const k = it.R.text + it.r.C.id; if (seen.has(k)) return false; seen.add(k); return true; }).slice(0, 6);
+      uniq.forEach(it => { it.R.keys.forEach(k => keyHolders.add(k)); it.path.S.forEach(x => keyHolders.add(x)); });
+      BR.innerHTML = '<h4>What It Would Take</h4>' + (uniq.length
+        ? `<ul>${uniq.map(it => `<li><span class="tag">${esc(it.r.C.name.split(' ').pop())} ${it.path.s}</span><span>If <b>${esc(it.R.text.charAt(0).toLowerCase() === it.R.text.charAt(0) ? it.R.text : it.R.text)}</b>, ${esc(it.r.C.name)} reaches ${it.path.s}${it.path.S.length ? ` with ${listNames(it.path.S)}` : ''}.</span></li>`).join('')}</ul>`
+        : '<p class="hint">No single broken pledge produces a majority. That points to a unity deal across the blocs, or new elections.</p>');
+      if (keyHolders.size) V.querySelector('.kv span:last-child').innerHTML = `Someone has to break a campaign pledge, or Israel goes back to the polls. The parties holding the key: <strong>${listNames([...keyHolders].sort((a, b) => (seats[b] || 0) - (seats[a] || 0)))}</strong>.`;
+    }
+    ST.innerHTML = open.length ? `<thead><tr><th>Swing Party</th><th class="r">Seats</th>${camps.map(r => `<th>Joins ${esc(r.C.name.split(' ').pop())}?</th>`).join('')}<th>Role</th></tr></thead><tbody>` + open.sort((a, b) => seats[b] - seats[a]).map(x => {
+      const never = PLEDGES.some(p => p.a === x && p.never);
+      const role = kingSet.has(x) ? '<span class="tag king">Kingmaker</span>' : keyHolders.has(x) ? '<span class="tag king">Kingmaker at a price</span>' : never ? '<span class="tag void">Stays out</span>' : outright ? '<span class="tag void">Not decisive</span>' : '<span class="tag void">Not enough alone</span>';
+      return `<tr><td><span class="party"><span class="chip" style="${swatch(x)}"></span><span class="name">${esc(META[x].en)}</span></span></td><td class="r">${seats[x]}</td>` +
+        camps.map(r => { const v = r.canJoin[x]; return `<td>${v.length ? `<span class="no" title="${esc(v.map(p => p.t).join('; '))}">No</span> <small>${esc(why(v[0], x))}</small>` : '<span class="yes">Yes</span>'}</td>`; }).join('') + `<td>${role}</td></tr>`;
+    }).join('') + '</tbody>' : '';
+  }
+  const swatch = c => `background:var(${BLOCS[META[c].bloc].v});opacity:${tone[c]}`;
+  function renderGov() {
+    const seats = lastSeats; if (!seats) return;
+    const seated = TRACKED.filter(c => seats[c] > 0).sort((a, b) => seats[b] - seats[a]);
+    const total = d3.sum(seated, c => seats[c]);
+    const keys = CANDS.map(C => C.id).concat(['X']);
+    const groups = {}; keys.forEach(k => { groups[k] = []; });
+    seated.forEach(c => groups[REC[c] && groups[REC[c]] ? REC[c] : 'X'].push(c));
+    const gs = k => d3.sum(groups[k], c => seats[c]);
+    document.getElementById('rec-hint').textContent = CFG.recommendations_status === 'expected'
+      ? "Expected recommendations, based on each party's declared camp. This updates after the President's consultations."
+      : "Recommendations as given to the President.";
+    document.getElementById('rec-stack').innerHTML = keys.filter(k => gs(k)).map(k => `<span style="flex:${gs(k)};background:var(${REC_NAMES[k][1]})" title="${esc(REC_NAMES[k][0])}: ${gs(k)}"></span>`).join('') + '<i class="line"></i>';
+    const leader = CANDS.map(C => C.id).sort((a, b) => gs(b) - gs(a))[0];
+    document.getElementById('recs').innerHTML = keys.map(k => `<div class="rec-row"><span class="sw" style="background:var(${REC_NAMES[k][1]})"></span><span><b>${esc(REC_NAMES[k][0])}</b>${k === leader && total ? (gs(k) >= 61 ? ' <span class="tag on">Gets the mandate · 61+</span>' : ' <span class="tag">Likely first mandate</span>') : ''}<br><small>${groups[k].map(c => `${esc(META[c].en)} ${seats[c]}`).join(' · ') || '–'}</small></span><span class="n num">${gs(k)}</span></div>`).join('');
+    renderKingmakers(seated, seats);
+    const usePledges = pledgesBox.checked;
+    const members = seated.filter(c => coal.has(c));
+    const cs = d3.sum(members, c => seats[c]);
+    document.getElementById('coal-total').innerHTML = `${cs}<small>of 120 seats</small>`;
+    const pmParty = members.slice().sort((a, b) => seats[b] - seats[a])[0];
+    document.getElementById('coal-pm').textContent = pmParty ? `Likely prime minister: ${META[pmParty].lead.split(' & ')[0].split(' (')[0]}, ${META[pmParty].en}` : 'Pick parties below';
+    document.getElementById('coal-stack').innerHTML = members.map(c => `<span style="flex:0 0 calc(${seats[c]} / 120 * 100% - 2px);${swatch(c)}" title="${esc(META[c].en)} ${seats[c]}"></span>`).join('') + '<i class="line"></i>';
+    const vetoes = cs >= 61 ? members.filter(c => cs - seats[c] < 61) : [];
+    document.getElementById('chips').innerHTML = seated.map(c => `<button type="button" data-c="${c}" aria-pressed="${coal.has(c)}"><span class="chip" style="${swatch(c)}"></span>${esc(META[c].en)} <span class="k">${seats[c]}</span>${kingSet.has(c) ? ' <span class="tag king">Kingmaker</span>' : ''}</button>`).join('');
+    const msgs = [cs >= 61
+      ? `<div><span class="tag on">Majority</span><span>${cs - 60} seat${cs - 60 === 1 ? '' : 's'} to spare. ${vetoes.length ? `Veto power: ${listNames(vetoes)} could each bring it down by walking out.` : 'No single party can bring it down alone.'}</span></div>`
+      : `<div><span class="tag">Short</span><span>${61 - cs} seat${61 - cs === 1 ? '' : 's'} short of 61.</span></div>`];
+    if (usePledges) violations(new Set(members)).forEach(v => msgs.push(`<div><span class="tag crit">Pledge broken</span><span>${esc(v)}</span></div>`));
+    document.getElementById('coal-msgs').innerHTML = msgs.join('');
+    const minimal = minimalMajorities(seated, seats, usePledges).sort((a, b) => a.s - b.s || a.set.length - b.set.length);
+    document.getElementById('paths').innerHTML = minimal.length
+      ? minimal.slice(0, 8).map((m, i) => `<li><button type="button" data-i="${i}"><span>${m.set.sort((a, b) => seats[b] - seats[a]).map(c => esc(META[c].en)).join(' + ')}</span><span class="s">${m.s} seats</span></button></li>`).join('') + (minimal.length > 8 ? `<li class="hint">${minimal.length - 8} more combinations</li>` : '')
+      : `<li class="hint">No majority is possible${usePledges ? ' while every party keeps its pledges' : ''}.</li>`;
+    document.getElementById('paths').onclick = e => { const b = e.target.closest('button[data-i]'); if (b) { coal = new Set(minimal[+b.dataset.i].set); renderGov(); } };
+  }
+  document.getElementById('chips').addEventListener('click', e => { const b = e.target.closest('button[data-c]'); if (!b) return; const c = b.dataset.c; if (coal.has(c)) coal.delete(c); else coal.add(c); renderGov(); });
+  document.getElementById('presets').addEventListener('click', e => { const b = e.target.closest('button[data-p]'); if (!b) return; coal = new Set(CFG.presets[+b.dataset.p].parties); renderGov(); });
+  pledgesBox.addEventListener('change', renderGov);
+
+  // ---- Locality explorer ----
+  let sortK = 'id', sortDir = 1;
+  const search = document.getElementById('search');
+  const byName = new Map();
+  function buildSearch() {
+    document.getElementById('loc-list').innerHTML = locs.slice().sort((a, b) => b.r - a.r).map(l => `<option value="${esc(l.en)}">${esc(l.he)}</option>`).join('');
+    locs.forEach(l => { byName.set(l.en.toLowerCase(), l); byName.set(l.he.trim(), l); });
+  }
+  buildSearch();
+  search.addEventListener('change', () => { const l = byName.get(search.value.trim().toLowerCase()) || byName.get(search.value.trim()); if (l) select(l.i); });
+  function select(i) { selected = locs[i]; search.value = selected.en; sizeDots(); renderLocality(); }
+  function renderLocality() {
+    const l = selected; if (!l) return;
+    const a = agg[l.i], on = showLive() && a.n;
+    const bt = blocTotals(a.v);
+    const shown = a.v.map((n, p) => ({ p, n })).filter(o => o.n > 0 && (CODES[o.p] === 'OTHER' || o.n / (a.valid || 1) >= 0.005))
+      .sort((x, y) => (CODES[x.p] === 'OTHER') - (CODES[y.p] === 'OTHER') || y.n - x.n).slice(0, 10);
+    const mx = d3.max(shown, o => o.n) || 1;
+    document.getElementById('ex-summary').innerHTML = `<h3>${esc(l.en)}</h3><span class="he" lang="he">${esc(l.he)}</span>` +
+      `<div class="ex-meta">${l.c === 9999 ? 'Counted centrally by the Elections Committee' : (l.dist ? `District: <span class="he" lang="he">${esc(l.dist)}</span>` : '')} · ${fmt(a.N || l.nb || 0)} ballot ${(a.N || l.nb) === 1 ? 'box' : 'boxes'}</div>` +
+      `<div class="stats"><div><div class="k">Registered</div><div class="v">${fmt(l.r)}</div></div><div><div class="k">Voted</div><div class="v">${on ? fmt(a.t) : '–'}</div></div><div><div class="k">Turnout</div><div class="v">${on ? pct(a.t, a.r) : '–'}</div></div><div><div class="k">Counted</div><div class="v">${on ? pct(a.n, a.N, 0) : '0%'}</div></div></div>` +
+      (on && a.valid ? `<div class="blocbar">${BLOC_ORDER.filter(b => bt[b] > 0).map(b => `<span style="flex:${bt[b]};background:var(${BLOCS[b].v})" title="${esc(BLOCS[b].name)}"></span>`).join('')}</div>` +
+        `<div class="blockey">${BLOC_ORDER.filter(b => bt[b] > 0).map(b => `<span><span class="sw" style="display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;background:var(${BLOCS[b].v})"></span>${esc(BLOCS[b].short)} ${pct(bt[b], a.valid)}</span>`).join('')}</div>` +
+        `<div class="plist">${shown.map(o => { const m = META[CODES[o.p]]; return `<div class="prow"><span class="pn">${esc(m.en)}</span><span class="track"><span style="width:${100 * o.n / mx}%;background:var(${BLOCS[m.bloc].v});opacity:${tone[CODES[o.p]]}"></span></span><span class="pv">${pct(o.n, a.valid)}</span></div>`; }).join('')}</div>`
+        : `<p style="color:var(--muted);margin-top:18px">${showLive() ? 'No ballot boxes counted here yet.' : `Results appear here once counting starts, ${esc(CFG.polls_close_label)}.`}</p>`);
+    renderBoxes();
+  }
+  function ensureBoxes() {
+    if (BOXES || !usableLive) return Promise.resolve(BOXES);
+    if (!boxesLoading) boxesLoading = fetchJSON('data/boxes.json', true).then(b => { BOXES = b; boxesLoading = null; return b; }).catch(() => { boxesLoading = null; return null; });
+    return boxesLoading;
+  }
+  function renderBoxes() {
+    const body = document.querySelector('#btable tbody');
+    const count = document.getElementById('box-count');
+    if (!selected) return;
+    if (!showLive()) { count.textContent = `${fmt(selected.nb || 0)} boxes`; body.innerHTML = '<tr class="pending"><td colspan="7">Ballot-box results appear once counting starts.</td></tr>'; return; }
+    if (!BOXES) { body.innerHTML = '<tr class="pending"><td colspan="7">Loading ballot boxes…</td></tr>'; ensureBoxes().then(b => { if (b) renderBoxes(); }); return; }
+    const map = BOXES.codes.map(c => (idx[c] !== undefined ? idx[c] : idx.OTHER));
+    const rows = (BOXES.b[String(selected.c)] || []).map(([id, r, t, x, vv]) => {
+      const v = new Array(NP).fill(0); vv.forEach((n, k) => { v[map[k]] += n; });
+      const valid = d3.sum(v), lp = leadParty(v);
+      return { id, idn: parseFloat(id), r, t, to: r ? t / r : 0, v, valid, lead: META[CODES[lp]].en, lp: valid ? v[lp] / valid : 0 };
+    });
+    const key = sortK === 'id' ? 'idn' : sortK;
+    rows.sort((a, b) => ((a[key] > b[key]) - (a[key] < b[key])) * sortDir);
+    count.textContent = `${fmt(rows.length)} of ${fmt(Math.max(rows.length, selected.nb || 0))} counted`;
+    document.querySelectorAll('#btable th[data-k]').forEach(th => { if (th.dataset.k === sortK) th.setAttribute('aria-sort', sortDir > 0 ? 'ascending' : 'descending'); else th.removeAttribute('aria-sort'); });
+    body.innerHTML = rows.length ? rows.map(r => {
+      const bt = blocTotals(r.v);
+      return `<tr><td class="num">${esc(r.id)}</td><td class="r">${fmt(r.r)}</td><td class="r">${fmt(r.t)}</td><td class="r">${pct(r.t, r.r)}</td><td>${esc(r.lead)}</td><td class="r">${(100 * r.lp).toFixed(1)}%</td>` +
+        `<td><span class="mini">${BLOC_ORDER.filter(b => bt[b] > 0).map(b => `<span style="flex:${bt[b]};background:var(${BLOCS[b].v})"></span>`).join('')}</span></td></tr>`;
+    }).join('') : '<tr class="pending"><td colspan="7">No ballot boxes counted here yet.</td></tr>';
+  }
+  document.querySelectorAll('#btable th[data-k]').forEach(th => th.addEventListener('click', () => {
+    if (sortK === th.dataset.k) sortDir = -sortDir; else { sortK = th.dataset.k; sortDir = th.dataset.k === 'id' ? 1 : -1; }
+    renderBoxes();
+  }));
+
+  // ---- Boot and auto-refresh ----
+  function update() { updateStatus(); colorDots(); renderNational(); renderLocality(); }
+  buildViews();
+  select(Math.max(0, locs.findIndex(l => l.c === 3000)));
+  update();
+  sizeDots();
+  placeCities();
+
+  let ticks = 0;
+  async function refresh() {
+    ticks++;
+    try {
+      if (ticks % 5 === 0) {
+        const c = await fetchJSON('config.json', true);
+        if (JSON.stringify(c) !== CFG_TEXT) { location.reload(); return; }
+      }
+      const L = await fetchJSON('data/live.json', true);
+      const changed = !LIVE || L.digest !== LIVE.digest || L.test_env !== LIVE.test_env;
+      LIVE = L;
+      if (changed) {
+        const nLocs = locs.length;
+        ingest(); BOXES = null;
+        if (locs.length !== nLocs) buildSearch();
+        buildViews(); update();
+      } else updateStatus();
+    } catch (e) { /* keep showing the last good data */ }
+  }
+  setInterval(refresh, (CFG.refresh_seconds || 60) * 1000);
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') refresh(); });
+})();
+</script>

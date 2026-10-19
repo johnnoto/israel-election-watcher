@@ -1,0 +1,110 @@
+{
+  "election": "26th Knesset",
+  "election_day": "2026-10-27",
+  "polls_close_utc": "2026-10-27T20:00:00Z",
+  "polls_close_label": "Tuesday, Oct 27 at 10:00 PM Israel time (4:00 PM ET)",
+  "official_results_date": "Nov 4",
+  "threshold": 0.0325,
+  "eligible_voters": 7331981,
+  "allow_test_data": false,
+  "force_live": false,
+  "stop_checking_utc": "2026-11-05T12:00:00Z",
+  "refresh_seconds": 60,
+  "results_site": "https://votes26.bechirot.gov.il/",
+
+  "blocs": {
+    "N": { "name": "Netanyahu Bloc", "short": "Netanyahu", "v": "--bloc-n" },
+    "C": { "name": "Opposition Bloc", "short": "Opposition", "v": "--bloc-c" },
+    "A": { "name": "Arab Parties", "short": "Arab", "v": "--bloc-a" },
+    "O": { "name": "Unaligned", "short": "Unaligned", "v": "--bloc-o" }
+  },
+
+  "parties": [
+    { "code": "מחל", "name": "Likud", "leader": "Benjamin Netanyahu", "bloc": "N" },
+    { "code": "דרך", "name": "Yashar!", "leader": "Gadi Eisenkot", "bloc": "C" },
+    { "code": "רק", "name": "Together", "leader": "Naftali Bennett & Yair Lapid", "bloc": "C" },
+    { "code": "אמת", "name": "The Democrats", "leader": "Yair Golan", "bloc": "C" },
+    { "code": "ל", "name": "Yisrael Beiteinu", "leader": "Avigdor Liberman", "bloc": "C" },
+    { "code": "שס", "name": "Shas", "leader": "Aryeh Deri", "bloc": "N" },
+    { "code": "ג", "name": "United Torah Judaism", "leader": "Agudat Yisrael & Degel HaTorah", "bloc": "N" },
+    { "code": "ט", "name": "Religious Zionism–Zehut", "leader": "Bezalel Smotrich & Moshe Feiglin", "bloc": "N" },
+    { "code": "ב", "name": "Otzma Yehudit", "leader": "Itamar Ben-Gvir", "bloc": "N" },
+    { "code": "עם", "name": "Ra'am", "leader": "Mansour Abbas", "bloc": "A" },
+    { "code": "ודם", "name": "Joint List", "leader": "Youssef Jabareen (Hadash, Ta'al, Balad)", "bloc": "A" },
+    { "code": "די", "name": "The Reservists", "leader": "Yoaz Hendel & Yaron Zelekha", "bloc": "O" },
+    { "code": "ך", "name": "Amcha Yisrael", "leader": "Ofer Winter", "bloc": "N" },
+    { "code": "כן", "name": "Blue and White", "leader": "Benny Gantz", "bloc": "O" },
+    { "code": "זך", "name": "HaTzibbur HaHaredi", "leader": "Moti Litner", "bloc": "O" },
+    { "code": "ני", "name": "Noam", "leader": "Avi Maoz", "bloc": "N" }
+  ],
+  "other_label": "22 smaller lists",
+
+  "seat_order": ["ודם", "עם", "אמת", "דרך", "רק", "ל", "די", "כן", "זך", "ג", "שס", "מחל", "ך", "ני", "ט", "ב"],
+
+  "agreements": [["מחל", "ט"], ["שס", "ג"], ["דרך", "אמת"], ["רק", "ל"], ["ודם", "עם"]],
+
+  "candidates": [
+    { "id": "N", "name": "Benjamin Netanyahu", "camp": "Netanyahu Camp", "v": "--bloc-n" },
+    { "id": "E", "name": "Gadi Eisenkot", "camp": "Eisenkot Camp", "v": "--bloc-c" }
+  ],
+  "recommendations_status": "expected",
+  "camps": { "מחל": "N", "ט": "N", "ב": "N", "שס": "N", "ג": "N", "ך": "N", "ני": "N", "דרך": "E", "רק": "E", "אמת": "E", "ל": "E" },
+
+  "pledges": [
+    { "a": "ל", "x": "מחל", "t": "Yisrael Beiteinu won't join a government led by Netanyahu", "b": "Yisrael Beiteinu agrees to serve under Netanyahu" },
+    { "a": "ל", "x": "שס", "t": "Yisrael Beiteinu ruled out Shas", "b": "Yisrael Beiteinu accepts Shas" },
+    { "a": "ל", "x": "ג", "t": "Yisrael Beiteinu ruled out United Torah Judaism", "b": "Yisrael Beiteinu accepts United Torah Judaism" },
+    { "a": "ל", "x": "עם", "t": "Yisrael Beiteinu ruled out Ra'am", "b": "Yisrael Beiteinu accepts Ra'am" },
+    { "a": "ל", "x": "ודם", "t": "Yisrael Beiteinu ruled out the Joint List", "b": "Yisrael Beiteinu accepts the Joint List" },
+    { "a": "דרך", "x": "עם", "t": "Yashar ruled out Ra'am in its coalition", "b": "Yashar accepts Ra'am" },
+    { "a": "דרך", "x": "ודם", "t": "Yashar ruled out the Joint List in its coalition", "b": "Yashar accepts the Joint List" },
+    { "a": "רק", "x": "עם", "t": "Together ruled out relying on Ra'am", "b": "Together accepts Ra'am" },
+    { "a": "רק", "x": "ודם", "t": "Together ruled out relying on the Joint List", "b": "Together accepts the Joint List" },
+    { "a": "ט", "x": "עם", "t": "Religious Zionism rejects any coalition with Ra'am", "b": "Religious Zionism accepts Ra'am" },
+    { "a": "ט", "x": "ודם", "t": "Religious Zionism rejects any coalition with the Joint List", "b": "Religious Zionism accepts the Joint List" },
+    { "a": "ב", "x": "עם", "t": "Otzma Yehudit rejects any coalition with Ra'am", "b": "Otzma Yehudit accepts Ra'am" },
+    { "a": "ב", "x": "ודם", "t": "Otzma Yehudit rejects any coalition with the Joint List", "b": "Otzma Yehudit accepts the Joint List" },
+    { "a": "די", "x": "שס", "t": "The Reservists oppose a coalition with Shas", "b": "The Reservists accept Shas" },
+    { "a": "די", "x": "ג", "t": "The Reservists oppose a coalition with United Torah Judaism", "b": "The Reservists accept United Torah Judaism" },
+    { "a": "עם", "x": "מחל", "t": "Ra'am's priority is replacing Netanyahu's government", "b": "Ra'am backs Netanyahu" },
+    { "a": "ודם", "x": "מחל", "t": "The Joint List backs only a government that ends Netanyahu's rule", "b": "The Joint List backs Netanyahu" },
+    { "a": "ודם", "never": true, "t": "The Joint List has never joined a governing coalition", "b": "The Joint List joins a government for the first time" }
+  ],
+  "veto_groups": [
+    { "x": "עם", "b": "the Zionist opposition parties accept Ra'am, as in 2021" },
+    { "x": "ודם", "b": "the Zionist opposition parties accept the Joint List" },
+    { "x": "שס", "b": "the opposition parties accept Shas" },
+    { "x": "ג", "b": "the opposition parties accept United Torah Judaism" }
+  ],
+  "pledge_sources": [
+    { "label": "Jerusalem Post, Oct 15: Liberman rules out Netanyahu, Haredi and Arab parties", "url": "https://www.jpost.com/israel-election-2026/article-911855" },
+    { "label": "Al Jazeera, Oct 17: the politicians seeking to replace Netanyahu", "url": "https://www.aljazeera.com/news/2026/10/17/the-israeli-politicians-seeking-to-replace-netanyahu" },
+    { "label": "JTA, Oct 13: Netanyahu faces a daunting playing field", "url": "https://www.jta.org/2026/10/13/israel/checkmate-netanyahu-faces-a-daunting-playing-field-ahead-of-oct-27" }
+  ],
+
+  "presets": [
+    { "label": "Netanyahu Camp", "parties": ["מחל", "ט", "ב", "שס", "ג", "ך", "ני"] },
+    { "label": "Eisenkot Camp + Reservists", "parties": ["דרך", "רק", "אמת", "ל", "די"] },
+    { "label": "Eisenkot Camp + Ra'am", "parties": ["דרך", "רק", "אמת", "ל", "די", "עם"] },
+    { "label": "Clear", "parties": [] }
+  ],
+
+  "polls": [
+    {
+      "id": "kan-oct18",
+      "label": "Kan 11 Poll · Oct 18",
+      "note": "Kantar for Kan 11, published Oct 18, 2026. 554 respondents, ±4.2% margin of error.",
+      "url": "https://www.haaretz.com/israel-news/elections/2026-10-18/ty-article/israeli-election-poll-new-far-right-party-sinks-under-threshold-smotrich-gains/000001a1-505c-da7f-a7a5-dcffffe30000",
+      "seats": { "דרך": 23, "מחל": 21, "רק": 12, "אמת": 9, "ב": 8, "ודם": 8, "ל": 8, "שס": 8, "ט": 7, "ג": 7, "עם": 5, "די": 4 }
+    }
+  ],
+
+  "timeline": [
+    { "t": "Election Day", "d": "Tue · Oct 27", "p": "Polls close at 10 PM Israel time, 4 PM ET." },
+    { "t": "Official Results", "d": "By Wed · Nov 4", "p": "The Elections Committee publishes final seats." },
+    { "t": "Consultations", "d": "Early November", "p": "Each list tells the President whom it backs for prime minister." },
+    { "t": "First Mandate", "d": "By Nov 11, latest", "p": "The President must pick within 7 days of the results. The nominee gets 28 days, plus up to 14 more." },
+    { "t": "Government Sworn In", "d": "By ~Dec 23", "p": "Latest date if the first nominee uses the full 42 days. 2022 took until Dec 29." },
+    { "t": "If The Mandate Fails", "d": "+28 days, then +21", "p": "A second nominee gets 28 days, then any MK backed by 61 has 21 days. After that, new elections." }
+  ]
+}

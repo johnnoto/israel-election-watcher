@@ -1,0 +1,69 @@
+name: Live results
+
+# Pulls the Central Elections Committee's results files and redeploys the site
+# whenever the count changes. Starts itself on election night and keeps going,
+# one run after another, until stop_checking_utc in config.json.
+on:
+  schedule:
+    - cron: '40 19 27 10 *'       # Oct 27, 21:40 Israel time, just before polls close
+    - cron: '15 */2 28-31 10 *'    # restarts the loop if it ever stops
+    - cron: '15 */3 1-5 11 *'
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: 'How many minutes this run keeps checking'
+        default: '340'
+      once:
+        description: 'Check once and stop (true/false)'
+        default: 'false'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: live-results
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check for new results
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MINUTES: ${{ github.event.inputs.minutes || '340' }}
+          ONCE: ${{ github.event.inputs.once || 'false' }}
+        run: |
+          git config user.name "election-watcher-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          stop=$(python -c "import json,datetime as d;print(int(d.datetime.strptime(json.load(open('config.json'))['stop_checking_utc'],'%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=d.timezone.utc).timestamp()))")
+          end=$(( $(date +%s) + MINUTES * 60 ))
+          while :; do
+            now=$(date +%s)
+            if [ "$now" -ge "$stop" ]; then echo "Past stop date, not checking."; break; fi
+            out=$(python scripts/fetch_results.py 2>&1) || true
+            echo "$(date -u +%H:%M:%S) $out"
+            if echo "$out" | grep -q '^CHANGED'; then
+              git add data/live.json data/boxes.json
+              if git commit -q -m "Results update $(date -u +%H:%M) UTC"; then
+                git pull -q --rebase && git push -q && gh workflow run deploy.yml --ref "${GITHUB_REF_NAME}" || echo "push or deploy failed, will retry next round"
+              fi
+            fi
+            [ "$ONCE" = "true" ] && break
+            [ "$(date +%s)" -ge "$end" ] && break
+            # Every 90 seconds through election night, every 10 minutes from Oct 28 08:00 Israel time
+            if [ "$(date +%s)" -lt "$(date -d '2026-10-28T06:00:00Z' +%s)" ]; then sleep 90; else sleep 600; fi
+          done
+      - name: Hand over to the next run
+        if: ${{ github.event.inputs.once != 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          stop=$(python -c "import json,datetime as d;print(int(d.datetime.strptime(json.load(open('config.json'))['stop_checking_utc'],'%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=d.timezone.utc).timestamp()))")
+          if [ "$(date +%s)" -lt "$stop" ] && [ "$(date +%s)" -ge "$(date -d '2026-10-27T19:00:00Z' +%s)" ]; then gh workflow run live.yml --ref "${GITHUB_REF_NAME}"; fi
