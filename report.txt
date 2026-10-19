@@ -1,0 +1,18 @@
+run at Mon Oct 19 14:24:10 UTC 2026
+runner ip: 20.51.206.85
+== https://votes26.bechirot.gov.il/
+http 404, 1376 bytes, 0.143970s
+== https://media26.bechirot.gov.il/files/expc.csv
+http 404, 1376 bytes, 0.171364s
+== fetch_results.py
+warning: results page not reachable: Could not download https://votes26.bechirot.gov.il/: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/home/runner/work/israel-election-watcher/israel-election-watcher/scripts/fetch_results.py", line 137, in <module>
+    main()
+  File "/home/runner/work/israel-election-watcher/israel-election-watcher/scripts/fetch_results.py", line 81, in main
+    expc = get(MEDIA + 'expc.csv')
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/israel-election-watcher/israel-election-watcher/scripts/fetch_results.py", line 32, in get
+    raise RuntimeError(f'Could not download {url}: {last}')
+RuntimeError: Could not download https://media26.bechirot.gov.il/files/expc.csv: HTTP Error 404: Not Found
+fetch_results.py exited with an error
