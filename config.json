@@ -383,6 +383,108 @@
   ],
   "polls": [
     {
+      "id": "exit-avg",
+      "label": "Exit Poll Average · Oct 27",
+      "note": "Average of the four TV exit polls released when polls closed at 10:00 PM Israel time, using Channel 12's 10:44 PM update. Channels 11, 12 and 13 count equally; Channel 14's poll, run by former Netanyahu aide Shlomo Filber, counts half, as in the pre-election average. Exit polls are projections from voter interviews, not counted votes, and have missed by several seats in past elections. This view disappears once the Committee's official count begins.",
+      "url": "https://www.israelhayom.com/2026/10/27/israel-election-2026-exit-polls-full-results/",
+      "seats": {
+        "מחל": 25,
+        "דרך": 22,
+        "רק": 13,
+        "ודם": 10,
+        "עם": 7,
+        "אמת": 10,
+        "ל": 7,
+        "שס": 7,
+        "ג": 7,
+        "ט": 6,
+        "ב": 6
+      },
+      "sources": [
+        {
+          "outlet": "Channel 13",
+          "firm": "10:00 PM",
+          "date": "Oct 27",
+          "n": null,
+          "w": 1.0,
+          "seats": {
+            "מחל": 25,
+            "דרך": 23,
+            "רק": 14,
+            "ודם": 10,
+            "עם": 7,
+            "אמת": 9,
+            "ל": 7,
+            "שס": 6,
+            "ג": 7,
+            "ט": 6,
+            "ב": 6
+          }
+        },
+        {
+          "outlet": "Channel 12",
+          "firm": "Updated 10:44 PM",
+          "date": "Oct 27",
+          "n": null,
+          "w": 1.0,
+          "seats": {
+            "מחל": 24,
+            "דרך": 22,
+            "רק": 12,
+            "ודם": 11,
+            "עם": 7,
+            "אמת": 10,
+            "ל": 8,
+            "שס": 8,
+            "ג": 6,
+            "ט": 6,
+            "ב": 6
+          }
+        },
+        {
+          "outlet": "Kan 11",
+          "firm": "10:00 PM",
+          "date": "Oct 27",
+          "n": null,
+          "w": 1.0,
+          "seats": {
+            "מחל": 25,
+            "דרך": 21,
+            "רק": 14,
+            "ודם": 10,
+            "עם": 7,
+            "אמת": 10,
+            "ל": 8,
+            "שס": 6,
+            "ג": 6,
+            "ט": 6,
+            "ב": 7
+          }
+        },
+        {
+          "outlet": "Channel 14",
+          "firm": "10:00 PM · Shlomo Filber",
+          "date": "Oct 27",
+          "n": null,
+          "w": 0.5,
+          "seats": {
+            "מחל": 30,
+            "דרך": 19,
+            "רק": 11,
+            "ודם": 10,
+            "עם": 7,
+            "אמת": 9,
+            "ל": 4,
+            "שס": 9,
+            "ג": 7,
+            "ט": 7,
+            "ב": 7
+          }
+        }
+      ],
+      "kind": "exit"
+    },
+    {
       "id": "avg-final",
       "label": "Poll Average · Oct 21–23",
       "note": "Weighted average of the six final polls with full seat counts. Each poll's weight reflects its sample size (square root, capped at 1.5), whether it published its sample and margin of error, how close to election day it was taken, and independence: Kantar's two polls share one firm's weight, and Channel 14's pollster is run by former Netanyahu aide Shlomo Filber, so it counts half. Parties averaging under 3 seats are shown below the threshold. i24's Direct Polls survey is left out because it did not publish a full party breakdown.",
@@ -558,5 +660,6 @@
       "d": "+28 days, then +21",
       "p": "A second nominee gets 28 days, then any MK backed by 61 has 21 days. After that, new elections."
     }
-  ]
+  ],
+  "hide_polls_when_live": true
 }

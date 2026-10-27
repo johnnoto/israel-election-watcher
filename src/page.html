@@ -673,7 +673,9 @@ footer a { color: var(--ink); }
   function views() {
     const v = [];
     if (usableLive) v.push({ id: 'live', label: LIVE.test_env ? 'Test Count' : 'Live Count' });
-    (CFG.polls || []).forEach((p, i) => v.push({ id: 'poll:' + i, label: p.label }));
+    const countingStarted = usableLive && !LIVE.test_env;
+    if (!(countingStarted && CFG.hide_polls_when_live))
+      (CFG.polls || []).forEach((p, i) => v.push({ id: 'poll:' + i, label: p.label }));
     if (!v.length) v.push({ id: 'live', label: 'Live Count' });
     return v;
   }
@@ -962,14 +964,14 @@ footer a { color: var(--ink); }
     seatSel.select('title').text((d, i) => seatList[i] ? `${META[seatList[i]].en}: ${seats[seatList[i]]} seats` : 'Unallocated');
     hemiCenter.text(anySeats ? bs.N : '–');
     hemiSub.text(anySeats ? NB.toUpperCase() : 'NO RESULTS YET');
-    document.getElementById('hemi-h').textContent = poll ? (poll.sources ? 'Knesset In The Poll Average' : 'Knesset In This Poll') : 'Projected Knesset';
+    document.getElementById('hemi-h').textContent = poll ? (poll.sources ? (poll.kind === 'exit' ? 'Knesset In The Exit Poll Average' : 'Knesset In The Poll Average') : 'Knesset In This Poll') : 'Projected Knesset';
     document.getElementById('majority').innerHTML = anySeats
       ? (bs.N >= 61 ? `<strong>${esc(NB)} holds a majority</strong> with ${bs.N} of 120 seats` : `<strong>No bloc at 61.</strong> ${esc(NB)} ${bs.N}, ${esc(BLOCS.C.name.toLowerCase())} ${bs.C}, Arab parties ${bs.A}, unaligned ${bs.O}`)
       : 'Seats appear once the first ballot boxes report';
-    document.getElementById('blocs').innerHTML = ['N', 'C', 'A'].map(b => `<div class="bloc" style="--c:var(${BLOCS[b].v})"><div class="n num">${bs[b]}</div><div class="l">${esc(BLOCS[b].name)}</div><div class="p num">${poll ? (poll.sources ? 'seats, poll average' : 'seats in poll') : `${pct(bv[b], valid)} of the vote`}</div></div>`).join('');
+    document.getElementById('blocs').innerHTML = ['N', 'C', 'A'].map(b => `<div class="bloc" style="--c:var(${BLOCS[b].v})"><div class="n num">${bs[b]}</div><div class="l">${esc(BLOCS[b].name)}</div><div class="p num">${poll ? (poll.sources ? (poll.kind === 'exit' ? 'seats, exit poll average' : 'seats, poll average') : 'seats in poll') : `${pct(bv[b], valid)} of the vote`}</div></div>`).join('');
     const blocOfSeats = (s, b) => Object.keys(s).filter(c => META[c] && META[c].bloc === b).reduce((n, c) => n + s[c], 0);
-    const srcTable = poll && poll.sources ? `<div class="tbl-scroll"><table class="src-tbl"><thead><tr><th>Poll</th><th>Date</th><th class="r">Sample</th><th class="r">Weight</th><th class="r">${esc(BLOCS.N.short)}</th><th class="r">${esc(BLOCS.C.short)}</th><th class="r">Arab</th></tr></thead><tbody>` +
-      poll.sources.slice().sort((a, b) => b.w - a.w).map(s => `<tr><td><b>${esc(s.outlet)}</b><br><small>${esc(s.firm)}</small></td><td>${esc(s.date)}</td><td class="r">${s.n ? fmt(s.n) : 'n/a'}</td><td class="r">${s.w.toFixed(2)}</td><td class="r">${blocOfSeats(s.seats, 'N')}</td><td class="r">${blocOfSeats(s.seats, 'C')}</td><td class="r">${blocOfSeats(s.seats, 'A')}</td></tr>`).join('') + '</tbody></table></div>' : '';
+    const srcTable = poll && poll.sources ? `<div class="tbl-scroll"><table class="src-tbl"><thead><tr><th>Poll</th>${poll.kind === 'exit' ? '' : '<th>Date</th><th class="r">Sample</th>'}<th class="r">Weight</th><th class="r">${esc(BLOCS.N.short)}</th><th class="r">${esc(BLOCS.C.short)}</th><th class="r">Arab</th></tr></thead><tbody>` +
+      poll.sources.slice().sort((a, b) => b.w - a.w).map(s => `<tr><td><b>${esc(s.outlet)}</b><br><small>${esc(s.firm)}</small></td>${poll.kind === 'exit' ? '' : `<td>${esc(s.date)}</td><td class="r">${s.n ? fmt(s.n) : 'n/a'}</td>`}<td class="r">${s.w.toFixed(2)}</td><td class="r">${blocOfSeats(s.seats, 'N')}</td><td class="r">${blocOfSeats(s.seats, 'C')}</td><td class="r">${blocOfSeats(s.seats, 'A')}</td></tr>`).join('') + '</tbody></table></div>' : '';
     document.getElementById('poll-note').innerHTML = poll ? `${srcTable}<span>${esc(poll.note)}${poll.url ? ` <a href="${esc(poll.url)}" target="_blank" rel="noopener">Source</a>` : ''}</span>` : '';
     document.getElementById('poll-note').hidden = !poll;
 
