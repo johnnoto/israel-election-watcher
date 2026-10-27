@@ -347,6 +347,18 @@ tr.pending td { color: var(--muted); }
 .ex-summary .bib { margin-top: 12px; padding-left: 12px; border-left: 2px solid var(--rule-strong); }
 .ex-summary .bib q { font-size: 15px; }
 
+/* Left column: map with the locality explorer under it */
+.left { display: grid; gap: 22px; min-width: 0; align-content: start; }
+.left .explorer { margin: 0; }
+.left .ex-body { grid-template-columns: minmax(0, 1fr); }
+.left .ex-summary { border-right: 0; border-bottom: 1px solid var(--rule); }
+.left .ex-top { padding: 12px 16px; }
+.left #search { max-width: none; }
+.ex-summary .ex-meta .he { display: inline; font-size: inherit; color: inherit; margin: 0; }
+.left .box-scroll { max-height: 380px; }
+.left .box-scroll table { font-size: 12.5px; }
+.left .box-scroll th, .left .box-scroll td { padding: 6px 7px; }
+
 footer { border-top: 1px solid var(--rule); margin-top: 18px; }
 footer .wrap { padding-block: 18px 30px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px 30px; font-size: 13px; color: var(--ink-2); }
 footer h5 { margin: 0 0 4px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
@@ -400,31 +412,55 @@ footer a { color: var(--ink); }
   </section>
 
   <div class="main">
-    <section class="panel" aria-labelledby="map-h">
-      <div class="panel-head"><h2 id="map-h">Results By Locality</h2><span class="note" id="map-note"></span></div>
-      <div class="map-controls">
-        <div class="seg" role="group" aria-label="Map shows" id="map-modes">
-          <button type="button" data-mode="bloc" aria-pressed="true">Leading Bloc</button>
-          <button type="button" data-mode="share" aria-pressed="false">Party Share</button>
-          <button type="button" data-mode="turnout" aria-pressed="false">Turnout</button>
+    <div class="left">
+      <section class="panel" aria-labelledby="map-h">
+        <div class="panel-head"><h2 id="map-h">Results By Locality</h2><span class="note" id="map-note"></span></div>
+        <div class="map-controls">
+          <div class="seg" role="group" aria-label="Map shows" id="map-modes">
+            <button type="button" data-mode="bloc" aria-pressed="true">Leading Bloc</button>
+            <button type="button" data-mode="share" aria-pressed="false">Party Share</button>
+            <button type="button" data-mode="turnout" aria-pressed="false">Turnout</button>
+          </div>
+          <select id="share-party" aria-label="Party to map" hidden></select>
         </div>
-        <select id="share-party" aria-label="Party to map" hidden></select>
-      </div>
-      <div class="map-box" id="map-box">
-        <svg id="map" viewBox="0 0 400 760" role="img" aria-label="Map of Israel with a dot for each locality, colored by result"></svg>
-        <div class="zoom"><button type="button" id="zin" aria-label="Zoom in">+</button><button type="button" id="zout" aria-label="Zoom out">−</button><button type="button" id="zreset" aria-label="Reset zoom" style="font-size:12px">⟲</button></div>
-        <div class="tip" id="tip" hidden></div>
-      </div>
-      <div class="legend" id="legend"></div>
-      <div class="zone-key" aria-label="Map key">
-        <h3>Reading The Map</h3>
-        <div class="zk"><span class="s dots"></span><span><b>Polling places.</b> Each dot is a city, town, kibbutz or village where Knesset ballots are cast, sized by its registered voters.</span></div>
-        <div class="zk"><span class="s pa"></span><span><b>No Knesset polling stations.</b> The shaded areas have no ballot boxes in this election, so no dots appear there.</span></div>
-        <div class="zk"><span class="s green"></span><span><b>Dashed line.</b> The 1949 armistice line.</span></div>
-        <div class="zk"><span class="s annex"></span><span><b>Dotted outline.</b> Jerusalem's eastern neighborhoods and the Golan Heights, outlined for reference.</span></div>
-        <div class="zk"><span class="s land"></span><span><b>Open country.</b> The Negev, the Arava and the Judean Desert are lightly populated, so dots there are few and far between.</span></div>
-      </div>
-    </section>
+        <div class="map-box" id="map-box">
+          <svg id="map" viewBox="0 0 400 760" role="img" aria-label="Map of Israel with a dot for each locality, colored by result"></svg>
+          <div class="zoom"><button type="button" id="zin" aria-label="Zoom in">+</button><button type="button" id="zout" aria-label="Zoom out">−</button><button type="button" id="zreset" aria-label="Reset zoom" style="font-size:12px">⟲</button></div>
+          <div class="tip" id="tip" hidden></div>
+        </div>
+        <div class="legend" id="legend"></div>
+        <div class="zone-key" aria-label="Map key">
+          <h3>Reading The Map</h3>
+          <div class="zk"><span class="s dots"></span><span><b>Polling places.</b> Each dot is a city, town, kibbutz or village where Knesset ballots are cast, sized by its registered voters.</span></div>
+          <div class="zk"><span class="s pa"></span><span><b>No Knesset polling stations.</b> The shaded areas have no ballot boxes in this election, so no dots appear there.</span></div>
+          <div class="zk"><span class="s green"></span><span><b>Dashed line.</b> The 1949 armistice line.</span></div>
+          <div class="zk"><span class="s annex"></span><span><b>Dotted outline.</b> Jerusalem's eastern neighborhoods and the Golan Heights, outlined for reference.</span></div>
+          <div class="zk"><span class="s land"></span><span><b>Open country.</b> The Negev, the Arava and the Judean Desert are lightly populated, so dots there are few and far between.</span></div>
+        </div>
+      </section>
+      <section class="panel explorer" id="explorer" aria-labelledby="ex-h">
+        <div class="panel-head"><h2 id="ex-h">Locality Explorer</h2><span class="note">Click any dot on the map, or search</span></div>
+        <div class="ex-top">
+          <label for="search">Find A Locality</label>
+          <input id="search" list="loc-list" placeholder="Jerusalem, Bnei Brak, רהט…" autocomplete="off">
+          <datalist id="loc-list"></datalist>
+        </div>
+        <div class="ex-body">
+          <div class="ex-summary" id="ex-summary"></div>
+          <div class="ex-boxes">
+            <div class="bh"><h4>Ballot Boxes</h4><span id="box-count"></span></div>
+            <div class="box-scroll">
+              <table id="btable">
+                <thead><tr>
+                  <th data-k="id">Box</th><th class="r" data-k="r">Registered</th><th class="r" data-k="t">Voted</th><th class="r" data-k="to">Turnout</th><th data-k="lead">Leading Party</th><th class="r" data-k="lp">Share</th><th>Blocs</th>
+                </tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <div class="right">
       <section class="panel" aria-labelledby="hemi-h">
@@ -504,28 +540,6 @@ footer a { color: var(--ink); }
     </div>
   </section>
 
-  <section class="panel explorer" id="explorer" aria-labelledby="ex-h">
-    <div class="panel-head"><h2 id="ex-h">Locality Explorer</h2><span class="note">Click any dot on the map, or search</span></div>
-    <div class="ex-top">
-      <label for="search">Find A Locality</label>
-      <input id="search" list="loc-list" placeholder="Jerusalem, Bnei Brak, רהט…" autocomplete="off">
-      <datalist id="loc-list"></datalist>
-    </div>
-    <div class="ex-body">
-      <div class="ex-summary" id="ex-summary"></div>
-      <div class="ex-boxes">
-        <div class="bh"><h4>Ballot Boxes</h4><span id="box-count"></span></div>
-        <div class="box-scroll">
-          <table id="btable">
-            <thead><tr>
-              <th data-k="id">Box</th><th class="r" data-k="r">Registered</th><th class="r" data-k="t">Voted</th><th class="r" data-k="to">Turnout</th><th data-k="lead">Leading Party</th><th class="r" data-k="lp">Share</th><th>Blocs</th>
-            </tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer>
