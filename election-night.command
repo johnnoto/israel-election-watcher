@@ -24,21 +24,40 @@ cd "$WORK" || exit 1
 
 say() { printf '%s  %s\n' "$(date +%H:%M:%S)" "$*"; }
 
-if [ ! -s "$TOKEN_FILE" ]; then
-  echo
-  echo "Paste your GitHub token (it starts with github_pat_) and press Return."
-  echo "It is saved only on this Mac, in $TOKEN_FILE"
-  read -rs TOKEN; echo
-  printf '%s' "$TOKEN" > "$TOKEN_FILE"; chmod 600 "$TOKEN_FILE"
-fi
+ask_token() {
+  while :; do
+    echo
+    echo "Paste your GitHub token (it starts with github_pat_) and press Return."
+    echo "Nothing appears while you paste. That is normal."
+    read -rs TOKEN; echo
+    TOKEN=$(printf '%s' "$TOKEN" | tr -d ' \t\r\n')
+    if [ -z "$TOKEN" ]; then echo "Nothing was pasted. Copy the token on the GitHub page again, then try once more."; continue; fi
+    case "$TOKEN" in
+      github_pat_*|ghp_*) ;;
+      *) echo "That doesn't look like a GitHub token (it should start with github_pat_). It began with: ${TOKEN:0:6}…"; continue ;;
+    esac
+    printf '%s' "$TOKEN" > "$TOKEN_FILE"; chmod 600 "$TOKEN_FILE"
+    return
+  done
+}
+[ -s "$TOKEN_FILE" ] || ask_token
 TOKEN=$(cat "$TOKEN_FILE")
 gh() { curl -sS -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" "$@"; }
 
-code=$(gh -o "$WORK/repo.json" -w '%{http_code}' "$API/repos/$REPO")
-if [ "$code" != "200" ]; then
-  say "GitHub did not accept the token (HTTP $code). Delete $TOKEN_FILE and run this again with a new token."
-  read -r -p "Press Return to close." _; exit 1
-fi
+while :; do
+  code=$(gh -o "$WORK/repo.json" -w '%{http_code}' "$API/repos/$REPO")
+  if [ "$code" = "200" ]; then break; fi
+  if [ "$code" = "401" ]; then
+    say "GitHub did not accept that token. It may have been copied incompletely, or it has expired."
+  elif [ "$code" = "404" ] || [ "$code" = "403" ]; then
+    say "The token works but cannot see $REPO. On the token page, give it access to israel-election-watcher with Contents: Read and write."
+  else
+    say "Could not reach GitHub (HTTP $code). Check the internet connection."
+  fi
+  rm -f "$TOKEN_FILE"
+  ask_token
+  TOKEN=$(cat "$TOKEN_FILE")
+done
 say "Connected to GitHub as the owner of $REPO."
 
 # Keep the Mac awake while this window is open.
