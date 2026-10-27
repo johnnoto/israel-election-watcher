@@ -65,14 +65,25 @@ caffeinate -dimsu -w $$ 2>/dev/null &
 
 last=""
 while :; do
-  ok=1
-  curl -sSf -m 60 --retry 3 -A "Mozilla/5.0" -o raw/page.html "$SITE" || ok=0
-  curl -sSf -m 90 --retry 3 -A "Mozilla/5.0" -o raw/expc.csv "${MEDIA}expc.csv?t=$(date +%s)" || ok=0
-  curl -sSf -m 120 --retry 3 -A "Mozilla/5.0" -o raw/expb.csv "${MEDIA}expb.csv?t=$(date +%s)" || ok=0
+  ok=1; pageok=1
+  rm -f raw/expc.csv raw/expb.csv
+  curl -sSf -m 60 --retry 3 -A "Mozilla/5.0" -o raw/page.html "$SITE" || pageok=0
+  curl -sSf -m 90 --retry 3 -A "Mozilla/5.0" -o raw/expc.csv "${MEDIA}expc.csv?t=$(date +%s)" 2>/dev/null || ok=0
+  curl -sSf -m 120 --retry 3 -A "Mozilla/5.0" -o raw/expb.csv "${MEDIA}expb.csv?t=$(date +%s)" 2>/dev/null || ok=0
+  files=""
   if [ $ok = 1 ] && grep -q 'סמל ישוב' raw/expc.csv && grep -q 'סמל ישוב' raw/expb.csv; then
+    files="expc.csv expb.csv page.html"; [ $pageok = 1 ] || files="expc.csv expb.csv"
     sum=$(cat raw/expc.csv raw/expb.csv | shasum | cut -c1-16)
+    kind="town-by-town"
+  elif [ $pageok = 1 ] && grep -q 'קלפיות עד עתה' raw/page.html; then
+    # The Committee shows national totals on its page before it posts the CSV files.
+    files="page.html"
+    sum=$(grep -o 'תוצאות נכון ל-[^<]*' raw/page.html | head -1 | shasum | cut -c1-16)
+    kind="national totals only (town files not posted yet)"
+  fi
+  if [ -n "$files" ]; then
     if [ "$sum" != "$last" ]; then
-      tar -czf results.tgz -C raw expc.csv expb.csv page.html
+      tar -czf results.tgz -C raw $files
       sha=$(gh "$API/repos/$REPO/contents/raw/results.tgz?ref=main" | grep -o '"sha": *"[0-9a-f]\{40\}"' | head -1 | grep -o '[0-9a-f]\{40\}')
       { printf '{"message":"Results files %s","branch":"main","content":"' "$(date -u +%H:%M:%S)"
         base64 < results.tgz | tr -d '\n'
@@ -80,8 +91,7 @@ while :; do
       code=$(gh -X PUT --data-binary @body.json -o put.json -w '%{http_code}' "$API/repos/$REPO/contents/raw/results.tgz")
       if [ "$code" = "200" ] || [ "$code" = "201" ]; then
         last="$sum"
-        boxes=$(($(wc -l < raw/expb.csv) - 1))
-        say "Uploaded new results ($boxes ballot-box rows). The page updates in about a minute."
+        say "Uploaded new results, $kind. The page updates in about a minute."
       else
         say "Upload failed (HTTP $code). Will try again."
       fi
@@ -89,7 +99,7 @@ while :; do
       say "No change since the last upload."
     fi
   else
-    say "Could not download the Committee's files this time. Will try again."
+    say "No results posted yet. Will check again in 90 seconds."
   fi
   [ $ONCE = 1 ] && break
   sleep "$INTERVAL"

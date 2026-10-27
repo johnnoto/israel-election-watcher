@@ -630,7 +630,7 @@ footer a { color: var(--ink); }
       const [c, he, r, t, x, nb, v] = row;
       let l = byCode.get(c);
       if (!l) {
-        l = { c, he, en: c === 9999 ? 'Double envelopes (soldiers, diplomats, prisoners, patients)' : he, lat: null, lon: null, dist: '', r: row[7] || r, nb, i: locs.length };
+        l = { c, he, en: c === 9999 ? 'Double envelopes (soldiers, diplomats, prisoners, patients)' : c === 9998 ? 'National Count (Locality Breakdown Not Yet Published)' : he, lat: null, lon: null, dist: '', r: row[7] || r, nb, i: locs.length };
         locs.push(l); byCode.set(c, l);
         agg.push({ r: 0, t: 0, x: 0, v: new Array(NP).fill(0), n: 0, N: nb, valid: 0 });
       }
@@ -1192,7 +1192,7 @@ footer a { color: var(--ink); }
       .sort((x, y) => (CODES[x.p] === 'OTHER') - (CODES[y.p] === 'OTHER') || y.n - x.n).slice(0, 10);
     const mx = d3.max(shown, o => o.n) || 1;
     document.getElementById('ex-summary').innerHTML = `<h3>${esc(l.en)}</h3><span class="he" lang="he">${esc(l.he)}</span>` +
-      `<div class="ex-meta">${l.c === 9999 ? 'Counted centrally by the Elections Committee' : (l.dist ? `District: <span class="he" lang="he">${esc(l.dist)}</span>` : '')} · ${fmt(a.N || l.nb || 0)} ballot ${(a.N || l.nb) === 1 ? 'box' : 'boxes'}</div>` + bibHtml(l, true) +
+      `<div class="ex-meta">${l.c === 9999 ? 'Counted centrally by the Elections Committee' : l.c === 9998 ? 'National totals from the Committee\'s results page. Town-by-town results fill in once the Committee posts its locality files' : (l.dist ? `District: <span class="he" lang="he">${esc(l.dist)}</span>` : '')} · ${fmt(a.N || l.nb || 0)} ballot ${(a.N || l.nb) === 1 ? 'box' : 'boxes'}</div>` + bibHtml(l, true) +
       `<div class="stats"><div><div class="k">Registered</div><div class="v">${fmt(l.r)}</div></div><div><div class="k">Voted</div><div class="v">${on ? fmt(a.t) : '–'}</div></div><div><div class="k">Turnout</div><div class="v">${on ? pct(a.t, a.r) : '–'}</div></div><div><div class="k">Counted</div><div class="v">${on ? pct(a.n, a.N, 0) : '0%'}</div></div></div>` +
       (on && a.valid ? `<div class="blocbar">${BLOC_ORDER.filter(b => bt[b] > 0).map(b => `<span style="flex:${bt[b]};background:var(${BLOCS[b].v})" title="${esc(BLOCS[b].name)}"></span>`).join('')}</div>` +
         `<div class="blockey">${BLOC_ORDER.filter(b => bt[b] > 0).map(b => `<span><span class="sw" style="display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;background:var(${BLOCS[b].v})"></span>${esc(BLOCS[b].short)} ${pct(bt[b], a.valid)}</span>`).join('')}</div>` +

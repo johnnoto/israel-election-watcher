@@ -48,6 +48,18 @@ def parse(raw):
     return head, parties, out
 
 
+def parse_page_national(html):
+    """Read the national totals off the Committee's results page (used when the CSV files are not published yet)."""
+    t = re.sub(r'<(\w+)[^>]*>', r'<\1>', re.sub(r'\s+', ' ', html))
+    def total(label):
+        m = re.search(re.escape(label) + r'\s*</div>\s*<div>\s*([\d,]+)', t)
+        return int(m.group(1).replace(',', '')) if m else None
+    rows = re.findall(r'<td>\s*([\u05d0-\u05ea]{1,4})\s*</td>\s*<td>\s*[\d.]+%\s*</td>\s*<td>\s*<div>\s*<span>\s*([\d,]+)\s*</span>', t)
+    votes = {code: int(n.replace(',', '')) for code, n in rows}
+    return {'eligible': total('מספר בעלי זכות בחירה'), 'votes': total('קולות עד עתה'), 'boxes': total('קלפיות עד עתה'),
+            'valid': total('קולות כשרים עד עתה'), 'invalid': total('קולות פסולים עד עתה'), 'parties': votes}
+
+
 def num(x):
     try:
         return int(float(str(x).strip() or 0))
@@ -67,9 +79,11 @@ def main():
     before_close = datetime.now(timezone.utc) < polls_close
     codes = tracked + ['OTHER']
     cec_time, test_env = None, False
+    html = None
     if a.local:
-        expc = open(os.path.join(a.local, 'expc.csv'), 'rb').read()
-        expb = open(os.path.join(a.local, 'expb.csv'), 'rb').read()
+        have_csv = os.path.exists(os.path.join(a.local, 'expc.csv')) and os.path.exists(os.path.join(a.local, 'expb.csv'))
+        expc = open(os.path.join(a.local, 'expc.csv'), 'rb').read() if have_csv else None
+        expb = open(os.path.join(a.local, 'expb.csv'), 'rb').read() if have_csv else None
         test_env = os.path.exists(os.path.join(a.local, 'TEST'))
         page = os.path.join(a.local, 'page.html')
         if os.path.exists(page):
@@ -97,10 +111,25 @@ def main():
             v[codes.index(p) if p in tracked else len(codes) - 1] += n
         return v
 
-    _, pc, crow = parse(expc)
-    _, pb, brow = parse(expb)
+    page_only = expc is None
+    if page_only:
+        # The Committee posts its results page before its CSV files. Until the files appear,
+        # publish the national totals as one row with no locality breakdown.
+        if not html:
+            sys.exit('No CSV files and no results page in the upload.')
+        pn = parse_page_national(html)
+        if not pn['parties'] or not pn['boxes']:
+            sys.exit('The results page has no counted ballot boxes yet.')
+        v = [0] * len(codes)
+        for p, n in pn['parties'].items():
+            v[codes.index(p) if p in tracked else len(codes) - 1] += n
+        crow, brow, pc, pb = [], [], [], []
+        page_row = [9998, 'ארצי', 0, pn['votes'] or 0, pn['invalid'] or 0, pn['boxes'], v]
     nb = {}
     boxes = {}
+    if not page_only:
+        _, pc, crow = parse(expc)
+        _, pb, brow = parse(expb)
     for d in brow:
         c = num(d['סמל ישוב'])
         if num(d.get('מצביעים')) == 0 and num(d.get('כשרים')) == 0:
@@ -118,6 +147,10 @@ def main():
         nat['r'] += r; nat['t'] += t; nat['x'] += x
         nat['v'] = [p + q for p, q in zip(nat['v'], v)]
     nat['boxes'] = sum(nb.values())
+    if page_only:
+        locs = [page_row]
+        nat = {'r': 0, 't': page_row[3], 'x': page_row[4], 'v': page_row[6], 'boxes': page_row[5]}
+        pc = list(pn['parties'])
     unknown = sorted(set(pc) - set(tracked))
     if not a.local or a.guard:
         # Anything published before polls close is test data, whatever the page says.
@@ -132,7 +165,7 @@ def main():
     changed = prev.get('digest') != digest or prev.get('test_env') != test_env
     live = {'status': 'counting' if locs else 'pre', 'test_env': test_env, 'cec_time': cec_time,
             'fetched_at': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), 'digest': digest,
-            'other_codes': unknown, **body}
+            'other_codes': unknown, 'page_only': page_only, **body}
     if changed or not os.path.exists(live_path):
         json.dump(live, open(live_path, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
         json.dump({'codes': codes, 'digest': digest, 'b': boxes}, open(os.path.join(a.out, 'boxes.json'), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
