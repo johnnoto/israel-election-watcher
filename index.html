@@ -963,7 +963,9 @@ footer a { color: var(--ink); }
       d3.select('#k-thr-s').text(`${fmt(Math.ceil(THR * validReal))} votes at current count`);
     } else {
       d3.select('#k-boxes').text('0%');
-      d3.select('#k-boxes-s').text(`Counting starts ${CFG.polls_close_label.split(' (')[0].replace(/^\w+, /, '')}`);
+      d3.select('#k-boxes-s').text(Date.now() >= Date.parse(CFG.polls_close_utc)
+        ? 'Polls closed · Waiting for the first official results'
+        : `Counting starts ${CFG.polls_close_label.split(' (')[0].replace(/^\w+, /, '')}`);
       d3.select('#k-turnout').text('–');
       d3.select('#k-turnout-s').text(`${fmt(CFG.eligible_voters)} eligible voters · 2022 turnout 70.6%`);
       d3.select('#k-thr-s').text('About 4 seats, roughly 160,000 votes');
