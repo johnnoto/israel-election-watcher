@@ -359,6 +359,13 @@ tr.pending td { color: var(--muted); }
 .left .box-scroll table { font-size: 12.5px; }
 .left .box-scroll th, .left .box-scroll td { padding: 6px 7px; }
 
+.poll-note { display: grid; gap: 8px; }
+.src-tbl { font-size: 12px; }
+.src-tbl th, .src-tbl td { padding: 5px 7px; }
+.src-tbl td:first-child, .src-tbl th:first-child { padding-left: 0; }
+.src-tbl small { color: var(--muted); font-size: 11px; }
+.src-tbl td:nth-child(2) { white-space: nowrap; }
+
 footer { border-top: 1px solid var(--rule); margin-top: 18px; }
 footer .wrap { padding-block: 18px 30px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px 30px; font-size: 13px; color: var(--ink-2); }
 footer h5 { margin: 0 0 4px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
@@ -953,12 +960,15 @@ footer a { color: var(--ink); }
     seatSel.select('title').text((d, i) => seatList[i] ? `${META[seatList[i]].en}: ${seats[seatList[i]]} seats` : 'Unallocated');
     hemiCenter.text(anySeats ? bs.N : '–');
     hemiSub.text(anySeats ? NB.toUpperCase() : 'NO RESULTS YET');
-    document.getElementById('hemi-h').textContent = poll ? 'Knesset In This Poll' : 'Projected Knesset';
+    document.getElementById('hemi-h').textContent = poll ? (poll.sources ? 'Knesset In The Poll Average' : 'Knesset In This Poll') : 'Projected Knesset';
     document.getElementById('majority').innerHTML = anySeats
       ? (bs.N >= 61 ? `<strong>${esc(NB)} holds a majority</strong> with ${bs.N} of 120 seats` : `<strong>No bloc at 61.</strong> ${esc(NB)} ${bs.N}, ${esc(BLOCS.C.name.toLowerCase())} ${bs.C}, Arab parties ${bs.A}, unaligned ${bs.O}`)
       : 'Seats appear once the first ballot boxes report';
-    document.getElementById('blocs').innerHTML = ['N', 'C', 'A'].map(b => `<div class="bloc" style="--c:var(${BLOCS[b].v})"><div class="n num">${bs[b]}</div><div class="l">${esc(BLOCS[b].name)}</div><div class="p num">${poll ? 'seats in poll' : `${pct(bv[b], valid)} of the vote`}</div></div>`).join('');
-    document.getElementById('poll-note').innerHTML = poll ? `${esc(poll.note)}${poll.url ? ` <a href="${esc(poll.url)}" target="_blank" rel="noopener">Source</a>` : ''}` : '';
+    document.getElementById('blocs').innerHTML = ['N', 'C', 'A'].map(b => `<div class="bloc" style="--c:var(${BLOCS[b].v})"><div class="n num">${bs[b]}</div><div class="l">${esc(BLOCS[b].name)}</div><div class="p num">${poll ? (poll.sources ? 'seats, poll average' : 'seats in poll') : `${pct(bv[b], valid)} of the vote`}</div></div>`).join('');
+    const blocOfSeats = (s, b) => Object.keys(s).filter(c => META[c] && META[c].bloc === b).reduce((n, c) => n + s[c], 0);
+    const srcTable = poll && poll.sources ? `<div class="tbl-scroll"><table class="src-tbl"><thead><tr><th>Poll</th><th>Date</th><th class="r">Sample</th><th class="r">Weight</th><th class="r">${esc(BLOCS.N.short)}</th><th class="r">${esc(BLOCS.C.short)}</th><th class="r">Arab</th></tr></thead><tbody>` +
+      poll.sources.slice().sort((a, b) => b.w - a.w).map(s => `<tr><td><b>${esc(s.outlet)}</b><br><small>${esc(s.firm)}</small></td><td>${esc(s.date)}</td><td class="r">${s.n ? fmt(s.n) : 'n/a'}</td><td class="r">${s.w.toFixed(2)}</td><td class="r">${blocOfSeats(s.seats, 'N')}</td><td class="r">${blocOfSeats(s.seats, 'C')}</td><td class="r">${blocOfSeats(s.seats, 'A')}</td></tr>`).join('') + '</tbody></table></div>' : '';
+    document.getElementById('poll-note').innerHTML = poll ? `${srcTable}<span>${esc(poll.note)}${poll.url ? ` <a href="${esc(poll.url)}" target="_blank" rel="noopener">Source</a>` : ''}</span>` : '';
     document.getElementById('poll-note').hidden = !poll;
 
     // Party table
