@@ -5,7 +5,7 @@ B = {b['name']: b['chapters'] for b in json.load(open('/home/claude/bible/kjv.js
 def verse(book, c, v):
     t = B[book][c - 1][v - 1]
     return re.sub(r'\s+', ' ', t.replace('{', '').replace('}', '')).strip()
-def fragment(text, kw, limit=150):
+def fragment(text, kw, limit=165):
     i = text.lower().find(kw.lower())
     if i < 0: return None
     # clause boundaries around the keyword
@@ -14,10 +14,15 @@ def fragment(text, kw, limit=150):
     m = re.search(r'[;:.?!](\s|$)', text[i + len(kw):])
     e = i + len(kw) + (m.start() + 1 if m else len(text) - i - len(kw))
     frag = text[s:e].strip()
-    if len(frag) < 40 and e < len(text):  # too short: take the next clause too
-        m2 = re.search(r'[;:.?!](\s|$)', text[e:])
-        e = e + (m2.start() + 1 if m2 else len(text) - e)
-        frag = text[s:e].strip()
+    for _ in range(3):  # too short to say anything: widen by a clause, forward first, then back
+        if len(text[s:e].strip()) >= 75: break
+        if e < len(text):
+            m2 = re.search(r'[;:.?!](\s|$)', text[e:])
+            e = e + (m2.start() + 1 if m2 else len(text) - e)
+        elif s > 0:
+            prev = [m.end() for m in re.finditer(r'[;:.?!]\s', text[:max(0, s - 2)])]
+            s = prev[-1] if prev else 0
+    frag = text[s:e].strip()
     if len(frag) > limit:
         a = max(0, i - s - 60)
         piece = frag[a:a + limit]
