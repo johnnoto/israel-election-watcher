@@ -11,17 +11,12 @@ jobs:
       - name: Download
         run: |
           mkdir -p out && cd out
-          B=https://israel.weinbren.me/live
           UA='Mozilla/5.0 (compatible; GlobeInBriefElectionWatcher/1.0; +https://johnnoto.github.io/israel-election-watcher/)'
-          curl -sS -m 30 -A "$UA" -o status.json -w 'status %{http_code}\n' "$B/status.json" | tee log.txt
-          cat status.json >> log.txt; echo >> log.txt
-          for f in expc.csv expb.csv night.json; do
-            v=$(python3 -c "import json;print(json.load(open('status.json')).get('files',{}).get('$f',''))")
-            curl -sS -m 90 -A "$UA" -o $f -w "$f v=$v %{http_code} %{size_download}\n" "$B/$f?v=$v" | tee -a log.txt
-          done
-          head -c 1500 expc.csv > expc_head.txt; head -c 1500 expb.csv > expb_head.txt; head -c 1500 night.json > night_head.txt
-          wc -l expc.csv expb.csv >> log.txt
-          rm -f expc.csv expb.csv night.json
+          date -u > log.txt
+          curl -sS -m 30 -A "$UA" "https://israel.weinbren.me/live/status.json?_=$(date +%s)" >> log.txt; echo >> log.txt
+          curl -sS -m 30 -A "$UA" -o reuters.html -w 'reuters %{http_code} %{size_download}\n' https://www.reuters.com/graphics/ISRAEL-ELECTION/RESULTS/akvelybkapr/ >> log.txt
+          curl -sS -m 30 -A "$UA" -o r_robots.txt -w 'reuters robots %{http_code}\n' https://www.reuters.com/robots.txt >> log.txt
+          grep -oE '"[^"]*\.json[^"]*"' reuters.html | sort -u | head -30 >> log.txt
       - name: Save
         run: |
           cd out
