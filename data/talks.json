@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-28T15:28:33Z",
-  "summary": "Counting continues, with Netanyahu's bloc ahead but short of 61 and Eisenkot's bloc further behind. President Herzog urged all parties to do everything they can to avoid another election and to enter his consultations with an open mind. Golan and the Joint List want the change bloc to govern with Arab parties' backing, but Liberman has ruled out both Arab parties and a minority government, while Eisenkot refuses to serve under Netanyahu even in a rotation. Analysts quoted by JTA and Ynet see a repeat election as a likely outcome unless a leader breaks a campaign pledge.",
+  "updated": "2026-10-28T18:25:04Z",
+  "summary": "Counting continues, with Netanyahu's bloc ahead but short of 61 and Eisenkot's bloc further behind, and roughly 450,000 soldiers' and other double-envelope ballots still to be tallied. Likud now claims Arab parties 'stole' the election through fraud and has asked police and the Shin Bet to investigate, which Ra'am rejects. Golan and the Joint List want the change bloc to govern with Arab parties' backing, but Liberman has ruled out both Arab parties and a minority government, while Eisenkot refuses to serve under Netanyahu even in a rotation. President Herzog has urged all sides to avoid another election and will consult the factions once official results are in.",
   "phase": {
     "now": "Votes still being counted",
-    "next": "Herzog expects the official results next week, by Nov 4, and will then consult every Knesset faction before choosing who gets the first try at forming a government, who then has 28 days plus a possible 14-day extension.",
-    "url": "https://www.timesofisrael.com/liveblog_entry/herzog-urges-parties-to-avoid-another-election-calls-for-open-mind-in-coalition-talks/",
+    "next": "The Central Elections Committee expects the full count, including soldiers' ballots, on the afternoon of Oct 29 and official results on Nov 4; Herzog then consults every faction before choosing who gets the first try at forming a government.",
+    "url": "https://www.timesofisrael.com/liveblog_entry/cec-estimates-up-to-480000-ballots-from-troops-police-diplomats-to-be-counted-worth-some-12-knesset-seats/",
     "source": "Times of Israel"
   },
   "scenarios": [
@@ -180,13 +180,13 @@
   "parties": {
     "מחל": {
       "backs": "Netanyahu",
-      "stance": "Wants a right-wing national government; calls relying on anti-Zionist Arab parties unthinkable.",
+      "stance": "Wants a right-wing national government without Arab parties, and now alleges Arab parties won seats through fraud and bribery.",
       "red_lines": [
         "No government that depends on Arab parties"
       ],
       "date": "2026-10-28",
-      "url": "https://www.timesofisrael.com/liveblog-october-28-2026/",
-      "source": "Times of Israel"
+      "url": "https://www.ynetnews.com/article/s1q6l51tmx",
+      "source": "Ynet"
     },
     "דרך": {
       "backs": "Eisenkot",
@@ -267,19 +267,19 @@
     },
     "ט": {
       "backs": "Netanyahu (expected)",
-      "stance": "No public post-election statement on coalition terms found yet.",
+      "stance": "Smotrich dismissed the opposition's election-night celebrations and vowed Jewish settlement in Gaza; no coalition terms stated yet.",
       "red_lines": [],
-      "date": "",
-      "url": "",
-      "source": ""
+      "date": "2026-10-27",
+      "url": "https://www.timesofisrael.com/liveblog_entry/smotrich-dismisses-opposition-celebrations-vows-jewish-settlements-will-rise-in-gaza/",
+      "source": "Times of Israel"
     },
     "עם": {
       "backs": "Undecided",
-      "stance": "Abbas says both camps are talking to him; open to an Eisenkot-led government once it has the numbers.",
+      "stance": "Abbas says he would join a government that commits to fighting violent crime, home demolitions and discrimination; Ra'am calls the arrests of its activists politically motivated.",
       "red_lines": [],
       "date": "2026-10-28",
-      "url": "https://www.republicworld.com/global-news/ra-am-chief-mansour-abbas-claims-both-netanyahu-and-change-bloc-in-contact-as-arab-parties-turn-kingmakers-2026-10-27-139809",
-      "source": "Republic World (ANI)"
+      "url": "https://www.ynetnews.com/article/s1q6l51tmx",
+      "source": "Ynet"
     },
     "ודם": {
       "backs": "Against Netanyahu",
@@ -294,12 +294,44 @@
   },
   "timeline": [
     {
+      "at": "2026-10-28T15:52:00Z",
+      "who": "Likud",
+      "party": "מחל",
+      "text": "Claims Arab parties stole the election through bribery, threats and forgery, and asks police, the Shin Bet and the elections committee to investigate.",
+      "url": "https://www.ynetnews.com/article/s1q6l51tmx",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-10-28T15:52:00Z",
+      "who": "Ra'am",
+      "party": "עם",
+      "text": "Rejects the vote-buying accusations and calls the arrests of its activists a politically motivated bid to suppress Arab turnout.",
+      "url": "https://www.ynetnews.com/article/s1q6l51tmx",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-10-28T14:46:00Z",
+      "who": "Central Elections Committee",
+      "party": "",
+      "text": "Estimates up to 480,000 double-envelope ballots remain, with the full count due Oct 29 and official results Nov 4.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/cec-estimates-up-to-480000-ballots-from-troops-police-diplomats-to-be-counted-worth-some-12-knesset-seats/",
+      "source": "Times of Israel"
+    },
+    {
       "at": "2026-10-28T13:08:00Z",
       "who": "President Isaac Herzog",
       "party": "",
       "text": "In his first remarks since the vote, urges parties to avoid another election and to come to consultations with an open mind.",
       "url": "https://www.timesofisrael.com/liveblog_entry/herzog-urges-parties-to-avoid-another-election-calls-for-open-mind-in-coalition-talks/",
       "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-28T12:10:00Z",
+      "who": "Ahmad Tibi",
+      "party": "ודם",
+      "text": "Confirms the Joint List is in talks with the opposition bloc and wants to help replace the government, the JC reports citing Kan.",
+      "url": "https://www.thejc.com/news/israel/israel-elections-2026-live-results-um05revx",
+      "source": "The Jewish Chronicle"
     },
     {
       "at": "2026-10-28T11:37:00Z",
@@ -372,6 +404,14 @@
       "text": "Declares Netanyahu has lost; says opposition leaders are already talking.",
       "url": "https://www.ynetnews.com/article/bjnx6sr3fx",
       "source": "Ynet"
+    },
+    {
+      "at": "2026-10-27T22:22:00Z",
+      "who": "Bezalel Smotrich",
+      "party": "ט",
+      "text": "Dismisses the opposition's celebrations and vows that Jewish settlements will be built in Gaza.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/smotrich-dismisses-opposition-celebrations-vows-jewish-settlements-will-rise-in-gaza/",
+      "source": "Times of Israel"
     },
     {
       "at": "2026-10-27T22:19:00Z",
