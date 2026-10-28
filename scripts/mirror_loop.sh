@@ -15,15 +15,19 @@ say() { echo "$(date -u +%H:%M:%S) $*"; }
 
 while [ "$(date +%s)" -lt "$END" ]; do
   if curl -sSf -m 30 -A "$UA" -o /tmp/status.json "$BASE/status.json?_=$(date +%s)"; then
-    read -r vc vb updated < <(python3 -c "
+    read -r vc vb vm updated < <(python3 -c "
 import json; s = json.load(open('/tmp/status.json')); f = s.get('files', {})
-print(f.get('expc.csv', '-'), f.get('expb.csv', '-'), s.get('updated', '-'))")
-    key="$vc/$vb"
+print(f.get('expc.csv', '-'), f.get('expb.csv', '-'), f.get('municipal_data.json', '-'), s.get('updated', '-'))")
+    key="$vc/$vb/$vm"
     if [ "$vc" != "-" ] && [ "$vb" != "-" ] && [ "$key" != "$last" ]; then
       rm -f "$RAW"/*
       if curl -sSf -m 120 -A "$UA" -o "$RAW/expc.csv" "$BASE/expc.csv?v=$vc" \
          && curl -sSf -m 180 -A "$UA" -o "$RAW/expb.csv" "$BASE/expb.csv?v=$vb" \
          && grep -q 'סמל ישוב' "$RAW/expc.csv" && grep -q 'סמל ישוב' "$RAW/expb.csv"; then
+        # The mirror's town file often runs ahead of its CSV copies; the converter prefers it when present.
+        if [ "$vm" != "-" ] && curl -sSf -m 120 -A "$UA" -o "$RAW/municipal_data.json" "$BASE/municipal_data.json?v=$vm" \
+           && python3 -c "import json,sys; d=json.load(open(sys.argv[1])); sys.exit(0 if d.get('features') else 1)" "$RAW/municipal_data.json"; then :
+        else rm -f "$RAW/municipal_data.json"; fi
         python3 -c "
 from datetime import datetime; from zoneinfo import ZoneInfo
 u = '$updated'

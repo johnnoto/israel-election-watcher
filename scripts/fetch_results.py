@@ -130,9 +130,17 @@ def main():
         page_row = [9998, 'ארצי', 0, pn['votes'] or 0, pn['invalid'] or 0, pn['boxes'], v]
     nb = {}
     boxes = {}
+    muni = None
+    if a.local and os.path.exists(os.path.join(a.local, 'municipal_data.json')):
+        # The mirror's town-by-town file, built from the Committee's locality results, often runs ahead
+        # of its expc.csv copy. Same columns as expc.csv, keyed by locality code.
+        muni = json.load(open(os.path.join(a.local, 'municipal_data.json'), encoding='utf-8'))
     if not page_only:
         _, pc, crow = parse(expc)
         _, pb, brow = parse(expb)
+    if muni and muni.get('features'):
+        crow = [{**f, 'סמל ישוב': code} for code, f in muni['features'].items()]
+        pc = [p for p in muni.get('parties', []) if p and p not in META_COLS]
     for d in brow:
         c = num(d['סמל ישוב'])
         if num(d.get('מצביעים')) == 0 and num(d.get('כשרים')) == 0:
@@ -150,6 +158,9 @@ def main():
         nat['r'] += r; nat['t'] += t; nat['x'] += x
         nat['v'] = [p + q for p, q in zip(nat['v'], v)]
     nat['boxes'] = sum(nb.values())
+    if muni and muni.get('features'):
+        # Ballot-box detail (expb.csv) may lag the town file; use the town file's own count.
+        nat['boxes'] = (muni.get('totals') or {}).get('kalpi_counted') or nat['boxes']
     if page_only:
         # Keep the latest town-by-town data already published (for example from the mirror) and add
         # whatever the Committee's page counts beyond it as one row, so national totals match the page.
