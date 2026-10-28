@@ -14,28 +14,20 @@ jobs:
           B=https://israel.weinbren.me/live
           UA='Mozilla/5.0 (compatible; GlobeInBriefElectionWatcher/1.0; +https://johnnoto.github.io/israel-election-watcher/)'
           curl -sS -m 30 -A "$UA" -o status.json "$B/status.json?_=$(date +%s)"
-          for f in night.json municipal_data.json; do
-            v=$(python3 -c "import json;print(json.load(open('status.json'))['files']['$f'])")
-            curl -sS -m 120 -A "$UA" -o $f -w "$f %{http_code} %{size_download}\n" "$B/$f?v=$v" >> log.txt
-          done
-          python3 - >> log.txt <<'PY'
+          v=$(python3 -c "import json;print(json.load(open('status.json'))['files']['municipal_data.json'])")
+          curl -sS -m 120 -A "$UA" -o m.json "$B/municipal_data.json?v=$v"
+          python3 - > log.txt <<'PY'
           import json
-          n = json.load(open('night.json'))['night']
-          print('night entries', len(n))
-          for e in n[-3:]:
-              print({k: e[k] for k in e if k not in ('parties', 'votes')}, sum(e['votes']))
-          print('last parties', n[-1]['parties']); print('last votes', n[-1]['votes'])
-          m = json.load(open('municipal_data.json'))
-          def show(x, p='', d=0):
-              if d > 3: return
-              if isinstance(x, dict):
-                  for k, v in list(x.items())[:12]:
-                      print(p + '.' + str(k), type(v).__name__, str(v)[:160] if not isinstance(v, (dict, list)) else len(v)); show(v, p + '.' + str(k), d + 1)
-              elif isinstance(x, list) and x:
-                  print(p + '[0]', str(x[0])[:300]); show(x[0], p + '[0]', d + 1)
-          show(m)
+          m = json.load(open('m.json')); P = set(m['parties'])
+          print('top keys', list(m.keys())); print('totals', m['totals'])
+          f = next(iter(m['features'].values()))
+          print('extra keys', [k for k in f if k not in P])
+          ks = [k for k in f if k not in P and k not in ('שם ישוב',)]
+          for k in ks:
+              vals = [x.get(k) for x in m['features'].values()]
+              print(k, 'sum', sum(v for v in vals if isinstance(v, (int, float))), 'sample', vals[:5])
           PY
-          rm -f municipal_data.json
+          rm -f m.json
       - name: Save
         run: |
           cd out
