@@ -227,7 +227,6 @@ tr.pending td { color: var(--muted); }
 .delta { font-family: var(--mono); font-size: 13px; }
 
 /* Government formation */
-.formation { margin-top: 28px; }
 .timeline { list-style: none; margin: 0; padding: 16px; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0; counter-reset: step; border-bottom: 1px solid var(--rule); }
 .timeline li { counter-increment: step; padding: 0 12px 0 0; position: relative; min-width: 0; }
 .timeline li::before { content: counter(step); display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--ink); color: var(--bg); font-family: var(--mono); font-size: 12px; margin-bottom: 8px; position: relative; z-index: 1; }
@@ -291,8 +290,115 @@ tr.pending td { color: var(--muted); }
   .gov-col + .gov-col { border-left: 0; border-top: 1px solid var(--rule); }
 }
 
+/* Tabs */
+.tabs { position: sticky; top: 0; z-index: 20; display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; background: var(--bg); border-bottom: 1px solid var(--rule-strong); margin: 0 0 20px; padding-top: 4px; }
+.tabs::-webkit-scrollbar { display: none; }
+.tabs button { flex: none; border: 0; background: none; padding: 10px 14px 9px; font: inherit; font-size: 15px; font-weight: 600; color: var(--ink-2); cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -1px; }
+.tabs button:hover { color: var(--ink); }
+.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+.tabpanel { display: grid; gap: 22px; min-width: 0; }
+.tabpanel[hidden] { display: none; }
+.seats-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px; align-items: start; }
+.right .box-scroll { max-height: 380px; }
+.btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.btn:disabled { opacity: .35; cursor: default; }
+/* Overview */
+.ov-body { padding: 16px; display: grid; gap: 16px; }
+.ov-lede { margin: 0; font-family: var(--display); font-size: clamp(20px, 2.6vw, 26px); line-height: 1.3; max-width: 60ch; }
+.ov-lede b { font-weight: 700; }
+.ov-talks { font-size: 14px; color: var(--ink-2); line-height: 1.55; max-width: 75ch; }
+.ov-talks a, .ov-talks button.link { color: var(--ink); }
+button.link { border: 0; background: none; padding: 0; font: inherit; text-decoration: underline; cursor: pointer; }
+.race { display: grid; gap: 6px; }
+.race-labels { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; }
+.race-labels b { font-family: var(--display); font-size: 22px; display: block; line-height: 1.1; }
+.race-labels .mid { text-align: center; color: var(--ink-2); }
+.race-labels .r { text-align: right; }
+.race-bar { position: relative; display: flex; gap: 2px; height: 30px; }
+.race-bar span { display: block; height: 100%; min-width: 0; }
+.race-bar span:first-child { border-radius: 5px 0 0 5px; }
+.race-bar span:last-child { border-radius: 0 5px 5px 0; }
+.race-bar .gap { background: repeating-linear-gradient(45deg, var(--rule) 0 3px, transparent 3px 6px); }
+.race-bar i { position: absolute; top: -6px; bottom: -6px; border-left: 2px solid var(--ink); }
+.race-axis { position: relative; height: 16px; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.race-axis span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
+.ov-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.ov-card { text-align: left; display: grid; gap: 4px; align-content: start; border: 1px solid var(--rule); border-radius: 10px; background: var(--surface); padding: 14px; font: inherit; cursor: pointer; color: var(--ink); }
+.ov-card:hover { border-color: var(--ink-2); }
+.ov-card b { font-family: var(--display); font-size: 17px; }
+.ov-card b::after { content: " →"; }
+.ov-card span { font-size: 13px; color: var(--ink-2); line-height: 1.45; }
+/* Walkthrough */
+.walk-steps { list-style: none; margin: 0; padding: 12px 16px 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; }
+.walk-steps button { width: 100%; display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 8px; align-items: center; text-align: left; border: 1px solid var(--rule); border-radius: 8px; background: var(--bg); padding: 8px 10px; font: inherit; font-size: 13px; font-weight: 600; color: var(--ink-2); cursor: pointer; }
+.walk-steps button .n { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--rule-strong); font-family: var(--mono); font-size: 12px; }
+.walk-steps button[aria-current="step"] { border-color: var(--ink); color: var(--ink); }
+.walk-steps button[aria-current="step"] .n { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.walk-body { padding: 16px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 20px 28px; align-items: start; min-height: 260px; }
+.walk-text h3 { font-family: var(--display); font-size: 24px; margin: 0 0 8px; }
+.walk-text p { margin: 0 0 10px; font-size: 15px; line-height: 1.55; }
+.walk-text .us { border-left: 3px solid var(--bloc-n); background: var(--bg); padding: 8px 12px; font-size: 13px; color: var(--ink-2); border-radius: 0 6px 6px 0; }
+.walk-text .us b { color: var(--ink); }
+.walk-vis { display: grid; gap: 8px; min-width: 0; }
+.walk-vis .cap { font-size: 12px; color: var(--muted); }
+.vbars { display: grid; gap: 5px; }
+.vbar { display: grid; grid-template-columns: minmax(0, 130px) minmax(0, 1fr) 52px; gap: 8px; align-items: center; font-size: 13px; }
+.vbar .nm { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.vbar .tr { position: relative; height: 14px; background: var(--rule); border-radius: 2px; }
+.vbar .tr span { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 2px; }
+.vbar .tr i { position: absolute; top: -3px; bottom: -3px; border-left: 2px dashed var(--critical); }
+.vbar .v { font-family: var(--mono); text-align: right; font-size: 12px; }
+.vbar.out { color: var(--muted); }
+.vbar.out .tr span { background: var(--muted) !important; opacity: .5 !important; }
+.waffle { display: grid; grid-template-columns: repeat(20, minmax(0, 1fr)); gap: 2px; max-width: 420px; }
+.waffle span { aspect-ratio: 1; border-radius: 2px; }
+.wkey { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 12px; color: var(--ink-2); }
+.wkey span { display: inline-flex; gap: 5px; align-items: center; }
+.wkey i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+.steps-tl { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.steps-tl li { display: grid; grid-template-columns: 14px minmax(0, 1fr); gap: 10px; font-size: 13px; line-height: 1.45; color: var(--ink-2); }
+.steps-tl li::before { content: ""; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--rule-strong); margin-top: 3px; }
+.steps-tl li.done::before { background: var(--ink-2); border-color: var(--ink-2); }
+.steps-tl li.now::before { background: var(--bg); border-color: var(--ink); box-shadow: 0 0 0 3px var(--rule); }
+.steps-tl li b { color: var(--ink); }
+.walk-nav { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 0 16px 16px; }
+/* Seat-tile map */
+.tiles-intro { padding: 14px 16px 0; display: grid; gap: 10px; }
+.tiles-intro p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--ink-2); max-width: 82ch; }
+.tiles-intro p b { color: var(--ink); }
+.tiles { padding: 16px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-areas: "haifa north north" "ta center js" "south south jlm" "env other other"; gap: 12px; }
+.tile { grid-area: var(--a); border: 1px solid var(--rule); border-radius: 10px; background: var(--bg); padding: 10px 12px 12px; display: grid; gap: 6px; align-content: start; text-align: left; font: inherit; color: var(--ink); cursor: pointer; min-width: 0; }
+.tile:hover { border-color: var(--ink-2); }
+.tile[aria-pressed="true"] { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.tile-h { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.tile-h b { font-family: var(--display); font-size: 17px; }
+.tile-h .n { font-family: var(--mono); font-size: 12px; color: var(--ink-2); white-space: nowrap; }
+.sq { display: flex; flex-wrap: wrap; gap: 2px; }
+.sq span { width: 18px; height: 18px; border-radius: 3px; }
+.tile small { font-size: 12px; color: var(--ink-2); line-height: 1.4; }
+.tile-detail { padding: 0 16px 16px; }
+.tile-detail .box { border-top: 1px solid var(--rule); padding-top: 14px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 16px 28px; }
+.tile-detail h3 { font-family: var(--display); font-size: 21px; margin: 0 0 6px; }
+.tile-detail p { margin: 0 0 6px; font-size: 13px; color: var(--ink-2); line-height: 1.5; }
+@media (max-width: 900px) {
+  .seats-grid { grid-template-columns: minmax(0, 1fr); }
+  .ov-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .walk-body { grid-template-columns: minmax(0, 1fr); }
+  .walk-steps { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .walk-steps button { grid-template-columns: 24px; justify-content: center; padding: 6px; }
+  .walk-steps button .t { display: none; }
+  .tile-detail .box { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 620px) {
+  .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-areas: "haifa north" "ta center" "js jlm" "south south" "env other"; gap: 8px; padding: 12px; }
+  .sq span { width: 11px; height: 11px; }
+  .tile { padding: 8px 10px 10px; }
+  .tile-h { flex-direction: column; gap: 0; }
+  .tabs button { padding: 10px 11px 9px; font-size: 14px; }
+  .ov-cards { grid-template-columns: minmax(0, 1fr); }
+  .vbar { grid-template-columns: minmax(0, 96px) minmax(0, 1fr) 46px; }
+}
 /* Coalition talks */
-.talks { margin-top: 28px; }
 .talks-top { padding: 16px; display: grid; gap: 8px; border-bottom: 1px solid var(--rule); }
 .talks-top .src { margin: 0; }
 .talks-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); }
@@ -300,7 +406,7 @@ tr.pending td { color: var(--muted); }
 .talks-col + .talks-col { border-left: 1px solid var(--rule); }
 .talks h3 { font-family: var(--display); font-weight: 700; font-size: 20px; margin: 0; }
 .talks h3 + .hint { margin-top: -2px; }
-.scen { display: grid; gap: 10px; }
+.tscen { display: grid; gap: 10px; }
 .scen-card { border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; background: var(--bg); display: grid; gap: 6px; }
 .scen-h { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 10px; }
 .scen-h b { font-size: 15px; }
@@ -461,8 +567,51 @@ footer a { color: var(--ink); }
     <div><div class="k">Electoral Threshold</div><div class="v num" id="k-thr">3.25%</div><div class="s" id="k-thr-s"></div></div>
   </section>
 
-  <div class="main">
-    <div class="left">
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button type="button" role="tab" id="t-overview" data-tab="overview" aria-selected="true">Overview</button>
+    <button type="button" role="tab" id="t-map" data-tab="map" aria-selected="false">Map</button>
+    <button type="button" role="tab" id="t-seats" data-tab="seats" aria-selected="false">Seats</button>
+    <button type="button" role="tab" id="t-coalition" data-tab="coalition" aria-selected="false">Coalition</button>
+    <button type="button" role="tab" id="t-talks" data-tab="talks" aria-selected="false">Talks</button>
+  </nav>
+
+  <div class="tabpanel" id="tab-overview" role="tabpanel" aria-labelledby="t-overview">
+    <section class="panel ov" aria-labelledby="ov-h">
+      <div class="panel-head"><h2 id="ov-h">The 30-Second Version</h2><span class="note" id="ov-note"></span></div>
+      <div class="ov-body">
+        <p class="ov-lede" id="ov-lede"></p>
+        <div class="race" id="ov-race"></div>
+        <div class="ov-talks" id="ov-talks"></div>
+      </div>
+    </section>
+
+    <section class="panel walk" aria-labelledby="walk-h">
+      <div class="panel-head"><h2 id="walk-h">How Votes Become A Government</h2><span class="note">Five steps, using the live count</span></div>
+      <ol class="walk-steps" id="walk-steps"></ol>
+      <div class="walk-body" id="walk-body" aria-live="polite"></div>
+      <div class="walk-nav"><button type="button" class="btn" id="walk-prev">Back</button><span class="readout" id="walk-pos"></span><button type="button" class="btn primary" id="walk-next">Next</button></div>
+    </section>
+
+    <div class="ov-cards">
+      <button type="button" class="ov-card" data-go="map"><b>Where The Votes Came From</b><span>Each region as a block of seats' worth of votes, like an electoral-college map.</span></button>
+      <button type="button" class="ov-card" data-go="seats"><b>The Projected Knesset</b><span>All 120 seats, every party's votes, and the surplus-vote deals.</span></button>
+      <button type="button" class="ov-card" data-go="coalition"><b>Build A Coalition</b><span>Try combinations, see the paths to 61 and who holds the key.</span></button>
+      <button type="button" class="ov-card" data-go="talks"><b>Coalition Talks</b><span>What each leader is saying, and which deals are blocked.</span></button>
+    </div>
+  </div>
+
+  <div class="tabpanel" id="tab-map" role="tabpanel" aria-labelledby="t-map" hidden>
+    <section class="panel tilemap" aria-labelledby="tiles-h">
+      <div class="panel-head"><h2 id="tiles-h">Where The Votes Came From</h2><span class="note" id="tiles-note"></span></div>
+      <div class="tiles-intro">
+        <p>Israel has <b>no electoral districts</b>. All 120 seats come from one national count, so no region "wins" seats the way a US state wins electors. But the votes still come from somewhere. <b>Each square is one seat's worth of votes</b> <span id="tiles-per"></span>. A region's block shows how many seats its voters filled, and for which parties, as if every state's votes poured into one national pot.</p>
+        <div class="legend" id="tiles-legend"></div>
+      </div>
+      <div class="tiles" id="tiles"></div>
+      <div class="tile-detail" id="tile-detail"></div>
+    </section>
+    <div class="main">
+      <div class="left">
       <section class="panel" aria-labelledby="map-h">
         <div class="panel-head"><h2 id="map-h">Results By Locality</h2><span class="note" id="map-note"></span></div>
         <div class="map-controls">
@@ -488,8 +637,10 @@ footer a { color: var(--ink); }
           <div class="zk"><span class="s land"></span><span><b>Open country.</b> The Negev, the Arava and the Judean Desert are lightly populated, so dots there are few and far between.</span></div>
         </div>
       </section>
+      </div>
+      <div class="right">
       <section class="panel explorer" id="explorer" aria-labelledby="ex-h">
-        <div class="panel-head"><h2 id="ex-h">Locality Explorer</h2><span class="note">Click any dot on the map, or search</span></div>
+        <div class="panel-head"><h2 id="ex-h">Locality Explorer</h2><span class="note">Tap any dot on the map, or search</span></div>
         <div class="ex-top">
           <label for="search">Find A Locality</label>
           <input id="search" list="loc-list" placeholder="Jerusalem, Bnei Brak, רהט…" autocomplete="off">
@@ -510,9 +661,12 @@ footer a { color: var(--ink); }
           </div>
         </div>
       </section>
+      </div>
     </div>
+  </div>
 
-    <div class="right">
+  <div class="tabpanel" id="tab-seats" role="tabpanel" aria-labelledby="t-seats" hidden>
+    <div class="seats-grid">
       <section class="panel" aria-labelledby="hemi-h">
         <div class="panel-head"><h2 id="hemi-h">Projected Knesset</h2><span class="note">120 seats · 61 for a majority</span></div>
         <div class="hemi-wrap"><svg id="hemi" viewBox="0 0 520 290" role="img" aria-label="Hemicycle of 120 Knesset seats by party"></svg></div>
@@ -543,31 +697,7 @@ footer a { color: var(--ink); }
     </div>
   </div>
 
-  <section class="panel talks" id="talks" aria-labelledby="talks-h" hidden>
-    <div class="panel-head"><h2 id="talks-h">Coalition Talks</h2><span class="note" id="talks-note"></span></div>
-    <div class="talks-top">
-      <div class="kv"><span class="tag" id="talks-phase"></span><b>State Of Play</b><span id="talks-summary"></span></div>
-      <p class="src" id="talks-next"></p>
-    </div>
-    <div class="talks-grid">
-      <div class="talks-col">
-        <h3>Paths On The Table</h3>
-        <p class="hint">Seats follow the live count. Each status reflects what the leaders involved have said in public.</p>
-        <div class="scen" id="talks-scen"></div>
-      </div>
-      <div class="talks-col">
-        <h3>Where Each Party Stands</h3>
-        <p class="hint">Latest stance as reported in the Israeli press, with the red lines that decide coalitions.</p>
-        <div class="stands" id="talks-parties"></div>
-      </div>
-    </div>
-    <div class="talks-feed">
-      <h3>Latest Statements</h3>
-      <ol class="feed" id="talks-feed"></ol>
-      <button type="button" class="btn" id="talks-more" hidden>Show all statements</button>
-    </div>
-  </section>
-
+  <div class="tabpanel" id="tab-coalition" role="tabpanel" aria-labelledby="t-coalition" hidden>
   <section class="panel formation" aria-labelledby="gov-h">
     <div class="panel-head"><h2 id="gov-h">From Ballots To A Government</h2><span class="note" id="gov-note">Uses the seats shown above</span></div>
     <ol class="timeline" id="timeline"></ol>
@@ -614,6 +744,36 @@ footer a { color: var(--ink); }
       </div>
     </div>
   </section>
+
+  </div>
+
+  <div class="tabpanel" id="tab-talks" role="tabpanel" aria-labelledby="t-talks" hidden>
+  <section class="panel talks" id="talks" aria-labelledby="talks-h">
+    <div class="panel-head"><h2 id="talks-h">Coalition Talks</h2><span class="note" id="talks-note"></span></div>
+    <div class="talks-top">
+      <div class="kv"><span class="tag" id="talks-phase"></span><b>State Of Play</b><span id="talks-summary"></span></div>
+      <p class="src" id="talks-next"></p>
+    </div>
+    <div class="talks-grid">
+      <div class="talks-col">
+        <h3>Paths On The Table</h3>
+        <p class="hint">Seats follow the live count. Each status reflects what the leaders involved have said in public.</p>
+        <div class="tscen" id="talks-scen"></div>
+      </div>
+      <div class="talks-col">
+        <h3>Where Each Party Stands</h3>
+        <p class="hint">Latest stance as reported in the Israeli press, with the red lines that decide coalitions.</p>
+        <div class="stands" id="talks-parties"></div>
+      </div>
+    </div>
+    <div class="talks-feed">
+      <h3>Latest Statements</h3>
+      <ol class="feed" id="talks-feed"></ol>
+      <button type="button" class="btn" id="talks-more" hidden>Show all statements</button>
+    </div>
+  </section>
+
+  </div>
 
 </main>
 
@@ -1071,6 +1231,7 @@ footer a { color: var(--ink); }
     }
     renderAgreements(natReal, validReal);
     talkSeats = seatsReal; renderTalks();
+    OV = { natReal, validReal, seatsReal, poll }; renderOverview(); renderTiles();
     renderGov();
   }
 
@@ -1258,6 +1419,200 @@ footer a { color: var(--ink); }
     more.textContent = talkFeedAll ? 'Show fewer' : `Show all ${feed.length} statements`;
   }
   document.getElementById('talks-more').addEventListener('click', () => { talkFeedAll = !talkFeedAll; renderTalks(); });
+
+  // ---- Tabs ----
+  const TABS = ['overview', 'map', 'seats', 'coalition', 'talks'];
+  function showTab(name, push) {
+    if (!TABS.includes(name)) name = 'overview';
+    TABS.forEach(t => {
+      document.getElementById('tab-' + t).hidden = t !== name;
+      const b = document.getElementById('t-' + t); b.setAttribute('aria-selected', t === name); b.tabIndex = t === name ? 0 : -1;
+    });
+    if (push && location.hash.slice(1) !== name) history.replaceState(null, '', name === 'overview' ? location.pathname + location.search : '#' + name);
+    if (name === 'map') { sizeDots(); placeCities(); }
+  }
+  document.querySelector('.tabs').addEventListener('click', e => { const b = e.target.closest('button[data-tab]'); if (b) showTab(b.dataset.tab, true); });
+  document.querySelector('.tabs').addEventListener('keydown', e => {
+    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+    const cur = TABS.findIndex(t => !document.getElementById('tab-' + t).hidden);
+    const nx = TABS[(cur + (e.key === 'ArrowRight' ? 1 : TABS.length - 1)) % TABS.length];
+    showTab(nx, true); document.getElementById('t-' + nx).focus();
+  });
+  document.addEventListener('click', e => {
+    const g = e.target.closest('[data-go]'); if (!g) return;
+    e.preventDefault(); showTab(g.dataset.go, true);
+    document.querySelector('.tabs').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+  window.addEventListener('hashchange', () => showTab(location.hash.slice(1), false));
+
+  // ---- Overview and walkthrough ----
+  let OV = null, walkStep = 0;
+  const blocParties = (seats, b) => SEAT_ORDER.filter(c => META[c].bloc === b && seats[c] > 0);
+  function raceHtml(seats) {
+    const bs = blocSeats(seats), n = bs.N, c = bs.C, mid = 120 - n - c;
+    const seg = arr => arr.map(x => `<span style="flex:${seats[x]};${swatch(x)}" title="${esc(META[x].en)} ${seats[x]}"></span>`).join('');
+    const midParties = SEAT_ORDER.filter(x => seats[x] > 0 && META[x].bloc !== 'N' && META[x].bloc !== 'C');
+    const unalloc = Math.max(0, mid - d3.sum(midParties, x => seats[x]));
+    const right = blocParties(seats, 'C').reverse();
+    return `<div class="race-labels"><div><b class="num" style="color:var(${BLOCS.N.v})">${n}</b>${esc(BLOCS.N.name)}${n >= 61 ? ' · majority' : ` · ${61 - n} short`}</div>` +
+      `<div class="mid">${midParties.length ? `${midParties.map(x => `${esc(META[x].en)} ${seats[x]}`).join(' · ')}` : ''}${unalloc ? ` · ${unalloc} unallocated` : ''}</div>` +
+      `<div class="r"><b class="num" style="color:var(${BLOCS.C.v})">${c}</b>${esc(BLOCS.C.name)}${c >= 61 ? ' · majority' : ` · ${61 - c} short`}</div></div>` +
+      `<div class="race-bar">${seg(blocParties(seats, 'N'))}${seg(midParties)}${unalloc ? `<span class="gap" style="flex:${unalloc}"></span>` : ''}${seg(right)}` +
+      `<i style="left:calc(61 / 120 * 100%)" title="61 seats from the left"></i><i style="left:calc(59 / 120 * 100%)" title="61 seats from the right"></i></div>` +
+      `<div class="race-axis"><span style="left:0;transform:none">0</span><span style="left:calc(60 / 120 * 100%)">61 needed from either side</span><span style="right:0;transform:none">120</span></div>`;
+  }
+  function renderOverview() {
+    if (!OV) return;
+    const { natReal, validReal, seatsReal: seats, poll } = OV;
+    const bs = blocSeats(seats);
+    const live = showLive() && validReal > 0;
+    const top = SEAT_ORDER.filter(c => seats[c] > 0).sort((a, b) => seats[b] - seats[a]);
+    const lead = top[0];
+    const counted = live ? pct(countedBoxes(), totalBoxes(), 0) : null;
+    const maj = ['N', 'C'].find(b => bs[b] >= 61);
+    let lede;
+    if (!lead) lede = 'Results will appear here once the count begins.';
+    else {
+      const intro = live ? `With <b>${counted}</b> of ballot boxes counted, ` : poll ? `In the ${esc(poll.label || 'poll')}, ` : '';
+      lede = `${intro}<b>${esc(META[lead].en)}</b> is the largest party with ${seats[lead]} seats. ` +
+        (maj ? `The <b>${esc(BLOCS[maj].name)}</b> has ${bs[maj]} seats, enough to govern without anyone else.`
+             : `But no side has the <b>61 seats</b> needed to govern: the ${esc(BLOCS.N.name)} has ${bs.N}, the ${esc(BLOCS.C.name)} ${bs.C}, and the Arab parties ${bs.A}.`);
+    }
+    document.getElementById('ov-lede').innerHTML = lede;
+    document.getElementById('ov-note').textContent = live ? `Live count · ${counted} of ballot boxes` : poll ? (poll.label || '') : '';
+    document.getElementById('ov-race').innerHTML = lead ? raceHtml(seats) : '';
+    const T = TALKS;
+    document.getElementById('ov-talks').innerHTML = T && T.summary
+      ? `<b>Coalition talks:</b> ${esc(T.summary)} <button type="button" class="link" data-go="talks">Follow the talks</button>`
+      : '';
+    renderWalk();
+  }
+  const STEPS = ['One National Vote', 'The 3.25% Bar', 'Votes Become Seats', 'Nobody Has 61', 'The Bargaining'];
+  document.getElementById('walk-steps').innerHTML = STEPS.map((t, i) => `<li><button type="button" data-s="${i}" aria-label="Step ${i + 1}: ${t}"><span class="n">${i + 1}</span><span class="t">${t}</span></button></li>`).join('');
+  document.getElementById('walk-steps').addEventListener('click', e => { const b = e.target.closest('button[data-s]'); if (b) { walkStep = +b.dataset.s; renderWalk(); } });
+  document.getElementById('walk-prev').addEventListener('click', () => { walkStep = Math.max(0, walkStep - 1); renderWalk(); });
+  document.getElementById('walk-next').addEventListener('click', () => { walkStep = Math.min(STEPS.length - 1, walkStep + 1); renderWalk(); });
+  function renderWalk() {
+    if (!OV) return;
+    const { natReal, validReal, seatsReal: seats } = OV;
+    const live = showLive() && validReal > 0;
+    const shares = TRACKED.map(c => ({ c, v: natReal[idx[c]] })).filter(o => o.v > 0).sort((a, b) => b.v - a.v);
+    const thrVotes = Math.ceil(THR * validReal);
+    const out = shares.filter(o => o.v < thrVotes);
+    const outVotes = d3.sum(out, o => o.v) + (natReal[idx.OTHER] || 0);
+    const seated = SEAT_ORDER.filter(c => seats[c] > 0).sort((a, b) => seats[b] - seats[a]);
+    const perSeat = validReal ? Math.round((validReal - outVotes) / 120) : 0;
+    const bs = blocSeats(seats);
+    const noLive = '<p class="cap">Vote counts appear here once the live count is showing.</p>';
+    const vbars = (list, maxV, thr) => `<div class="vbars">${list.map(o => `<div class="vbar ${thr && o.v < thrVotes ? 'out' : ''}"><span class="nm">${esc(META[o.c].en)}</span><span class="tr"><span style="width:${100 * o.v / maxV}%;${swatch(o.c)}"></span>${thr ? `<i style="left:${100 * thrVotes / maxV}%"></i>` : ''}</span><span class="v">${pct(o.v, validReal)}</span></div>`).join('')}</div>`;
+    let text = '', vis = '';
+    if (walkStep === 0) {
+      text = `<h3>1. One National Vote</h3><p>Israelis don't vote for a local representative. There are <b>no districts</b>: the whole country is a single 120-seat race, and each voter picks one party's list of candidates.</p>` +
+        `<p>${live ? `So far <b>${fmt(validReal)}</b> valid votes have been counted, from ${pct(countedBoxes(), totalBoxes(), 0)} of ballot boxes.` : ''}</p>` +
+        `<p class="us"><b>For Americans:</b> imagine all 435 House seats filled by one national popular vote, split by party, with no states or districts.</p>`;
+      vis = live ? `${vbars(shares.slice(0, 10), shares[0].v, false)}<span class="cap">Share of valid votes, top 10 parties</span>` : noLive;
+    } else if (walkStep === 1) {
+      text = `<h3>2. The 3.25% Bar</h3><p>To win any seats, a party needs at least <b>3.25%</b> of valid votes${live ? `, about <b>${fmt(thrVotes)}</b> votes on the current count` : ''}. Below that, it gets nothing and its votes are set aside.</p>` +
+        (live ? `<p>${out.length ? `Right now ${out.length === 1 ? 'one list is' : `${out.length} lists are`} below the bar, led by ${esc(META[out[0].c].en)} at ${pct(out[0].v, validReal)}. About <b>${fmt(outVotes)}</b> votes (${pct(outVotes, validReal)}) currently elect no one.` : 'Every tracked list is above the bar right now.'}</p>` : '') +
+        `<p class="us"><b>For Americans:</b> as if any party under 3.25% of the national vote got zero House seats, however strong it was in one city.</p>`;
+      const near = shares.filter(o => o.v < thrVotes * 3).slice(0, 9);
+      vis = live ? `${vbars(near, Math.max(thrVotes * 1.6, ...near.map(o => o.v)), true)}<span class="cap">Smaller parties near the line. Dashed red line: 3.25%.</span>` : noLive;
+    } else if (walkStep === 2) {
+      text = `<h3>3. Votes Become Seats</h3><p>The parties over the bar split all 120 seats in proportion to their votes${perSeat ? `, roughly <b>one seat per ${fmt(perSeat)} votes</b>` : ''}. Pairs of parties that signed surplus-vote deals pool their leftover votes for the last few seats.</p>` +
+        `<p>Each party then fills its seats from the top of its candidate list.</p>` +
+        `<p class="us"><b>For Americans:</b> like the Electoral College with one giant state, handed out proportionally instead of winner-take-all.</p>`;
+      const sq = []; seated.forEach(c => { for (let k = 0; k < seats[c]; k++) sq.push(c); });
+      vis = seated.length ? `<div class="waffle">${sq.map(c => `<span style="${swatch(c)}" title="${esc(META[c].en)}"></span>`).join('')}</div>` +
+        `<div class="wkey">${seated.map(c => `<span><i style="${swatch(c)}"></i>${esc(META[c].en)} ${seats[c]}</span>`).join('')}</div><span class="cap">120 seats, one square each</span>` : noLive;
+    } else if (walkStep === 3) {
+      const maj = ['N', 'C'].find(b => bs[b] >= 61);
+      text = `<h3>4. Nobody Has 61</h3><p>A government needs the support of <b>61 of the 120</b> members. No single party has ever won that, so parties line up in blocs behind a candidate for prime minister.</p>` +
+        `<p>${maj ? `Right now the ${esc(BLOCS[maj].name)} has ${bs[maj]}, a majority.` : `Right now the ${esc(BLOCS.N.name)} has <b>${bs.N}</b>, the ${esc(BLOCS.C.name)} <b>${bs.C}</b>, and the Arab parties <b>${bs.A}</b>. Neither main bloc reaches 61 alone, so someone has to win over a party from outside its camp.`}</p>` +
+        `<p class="us"><b>For Americans:</b> like needing 218 votes to elect a House Speaker when no party holds 218, so the winner has to deal.</p>`;
+      vis = seated.length ? raceHtml(seats) + `<span class="cap">Seats by bloc. The black lines mark 61 from each side.</span>` : noLive;
+    } else {
+      const ph = (TALKS && TALKS.phase && TALKS.phase.now) || '';
+      const stage = /sworn/i.test(ph) ? 4 : /mandate/i.test(ph) ? 3 : /consult/i.test(ph) ? 2 : /official/i.test(ph) ? 1 : 0;
+      const tl = [['Count finishes', 'Soldiers’ and other absentee ballots come last. Official results by ' + esc(CFG.official_results_date || 'Nov 4') + '.'],
+        ['President consults', 'President Herzog asks every party whom it recommends for prime minister.'],
+        ['Mandate', 'The candidate with the best chance gets 28 days, plus up to 14 more, to assemble 61.'],
+        ['Confidence vote', 'The Knesset votes on the new government. If nobody gets there, Israel votes again.']];
+      text = `<h3>5. The Bargaining</h3><p>After the count, the President picks whoever has the best chance of forming a government. That person then trades ministries and policy promises with other parties until 61 members agree.</p>` +
+        (ph ? `<p>Now: <b>${esc(ph)}</b>.</p>` : '') +
+        `<p class="us"><b>For Americans:</b> closer to how a Speaker is chosen than how a president is elected. Whoever can assemble the votes governs, even if they didn't lead the largest party.</p>` +
+        `<p><button type="button" class="link" data-go="talks">See the coalition talks</button> · <button type="button" class="link" data-go="coalition">Try building a coalition</button></p>`;
+      vis = `<ol class="steps-tl">${tl.map((x, i) => `<li class="${i < stage ? 'done' : i === stage ? 'now' : ''}"><span><b>${x[0]}</b><br>${x[1]}</span></li>`).join('')}</ol>`;
+    }
+    document.getElementById('walk-body').innerHTML = `<div class="walk-text">${text}</div><div class="walk-vis">${vis}</div>`;
+    document.querySelectorAll('#walk-steps button').forEach((b, i) => { if (i === walkStep) b.setAttribute('aria-current', 'step'); else b.removeAttribute('aria-current'); });
+    document.getElementById('walk-prev').disabled = walkStep === 0;
+    document.getElementById('walk-next').disabled = walkStep === STEPS.length - 1;
+    document.getElementById('walk-pos').textContent = `Step ${walkStep + 1} of ${STEPS.length}`;
+  }
+
+  // ---- Seat-tile map ----
+  const REGIONS = [
+    { id: 'haifa', d: ['חיפה'], en: 'Haifa' },
+    { id: 'north', d: ['הצפון'], en: 'North' },
+    { id: 'ta', d: ['תל אביב'], en: 'Tel Aviv' },
+    { id: 'center', d: ['המרכז'], en: 'Center' },
+    { id: 'js', d: ['אזור יהודה ושומרון', 'יהודה והשומרון'], en: 'West Bank Settlements' },
+    { id: 'jlm', d: ['ירושלים'], en: 'Jerusalem' },
+    { id: 'south', d: ['הדרום'], en: 'South' },
+    { id: 'env', codes: [9999], en: 'Double Envelopes', sub: 'Soldiers, diplomats, prisoners and hospital patients, counted last' },
+    { id: 'other', codes: [9998], en: 'Not Yet Placed', sub: 'Counted nationally but not yet broken down by town' }
+  ];
+  let tileSel = null;
+  const regionOf = l => (REGIONS.find(R => (R.codes && R.codes.includes(l.c)) || (R.d && R.d.includes(l.dist))) || REGIONS[8]).id;
+  function lr(weights, n) { // largest remainder: split n units by weights
+    const tot = d3.sum(Object.values(weights)); const out = {}; if (!tot || !n) { Object.keys(weights).forEach(k => { out[k] = 0; }); return out; }
+    const rows = Object.entries(weights).map(([k, w]) => { const q = w * n / tot; out[k] = Math.floor(q); return [k, q - Math.floor(q)]; });
+    let left = n - d3.sum(Object.values(out)); rows.sort((a, b) => b[1] - a[1]).forEach(([k]) => { if (left > 0) { out[k]++; left--; } });
+    return out;
+  }
+  function renderTiles() {
+    const box = document.getElementById('tiles');
+    if (!OV || !(showLive() && OV.validReal > 0)) {
+      box.innerHTML = '<p class="hint" style="grid-column:1/-1">The tile map fills in from the live count.</p>';
+      document.getElementById('tiles-per').textContent = ''; document.getElementById('tile-detail').innerHTML = ''; document.getElementById('tiles-legend').innerHTML = '';
+      return;
+    }
+    const seats = OV.seatsReal;
+    const R = {}; REGIONS.forEach(r => { R[r.id] = { r, v: new Array(NP).fill(0), reg: 0, t: 0, n: 0, N: 0, valid: 0 }; });
+    locs.forEach((l, i) => { const a = agg[i]; if (!a) return; const g = R[regionOf(l)]; g.reg += a.r; g.t += a.t; g.n += a.n; g.N += a.N; for (let p = 0; p < NP; p++) g.v[p] += a.v[p]; });
+    Object.values(R).forEach(g => { g.valid = d3.sum(g.v); });
+    const totalValid = d3.sum(Object.values(R), g => g.valid);
+    const regSq = lr(Object.fromEntries(Object.values(R).map(g => [g.r.id, g.valid])), 120);
+    const keyOf = c => seats[c] > 0 ? c : 'OUT';
+    const order = SEAT_ORDER.filter(c => seats[c] > 0).sort((a, b) => BLOC_ORDER.indexOf(META[a].bloc) - BLOC_ORDER.indexOf(META[b].bloc) || seats[b] - seats[a]).concat(['OUT']);
+    const outStyle = 'background:var(--muted);opacity:.35';
+    document.getElementById('tiles-per').textContent = `(about ${fmt(Math.round(totalValid / 120))} votes on the current count)`;
+    document.getElementById('tiles-note').textContent = `${pct(countedBoxes(), totalBoxes(), 0)} of ballot boxes counted`;
+    document.getElementById('tiles-legend').innerHTML = ['N', 'C', 'A'].map(b => `<span><span class="sw" style="background:var(${BLOCS[b].v})"></span>${esc(BLOCS[b].name)}</span>`).join('') +
+      `<span><span class="sw" style="${outStyle}"></span>Parties below 3.25% (no seats)</span><span style="color:var(--muted)">Lighter and darker shades tell parties in the same bloc apart. Tap a region for details.</span>`;
+    box.innerHTML = REGIONS.map(r => {
+      const g = R[r.id], n = regSq[r.id];
+      if (!n && (r.id === 'other' || r.id === 'env')) return '';
+      const w = {}; CODES.forEach((c, p) => { if (g.v[p] > 0) { const k = c === 'OTHER' ? 'OUT' : keyOf(c); w[k] = (w[k] || 0) + g.v[p]; } });
+      const sqn = lr(w, n);
+      const sq = []; order.forEach(k => { for (let j = 0; j < (sqn[k] || 0); j++) sq.push(k); });
+      const bsq = { N: 0, C: 0, A: 0 }; Object.entries(sqn).forEach(([k, v]) => { if (k !== 'OUT' && bsq[META[k].bloc] !== undefined) bsq[META[k].bloc] += v; });
+      const leadP = Object.entries(w).filter(([k]) => k !== 'OUT').sort((a, b) => b[1] - a[1])[0];
+      return `<button type="button" class="tile" style="--a:${r.id}" data-r="${r.id}" aria-pressed="${tileSel === r.id}">` +
+        `<div class="tile-h"><b>${esc(r.en)}</b><span class="n">${n} seat${n === 1 ? '' : 's'}' worth</span></div>` +
+        `<div class="sq">${sq.map(k => `<span style="${k === 'OUT' ? outStyle : swatch(k)}" title="${k === 'OUT' ? 'Below threshold' : esc(META[k].en)}"></span>`).join('')}</div>` +
+        `<small>${['N', 'C', 'A'].filter(b => bsq[b]).map(b => `${esc(BLOCS[b].short)} ${bsq[b]}`).join(' · ') || 'No votes counted yet'}${leadP ? `<br>Top party: ${esc(META[leadP[0]].en)} ${pct(leadP[1], g.valid, 0)}` : ''}</small></button>`;
+    }).join('');
+    box.onclick = e => { const b = e.target.closest('button[data-r]'); if (!b) return; tileSel = tileSel === b.dataset.r ? null : b.dataset.r; renderTiles(); if (tileSel && innerWidth < 900) document.getElementById('tile-detail').scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+    const D = document.getElementById('tile-detail');
+    if (!tileSel) { D.innerHTML = ''; return; }
+    const g = R[tileSel], r = g.r;
+    const ps = CODES.map((c, p) => ({ c, v: g.v[p] })).filter(o => o.v > 0 && o.c !== 'OTHER').sort((a, b) => b.v - a.v);
+    D.innerHTML = `<div class="box"><div><h3>${esc(r.en)}</h3>${r.sub ? `<p>${esc(r.sub)}.</p>` : ''}` +
+      `<p><b>${fmt(g.valid)}</b> valid votes counted, ${pct(g.valid, totalValid)} of the national total.${g.reg ? ` Turnout in counted boxes: ${pct(g.t, g.reg, 0)}.` : ''}${g.N ? ` Ballot boxes counted: ${fmt(Math.min(g.n, g.N))} of ${fmt(g.N)}.` : ''}</p>` +
+      `<p>These votes don't elect members for ${esc(r.en)}. They join the national pot, where they count exactly the same as a vote anywhere else.</p></div>` +
+      `<div class="vbars">${ps.slice(0, 8).map(o => `<div class="vbar ${seats[o.c] > 0 ? '' : 'out'}"><span class="nm">${esc(META[o.c].en)}</span><span class="tr"><span style="width:${100 * o.v / ps[0].v}%;${swatch(o.c)}"></span></span><span class="v">${pct(o.v, g.valid)}</span></div>`).join('')}</div></div>`;
+  }
   function renderGov() {
     const seats = lastSeats; if (!seats) return;
     const seated = TRACKED.filter(c => seats[c] > 0).sort((a, b) => seats[b] - seats[a]);
@@ -1363,6 +1718,7 @@ footer a { color: var(--ink); }
   update();
   sizeDots();
   placeCities();
+  showTab(location.hash.slice(1), false);
 
   let ticks = 0;
   async function refresh() {
@@ -1372,7 +1728,7 @@ footer a { color: var(--ink); }
         const c = await fetchJSON('config.json', true);
         if (JSON.stringify(c) !== CFG_TEXT) { location.reload(); return; }
       }
-      if (ticks % 5 === 0) { const T2 = await fetchJSON('data/talks.json', true).catch(() => null); if (T2 && JSON.stringify(T2) !== JSON.stringify(TALKS)) { TALKS = T2; renderTalks(); } }
+      if (ticks % 5 === 0) { const T2 = await fetchJSON('data/talks.json', true).catch(() => null); if (T2 && JSON.stringify(T2) !== JSON.stringify(TALKS)) { TALKS = T2; renderTalks(); renderOverview(); } }
       const L = await fetchJSON('data/live.json', true);
       const changed = !LIVE || L.digest !== LIVE.digest || L.test_env !== LIVE.test_env;
       LIVE = L;
