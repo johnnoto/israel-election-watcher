@@ -151,8 +151,20 @@ def main():
         nat['v'] = [p + q for p, q in zip(nat['v'], v)]
     nat['boxes'] = sum(nb.values())
     if page_only:
-        locs = [page_row]
-        nat = {'r': 0, 't': page_row[3], 'x': page_row[4], 'v': page_row[6], 'boxes': page_row[5]}
+        # Keep the latest town-by-town data already published (for example from the mirror) and add
+        # whatever the Committee's page counts beyond it as one row, so national totals match the page.
+        prev_path = os.path.join(a.out, 'live.json')
+        prev_live = json.load(open(prev_path, encoding='utf-8')) if os.path.exists(prev_path) else {}
+        base = []
+        if prev_live.get('codes') == codes and not prev_live.get('test_env'):
+            base = [row for row in prev_live.get('locs', []) if row[0] != 9998]
+        bt = sum(r[3] for r in base); bx = sum(r[4] for r in base); bb = sum(r[5] for r in base); br = sum(r[2] for r in base)
+        bv = [sum(r[6][k] for r in base) for k in range(len(codes))]
+        rv = [max(0, p - q) for p, q in zip(page_row[6], bv)]
+        rt, rx, rb = max(0, page_row[3] - bt), max(0, page_row[4] - bx), max(0, page_row[5] - bb)
+        rr = round(rt * br / bt) if bt else 0  # registered voters estimated at the counted towns' turnout
+        locs = base + ([[9998, 'ארצי', rr, rt, rx, rb, rv]] if rb or sum(rv) else [])
+        nat = {'r': br + rr, 't': bt + rt, 'x': bx + rx, 'v': [p + q for p, q in zip(bv, rv)], 'boxes': bb + rb}
         pc = list(pn['parties'])
     unknown = sorted(set(pc) - set(tracked))
     if not a.local or a.guard:
@@ -171,7 +183,8 @@ def main():
             'other_codes': unknown, 'page_only': page_only, **body}
     if changed or not os.path.exists(live_path):
         json.dump(live, open(live_path, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
-        json.dump({'codes': codes, 'digest': digest, 'b': boxes}, open(os.path.join(a.out, 'boxes.json'), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
+        if not page_only:  # a page upload has no ballot-box detail; keep the last box file
+            json.dump({'codes': codes, 'digest': digest, 'b': boxes}, open(os.path.join(a.out, 'boxes.json'), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
     valid = sum(nat['v'])
     print(f"{'CHANGED' if changed else 'UNCHANGED'} test_env={test_env} cec_time={cec_time} localities={len(locs)} boxes={nat['boxes']} valid={valid}")
 
