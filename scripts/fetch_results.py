@@ -91,6 +91,9 @@ def main():
             test_env = test_env or 'סביבת בדיקות' in html
             m = re.search(r'תוצאות נכון ל-\s*([0-9/]+\s+[0-9:]+)', html)
             cec_time = m.group(1) if m else None
+        stamp = os.path.join(a.local, 'cec_time.txt')
+        if not cec_time and os.path.exists(stamp):
+            cec_time = open(stamp, encoding='utf-8').read().strip() or None
     else:
         try:
             html = get(SITE).decode('utf-8', 'replace')

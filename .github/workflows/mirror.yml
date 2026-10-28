@@ -1,0 +1,38 @@
+name: Results feed
+
+# Election-night feed. The Elections Committee blocks GitHub's servers, so this
+# reads the Committee's official files from the unaltered copy republished by
+# israel.weinbren.me, converts them and redeploys the site whenever they change.
+# Each run lasts just under six hours; the hourly schedule queues the next one.
+# To stop it after the count is final, disable this workflow on the Actions tab.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: results-feed
+  cancel-in-progress: false
+
+jobs:
+  feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Follow the count
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "election-watcher-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          RUN_MINUTES=340 bash scripts/mirror_loop.sh
