@@ -355,8 +355,6 @@ button.link { border: 0; background: none; padding: 0; font: inherit; text-decor
 .walk-body { padding: 16px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 20px 28px; align-items: start; min-height: 260px; }
 .walk-text h3 { font-family: var(--display); font-size: 24px; margin: 0 0 8px; }
 .walk-text p { margin: 0 0 10px; font-size: 15px; line-height: 1.55; }
-.walk-text .us { border-left: 3px solid var(--bloc-n); background: var(--bg); padding: 8px 12px; font-size: 13px; color: var(--ink-2); border-radius: 0 6px 6px 0; }
-.walk-text .us b { color: var(--ink); }
 .walk-vis { display: grid; gap: 8px; min-width: 0; }
 .walk-vis .cap { font-size: 12px; color: var(--muted); }
 .vbars { display: grid; gap: 5px; }
@@ -1529,27 +1527,23 @@ footer a { color: var(--ink); }
     let text = '', vis = '';
     if (walkStep === 0) {
       text = `<h3>1. One National Vote</h3><p>Israelis don't vote for a local representative. There are <b>no districts</b>: the whole country is a single 120-seat race, and each voter picks one party's list of candidates.</p>` +
-        `<p>${live ? `So far <b>${fmt(validReal)}</b> valid votes have been counted, from ${pct(countedBoxes(), totalBoxes(), 0)} of ballot boxes.` : ''}</p>` +
-        `<p class="us"><b>For Americans:</b> imagine all 435 House seats filled by one national popular vote, split by party, with no states or districts.</p>`;
+        `<p>${live ? `So far <b>${fmt(validReal)}</b> valid votes have been counted, from ${pct(countedBoxes(), totalBoxes(), 0)} of ballot boxes.` : ''}</p>`;
       vis = live ? `${vbars(shares.slice(0, 10), shares[0].v, false)}<span class="cap">Share of valid votes, top 10 parties</span>` : noLive;
     } else if (walkStep === 1) {
       text = `<h3>2. The 3.25% Bar</h3><p>To win any seats, a party needs at least <b>3.25%</b> of valid votes${live ? `, about <b>${fmt(thrVotes)}</b> votes on the current count` : ''}. Below that, it gets nothing and its votes are set aside.</p>` +
-        (live ? `<p>${out.length ? `Right now ${out.length === 1 ? 'one list is' : `${out.length} lists are`} below the bar, led by ${esc(META[out[0].c].en)} at ${pct(out[0].v, validReal)}. About <b>${fmt(outVotes)}</b> votes (${pct(outVotes, validReal)}) currently elect no one.` : 'Every tracked list is above the bar right now.'}</p>` : '') +
-        `<p class="us"><b>For Americans:</b> as if any party under 3.25% of the national vote got zero House seats, however strong it was in one city.</p>`;
+        (live ? `<p>${out.length ? `Right now ${out.length === 1 ? 'one list is' : `${out.length} lists are`} below the bar, led by ${esc(META[out[0].c].en)} at ${pct(out[0].v, validReal)}. About <b>${fmt(outVotes)}</b> votes (${pct(outVotes, validReal)}) currently elect no one.` : 'Every tracked list is above the bar right now.'}</p>` : '');
       const near = shares.filter(o => o.v < thrVotes * 3).slice(0, 9);
       vis = live ? `${vbars(near, Math.max(thrVotes * 1.6, ...near.map(o => o.v)), true)}<span class="cap">Smaller parties near the line. Dashed red line: 3.25%.</span>` : noLive;
     } else if (walkStep === 2) {
       text = `<h3>3. Votes Become Seats</h3><p>The parties over the bar split all 120 seats in proportion to their votes${perSeat ? `, roughly <b>one seat per ${fmt(perSeat)} votes</b>` : ''}. Pairs of parties that signed surplus-vote deals pool their leftover votes for the last few seats.</p>` +
-        `<p>Each party then fills its seats from the top of its candidate list.</p>` +
-        `<p class="us"><b>For Americans:</b> like the Electoral College with one giant state, handed out proportionally instead of winner-take-all.</p>`;
+        `<p>Each party then fills its seats from the top of its candidate list.</p>`;
       const sq = []; seated.forEach(c => { for (let k = 0; k < seats[c]; k++) sq.push(c); });
       vis = seated.length ? `<div class="waffle">${sq.map(c => `<span style="${swatch(c)}" title="${esc(META[c].en)}"></span>`).join('')}</div>` +
         `<div class="wkey">${seated.map(c => `<span><i style="${swatch(c)}"></i>${esc(META[c].en)} ${seats[c]}</span>`).join('')}</div><span class="cap">120 seats, one square each</span>` : noLive;
     } else if (walkStep === 3) {
       const maj = ['N', 'C'].find(b => bs[b] >= 61);
       text = `<h3>4. Nobody Has 61</h3><p>A government needs the support of <b>61 of the 120</b> members. No single party has ever won that, so parties line up in blocs behind a candidate for prime minister.</p>` +
-        `<p>${maj ? `Right now the ${esc(BLOCS[maj].name)} has ${bs[maj]}, a majority.` : `Right now the ${esc(BLOCS.N.name)} has <b>${bs.N}</b>, the ${esc(BLOCS.C.name)} <b>${bs.C}</b>, and the Arab parties <b>${bs.A}</b>. Neither main bloc reaches 61 alone, so someone has to win over a party from outside its camp.`}</p>` +
-        `<p class="us"><b>For Americans:</b> like needing 218 votes to elect a House Speaker when no party holds 218, so the winner has to deal.</p>`;
+        `<p>${maj ? `Right now the ${esc(BLOCS[maj].name)} has ${bs[maj]}, a majority.` : `Right now the ${esc(BLOCS.N.name)} has <b>${bs.N}</b>, the ${esc(BLOCS.C.name)} <b>${bs.C}</b>, and the Arab parties <b>${bs.A}</b>. Neither main bloc reaches 61 alone, so someone has to win over a party from outside its camp.`}</p>`;
       vis = seated.length ? raceHtml(seats) + `<span class="cap">Seats by bloc. The black lines mark 61 from each side.</span>` : noLive;
     } else {
       const ph = (TALKS && TALKS.phase && TALKS.phase.now) || '';
@@ -1560,7 +1554,6 @@ footer a { color: var(--ink); }
         ['Confidence vote', 'The Knesset votes on the new government. If nobody gets there, Israel votes again.']];
       text = `<h3>5. The Bargaining</h3><p>After the count, the President picks whoever has the best chance of forming a government. That person then trades ministries and policy promises with other parties until 61 members agree.</p>` +
         (ph ? `<p>Now: <b>${esc(ph)}</b>.</p>` : '') +
-        `<p class="us"><b>For Americans:</b> closer to how a Speaker is chosen than how a president is elected. Whoever can assemble the votes governs, even if they didn't lead the largest party.</p>` +
         `<p><button type="button" class="link" data-go="talks">See the coalition talks</button> · <button type="button" class="link" data-go="coalition">Try building a coalition</button></p>`;
       vis = `<ol class="steps-tl">${tl.map((x, i) => `<li class="${i < stage ? 'done' : i === stage ? 'now' : ''}"><span><b>${x[0]}</b><br>${x[1]}</span></li>`).join('')}</ol>`;
     }
