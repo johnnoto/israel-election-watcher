@@ -8,15 +8,23 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: repo
       - name: Download
         run: |
-          mkdir -p out && cd out
+          mkdir -p out raw
+          B=https://israel.weinbren.me/live
           UA='Mozilla/5.0 (compatible; GlobeInBriefElectionWatcher/1.0; +https://johnnoto.github.io/israel-election-watcher/)'
-          date -u > log.txt
-          curl -sS -m 30 -A "$UA" "https://israel.weinbren.me/live/status.json?_=$(date +%s)" >> log.txt; echo >> log.txt
-          curl -sS -m 30 -A "$UA" -o reuters.html -w 'reuters %{http_code} %{size_download}\n' https://www.reuters.com/graphics/ISRAEL-ELECTION/RESULTS/akvelybkapr/ >> log.txt
-          curl -sS -m 30 -A "$UA" -o r_robots.txt -w 'reuters robots %{http_code}\n' https://www.reuters.com/robots.txt >> log.txt
-          grep -oE '"[^"]*\.json[^"]*"' reuters.html | sort -u | head -30 >> log.txt
+          curl -sS -m 30 -A "$UA" -o raw/status.json "$B/status.json?_=$(date +%s)"
+          vc=$(python3 -c "import json;print(json.load(open('raw/status.json'))['files']['expc.csv'])"); vb=$(python3 -c "import json;print(json.load(open('raw/status.json'))['files']['expb.csv'])")
+          curl -sS -m 120 -A "$UA" -o raw/expc.csv -w 'expc %{http_code} %{size_download}\n' "$B/expc.csv?v=$vc" > out/log.txt
+          curl -sS -m 180 -A "$UA" -o raw/expb.csv -w 'expb %{http_code} %{size_download}\n' "$B/expb.csv?v=$vb" >> out/log.txt
+          wc -l raw/*.csv >> out/log.txt
+          head -c 800 raw/expc.csv > out/expc_head.txt; head -c 800 raw/expb.csv > out/expb_head.txt
+          grep -c 'סמל ישוב' raw/expc.csv raw/expb.csv >> out/log.txt || true
+          cd repo && python3 scripts/fetch_results.py --local ../raw --guard --out /tmp >> ../out/log.txt 2>&1 || echo "converter exit $?" >> ../out/log.txt
       - name: Save
         run: |
           cd out
