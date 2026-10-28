@@ -8,23 +8,34 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-          path: repo
       - name: Download
         run: |
-          mkdir -p out raw
+          mkdir -p out && cd out
           B=https://israel.weinbren.me/live
           UA='Mozilla/5.0 (compatible; GlobeInBriefElectionWatcher/1.0; +https://johnnoto.github.io/israel-election-watcher/)'
-          curl -sS -m 30 -A "$UA" -o raw/status.json "$B/status.json?_=$(date +%s)"
-          vc=$(python3 -c "import json;print(json.load(open('raw/status.json'))['files']['expc.csv'])"); vb=$(python3 -c "import json;print(json.load(open('raw/status.json'))['files']['expb.csv'])")
-          curl -sS -m 120 -A "$UA" -o raw/expc.csv -w 'expc %{http_code} %{size_download}\n' "$B/expc.csv?v=$vc" > out/log.txt
-          curl -sS -m 180 -A "$UA" -o raw/expb.csv -w 'expb %{http_code} %{size_download}\n' "$B/expb.csv?v=$vb" >> out/log.txt
-          wc -l raw/*.csv >> out/log.txt
-          head -c 800 raw/expc.csv > out/expc_head.txt; head -c 800 raw/expb.csv > out/expb_head.txt
-          grep -c 'סמל ישוב' raw/expc.csv raw/expb.csv >> out/log.txt || true
-          cd repo && python3 scripts/fetch_results.py --local ../raw --guard --out /tmp >> ../out/log.txt 2>&1 || echo "converter exit $?" >> ../out/log.txt
+          curl -sS -m 30 -A "$UA" -o status.json "$B/status.json?_=$(date +%s)"
+          for f in night.json municipal_data.json; do
+            v=$(python3 -c "import json;print(json.load(open('status.json'))['files']['$f'])")
+            curl -sS -m 120 -A "$UA" -o $f -w "$f %{http_code} %{size_download}\n" "$B/$f?v=$v" >> log.txt
+          done
+          python3 - >> log.txt <<'PY'
+          import json
+          n = json.load(open('night.json'))['night']
+          print('night entries', len(n))
+          for e in n[-3:]:
+              print({k: e[k] for k in e if k not in ('parties', 'votes')}, sum(e['votes']))
+          print('last parties', n[-1]['parties']); print('last votes', n[-1]['votes'])
+          m = json.load(open('municipal_data.json'))
+          def show(x, p='', d=0):
+              if d > 3: return
+              if isinstance(x, dict):
+                  for k, v in list(x.items())[:12]:
+                      print(p + '.' + str(k), type(v).__name__, str(v)[:160] if not isinstance(v, (dict, list)) else len(v)); show(v, p + '.' + str(k), d + 1)
+              elif isinstance(x, list) and x:
+                  print(p + '[0]', str(x[0])[:300]); show(x[0], p + '[0]', d + 1)
+          show(m)
+          PY
+          rm -f municipal_data.json
       - name: Save
         run: |
           cd out
