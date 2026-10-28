@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-28T18:25:04Z",
-  "summary": "Counting continues, with Netanyahu's bloc ahead but short of 61 and Eisenkot's bloc further behind, and roughly 450,000 soldiers' and other double-envelope ballots still to be tallied. Likud now claims Arab parties 'stole' the election through fraud and has asked police and the Shin Bet to investigate, which Ra'am rejects. Golan and the Joint List want the change bloc to govern with Arab parties' backing, but Liberman has ruled out both Arab parties and a minority government, while Eisenkot refuses to serve under Netanyahu even in a rotation. President Herzog has urged all sides to avoid another election and will consult the factions once official results are in.",
+  "updated": "2026-10-28T21:24:15Z",
+  "summary": "Counting of soldiers' and other double-envelope ballots continues, with Netanyahu's bloc ahead but short of a majority and Eisenkot's bloc further behind. Likud alleges Arab parties won seats through fraud, which Ra'am rejects, while Golan plans to meet Eisenkot, Lapid and a third leader on Oct 29 to begin coalition talks. Golan and the Joint List want the change bloc to govern with Arab parties' backing, but Liberman has ruled out both Arab parties and a minority government, and Eisenkot refuses to serve under Netanyahu even in a rotation. President Herzog has urged all sides to avoid another election and will consult the factions once official results are in.",
   "phase": {
     "now": "Votes still being counted",
     "next": "The Central Elections Committee expects the full count, including soldiers' ballots, on the afternoon of Oct 29 and official results on Nov 4; Herzog then consults every faction before choosing who gets the first try at forming a government.",
@@ -43,7 +43,7 @@
         "עם"
       ],
       "status": "floated",
-      "note": "Proposed by Yair Golan on Oct 28, with Abbas again offering to join. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it.",
+      "note": "Proposed by Yair Golan, who is meeting other opposition leaders from Oct 29, with Abbas again offering to join. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it.",
       "blockers": [
         {
           "party": "ל",
@@ -212,12 +212,12 @@
     },
     "אמת": {
       "backs": "Eisenkot",
-      "stance": "Golan urges a change government in partnership with the Arab parties: '65 is more than 55.'",
+      "stance": "Golan urges a change government in partnership with the Arab parties and is set to meet Eisenkot and Lapid on Oct 29 for coalition talks.",
       "red_lines": [
         "No Netanyahu government"
       ],
       "date": "2026-10-28",
-      "url": "https://www.timesofisrael.com/liveblog_entry/golan-calls-for-bloc-to-unite-with-arab-parties-we-have-a-majority-of-65-seats-we-must-stop-being-afraid/",
+      "url": "https://www.timesofisrael.com/liveblog_entry/golan-to-meet-with-three-unspecified-party-leaders-tomorrow-for-coalition-talks",
       "source": "Times of Israel"
     },
     "ל": {
@@ -268,10 +268,14 @@
     "ט": {
       "backs": "Netanyahu (expected)",
       "stance": "Smotrich dismissed the opposition's election-night celebrations and vowed Jewish settlement in Gaza; no coalition terms stated yet.",
-      "red_lines": [],
+      "red_lines": [
+        "No government that boycotts Ben-Gvir"
+      ],
       "date": "2026-10-27",
       "url": "https://www.timesofisrael.com/liveblog_entry/smotrich-dismisses-opposition-celebrations-vows-jewish-settlements-will-rise-in-gaza/",
-      "source": "Times of Israel"
+      "source": "Times of Israel",
+      "lines_url": "https://www.jpost.com/israel-election-2026/article-912494",
+      "lines_source": "Red lines: Jerusalem Post (Oct 22)"
     },
     "עם": {
       "backs": "Undecided",
@@ -293,6 +297,14 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-10-28T18:06:00Z",
+      "who": "Yair Golan",
+      "party": "אמת",
+      "text": "Tells Channel 12 he will meet Eisenkot, Lapid and an unnamed third leader on Oct 29 to discuss forming a government.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/golan-to-meet-with-three-unspecified-party-leaders-tomorrow-for-coalition-talks",
+      "source": "Times of Israel"
+    },
     {
       "at": "2026-10-28T15:52:00Z",
       "who": "Likud",
