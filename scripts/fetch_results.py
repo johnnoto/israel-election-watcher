@@ -130,7 +130,7 @@ def main():
         page_row = [9998, 'ארצי', 0, pn['votes'] or 0, pn['invalid'] or 0, pn['boxes'], v]
     nb = {}
     boxes = {}
-    muni = None
+    muni, est_boxes = None, {}
     if a.local and os.path.exists(os.path.join(a.local, 'municipal_data.json')):
         # The mirror's town-by-town file, built from the Committee's locality results, often runs ahead
         # of its expc.csv copy. Same columns as expc.csv, keyed by locality code.
@@ -141,12 +141,22 @@ def main():
     if muni and muni.get('features'):
         crow = [{**f, 'סמל ישוב': code} for code, f in muni['features'].items()]
         pc = [p for p in muni.get('parties', []) if p and p not in META_COLS]
+        # The town file has no per-town box count, and expb.csv may lag it. Estimate each town's counted
+        # boxes from the share of its registered voters already counted, never below expb.csv's count.
+        base = json.load(open(os.path.join(ROOT, 'data', 'localities.json'), encoding='utf-8'))['locs']
+        tot = {l['c']: (l.get('nb') or 0, l.get('r') or 0) for l in base}
+        for d in crow:
+            c = num(d['סמל ישוב']); N, R = tot.get(c, (0, 0))
+            if N and R and num(d.get('מצביעים')):
+                est_boxes[c] = min(N, max(1, round(N * num(d.get('בזב')) / R)))
     for d in brow:
         c = num(d['סמל ישוב'])
         if num(d.get('מצביעים')) == 0 and num(d.get('כשרים')) == 0:
             continue  # box listed but not counted yet
         nb[c] = nb.get(c, 0) + 1
         boxes.setdefault(str(c), []).append([d.get('קלפי', '').strip(), num(d.get('בזב')), num(d.get('מצביעים')), num(d.get('פסולים')), vec(d, pb)])
+    for c, n in est_boxes.items():
+        nb[c] = max(nb.get(c, 0), n)
     locs, nat = [], {'r': 0, 't': 0, 'x': 0, 'v': [0] * len(codes), 'boxes': 0}
     for d in crow:
         c = num(d['סמל ישוב'])

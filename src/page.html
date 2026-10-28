@@ -642,7 +642,8 @@ footer a { color: var(--ink); }
   }
   ingest();
   const totalBoxes = () => Math.max(TOTAL_BOXES_BASE, d3.sum(agg, a => a.n));
-  const countedBoxes = () => d3.sum(agg, a => a.n);
+  // The national count can run ahead of the per-town box counts, so take whichever is higher.
+  const countedBoxes = () => Math.min(totalBoxes(), Math.max(d3.sum(agg, a => a.n), (usableLive && LIVE.national && LIVE.national.boxes) || 0));
 
   function dhondt(votes, seats) {
     const keys = Object.keys(votes), alloc = {}; keys.forEach(k => { alloc[k] = 0; });
