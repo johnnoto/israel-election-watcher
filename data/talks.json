@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-28T12:35:18Z",
-  "summary": "Counting continues, with Netanyahu's bloc ahead but short of 61 and Eisenkot's bloc further behind. Golan wants the change bloc to govern with the Arab parties and Ra'am's Abbas is offering to join, but Liberman has ruled out both Arab parties and a minority government. Eisenkot refuses to serve under Netanyahu, even in a rotation, and says another election would be a mistake. Analysts quoted by JTA and Ynet see a repeat election as a likely outcome unless a leader breaks a campaign pledge.",
+  "updated": "2026-10-28T15:28:33Z",
+  "summary": "Counting continues, with Netanyahu's bloc ahead but short of 61 and Eisenkot's bloc further behind. President Herzog urged all parties to do everything they can to avoid another election and to enter his consultations with an open mind. Golan and the Joint List want the change bloc to govern with Arab parties' backing, but Liberman has ruled out both Arab parties and a minority government, while Eisenkot refuses to serve under Netanyahu even in a rotation. Analysts quoted by JTA and Ynet see a repeat election as a likely outcome unless a leader breaks a campaign pledge.",
   "phase": {
     "now": "Votes still being counted",
-    "next": "Official results by Nov 4. President Herzog then has seven days to choose who gets the first try at forming a government, who then has 28 days plus a possible 14-day extension.",
-    "url": "https://www.timesofisrael.com/2026-israeli-elections-what-you-need-to-know/",
+    "next": "Herzog expects the official results next week, by Nov 4, and will then consult every Knesset faction before choosing who gets the first try at forming a government, who then has 28 days plus a possible 14-day extension.",
+    "url": "https://www.timesofisrael.com/liveblog_entry/herzog-urges-parties-to-avoid-another-election-calls-for-open-mind-in-coalition-talks/",
     "source": "Times of Israel"
   },
   "scenarios": [
@@ -283,16 +283,24 @@
     },
     "ודם": {
       "backs": "Against Netanyahu",
-      "stance": "Leaders say they will back efforts to stop Netanyahu and support an opposition-led coalition.",
+      "stance": "Chairman Jabareen says the Joint List is ready to help clear the way to remove Netanyahu's government.",
       "red_lines": [
         "No Netanyahu government"
       ],
-      "date": "2026-10-27",
-      "url": "https://www.israelhayom.com/2026/10/27/arab-parties-election-gains-complicate-eisenkots-coalition-path/",
-      "source": "Israel Hayom"
+      "date": "2026-10-28",
+      "url": "https://www.ynetnews.com/article/hjnatbkaml",
+      "source": "Ynet"
     }
   },
   "timeline": [
+    {
+      "at": "2026-10-28T13:08:00Z",
+      "who": "President Isaac Herzog",
+      "party": "",
+      "text": "In his first remarks since the vote, urges parties to avoid another election and to come to consultations with an open mind.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/herzog-urges-parties-to-avoid-another-election-calls-for-open-mind-in-coalition-talks/",
+      "source": "Times of Israel"
+    },
     {
       "at": "2026-10-28T11:37:00Z",
       "who": "Avigdor Liberman",
@@ -300,6 +308,14 @@
       "text": "JTA reports Liberman has rejected the option of a minority government backed by Arab parties from outside.",
       "url": "https://www.jta.org/2026/10/28/israel/israels-election-deadlock-3-scenarios-for-what-comes-next",
       "source": "JTA"
+    },
+    {
+      "at": "2026-10-28T07:53:00Z",
+      "who": "Yair Golan",
+      "party": "אמת",
+      "text": "Calls on the change bloc to form a government in partnership with the Arab parties.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/golan-calls-for-bloc-to-unite-with-arab-parties-we-have-a-majority-of-65-seats-we-must-stop-being-afraid/",
+      "source": "Times of Israel"
     },
     {
       "at": "2026-10-28T06:39:00Z",
@@ -310,20 +326,20 @@
       "source": "Jerusalem Post"
     },
     {
+      "at": "2026-10-28T05:37:00Z",
+      "who": "Youssef Jabareen",
+      "party": "ודם",
+      "text": "Says the Joint List is prepared to help remove the Netanyahu, Ben-Gvir and Smotrich government.",
+      "url": "https://www.ynetnews.com/article/hjnatbkaml",
+      "source": "Ynet"
+    },
+    {
       "at": "2026-10-28T02:39:00Z",
       "who": "Benjamin Netanyahu",
       "party": "מחל",
       "text": "Calls on the Zionist majority to unite, without saying how.",
       "url": "https://www.ynetnews.com/article/s1600hrr2ml",
       "source": "Ynet"
-    },
-    {
-      "at": "2026-10-28T07:53:00Z",
-      "who": "Yair Golan",
-      "party": "אמת",
-      "text": "Calls on the change bloc to form a government in partnership with the Arab parties.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/golan-calls-for-bloc-to-unite-with-arab-parties-we-have-a-majority-of-65-seats-we-must-stop-being-afraid/",
-      "source": "Times of Israel"
     },
     {
       "at": "2026-10-28",
