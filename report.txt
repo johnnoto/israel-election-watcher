@@ -1,0 +1,18 @@
+run at Wed Oct 28 00:16:31 UTC 2026
+runner ip: 74.249.190.50
+== https://votes26.bechirot.gov.il/
+http 404, 1376 bytes, 0.284334s
+== https://media26.bechirot.gov.il/files/expc.csv
+http 202, 0 bytes, 0.159370s
+== fetch_results.py
+Traceback (most recent call last):
+  File "/home/runner/work/israel-election-watcher/israel-election-watcher/scripts/fetch_results.py", line 177, in <module>
+    main()
+  File "/home/runner/work/israel-election-watcher/israel-election-watcher/scripts/fetch_results.py", line 131, in main
+    _, pc, crow = parse(expc)
+                  ^^^^^^^^^^^
+  File "/home/runner/work/israel-election-watcher/israel-election-watcher/scripts/fetch_results.py", line 38, in parse
+    head = [h.strip() for h in rows[0]]
+                               ~~~~^^^
+IndexError: list index out of range
+fetch_results.py exited with an error
