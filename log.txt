@@ -1,0 +1,8 @@
+top keys ['version', 'generated', 'source', 'layer', 'join', 'parties', 'totals', 'features']
+totals {'kalpi': 9224, 'kalpi_counted': 9224, 'votes_counted': 4008086}
+extra keys ['שם ישוב', 'בזב', 'מצביעים', 'פסולים', 'כשרים', 'winner_party']
+בזב sum 5613832 sample [274, 167, 110, 139, 139]
+מצביעים sum 4024654 sample [202, 133, 97, 30, 103]
+פסולים sum 17959 sample [0, 0, 2, 0, 1]
+כשרים sum 4006695 sample [202, 133, 95, 30, 102]
+winner_party sum 0 sample ['דרך', 'דרך', 'ודם', 'דרך', 'דרך']
