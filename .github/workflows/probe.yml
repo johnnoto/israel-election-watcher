@@ -1,0 +1,29 @@
+name: Probe Poliwave
+on:
+  push:
+    branches: [probe]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download
+        run: |
+          mkdir -p out && cd out
+          UA='Mozilla/5.0 (compatible; GlobeInBriefElectionWatcher/1.0)'
+          curl -sS -m 40 -A "$UA" -o page.html -w 'page %{http_code} %{size_download}\n' https://www.poliwave.com/il/live/knesset-2026 | tee log.txt
+          grep -o 'api/export/[^"'"'"' <>]*\.json' page.html | sort -u | tee -a log.txt
+          u=$(grep -o 'api/export/[^"'"'"' <>]*\.json' page.html | head -1)
+          [ -n "$u" ] && curl -sS -m 60 -A "$UA" -o full.json -w 'json %{http_code} %{size_download}\n' "https://www.poliwave.com/$u" | tee -a log.txt
+          grep -o '/[a-zA-Z0-9_/.-]*\.json[^"]*' page.html | sort -u | head -40 >> log.txt
+          curl -sS -m 20 -A "$UA" https://www.poliwave.com/robots.txt > robots.txt || true
+          curl -sS -m 20 -A "$UA" https://www.poliwave.com/terms > terms.html || true
+          ls -la >> log.txt
+      - name: Save
+        run: |
+          cd out
+          git init -q && git checkout -q -b probe-out
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add . && git commit -qm probe
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" probe-out
