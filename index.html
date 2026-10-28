@@ -309,6 +309,49 @@ tr.pending td { color: var(--muted); }
   .gov-col + .gov-col { border-left: 0; border-top: 1px solid var(--rule); }
 }
 
+/* Coalition talks */
+.talks { margin-top: 28px; }
+.talks-top { padding: 16px; display: grid; gap: 8px; border-bottom: 1px solid var(--rule); }
+.talks-top .src { margin: 0; }
+.talks-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); }
+.talks-col { padding: 16px; min-width: 0; display: grid; gap: 10px; align-content: start; }
+.talks-col + .talks-col { border-left: 1px solid var(--rule); }
+.talks h3 { font-family: var(--display); font-weight: 700; font-size: 20px; margin: 0; }
+.talks h3 + .hint { margin-top: -2px; }
+.scen { display: grid; gap: 10px; }
+.scen-card { border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; background: var(--bg); display: grid; gap: 6px; }
+.scen-h { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 10px; }
+.scen-h b { font-size: 15px; }
+.scen-h .tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.scen-n { font-family: var(--mono); font-size: 12px; color: var(--ink-2); }
+.scen-card p { margin: 0; font-size: 13px; color: var(--ink-2); line-height: 1.45; }
+.scen-card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: 12px; color: var(--ink-2); line-height: 1.45; }
+.scen-card ul b { color: var(--ink); font-weight: 600; }
+.talks a.s { color: var(--muted); white-space: nowrap; }
+.stands { display: grid; gap: 0; }
+.stand { display: grid; grid-template-columns: 12px minmax(0, 1fr); gap: 4px 10px; padding: 10px 0; border-top: 1px solid var(--rule); font-size: 13px; line-height: 1.45; }
+.stand:first-child { border-top: 0; padding-top: 0; }
+.stand .sw { width: 10px; height: 10px; border-radius: 2px; margin-top: 4px; }
+.stand-h { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 10px; align-items: baseline; }
+.stand-h small { color: var(--muted); font-size: 12px; }
+.stand p { margin: 2px 0 0; color: var(--ink-2); }
+.stand .lines { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 5px; }
+.stand .lines .tag { text-transform: none; letter-spacing: 0; font-weight: 500; white-space: normal; }
+.talks-feed { padding: 16px; border-top: 1px solid var(--rule); display: grid; gap: 10px; }
+.feed { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.feed li { display: grid; grid-template-columns: 112px 12px minmax(0, 1fr); gap: 10px; align-items: baseline; font-size: 13px; line-height: 1.45; }
+.feed .t { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.feed .sw { width: 10px; height: 10px; border-radius: 2px; }
+.feed .btn { justify-self: start; }
+@media (max-width: 900px) {
+  .talks-grid { grid-template-columns: minmax(0, 1fr); }
+  .talks-col + .talks-col { border-left: 0; border-top: 1px solid var(--rule); }
+}
+@media (max-width: 620px) {
+  .feed li { grid-template-columns: 12px minmax(0, 1fr); }
+  .feed .t { grid-column: 2; order: -1; }
+  .feed .sw { grid-row: 1 / span 2; margin-top: 4px; }
+}
 /* Kingmaker watch */
 .kv { display: grid; gap: 4px; border: 1px solid var(--rule-strong); border-radius: 8px; padding: 12px 14px; background: var(--bg); }
 .kv .tag { justify-self: start; }
@@ -521,6 +564,31 @@ footer a { color: var(--ink); }
     </div>
   </div>
 
+  <section class="panel talks" id="talks" aria-labelledby="talks-h" hidden>
+    <div class="panel-head"><h2 id="talks-h">Coalition Talks</h2><span class="note" id="talks-note"></span></div>
+    <div class="talks-top">
+      <div class="kv"><span class="tag" id="talks-phase"></span><b>State Of Play</b><span id="talks-summary"></span></div>
+      <p class="src" id="talks-next"></p>
+    </div>
+    <div class="talks-grid">
+      <div class="talks-col">
+        <h3>Paths On The Table</h3>
+        <p class="hint">Seats follow the live count. Each status reflects what the leaders involved have said in public.</p>
+        <div class="scen" id="talks-scen"></div>
+      </div>
+      <div class="talks-col">
+        <h3>Where Each Party Stands</h3>
+        <p class="hint">Latest stance as reported in the Israeli press, with the red lines that decide coalitions.</p>
+        <div class="stands" id="talks-parties"></div>
+      </div>
+    </div>
+    <div class="talks-feed">
+      <h3>Latest Statements</h3>
+      <ol class="feed" id="talks-feed"></ol>
+      <button type="button" class="btn" id="talks-more" hidden>Show all statements</button>
+    </div>
+  </section>
+
   <section class="panel formation" aria-labelledby="gov-h">
     <div class="panel-head"><h2 id="gov-h">From Ballots To A Government</h2><span class="note" id="gov-note">Uses the seats shown above</span></div>
     <ol class="timeline" id="timeline"></ol>
@@ -597,6 +665,7 @@ footer a { color: var(--ink); }
     return;
   }
   LIVE = await fetchJSON('data/live.json', true).catch(() => null);
+  let TALKS = await fetchJSON('data/talks.json', true).catch(() => null);
   const CFG_TEXT = JSON.stringify(CFG);
   let BIBLE = {};
   fetchJSON('data/bible.json').then(b => { BIBLE = (b && b.b) || {}; if (typeof renderLocality === 'function') renderLocality(); }).catch(() => {});
@@ -1022,6 +1091,7 @@ footer a { color: var(--ink); }
       }).join('');
     }
     renderAgreements(natReal, validReal);
+    talkSeats = seatsReal; renderTalks();
     renderGov();
   }
 
@@ -1156,6 +1226,59 @@ footer a { color: var(--ink); }
     }).join('') + '</tbody>' : '';
   }
   const swatch = c => `background:var(${BLOCS[META[c].bloc].v});opacity:${tone[c]}`;
+
+  // ---- Coalition talks (data/talks.json, updated from press reports) ----
+  let talkSeats = null, talkFeedAll = false;
+  const STATUS = { floated: ['Floated', ''], talks: ['In talks', 'on'], agreed: ['Agreed', 'on'], blocked: ['Blocked', 'crit'], short: ['Short of 61', 'void'], open: ['Open', 'on'] };
+  const srcLink = (url, src) => url ? ` <a class="s" href="${esc(url)}" target="_blank" rel="noopener">${esc(src || 'Source')}</a>` : '';
+  const whenText = at => !at ? '' : at.length <= 10 ? ilDay(at + 'T12:00:00Z') : `${ilDay(at)}, ${ilTime(at)}`;
+  function renderTalks() {
+    const box = document.getElementById('talks');
+    if (!TALKS || !TALKS.scenarios) { box.hidden = true; return; }
+    box.hidden = false;
+    const T = TALKS, seats = talkSeats || {};
+    const haveSeats = TRACKED.some(c => seats[c] > 0);
+    document.getElementById('talks-note').textContent = T.updated ? `Updated ${ilDay(T.updated)}, ${ilTime(T.updated)} Israel time` : '';
+    document.getElementById('talks-phase').textContent = (T.phase && T.phase.now) || 'Coalition talks';
+    document.getElementById('talks-summary').textContent = T.summary || '';
+    document.getElementById('talks-next').innerHTML = T.phase && T.phase.next ? `Next: ${esc(T.phase.next)}${srcLink(T.phase.url, T.phase.source)}` : '';
+
+    const scen = T.scenarios.map(S => {
+      const ps = S.parties.filter(c => META[c]);
+      const tot = d3.sum(ps, c => seats[c] || 0);
+      return { S, ps: ps.slice().sort((a, b) => (seats[b] || 0) - (seats[a] || 0)), tot };
+    });
+    const rank = { agreed: 0, talks: 1, open: 2, floated: 3, short: 4, blocked: 5 };
+    scen.sort((a, b) => (rank[a.S.status] ?? 3) - (rank[b.S.status] ?? 3) || b.tot - a.tot);
+    document.getElementById('talks-scen').innerHTML = scen.map(({ S, ps, tot }) => {
+      const st = STATUS[S.status] || [S.status, ''];
+      const math = !haveSeats ? '' : tot >= 61 ? `<span class="tag on">${tot} seats</span>` : `<span class="tag void">${tot} · ${61 - tot} short</span>`;
+      const showStatus = !(S.status === 'short' && haveSeats && tot < 61);
+      return `<div class="scen-card"><div class="scen-h"><b>${esc(S.name)}</b><span class="tags">${showStatus ? `<span class="tag ${st[1]}">${esc(st[0])}</span>` : ''}${math}</span></div>` +
+        `<div class="stack thin">${ps.map(c => `<span style="flex:0 0 calc(${(seats[c] || 0)} / 120 * 100% - 2px);${swatch(c)}" title="${esc(META[c].en)} ${seats[c] || 0}"></span>`).join('')}<i class="line"></i></div>` +
+        `<div class="scen-n">${ps.map(c => `${esc(META[c].en)} ${haveSeats ? (seats[c] || 0) : ''}`.trim()).join(' · ')}${S.pm ? ` · PM: ${esc(S.pm)}` : ''}</div>` +
+        (S.note ? `<p>${esc(S.note)}${srcLink(S.url, S.source)}</p>` : '') +
+        (S.blockers && S.blockers.length ? `<ul>${S.blockers.map(B => `<li><b>${esc(META[B.party] ? META[B.party].en : B.party)}:</b> ${esc(B.text)}${srcLink(B.url, B.source)}</li>`).join('')}</ul>` : '') +
+        `</div>`;
+    }).join('');
+
+    const P = T.parties || {};
+    const order = Object.keys(P).filter(c => META[c]).sort((a, b) => (seats[b] || 0) - (seats[a] || 0) || META[a].en.localeCompare(META[b].en));
+    document.getElementById('talks-parties').innerHTML = order.map(c => {
+      const x = P[c], s = seats[c] || 0;
+      return `<div class="stand"><span class="sw" style="${swatch(c)}"></span><div><div class="stand-h"><b>${esc(META[c].en)}${haveSeats ? ` · ${s}` : ''}</b><small>Backs: ${esc(x.backs || '–')}</small></div>` +
+        `<p>${esc(x.stance || '')}${x.date ? ` <span class="s">(${esc(whenText(x.date))})</span>` : ''}${srcLink(x.url, x.source)}</p>` +
+        (x.red_lines && x.red_lines.length ? `<div class="lines">${x.red_lines.map(r => `<span class="tag">${esc(r)}</span>`).join('')}${srcLink(x.lines_url, x.lines_source)}</div>` : '') + `</div></div>`;
+    }).join('');
+
+    const feed = (T.timeline || []).slice().sort((a, b) => String(b.at).localeCompare(String(a.at)));
+    const shown = talkFeedAll ? feed : feed.slice(0, 6);
+    document.getElementById('talks-feed').innerHTML = shown.map(f => `<li><span class="t">${esc(whenText(f.at))}</span><span class="sw" style="${META[f.party] ? swatch(f.party) : 'background:var(--rule-strong)'}"></span><span><b>${esc(f.who)}</b> ${esc(f.text)}${srcLink(f.url, f.source)}</span></li>`).join('');
+    const more = document.getElementById('talks-more');
+    more.hidden = feed.length <= 6;
+    more.textContent = talkFeedAll ? 'Show fewer' : `Show all ${feed.length} statements`;
+  }
+  document.getElementById('talks-more').addEventListener('click', () => { talkFeedAll = !talkFeedAll; renderTalks(); });
   function renderGov() {
     const seats = lastSeats; if (!seats) return;
     const seated = TRACKED.filter(c => seats[c] > 0).sort((a, b) => seats[b] - seats[a]);
@@ -1270,6 +1393,7 @@ footer a { color: var(--ink); }
         const c = await fetchJSON('config.json', true);
         if (JSON.stringify(c) !== CFG_TEXT) { location.reload(); return; }
       }
+      if (ticks % 5 === 0) { const T2 = await fetchJSON('data/talks.json', true).catch(() => null); if (T2 && JSON.stringify(T2) !== JSON.stringify(TALKS)) { TALKS = T2; renderTalks(); } }
       const L = await fetchJSON('data/live.json', true);
       const changed = !LIVE || L.digest !== LIVE.digest || L.test_env !== LIVE.test_env;
       LIVE = L;

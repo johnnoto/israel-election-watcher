@@ -1,0 +1,358 @@
+{
+  "updated": "2026-10-28T11:30:00Z",
+  "summary": "Netanyahu's bloc leads the count but is short of 61, and so is Eisenkot's. Democrats leader Yair Golan wants the change bloc to govern with the Arab parties, but that majority only exists with Yisrael Beiteinu, and Liberman ruled out both Arab parties and minority governments during the campaign. Eisenkot has promised a 'Zionist government' and has not endorsed Golan's idea. Every path to 61 right now requires at least one leader to break a campaign pledge.",
+  "phase": {
+    "now": "Votes still being counted",
+    "next": "Official results by Nov 4. President Herzog then has seven days to choose who gets the first try at forming a government, who then has 28 days plus a possible 14-day extension.",
+    "url": "https://www.timesofisrael.com/2026-israeli-elections-what-you-need-to-know/",
+    "source": "Times of Israel"
+  },
+  "scenarios": [
+    {
+      "id": "right",
+      "name": "Netanyahu's Right-Religious Bloc",
+      "pm": "Netanyahu",
+      "parties": [
+        "מחל",
+        "שס",
+        "ג",
+        "ב",
+        "ט"
+      ],
+      "status": "short",
+      "note": "His existing partners. Without a majority, Netanyahu needs defectors or a new partner from the other side.",
+      "blockers": [
+        {
+          "party": "ל",
+          "text": "Liberman urged Likud MKs to revolt against Netanyahu rather than join him.",
+          "url": "https://www.timesofisrael.com/liveblog_entry/liberman-suggests-soldiers-votes-could-boost-yisrael-beytenu-to-14-or-15-seats-urges-likud-members-to-defect/",
+          "source": "Times of Israel"
+        }
+      ]
+    },
+    {
+      "id": "change-arab",
+      "name": "Change Bloc With Arab Parties",
+      "pm": "Eisenkot",
+      "parties": [
+        "דרך",
+        "רק",
+        "אמת",
+        "ל",
+        "ודם",
+        "עם"
+      ],
+      "status": "floated",
+      "note": "Proposed by Yair Golan on Oct 28. Without Yisrael Beiteinu the same group falls short, so Liberman decides whether this exists.",
+      "blockers": [
+        {
+          "party": "ל",
+          "text": "Liberman ruled out Ra'am, the Joint List and any minority government.",
+          "url": "https://www.jpost.com/israel-election-2026/article-911855",
+          "source": "Jerusalem Post"
+        },
+        {
+          "party": "דרך",
+          "text": "Eisenkot pledged a 'Zionist government' and has not backed the idea.",
+          "url": "https://www.timesofisrael.com/eisenkot-i-will-do-my-utmost-to-form-a-zionist-government-with-national-service-for-all-netanyahu-should-step-down/",
+          "source": "Times of Israel"
+        }
+      ]
+    },
+    {
+      "id": "change-raam",
+      "name": "Change Bloc With Ra'am Only",
+      "pm": "Eisenkot",
+      "parties": [
+        "דרך",
+        "רק",
+        "אמת",
+        "ל",
+        "עם"
+      ],
+      "status": "short",
+      "note": "The 2021 Bennett–Lapid model. Abbas says both camps have contacted him, but this falls short of 61 even before Liberman's veto.",
+      "blockers": [
+        {
+          "party": "ל",
+          "text": "Liberman ruled out Ra'am.",
+          "url": "https://www.jpost.com/israel-election-2026/article-911855",
+          "source": "Jerusalem Post"
+        }
+      ]
+    },
+    {
+      "id": "change-haredi",
+      "name": "Change Bloc With Shas And UTJ",
+      "pm": "Eisenkot",
+      "parties": [
+        "דרך",
+        "רק",
+        "אמת",
+        "ל",
+        "שס",
+        "ג"
+      ],
+      "status": "blocked",
+      "note": "No Arab parties needed, but the Haredi draft splits it in two.",
+      "blockers": [
+        {
+          "party": "שס",
+          "text": "Shas and UTJ say they won't join any government unless yeshiva students' exemptions are written into law.",
+          "url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
+          "source": "Times of Israel"
+        },
+        {
+          "party": "ל",
+          "text": "Liberman ruled out Shas and UTJ.",
+          "url": "https://www.jpost.com/israel-election-2026/article-911855",
+          "source": "Jerusalem Post"
+        },
+        {
+          "party": "דרך",
+          "text": "Eisenkot's core promise is national service for all.",
+          "url": "https://www.timesofisrael.com/eisenkot-i-will-do-my-utmost-to-form-a-zionist-government-with-national-service-for-all-netanyahu-should-step-down/",
+          "source": "Times of Israel"
+        }
+      ]
+    },
+    {
+      "id": "unity",
+      "name": "National Unity Government",
+      "pm": "Contested",
+      "parties": [
+        "מחל",
+        "דרך",
+        "רק",
+        "ל"
+      ],
+      "status": "floated",
+      "note": "Analysts call it Netanyahu's most realistic route, at the cost of dropping Ben-Gvir and possibly the Haredi parties. Who would lead it is the sticking point.",
+      "blockers": [
+        {
+          "party": "דרך",
+          "text": "Eisenkot says Netanyahu should step down.",
+          "url": "https://www.timesofisrael.com/eisenkot-i-will-do-my-utmost-to-form-a-zionist-government-with-national-service-for-all-netanyahu-should-step-down/",
+          "source": "Times of Israel"
+        },
+        {
+          "party": "ל",
+          "text": "Liberman won't sit with Likud while Netanyahu leads it.",
+          "url": "https://www.jpost.com/israel-election-2026/article-911855",
+          "source": "Jerusalem Post"
+        },
+        {
+          "party": "ב",
+          "text": "Ben-Gvir warned Netanyahu against a unity government with Eisenkot.",
+          "url": "https://www.ynetnews.com/article/skmg7jc2ml",
+          "source": "Ynet"
+        }
+      ],
+      "url": "https://www.israelhayom.com/2026/10/28/netanyahu-unity-government-exit-polls-likud/",
+      "source": "Israel Hayom"
+    },
+    {
+      "id": "right-together",
+      "name": "Netanyahu Plus Bennett's Together",
+      "pm": "Netanyahu",
+      "parties": [
+        "מחל",
+        "שס",
+        "ג",
+        "ב",
+        "ט",
+        "רק"
+      ],
+      "status": "blocked",
+      "note": "Ideologically the closest fit, but Bennett and Lapid campaigned on replacing Netanyahu.",
+      "blockers": [
+        {
+          "party": "רק",
+          "text": "Bennett declared on election night that Netanyahu has lost.",
+          "url": "https://www.ynetnews.com/article/bjnx6sr3fx",
+          "source": "Ynet"
+        }
+      ]
+    }
+  ],
+  "parties": {
+    "מחל": {
+      "backs": "Netanyahu",
+      "stance": "Wants a right-wing national government; calls relying on anti-Zionist Arab parties unthinkable.",
+      "red_lines": [
+        "No government that depends on Arab parties"
+      ],
+      "date": "2026-10-28",
+      "url": "https://www.timesofisrael.com/liveblog-october-28-2026/",
+      "source": "Times of Israel"
+    },
+    "דרך": {
+      "backs": "Eisenkot",
+      "stance": "Eisenkot vows to form a 'Zionist government that drafts everyone' and says Netanyahu should step down.",
+      "red_lines": [
+        "National service for all",
+        "Netanyahu out"
+      ],
+      "date": "2026-10-28",
+      "url": "https://www.timesofisrael.com/eisenkot-i-will-do-my-utmost-to-form-a-zionist-government-with-national-service-for-all-netanyahu-should-step-down/",
+      "source": "Times of Israel"
+    },
+    "רק": {
+      "backs": "Change bloc",
+      "stance": "Bennett says 'Netanyahu has lost' and that talks among opposition leaders are underway.",
+      "red_lines": [
+        "No Netanyahu government"
+      ],
+      "date": "2026-10-28",
+      "url": "https://www.ynetnews.com/article/bjnx6sr3fx",
+      "source": "Ynet"
+    },
+    "אמת": {
+      "backs": "Eisenkot",
+      "stance": "Golan urges a change government in partnership with the Arab parties: '65 is more than 55.'",
+      "red_lines": [
+        "No Netanyahu government"
+      ],
+      "date": "2026-10-28",
+      "url": "https://www.timesofisrael.com/liveblog_entry/golan-calls-for-bloc-to-unite-with-arab-parties-we-have-a-majority-of-65-seats-we-must-stop-being-afraid/",
+      "source": "Times of Israel"
+    },
+    "ל": {
+      "backs": "Change bloc",
+      "stance": "Liberman urges Likud MKs to revolt and expects soldiers' votes to lift his party.",
+      "red_lines": [
+        "No Likud under Netanyahu",
+        "No Shas or UTJ",
+        "No Ra'am or Joint List",
+        "No minority government"
+      ],
+      "date": "2026-10-28",
+      "url": "https://www.timesofisrael.com/liveblog_entry/liberman-suggests-soldiers-votes-could-boost-yisrael-beytenu-to-14-or-15-seats-urges-likud-members-to-defect/",
+      "source": "Times of Israel",
+      "lines_url": "https://www.jpost.com/israel-election-2026/article-911855",
+      "lines_source": "Red lines: Jerusalem Post"
+    },
+    "שס": {
+      "backs": "Netanyahu (expected)",
+      "stance": "Won't join any government unless yeshiva students' draft exemptions are written into law.",
+      "red_lines": [
+        "Draft-exemption law"
+      ],
+      "date": "2026-10-14",
+      "url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
+      "source": "Times of Israel"
+    },
+    "ג": {
+      "backs": "Netanyahu (expected)",
+      "stance": "Asher set the same condition as Shas: a law securing yeshiva students' exemptions.",
+      "red_lines": [
+        "Draft-exemption law"
+      ],
+      "date": "2026-10-14",
+      "url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
+      "source": "Times of Israel"
+    },
+    "ב": {
+      "backs": "Netanyahu",
+      "stance": "Ben-Gvir rejects a unity government with Eisenkot as a 'government of paralysis.'",
+      "red_lines": [
+        "No unity with Eisenkot"
+      ],
+      "date": "2026-10-28",
+      "url": "https://www.ynetnews.com/article/skmg7jc2ml",
+      "source": "Ynet"
+    },
+    "ט": {
+      "backs": "Netanyahu (expected)",
+      "stance": "No public post-election statement on coalition terms found yet.",
+      "red_lines": [],
+      "date": "",
+      "url": "",
+      "source": ""
+    },
+    "עם": {
+      "backs": "Undecided",
+      "stance": "Abbas says both camps are talking to him; open to an Eisenkot-led government once it has the numbers.",
+      "red_lines": [],
+      "date": "2026-10-28",
+      "url": "https://www.republicworld.com/global-news/ra-am-chief-mansour-abbas-claims-both-netanyahu-and-change-bloc-in-contact-as-arab-parties-turn-kingmakers-2026-10-27-139809",
+      "source": "Republic World (ANI)"
+    },
+    "ודם": {
+      "backs": "Against Netanyahu",
+      "stance": "Leaders say they will back efforts to stop Netanyahu and support an opposition-led coalition.",
+      "red_lines": [
+        "No Netanyahu government"
+      ],
+      "date": "2026-10-27",
+      "url": "https://www.israelhayom.com/2026/10/27/arab-parties-election-gains-complicate-eisenkots-coalition-path/",
+      "source": "Israel Hayom"
+    }
+  },
+  "timeline": [
+    {
+      "at": "2026-10-28T07:53:00Z",
+      "who": "Yair Golan",
+      "party": "אמת",
+      "text": "Calls on the change bloc to form a government in partnership with the Arab parties.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/golan-calls-for-bloc-to-unite-with-arab-parties-we-have-a-majority-of-65-seats-we-must-stop-being-afraid/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-28",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "Plans a right-wing government; rejects any government relying on Arab parties.",
+      "url": "https://www.timesofisrael.com/liveblog-october-28-2026/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-28",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Vows to form a Zionist government with national service for all; says Netanyahu should step down.",
+      "url": "https://www.timesofisrael.com/eisenkot-i-will-do-my-utmost-to-form-a-zionist-government-with-national-service-for-all-netanyahu-should-step-down/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-28",
+      "who": "Mansour Abbas",
+      "party": "עם",
+      "text": "Says both camps are in contact with Ra'am and the numbers for a government aren't there yet.",
+      "url": "https://www.republicworld.com/global-news/ra-am-chief-mansour-abbas-claims-both-netanyahu-and-change-bloc-in-contact-as-arab-parties-turn-kingmakers-2026-10-27-139809",
+      "source": "Republic World (ANI)"
+    },
+    {
+      "at": "2026-10-27T23:09:00Z",
+      "who": "Naftali Bennett",
+      "party": "רק",
+      "text": "Declares Netanyahu has lost; says opposition leaders are already talking.",
+      "url": "https://www.ynetnews.com/article/bjnx6sr3fx",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-10-27T22:19:00Z",
+      "who": "Itamar Ben-Gvir",
+      "party": "ב",
+      "text": "Rejects a unity government with Eisenkot.",
+      "url": "https://www.ynetnews.com/article/skmg7jc2ml",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-10-27T22:01:00Z",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Urges Likud members to revolt against Netanyahu; expects soldiers' votes to raise his seat count.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/liberman-suggests-soldiers-votes-could-boost-yisrael-beytenu-to-14-or-15-seats-urges-likud-members-to-defect/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-27",
+      "who": "Joint List",
+      "party": "ודם",
+      "text": "Says it will back efforts to block Netanyahu and support an opposition-led coalition.",
+      "url": "https://www.israelhayom.com/2026/10/27/arab-parties-election-gains-complicate-eisenkots-coalition-path/",
+      "source": "Israel Hayom"
+    }
+  ]
+}
