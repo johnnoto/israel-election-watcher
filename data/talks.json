@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-29T00:35:00Z",
-  "summary": "Counting of soldiers' and other double-envelope ballots began overnight, with Netanyahu's bloc ahead but short of a majority and Eisenkot's bloc further behind. Netanyahu has told Ben-Gvir and Smotrich they are staying together, and Shas and UTJ signal they will stick with him. On the other side, Channel 12 reports Liberman has cut contact with his opposition partners and wants Eisenkot to join a unity government with Netanyahu, while Golan meets Eisenkot and Lapid on Oct 29 and the Joint List offers to help oust Netanyahu. President Herzog will consult the factions once official results are published.",
+  "updated": "2026-10-29T03:25:00Z",
+  "summary": "The double-envelope count of soldiers' and other special ballots continues, with Netanyahu's bloc ahead but short of a majority and Eisenkot's bloc further behind. Netanyahu has told Ben-Gvir and Smotrich they are staying together, and Shas and UTJ signal they will stick with him. Eisenkot calls the result a no-confidence vote in the outgoing government and vows to keep trying to replace it, while Golan aims to meet all opposition leaders by Sunday and Channel 12 reports Liberman has cut contact with his partners and wants Eisenkot in a unity government with Netanyahu. President Herzog will consult the factions once official results are published.",
   "phase": {
     "now": "Double-envelope ballots being counted",
     "next": "The Central Elections Committee expects the full count on the evening of Oct 29 and official results on Nov 4; Herzog then consults every faction before choosing who gets the first try at forming a government.",
@@ -196,15 +196,15 @@
     },
     "דרך": {
       "backs": "Eisenkot",
-      "stance": "Eisenkot vows a Zionist government with conscription for all, refuses to serve under Netanyahu even in a rotation, and calls another election a mistake.",
+      "stance": "Eisenkot calls the result a no-confidence vote in the outgoing government and vows to keep working to form a Zionist government with conscription for all, still refusing to serve under Netanyahu.",
       "red_lines": [
         "National service for all",
         "Netanyahu out",
         "No rotation with Netanyahu"
       ],
       "date": "2026-10-28",
-      "url": "https://www.jpost.com/israel-election-2026/article-913053",
-      "source": "Jerusalem Post"
+      "url": "https://www.timesofisrael.com/netanyahu-vows-to-stick-with-far-right-partners-as-eisenkot-seeks-path-to-bring-change/",
+      "source": "Times of Israel"
     },
     "רק": {
       "backs": "Change bloc",
@@ -218,12 +218,12 @@
     },
     "אמת": {
       "backs": "Eisenkot",
-      "stance": "Golan urges a change government in partnership with the Arab parties and is set to meet Eisenkot and Lapid on Oct 29 for coalition talks.",
+      "stance": "Golan urges a change government in partnership with the Arab parties and told Channel 12 he hopes to meet all opposition leaders by Sunday.",
       "red_lines": [
         "No Netanyahu government"
       ],
       "date": "2026-10-28",
-      "url": "https://www.timesofisrael.com/liveblog_entry/golan-to-meet-with-three-unspecified-party-leaders-tomorrow-for-coalition-talks",
+      "url": "https://www.timesofisrael.com/netanyahu-vows-to-stick-with-far-right-partners-as-eisenkot-seeks-path-to-bring-change/",
       "source": "Times of Israel"
     },
     "ל": {
@@ -450,6 +450,22 @@
       "text": "Calls on the Zionist majority to unite, without saying how.",
       "url": "https://www.ynetnews.com/article/s1600hrr2ml",
       "source": "Ynet"
+    },
+    {
+      "at": "2026-10-28",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Calls the results a no-confidence vote in the outgoing government and vows to press on with efforts to replace it.",
+      "url": "https://www.timesofisrael.com/netanyahu-vows-to-stick-with-far-right-partners-as-eisenkot-seeks-path-to-bring-change/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-28",
+      "who": "Opposition parties",
+      "party": "",
+      "text": "Kan reports they are weighing Lapid among candidates to replace Knesset Speaker Ohana, a move Liberman reportedly opposes per Channel 12.",
+      "url": "https://www.timesofisrael.com/netanyahu-vows-to-stick-with-far-right-partners-as-eisenkot-seeks-path-to-bring-change/",
+      "source": "Times of Israel (citing Kan, Channel 12)"
     },
     {
       "at": "2026-10-28",
