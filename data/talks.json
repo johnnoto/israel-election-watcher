@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-29T15:44:51Z",
-  "summary": "The count of double-envelope ballots is still under way, and the partial tally shows no shift between the blocs: Netanyahu's camp leads but lacks a majority, with Eisenkot's camp further behind. Netanyahu now says no Zionist party can partner with Ra'am or the Joint List in light of the foreign-interference allegations, which Arab party leaders and Qatar deny and election officials say they cannot confirm. On the other side, Golan met Lapid to coordinate, Liberman repeated that he won't sit with Netanyahu, the Joint List or the Haredi parties, and Channel 12 reports UTJ sources are floating outside support for an Eisenkot government in exchange for draft concessions. President Herzog will consult the factions once official results are published, expected Nov 4.",
+  "updated": "2026-10-29T18:29:20Z",
+  "summary": "The double-envelope count is nearly finished and the latest shift, a seat moving from the Joint List to Ra'am, leaves the blocs unchanged: Netanyahu's camp leads but lacks a majority. Netanyahu and his allies are pressing the foreign-interference allegations against the Arab parties, while Lapid, after a Shin Bet and elections committee briefing, says they give no grounds to challenge the results, and the committee's acting director says they are unlikely to affect the outcome. On the other side, Eisenkot met Bennett and Golan met Abbas on Oct 29, but Liberman still rules out the Arab parties, the Haredi parties and Netanyahu. President Herzog will consult the factions once official results are published, expected Nov 4.",
   "phase": {
-    "now": "Double-envelope ballots still being counted (about 296,000 of up to 480,000 tallied by mid-afternoon Oct 29)",
-    "next": "The Central Elections Committee expects the full count on the evening of Oct 29 and official results on Nov 4; Herzog then consults every faction before choosing who gets the first try at forming a government.",
-    "url": "https://www.timesofisrael.com/liveblog_entry/as-vote-count-continues-likud-gains-a-seat-at-expense-of-ally-shas-no-change-in-blocs/",
+    "now": "Double-envelope count almost complete; no change between the blocs",
+    "next": "Official results are due Nov 4; Herzog then consults every faction and must assign the mandate by Nov 11.",
+    "url": "https://www.timesofisrael.com/liveblog-october-29-2026/",
     "source": "Times of Israel"
   },
   "scenarios": [
@@ -43,7 +43,7 @@
         "עם"
       ],
       "status": "floated",
-      "note": "Proposed by Yair Golan, who meets Eisenkot and Lapid separately on Oct 29, with Abbas and the Joint List both offering help. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it.",
+      "note": "Championed by Yair Golan, who met Lapid and then Abbas on Oct 29; the Times of Israel says he is the only Jewish-led bloc leader openly backing a coalition with Ra'am. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it.",
       "blockers": [
         {
           "party": "ל",
@@ -202,34 +202,34 @@
     },
     "דרך": {
       "backs": "Eisenkot",
-      "stance": "Eisenkot accuses Netanyahu of using an unfinished interference probe to undermine the election results and insists the new Knesset convene on time, while still refusing to serve under him.",
+      "stance": "Eisenkot met Bennett to discuss forming a government quickly, accuses Netanyahu of a campaign to delegitimize the election, and says his teams are drafting conscription, Oct. 7 inquiry and budget bills for the new Knesset.",
       "red_lines": [
         "National service for all",
         "Netanyahu out",
         "No rotation with Netanyahu"
       ],
       "date": "2026-10-29",
-      "url": "https://www.timesofisrael.com/liveblog_entry/eisenkot-qatari-involvement-in-israel-is-grave-matter-whether-in-pms-office-or-election/",
+      "url": "https://www.timesofisrael.com/liveblog_entry/eisenkot-accuses-netanyahu-of-delegitimizing-election-vows-not-to-give-centimeter-deviation-in-swearing-in-of-next-knesset-promises-state-inquiry-conscription-law/",
       "source": "Times of Israel"
     },
     "רק": {
       "backs": "Change bloc",
-      "stance": "Bennett says 'Netanyahu has lost' and that talks among opposition leaders are underway.",
-      "red_lines": [
-        "No Netanyahu government"
-      ],
-      "date": "2026-10-28",
-      "url": "https://www.ynetnews.com/article/bjnx6sr3fx",
-      "source": "Ynet"
-    },
-    "אמת": {
-      "backs": "Eisenkot",
-      "stance": "Golan met Lapid as part of an effort to oust Netanyahu and says the two will keep working in tandem; he still favors partnering with the Arab parties.",
+      "stance": "Bennett met Eisenkot about forming a government quickly; Lapid says the interference briefing gave no reason to challenge the results or delay the Knesset's swearing-in.",
       "red_lines": [
         "No Netanyahu government"
       ],
       "date": "2026-10-29",
-      "url": "https://www.timesofisrael.com/liveblog_entry/golan-and-lapid-meet-as-part-of-effort-to-save-israel-following-election/",
+      "url": "https://www.timesofisrael.com/liveblog_entry/after-briefing-lapid-says-election-interference-allegations-not-enough-to-warrant-vote-challenge/",
+      "source": "Times of Israel"
+    },
+    "אמת": {
+      "backs": "Eisenkot",
+      "stance": "Golan met Lapid and then Abbas on Oct 29 in his push to oust Netanyahu, and is the only Jewish-led opposition leader openly backing a coalition with Ra'am.",
+      "red_lines": [
+        "No Netanyahu government"
+      ],
+      "date": "2026-10-29",
+      "url": "https://www.timesofisrael.com/liveblog_entry/democrats-golan-meets-raam-chair-abbas-as-efforts-continue-to-oust-netanyahu/",
       "source": "Times of Israel"
     },
     "ל": {
@@ -315,6 +315,54 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-10-29T18:09:00Z",
+      "who": "Central Elections Committee",
+      "party": "",
+      "text": "Acting director Dean Livne tells Channel 12 he sees no likelihood the interference allegations will change the results, with individual votes voided only on direct proof.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/election-panel-director-i-see-no-likelihood-allegations-of-election-fraud-will-influence-results/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-29T17:50:00Z",
+      "who": "Yair Golan",
+      "party": "אמת",
+      "text": "Meets Ra'am chairman Mansour Abbas as part of his efforts to form a government without Netanyahu.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/democrats-golan-meets-raam-chair-abbas-as-efforts-continue-to-oust-netanyahu/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-29T17:23:00Z",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Meets Bennett at his Ra'anana home; their joint statement says they discussed forming a good government as quickly as possible.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/eisenkot-and-bennett-meet-over-efforts-to-form-government/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-29T16:41:00Z",
+      "who": "Yair Lapid",
+      "party": "רק",
+      "text": "After briefings from the elections committee and the Shin Bet chief, says there is no reason to challenge the results or delay the Knesset's swearing-in.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/after-briefing-lapid-says-election-interference-allegations-not-enough-to-warrant-vote-challenge/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-29T16:31:00Z",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Accuses Netanyahu of a coordinated bid to delegitimize the results, vows the Knesset will be sworn in on schedule, and says conscription and Oct. 7 inquiry bills are being prepared.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/eisenkot-accuses-netanyahu-of-delegitimizing-election-vows-not-to-give-centimeter-deviation-in-swearing-in-of-next-knesset-promises-state-inquiry-conscription-law/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-29T15:02:00Z",
+      "who": "Central Elections Committee",
+      "party": "",
+      "text": "With the double-envelope count almost done, a seat moves from the Joint List to Ra'am, with no change between the blocs.",
+      "url": "https://www.timesofisrael.com/liveblog-october-29-2026/",
+      "source": "Times of Israel"
+    },
     {
       "at": "2026-10-29",
       "who": "Benjamin Netanyahu",
@@ -506,54 +554,6 @@
       "text": "A party official says Deri has no intention of leaving Netanyahu's bloc or negotiating with Eisenkot.",
       "url": "https://www.ynetnews.com/article/hkre9ay6me",
       "source": "Ynet"
-    },
-    {
-      "at": "2026-10-28T19:33:00Z",
-      "who": "Opposition leaders",
-      "party": "",
-      "text": "Weigh a bid to replace Knesset Speaker Amir Ohana when the Knesset is sworn in, a move that would likely need Arab parties' votes.",
-      "url": "https://www.ynetnews.com/article/hkre9ay6me",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-10-28T18:30:00Z",
-      "who": "Avigdor Liberman",
-      "party": "ל",
-      "text": "Channel 12 reports he has stopped taking Eisenkot's and Bennett's calls and wants Eisenkot to join a unity government with Netanyahu.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/report-liberman-cuts-contact-with-rest-of-opposition-wants-eisenkot-netanyahu-unity-government/",
-      "source": "Times of Israel (citing Channel 12)"
-    },
-    {
-      "at": "2026-10-28T18:06:00Z",
-      "who": "Yair Golan",
-      "party": "אמת",
-      "text": "Tells Channel 12 he will meet Eisenkot, Lapid and an unnamed third leader on Oct 29 to discuss forming a government.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/golan-to-meet-with-three-unspecified-party-leaders-tomorrow-for-coalition-talks",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-28T15:52:00Z",
-      "who": "Likud",
-      "party": "מחל",
-      "text": "Claims Arab parties stole the election through bribery, threats and forgery, and asks police, the Shin Bet and the elections committee to investigate.",
-      "url": "https://www.ynetnews.com/article/s1q6l51tmx",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-10-28T15:52:00Z",
-      "who": "Ra'am",
-      "party": "עם",
-      "text": "Rejects the vote-buying accusations and calls the arrests of its activists a politically motivated bid to suppress Arab turnout.",
-      "url": "https://www.ynetnews.com/article/s1q6l51tmx",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-10-28T14:46:00Z",
-      "who": "Central Elections Committee",
-      "party": "",
-      "text": "Estimates up to 480,000 double-envelope ballots remain, with the full count due Oct 29 and official results Nov 4.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/cec-estimates-up-to-480000-ballots-from-troops-police-diplomats-to-be-counted-worth-some-12-knesset-seats/",
-      "source": "Times of Israel"
     }
   ]
 }
