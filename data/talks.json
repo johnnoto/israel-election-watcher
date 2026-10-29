@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-29T12:40:25Z",
-  "summary": "The count of soldiers' and other double-envelope ballots is due to finish this evening, with Netanyahu's bloc ahead but short of a majority and Eisenkot's bloc further behind. Elections committee chair Noam Sohlberg has asked the Shin Bet to examine alleged foreign-funded efforts to boost Arab turnout; Likud and Ben-Gvir have seized on it, while Eisenkot accuses Netanyahu of using the probe to undermine the results and the committee's director says the fraud claims appear baseless. Netanyahu-linked sources are floating a unity government with Eisenkot, who still refuses to serve under Netanyahu, and Liberman is keeping his distance from both camps. President Herzog, who urged a thorough probe without tarnishing Arab citizens, will consult the factions once official results are published, expected Nov 4.",
+  "updated": "2026-10-29T15:44:51Z",
+  "summary": "The count of double-envelope ballots is still under way, and the partial tally shows no shift between the blocs: Netanyahu's camp leads but lacks a majority, with Eisenkot's camp further behind. Netanyahu now says no Zionist party can partner with Ra'am or the Joint List in light of the foreign-interference allegations, which Arab party leaders and Qatar deny and election officials say they cannot confirm. On the other side, Golan met Lapid to coordinate, Liberman repeated that he won't sit with Netanyahu, the Joint List or the Haredi parties, and Channel 12 reports UTJ sources are floating outside support for an Eisenkot government in exchange for draft concessions. President Herzog will consult the factions once official results are published, expected Nov 4.",
   "phase": {
-    "now": "Double-envelope ballots being counted (full count expected the evening of Oct 29)",
+    "now": "Double-envelope ballots still being counted (about 296,000 of up to 480,000 tallied by mid-afternoon Oct 29)",
     "next": "The Central Elections Committee expects the full count on the evening of Oct 29 and official results on Nov 4; Herzog then consults every faction before choosing who gets the first try at forming a government.",
-    "url": "https://www.timesofisrael.com/liveblog_entry/counting-of-double-envelope-votes-has-begun-says-central-elections-commission/",
+    "url": "https://www.timesofisrael.com/liveblog_entry/as-vote-count-continues-likud-gains-a-seat-at-expense-of-ally-shas-no-change-in-blocs/",
     "source": "Times of Israel"
   },
   "scenarios": [
@@ -102,7 +102,7 @@
         "ג"
       ],
       "status": "blocked",
-      "note": "No Arab parties needed, but the Haredi draft splits it in two.",
+      "note": "No Arab parties needed, but the Haredi draft splits it in two. Channel 12 reports UTJ sources are proposing a looser variant: backing an Eisenkot government from outside by skipping votes, in exchange for draft concessions; no response from Eisenkot was reported.",
       "blockers": [
         {
           "party": "שס",
@@ -118,9 +118,9 @@
         },
         {
           "party": "ל",
-          "text": "Liberman ruled out Shas and UTJ.",
-          "url": "https://www.jpost.com/israel-election-2026/article-911855",
-          "source": "Jerusalem Post"
+          "text": "Liberman repeated on Oct 29 that he won't sit in a government with the Haredi parties.",
+          "url": "https://www.timesofisrael.com/arab-parties-pan-racist-campaign-as-pm-allies-claim-foreign-influence-plot-stole-election/",
+          "source": "Times of Israel"
         },
         {
           "party": "דרך",
@@ -192,12 +192,12 @@
   "parties": {
     "מחל": {
       "backs": "Netanyahu",
-      "stance": "Netanyahu told Ben-Gvir and Smotrich they are together and staying together, per Channel 14, and was due to call the Haredi leaders next.",
+      "stance": "Netanyahu says that, given the interference allegations, no Zionist party can partner with Ra'am or the Joint List; Likud says the election was stolen.",
       "red_lines": [
         "No government that depends on Arab parties"
       ],
-      "date": "2026-10-28",
-      "url": "https://www.timesofisrael.com/liveblog_entry/netanyahu-speaks-with-ben-gvir-smotrich-we-are-together-and-we-are-staying-together/",
+      "date": "2026-10-29",
+      "url": "https://www.timesofisrael.com/arab-parties-pan-racist-campaign-as-pm-allies-claim-foreign-influence-plot-stole-election/",
       "source": "Times of Israel"
     },
     "דרך": {
@@ -224,17 +224,17 @@
     },
     "אמת": {
       "backs": "Eisenkot",
-      "stance": "Golan urges a change government in partnership with the Arab parties and told Channel 12 he hopes to meet all opposition leaders by Sunday.",
+      "stance": "Golan met Lapid as part of an effort to oust Netanyahu and says the two will keep working in tandem; he still favors partnering with the Arab parties.",
       "red_lines": [
         "No Netanyahu government"
       ],
-      "date": "2026-10-28",
-      "url": "https://www.timesofisrael.com/netanyahu-vows-to-stick-with-far-right-partners-as-eisenkot-seeks-path-to-bring-change/",
+      "date": "2026-10-29",
+      "url": "https://www.timesofisrael.com/liveblog_entry/golan-and-lapid-meet-as-part-of-effort-to-save-israel-following-election/",
       "source": "Times of Israel"
     },
     "ל": {
       "backs": "Change bloc",
-      "stance": "Channel 12 reports, citing people close to him, that Liberman has stopped answering Eisenkot's and Bennett's calls and is choosing to wait, while still refusing to join Netanyahu.",
+      "stance": "Liberman called the Shin Bet request dramatic and unprecedented and repeated that he won't sit with Netanyahu, the Joint List or the Haredi parties; Channel 12 says he is avoiding his allies' calls.",
       "red_lines": [
         "No Likud under Netanyahu",
         "No Shas or UTJ",
@@ -242,8 +242,8 @@
         "No minority government"
       ],
       "date": "2026-10-29",
-      "url": "https://www.jpost.com/israel-election-2026/article-913183",
-      "source": "Jerusalem Post (citing Channel 12)",
+      "url": "https://www.timesofisrael.com/arab-parties-pan-racist-campaign-as-pm-allies-claim-foreign-influence-plot-stole-election/",
+      "source": "Times of Israel",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-911855",
       "lines_source": "Red lines: Jerusalem Post"
     },
@@ -261,13 +261,13 @@
     },
     "ג": {
       "backs": "Netanyahu (expected)",
-      "stance": "Asher says UTJ has had no contact with the change bloc and was told Netanyahu intends to keep the coalition together.",
+      "stance": "Asher mocked the opposition's 'alliance of those who serve' label; separately, Channel 12 reports unnamed UTJ sources floating outside support for an Eisenkot government in exchange for draft concessions.",
       "red_lines": [
         "Draft-exemption law"
       ],
-      "date": "2026-10-28",
-      "url": "https://www.ynetnews.com/article/hkre9ay6me",
-      "source": "Ynet",
+      "date": "2026-10-29",
+      "url": "https://www.timesofisrael.com/liveblog_entry/utj-sources-proposing-to-back-eisenkot-from-outside-the-government-report/",
+      "source": "Times of Israel (citing Channel 12)",
       "lines_url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
       "lines_source": "Red lines: Times of Israel (Oct 14)"
     },
@@ -285,36 +285,92 @@
     },
     "ט": {
       "backs": "Netanyahu (expected)",
-      "stance": "Smotrich dismissed the opposition's election-night celebrations and vowed Jewish settlement in Gaza; no coalition terms stated yet.",
+      "stance": "Smotrich says the Arab party heads should be questioned by the Shin Bet over the alleged foreign funding; no coalition terms stated yet.",
       "red_lines": [
         "No government that boycotts Ben-Gvir"
       ],
-      "date": "2026-10-27",
-      "url": "https://www.timesofisrael.com/liveblog_entry/smotrich-dismisses-opposition-celebrations-vows-jewish-settlements-will-rise-in-gaza/",
+      "date": "2026-10-29",
+      "url": "https://www.timesofisrael.com/arab-parties-pan-racist-campaign-as-pm-allies-claim-foreign-influence-plot-stole-election/",
       "source": "Times of Israel",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-912494",
       "lines_source": "Red lines: Jerusalem Post (Oct 22)"
     },
     "עם": {
       "backs": "Undecided",
-      "stance": "Abbas says he would join a government that commits to fighting violent crime, home demolitions and discrimination; Ra'am calls the arrests of its activists politically motivated.",
+      "stance": "Abbas denies any link to the alleged foreign interference, pledges full cooperation with investigators and accuses Netanyahu of inciting against Arab citizens; he has said he'd join a government that tackles crime and discrimination.",
       "red_lines": [],
-      "date": "2026-10-28",
-      "url": "https://www.ynetnews.com/article/s1q6l51tmx",
-      "source": "Ynet"
+      "date": "2026-10-29",
+      "url": "https://www.timesofisrael.com/liveblog_entry/raam-leader-abbas-denies-involvement-in-alleged-election-interference-accuses-netanyahu-of-incitement-against-arabs/",
+      "source": "Times of Israel"
     },
     "ודם": {
       "backs": "Against Netanyahu",
-      "stance": "The Joint List says it is ready for \"political cooperation to oust the Netanyahu government\" and to help form an alternative.",
+      "stance": "The Joint List calls the interference accusations racist lies and says it won't apologize for its results; it remains ready to help oust Netanyahu.",
       "red_lines": [
         "No Netanyahu government"
       ],
-      "date": "2026-10-28",
-      "url": "https://www.timesofisrael.com/liveblog_entry/joint-list-reiterates-its-ready-for-political-cooperation-to-oust-the-netanyahu-government/",
+      "date": "2026-10-29",
+      "url": "https://www.timesofisrael.com/arab-parties-pan-racist-campaign-as-pm-allies-claim-foreign-influence-plot-stole-election/",
       "source": "Times of Israel"
     }
   },
   "timeline": [
+    {
+      "at": "2026-10-29",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "Says that, given the interference allegations, no Zionist party can partner with Ra'am or the Joint List.",
+      "url": "https://www.timesofisrael.com/arab-parties-pan-racist-campaign-as-pm-allies-claim-foreign-influence-plot-stole-election/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-29",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Repeats that he won't sit in a government with Netanyahu, the Joint List or the Haredi parties.",
+      "url": "https://www.timesofisrael.com/arab-parties-pan-racist-campaign-as-pm-allies-claim-foreign-influence-plot-stole-election/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-29",
+      "who": "Joint List",
+      "party": "ודם",
+      "text": "Calls the interference accusations racist lies and says the Arab parties won't apologize for their results.",
+      "url": "https://www.timesofisrael.com/arab-parties-pan-racist-campaign-as-pm-allies-claim-foreign-influence-plot-stole-election/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-29T14:21:00Z",
+      "who": "UTJ sources",
+      "party": "ג",
+      "text": "Channel 12 reports they are floating outside support for an Eisenkot government, abstaining rather than opposing it, in exchange for draft concessions.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/utj-sources-proposing-to-back-eisenkot-from-outside-the-government-report/",
+      "source": "Times of Israel (citing Channel 12)"
+    },
+    {
+      "at": "2026-10-29T13:46:00Z",
+      "who": "Yair Golan",
+      "party": "אמת",
+      "text": "Meets Lapid and says the two will keep working together to bring change.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/golan-and-lapid-meet-as-part-of-effort-to-save-israel-following-election/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-29T13:23:00Z",
+      "who": "Central Elections Committee",
+      "party": "",
+      "text": "Partial double-envelope count moves a seat from Shas to Likud, with no change between the blocs.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/as-vote-count-continues-likud-gains-a-seat-at-expense-of-ally-shas-no-change-in-blocs/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-29T12:44:00Z",
+      "who": "Mansour Abbas",
+      "party": "עם",
+      "text": "Denies any role in the alleged foreign interference, welcomes the probe and accuses Netanyahu of incitement against Arab citizens.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/raam-leader-abbas-denies-involvement-in-alleged-election-interference-accuses-netanyahu-of-incitement-against-arabs/",
+      "source": "Times of Israel"
+    },
     {
       "at": "2026-10-29T12:32:00Z",
       "who": "Central Elections Committee",
@@ -498,62 +554,6 @@
       "text": "Estimates up to 480,000 double-envelope ballots remain, with the full count due Oct 29 and official results Nov 4.",
       "url": "https://www.timesofisrael.com/liveblog_entry/cec-estimates-up-to-480000-ballots-from-troops-police-diplomats-to-be-counted-worth-some-12-knesset-seats/",
       "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-28T13:08:00Z",
-      "who": "President Isaac Herzog",
-      "party": "",
-      "text": "In his first remarks since the vote, urges parties to avoid another election and to come to consultations with an open mind.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/herzog-urges-parties-to-avoid-another-election-calls-for-open-mind-in-coalition-talks/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-28T12:10:00Z",
-      "who": "Ahmad Tibi",
-      "party": "ודם",
-      "text": "Confirms the Joint List is in talks with the opposition bloc and wants to help replace the government, the JC reports citing Kan.",
-      "url": "https://www.thejc.com/news/israel/israel-elections-2026-live-results-um05revx",
-      "source": "The Jewish Chronicle"
-    },
-    {
-      "at": "2026-10-28T11:37:00Z",
-      "who": "Avigdor Liberman",
-      "party": "ל",
-      "text": "JTA reports Liberman has rejected the option of a minority government backed by Arab parties from outside.",
-      "url": "https://www.jta.org/2026/10/28/israel/israels-election-deadlock-3-scenarios-for-what-comes-next",
-      "source": "JTA"
-    },
-    {
-      "at": "2026-10-28T07:53:00Z",
-      "who": "Yair Golan",
-      "party": "אמת",
-      "text": "Calls on the change bloc to form a government in partnership with the Arab parties.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/golan-calls-for-bloc-to-unite-with-arab-parties-we-have-a-majority-of-65-seats-we-must-stop-being-afraid/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-28T06:39:00Z",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Reiterates he won't serve under Netanyahu, even in a rotation, and says another election would be a mistake.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913053",
-      "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-10-28T05:37:00Z",
-      "who": "Youssef Jabareen",
-      "party": "ודם",
-      "text": "Says the Joint List is prepared to help remove the Netanyahu, Ben-Gvir and Smotrich government.",
-      "url": "https://www.ynetnews.com/article/hjnatbkaml",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-10-28T02:39:00Z",
-      "who": "Benjamin Netanyahu",
-      "party": "מחל",
-      "text": "Calls on the Zionist majority to unite, without saying how.",
-      "url": "https://www.ynetnews.com/article/s1600hrr2ml",
-      "source": "Ynet"
     }
   ]
 }
