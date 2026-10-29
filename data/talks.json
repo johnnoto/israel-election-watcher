@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-29T06:24:00Z",
-  "summary": "The double-envelope count of soldiers' and other special ballots continues, with Netanyahu's bloc ahead but short of a majority and Eisenkot's bloc further behind. Netanyahu has told Ben-Gvir and Smotrich they are staying together, and Shas and UTJ signal they will stick with him. Eisenkot calls the result a no-confidence vote in the outgoing government and vows to keep trying to replace it, while Golan aims to meet all opposition leaders by Sunday and Channel 12 reports Liberman has cut contact with his partners and wants Eisenkot in a unity government with Netanyahu. President Herzog will consult the factions once official results are published.",
+  "updated": "2026-10-29T09:25:11Z",
+  "summary": "The count of soldiers' and other double-envelope ballots is due to finish this evening, with Netanyahu's bloc ahead but short of a majority and Eisenkot's bloc further behind. The Jerusalem Post reports that people around Netanyahu are pushing a unity government with Eisenkot, possibly with a rotation and without the Haredi parties, while Eisenkot has repeatedly ruled out serving under Netanyahu. Channel 12 reports Liberman has cut contact with his opposition partners and is biding his time, and opposition leaders are weighing a bid to replace Knesset Speaker Ohana. President Herzog will consult the factions once official results are published, expected Nov 4.",
   "phase": {
-    "now": "Double-envelope ballots being counted",
+    "now": "Double-envelope ballots being counted (full count expected the evening of Oct 29)",
     "next": "The Central Elections Committee expects the full count on the evening of Oct 29 and official results on Nov 4; Herzog then consults every faction before choosing who gets the first try at forming a government.",
     "url": "https://www.timesofisrael.com/liveblog_entry/counting-of-double-envelope-votes-has-begun-says-central-elections-commission/",
     "source": "Times of Israel"
@@ -135,7 +135,7 @@
         "ל"
       ],
       "status": "floated",
-      "note": "Analysts call it Netanyahu's most realistic route, at the cost of dropping Ben-Gvir and possibly the Haredi parties. Channel 12 reports Liberman wants Eisenkot to join Netanyahu, though not under his own banner. Who would lead it is the sticking point.",
+      "note": "The Jerusalem Post reports Netanyahu-linked sources are promoting it, possibly with a rotating premiership and without Shas and UTJ, while anonymous change-bloc sources dismiss the idea. Channel 12 reports Liberman wants Eisenkot to join Netanyahu, though not under his own banner. Who would lead it is the sticking point.",
       "blockers": [
         {
           "party": "דרך",
@@ -156,8 +156,8 @@
           "source": "Ynet"
         }
       ],
-      "url": "https://www.israelhayom.com/2026/10/28/netanyahu-unity-government-exit-polls-likud/",
-      "source": "Israel Hayom"
+      "url": "https://www.jpost.com/israel-election-2026/article-913185",
+      "source": "Jerusalem Post"
     },
     {
       "id": "right-together",
@@ -228,16 +228,16 @@
     },
     "ל": {
       "backs": "Change bloc",
-      "stance": "Channel 12 reports, without comment from Liberman, that he has cut contact with his opposition partners and wants Eisenkot to join a unity government with Netanyahu.",
+      "stance": "Channel 12 reports, citing people close to him, that Liberman has stopped answering Eisenkot's and Bennett's calls and is choosing to wait, while still refusing to join Netanyahu.",
       "red_lines": [
         "No Likud under Netanyahu",
         "No Shas or UTJ",
         "No Ra'am or Joint List",
         "No minority government"
       ],
-      "date": "2026-10-28",
-      "url": "https://www.timesofisrael.com/liveblog_entry/report-liberman-cuts-contact-with-rest-of-opposition-wants-eisenkot-netanyahu-unity-government/",
-      "source": "Times of Israel (citing Channel 12)",
+      "date": "2026-10-29",
+      "url": "https://www.jpost.com/israel-election-2026/article-913183",
+      "source": "Jerusalem Post (citing Channel 12)",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-911855",
       "lines_source": "Red lines: Jerusalem Post"
     },
@@ -307,6 +307,30 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-10-29T07:24:00Z",
+      "who": "Netanyahu associates",
+      "party": "מחל",
+      "text": "The Jerusalem Post reports they are pushing a unity government with Eisenkot, possibly with a rotation and without the Haredi parties; change-bloc sources reject it.",
+      "url": "https://www.jpost.com/israel-election-2026/article-913185",
+      "source": "Jerusalem Post"
+    },
+    {
+      "at": "2026-10-29T06:43:00Z",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Channel 12 sources close to him say he is choosing to lie in wait rather than commit to either camp.",
+      "url": "https://www.jpost.com/israel-election-2026/article-913183",
+      "source": "Jerusalem Post (citing Channel 12)"
+    },
+    {
+      "at": "2026-10-29T06:43:00Z",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "Maariv reports, citing sources close to him, that he is considering a unity government with Eisenkot.",
+      "url": "https://www.jpost.com/israel-election-2026/article-913183",
+      "source": "Jerusalem Post (citing Maariv)"
+    },
     {
       "at": "2026-10-28T23:16:00Z",
       "who": "Central Elections Committee",
@@ -522,14 +546,6 @@
       "text": "Urges Likud members to revolt against Netanyahu; expects soldiers' votes to raise his seat count.",
       "url": "https://www.timesofisrael.com/liveblog_entry/liberman-suggests-soldiers-votes-could-boost-yisrael-beytenu-to-14-or-15-seats-urges-likud-members-to-defect/",
       "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-27",
-      "who": "Joint List",
-      "party": "ודם",
-      "text": "Says it will back efforts to block Netanyahu and support an opposition-led coalition.",
-      "url": "https://www.israelhayom.com/2026/10/27/arab-parties-election-gains-complicate-eisenkots-coalition-path/",
-      "source": "Israel Hayom"
     }
   ]
 }
