@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-29T21:23:13Z",
-  "summary": "The double-envelope count is nearly finished and the latest shift, a seat moving from the Joint List to Ra'am, leaves the blocs unchanged: Netanyahu's camp leads but lacks a majority. Netanyahu and his allies are pressing the foreign-interference allegations against the Arab parties, while Lapid, after a Shin Bet and elections committee briefing, says they give no grounds to challenge the results, and the committee's acting director says they are unlikely to affect the outcome. On the other side, Eisenkot met Bennett and Golan met Abbas on Oct 29, but Liberman still rules out the Arab parties, the Haredi parties and Netanyahu. President Herzog will consult the factions once official results are published, expected Nov 4.",
+  "updated": "2026-10-29T22:29:19Z",
+  "summary": "The count is all but complete and Netanyahu's camp leads without a majority, while the interference allegations against the Arab parties remain a flashpoint; election officials say they are unlikely to change the outcome. Netanyahu met Smotrich on Oct 29 and is expected to talk to the Haredi parties next, and Ynet reports he has not raised a unity government with his partners. On the other side, Eisenkot met Bennett and Golan, and unnamed Haredi sources told Ynet they would negotiate with Eisenkot in return for a draft-exemption law, while Liberman told his party he still rules out sitting with the Haredi and Arab parties. President Herzog is expected to consult the factions next week, after official results are published.",
   "phase": {
     "now": "Double-envelope count almost complete; no change between the blocs",
     "next": "Official results are due Nov 4; Herzog then consults every faction and must assign the mandate by Nov 11.",
@@ -102,7 +102,7 @@
         "ג"
       ],
       "status": "blocked",
-      "note": "No Arab parties needed, but the Haredi draft splits it in two. Channel 12 reports UTJ sources are proposing a looser variant: backing an Eisenkot government from outside by skipping votes, in exchange for draft concessions; no response from Eisenkot was reported.",
+      "note": "No Arab parties needed, but the Haredi draft splits it in two. Ynet reports unnamed Haredi sources signaling they would negotiate joining an Eisenkot government in return for a draft-exemption law, and Channel 12 reports UTJ sources floating outside support; no response from Eisenkot was reported.",
       "blockers": [
         {
           "party": "שס",
@@ -118,9 +118,9 @@
         },
         {
           "party": "ל",
-          "text": "Liberman repeated on Oct 29 that he won't sit in a government with the Haredi parties.",
-          "url": "https://www.timesofisrael.com/arab-parties-pan-racist-campaign-as-pm-allies-claim-foreign-influence-plot-stole-election/",
-          "source": "Times of Israel"
+          "text": "Liberman told party members on Oct 29 that his pledge not to sit with the Haredi parties stands.",
+          "url": "https://www.ynetnews.com/article/byjzm7ztmx",
+          "source": "Ynet"
         },
         {
           "party": "דרך",
@@ -128,7 +128,9 @@
           "url": "https://www.timesofisrael.com/eisenkot-i-will-do-my-utmost-to-form-a-zionist-government-with-national-service-for-all-netanyahu-should-step-down/",
           "source": "Times of Israel"
         }
-      ]
+      ],
+      "url": "https://www.ynetnews.com/article/byjzm7ztmx",
+      "source": "Ynet"
     },
     {
       "id": "unity",
@@ -141,7 +143,7 @@
         "ל"
       ],
       "status": "floated",
-      "note": "The Jerusalem Post reports Netanyahu-linked sources are promoting it, possibly with a rotating premiership and without Shas and UTJ, while anonymous change-bloc sources dismiss the idea. Channel 12 reports Liberman wants Eisenkot to join Netanyahu, though not under his own banner. Who would lead it is the sticking point.",
+      "note": "The Jerusalem Post reports Netanyahu-linked sources are promoting it, possibly with a rotating premiership and without Shas and UTJ, but Ynet reports Netanyahu has not discussed it with his partners or Likud associates. Channel 12 reports Liberman wants Eisenkot to join Netanyahu, though not under his own banner. Who would lead it is the sticking point.",
       "blockers": [
         {
           "party": "דרך",
@@ -202,15 +204,15 @@
     },
     "דרך": {
       "backs": "Eisenkot",
-      "stance": "Eisenkot met Bennett to discuss forming a government quickly, accuses Netanyahu of a campaign to delegitimize the election, and says his teams are drafting conscription, Oct. 7 inquiry and budget bills for the new Knesset.",
+      "stance": "Eisenkot met Bennett and Golan on Oct 29, told supporters he will work to form a new government, and accuses Netanyahu of trying to delegitimize the election.",
       "red_lines": [
         "National service for all",
         "Netanyahu out",
         "No rotation with Netanyahu"
       ],
       "date": "2026-10-29",
-      "url": "https://www.timesofisrael.com/liveblog_entry/eisenkot-accuses-netanyahu-of-delegitimizing-election-vows-not-to-give-centimeter-deviation-in-swearing-in-of-next-knesset-promises-state-inquiry-conscription-law/",
-      "source": "Times of Israel"
+      "url": "https://www.ynetnews.com/article/byjzm7ztmx",
+      "source": "Ynet"
     },
     "רק": {
       "backs": "Change bloc",
@@ -234,7 +236,7 @@
     },
     "ל": {
       "backs": "Change bloc",
-      "stance": "Liberman called the Shin Bet request dramatic and unprecedented and repeated that he won't sit with Netanyahu, the Joint List or the Haredi parties; Channel 12 says he is avoiding his allies' calls.",
+      "stance": "Liberman told party members and branch heads on Oct 29 that his pledges not to join a government with the Haredi or Arab parties stand, and he still won't sit with Netanyahu.",
       "red_lines": [
         "No Likud under Netanyahu",
         "No Shas or UTJ",
@@ -242,8 +244,8 @@
         "No minority government"
       ],
       "date": "2026-10-29",
-      "url": "https://www.timesofisrael.com/arab-parties-pan-racist-campaign-as-pm-allies-claim-foreign-influence-plot-stole-election/",
-      "source": "Times of Israel",
+      "url": "https://www.ynetnews.com/article/byjzm7ztmx",
+      "source": "Ynet",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-911855",
       "lines_source": "Red lines: Jerusalem Post"
     },
@@ -285,13 +287,13 @@
     },
     "ט": {
       "backs": "Netanyahu (expected)",
-      "stance": "Smotrich says the Arab party heads should be questioned by the Shin Bet over the alleged foreign funding; no coalition terms stated yet.",
+      "stance": "Smotrich met Netanyahu in person on Oct 29, Ynet reports, and says the Arab party heads should be questioned by the Shin Bet over alleged foreign funding.",
       "red_lines": [
         "No government that boycotts Ben-Gvir"
       ],
       "date": "2026-10-29",
-      "url": "https://www.timesofisrael.com/arab-parties-pan-racist-campaign-as-pm-allies-claim-foreign-influence-plot-stole-election/",
-      "source": "Times of Israel",
+      "url": "https://www.ynetnews.com/article/byjzm7ztmx",
+      "source": "Ynet",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-912494",
       "lines_source": "Red lines: Jerusalem Post (Oct 22)"
     },
@@ -315,6 +317,30 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-10-29",
+      "who": "Haredi party sources",
+      "party": "ג",
+      "text": "Unnamed sources tell Ynet the Haredi parties would negotiate joining an Eisenkot government if a draft-exemption law is passed.",
+      "url": "https://www.ynetnews.com/article/byjzm7ztmx",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-10-29",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Tells party members his pledges not to sit with the Haredi or Arab parties remain in place.",
+      "url": "https://www.ynetnews.com/article/byjzm7ztmx",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-10-29",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "Meets Smotrich in person after calling him and Ben-Gvir the night before; Ynet says talks with the Haredi parties are expected next.",
+      "url": "https://www.ynetnews.com/article/byjzm7ztmx",
+      "source": "Ynet"
+    },
     {
       "at": "2026-10-29T18:09:00Z",
       "who": "Central Elections Committee",
@@ -530,30 +556,6 @@
       "text": "Reiterates it is ready to cooperate politically to oust Netanyahu and help form an alternative government.",
       "url": "https://www.timesofisrael.com/liveblog_entry/joint-list-reiterates-its-ready-for-political-cooperation-to-oust-the-netanyahu-government/",
       "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-28T20:15:00Z",
-      "who": "Benjamin Netanyahu",
-      "party": "מחל",
-      "text": "Tells Ben-Gvir and Smotrich they are staying together, Channel 14 reports, before calls with the Haredi leaders.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/netanyahu-speaks-with-ben-gvir-smotrich-we-are-together-and-we-are-staying-together/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-28T19:33:00Z",
-      "who": "Yaakov Asher",
-      "party": "ג",
-      "text": "Says UTJ has had no contact with change-bloc parties and that Netanyahu's associates say he will keep the coalition together.",
-      "url": "https://www.ynetnews.com/article/hkre9ay6me",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-10-28T19:33:00Z",
-      "who": "Shas",
-      "party": "שס",
-      "text": "A party official says Deri has no intention of leaving Netanyahu's bloc or negotiating with Eisenkot.",
-      "url": "https://www.ynetnews.com/article/hkre9ay6me",
-      "source": "Ynet"
     }
   ]
 }
