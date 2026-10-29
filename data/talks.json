@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-28T21:24:15Z",
-  "summary": "Counting of soldiers' and other double-envelope ballots continues, with Netanyahu's bloc ahead but short of a majority and Eisenkot's bloc further behind. Likud alleges Arab parties won seats through fraud, which Ra'am rejects, while Golan plans to meet Eisenkot, Lapid and a third leader on Oct 29 to begin coalition talks. Golan and the Joint List want the change bloc to govern with Arab parties' backing, but Liberman has ruled out both Arab parties and a minority government, and Eisenkot refuses to serve under Netanyahu even in a rotation. President Herzog has urged all sides to avoid another election and will consult the factions once official results are in.",
+  "updated": "2026-10-29T00:35:00Z",
+  "summary": "Counting of soldiers' and other double-envelope ballots began overnight, with Netanyahu's bloc ahead but short of a majority and Eisenkot's bloc further behind. Netanyahu has told Ben-Gvir and Smotrich they are staying together, and Shas and UTJ signal they will stick with him. On the other side, Channel 12 reports Liberman has cut contact with his opposition partners and wants Eisenkot to join a unity government with Netanyahu, while Golan meets Eisenkot and Lapid on Oct 29 and the Joint List offers to help oust Netanyahu. President Herzog will consult the factions once official results are published.",
   "phase": {
-    "now": "Votes still being counted",
-    "next": "The Central Elections Committee expects the full count, including soldiers' ballots, on the afternoon of Oct 29 and official results on Nov 4; Herzog then consults every faction before choosing who gets the first try at forming a government.",
-    "url": "https://www.timesofisrael.com/liveblog_entry/cec-estimates-up-to-480000-ballots-from-troops-police-diplomats-to-be-counted-worth-some-12-knesset-seats/",
+    "now": "Double-envelope ballots being counted",
+    "next": "The Central Elections Committee expects the full count on the evening of Oct 29 and official results on Nov 4; Herzog then consults every faction before choosing who gets the first try at forming a government.",
+    "url": "https://www.timesofisrael.com/liveblog_entry/counting-of-double-envelope-votes-has-begun-says-central-elections-commission/",
     "source": "Times of Israel"
   },
   "scenarios": [
@@ -20,7 +20,7 @@
         "ט"
       ],
       "status": "short",
-      "note": "His existing partners. Without a majority, Netanyahu needs defectors or a new partner from the other side.",
+      "note": "His existing partners, whom he told they are staying together. Without a majority, Netanyahu needs defectors or a new partner from the other side.",
       "blockers": [
         {
           "party": "ל",
@@ -43,7 +43,7 @@
         "עם"
       ],
       "status": "floated",
-      "note": "Proposed by Yair Golan, who is meeting other opposition leaders from Oct 29, with Abbas again offering to join. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it.",
+      "note": "Proposed by Yair Golan, who meets Eisenkot and Lapid separately on Oct 29, with Abbas and the Joint List both offering help. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it.",
       "blockers": [
         {
           "party": "ל",
@@ -100,6 +100,12 @@
       "blockers": [
         {
           "party": "שס",
+          "text": "A Shas official told Ynet that Deri won't leave Netanyahu's bloc or negotiate with Eisenkot.",
+          "url": "https://www.ynetnews.com/article/hkre9ay6me",
+          "source": "Ynet"
+        },
+        {
+          "party": "שס",
           "text": "Shas and UTJ say they won't join any government unless yeshiva students' exemptions are written into law.",
           "url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
           "source": "Times of Israel"
@@ -129,7 +135,7 @@
         "ל"
       ],
       "status": "floated",
-      "note": "Analysts call it Netanyahu's most realistic route, at the cost of dropping Ben-Gvir and possibly the Haredi parties. Who would lead it is the sticking point.",
+      "note": "Analysts call it Netanyahu's most realistic route, at the cost of dropping Ben-Gvir and possibly the Haredi parties. Channel 12 reports Liberman wants Eisenkot to join Netanyahu, though not under his own banner. Who would lead it is the sticking point.",
       "blockers": [
         {
           "party": "דרך",
@@ -139,9 +145,9 @@
         },
         {
           "party": "ל",
-          "text": "Liberman won't sit with Likud while Netanyahu leads it.",
-          "url": "https://www.jpost.com/israel-election-2026/article-911855",
-          "source": "Jerusalem Post"
+          "text": "Channel 12 reports Liberman still refuses to join a Netanyahu-led government, even as he urges Eisenkot to.",
+          "url": "https://www.timesofisrael.com/liveblog_entry/report-liberman-cuts-contact-with-rest-of-opposition-wants-eisenkot-netanyahu-unity-government/",
+          "source": "Times of Israel (citing Channel 12)"
         },
         {
           "party": "ב",
@@ -180,13 +186,13 @@
   "parties": {
     "מחל": {
       "backs": "Netanyahu",
-      "stance": "Wants a right-wing national government without Arab parties, and now alleges Arab parties won seats through fraud and bribery.",
+      "stance": "Netanyahu told Ben-Gvir and Smotrich they are together and staying together, per Channel 14, and was due to call the Haredi leaders next.",
       "red_lines": [
         "No government that depends on Arab parties"
       ],
       "date": "2026-10-28",
-      "url": "https://www.ynetnews.com/article/s1q6l51tmx",
-      "source": "Ynet"
+      "url": "https://www.timesofisrael.com/liveblog_entry/netanyahu-speaks-with-ben-gvir-smotrich-we-are-together-and-we-are-staying-together/",
+      "source": "Times of Israel"
     },
     "דרך": {
       "backs": "Eisenkot",
@@ -222,7 +228,7 @@
     },
     "ל": {
       "backs": "Change bloc",
-      "stance": "Liberman urges Likud MKs to revolt and expects soldiers' votes to lift his party.",
+      "stance": "Channel 12 reports, without comment from Liberman, that he has cut contact with his opposition partners and wants Eisenkot to join a unity government with Netanyahu.",
       "red_lines": [
         "No Likud under Netanyahu",
         "No Shas or UTJ",
@@ -230,30 +236,34 @@
         "No minority government"
       ],
       "date": "2026-10-28",
-      "url": "https://www.timesofisrael.com/liveblog_entry/liberman-suggests-soldiers-votes-could-boost-yisrael-beytenu-to-14-or-15-seats-urges-likud-members-to-defect/",
-      "source": "Times of Israel",
+      "url": "https://www.timesofisrael.com/liveblog_entry/report-liberman-cuts-contact-with-rest-of-opposition-wants-eisenkot-netanyahu-unity-government/",
+      "source": "Times of Israel (citing Channel 12)",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-911855",
       "lines_source": "Red lines: Jerusalem Post"
     },
     "שס": {
       "backs": "Netanyahu (expected)",
-      "stance": "Won't join any government unless yeshiva students' draft exemptions are written into law.",
+      "stance": "A Shas official says Deri won't leave Netanyahu's bloc or negotiate with Eisenkot; Shas still demands a draft-exemption law.",
       "red_lines": [
         "Draft-exemption law"
       ],
-      "date": "2026-10-14",
-      "url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
-      "source": "Times of Israel"
+      "date": "2026-10-28",
+      "url": "https://www.ynetnews.com/article/hkre9ay6me",
+      "source": "Ynet",
+      "lines_url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
+      "lines_source": "Red lines: Times of Israel (Oct 14)"
     },
     "ג": {
       "backs": "Netanyahu (expected)",
-      "stance": "Asher set the same condition as Shas: a law securing yeshiva students' exemptions.",
+      "stance": "Asher says UTJ has had no contact with the change bloc and was told Netanyahu intends to keep the coalition together.",
       "red_lines": [
         "Draft-exemption law"
       ],
-      "date": "2026-10-14",
-      "url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
-      "source": "Times of Israel"
+      "date": "2026-10-28",
+      "url": "https://www.ynetnews.com/article/hkre9ay6me",
+      "source": "Ynet",
+      "lines_url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
+      "lines_source": "Red lines: Times of Israel (Oct 14)"
     },
     "ב": {
       "backs": "Netanyahu",
@@ -287,16 +297,72 @@
     },
     "ודם": {
       "backs": "Against Netanyahu",
-      "stance": "Chairman Jabareen says the Joint List is ready to help clear the way to remove Netanyahu's government.",
+      "stance": "The Joint List says it is ready for \"political cooperation to oust the Netanyahu government\" and to help form an alternative.",
       "red_lines": [
         "No Netanyahu government"
       ],
       "date": "2026-10-28",
-      "url": "https://www.ynetnews.com/article/hjnatbkaml",
-      "source": "Ynet"
+      "url": "https://www.timesofisrael.com/liveblog_entry/joint-list-reiterates-its-ready-for-political-cooperation-to-oust-the-netanyahu-government/",
+      "source": "Times of Israel"
     }
   },
   "timeline": [
+    {
+      "at": "2026-10-28T23:16:00Z",
+      "who": "Central Elections Committee",
+      "party": "",
+      "text": "Begins counting the double-envelope ballots of soldiers, diplomats and others.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/counting-of-double-envelope-votes-has-begun-says-central-elections-commission/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-28T21:38:00Z",
+      "who": "Joint List",
+      "party": "ודם",
+      "text": "Reiterates it is ready to cooperate politically to oust Netanyahu and help form an alternative government.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/joint-list-reiterates-its-ready-for-political-cooperation-to-oust-the-netanyahu-government/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-28T20:15:00Z",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "Tells Ben-Gvir and Smotrich they are staying together, Channel 14 reports, before calls with the Haredi leaders.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/netanyahu-speaks-with-ben-gvir-smotrich-we-are-together-and-we-are-staying-together/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-28T19:33:00Z",
+      "who": "Yaakov Asher",
+      "party": "ג",
+      "text": "Says UTJ has had no contact with change-bloc parties and that Netanyahu's associates say he will keep the coalition together.",
+      "url": "https://www.ynetnews.com/article/hkre9ay6me",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-10-28T19:33:00Z",
+      "who": "Shas",
+      "party": "שס",
+      "text": "A party official says Deri has no intention of leaving Netanyahu's bloc or negotiating with Eisenkot.",
+      "url": "https://www.ynetnews.com/article/hkre9ay6me",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-10-28T19:33:00Z",
+      "who": "Opposition leaders",
+      "party": "",
+      "text": "Weigh a bid to replace Knesset Speaker Amir Ohana when the Knesset is sworn in, a move that would likely need Arab parties' votes.",
+      "url": "https://www.ynetnews.com/article/hkre9ay6me",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-10-28T18:30:00Z",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Channel 12 reports he has stopped taking Eisenkot's and Bennett's calls and wants Eisenkot to join a unity government with Netanyahu.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/report-liberman-cuts-contact-with-rest-of-opposition-wants-eisenkot-netanyahu-unity-government/",
+      "source": "Times of Israel (citing Channel 12)"
+    },
     {
       "at": "2026-10-28T18:06:00Z",
       "who": "Yair Golan",
