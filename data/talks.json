@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-30T03:22:32Z",
-  "summary": "The count is all but complete and Netanyahu's camp leads without a majority, while the interference allegations against the Arab parties remain a flashpoint; election officials say they are unlikely to change the outcome. Netanyahu met Smotrich on Oct 29 and is expected to talk to the Haredi parties next, and Ynet reports he has not raised a unity government with his partners. On the other side, Eisenkot met Bennett and Golan, and unnamed Haredi sources told Ynet they would negotiate with Eisenkot in return for a draft-exemption law, while Liberman told his party he still rules out sitting with the Haredi and Arab parties, and Channel 12 reports Abbas privately doubts a minority government could work. President Herzog is expected to consult the factions next week, after official results are published.",
+  "updated": "2026-10-30T06:29:22Z",
+  "summary": "The Central Elections Committee has published the final results, with Netanyahu's camp ahead but without a majority, and the new Knesset is set to be sworn in on Nov 10. Netanyahu met Smotrich on Oct 29 and is expected to talk to the Haredi parties next, while Eisenkot met Bennett and Golan and Golan met Ra'am's Abbas. Liberman still rules out sitting with the Haredi and Arab parties, and Channel 12 reports Abbas privately doubts an Eisenkot minority government could work. The interference allegations against the Arab parties remain a flashpoint, though election officials say they are unlikely to change the outcome.",
   "phase": {
-    "now": "Double-envelope count almost complete; no change between the blocs",
-    "next": "Official results are due Nov 4; Herzog then consults every faction and must assign the mandate by Nov 11.",
-    "url": "https://www.timesofisrael.com/liveblog-october-29-2026/",
-    "source": "Times of Israel"
+    "now": "Final results published by the Central Elections Committee; no change between the blocs",
+    "next": "Official results go to President Herzog on Nov 4, he then consults the factions, and the new Knesset is sworn in on Nov 10.",
+    "url": "https://www.tribuneindia.com/news/world/israel-publishes-final-election-results-new-knesset-to-be-sworn-in-nov-10",
+    "source": "The Tribune (ANI)"
   },
   "scenarios": [
     {
@@ -318,6 +318,14 @@
   },
   "timeline": [
     {
+      "at": "2026-10-30",
+      "who": "Central Elections Committee",
+      "party": "",
+      "text": "Publishes the final election results and says the new Knesset will be sworn in on Nov. 10.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/central-elections-committee-publishes-final-election-results-knesset-to-be-sworn-in-nov-10/",
+      "source": "Times of Israel"
+    },
+    {
       "at": "2026-10-29",
       "who": "Haredi party sources",
       "party": "ג",
@@ -548,14 +556,6 @@
       "text": "Channel 13 and Kan report Shas's spiritual leader has begun moves to oust Deri as party chairman over the election result.",
       "url": "https://www.timesofisrael.com/top-shas-rabbi-said-looking-to-oust-longtime-leader-deri-over-poor-election-result/",
       "source": "Times of Israel (citing Channel 13, Kan)"
-    },
-    {
-      "at": "2026-10-28T23:16:00Z",
-      "who": "Central Elections Committee",
-      "party": "",
-      "text": "Begins counting the double-envelope ballots of soldiers, diplomats and others.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/counting-of-double-envelope-votes-has-begun-says-central-elections-commission/",
-      "source": "Times of Israel"
     }
   ]
 }
