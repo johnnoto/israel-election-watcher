@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-30T09:24:36Z",
-  "summary": "The Central Elections Committee has published the final results, with Netanyahu's camp ahead but without a majority, and the new Knesset is set to be sworn in on Nov 10. Netanyahu met Smotrich on Oct 29 and is expected to talk to the Haredi parties next, while Eisenkot met Bennett and Golan and Golan met Ra'am's Abbas. Liberman still rules out sitting with the Haredi and Arab parties, and Channel 12 reports Abbas privately doubts an Eisenkot minority government could work. The interference allegations against the Arab parties remain a flashpoint, though election officials say they are unlikely to change the outcome.",
+  "updated": "2026-10-30T12:53:21Z",
+  "summary": "The Central Elections Committee has published final results, with Netanyahu's camp ahead but short of a majority; Herzog receives the official results on Nov 4 and the new Knesset is sworn in on Nov 10. Netanyahu has met Smotrich and Ben-Gvir, and Haredi sources tell the Jerusalem Post that Deri won't join an opposition-led government without Likud. UTJ is emerging as the opposition's likeliest Haredi partner after senior rabbi Dov Landau reportedly told Degel HaTorah MKs to consider joining, though Liberman still rules out sitting with the Haredi and Arab parties. Lapid says Netanyahu has no path to a government but warns that building an alternative will be complicated.",
   "phase": {
     "now": "Final results published by the Central Elections Committee; no change between the blocs",
     "next": "Official results go to President Herzog on Nov 4, he then consults the factions, and the new Knesset is sworn in on Nov 10.",
@@ -102,13 +102,13 @@
         "ג"
       ],
       "status": "blocked",
-      "note": "No Arab parties needed, but the Haredi draft splits it in two. Ynet reports unnamed Haredi sources signaling they would negotiate joining an Eisenkot government in return for a draft-exemption law, and Channel 12 reports UTJ sources floating outside support; no response from Eisenkot was reported.",
+      "note": "No Arab parties needed, but the Haredi draft splits it. The Jerusalem Post reports UTJ is emerging as a possible partner after Rabbi Dov Landau reportedly urged Degel HaTorah MKs to consider joining, with UTJ sources cautiously optimistic about a draft compromise; Shas is reported to be out.",
       "blockers": [
         {
           "party": "שס",
-          "text": "A Shas official told Ynet that Deri won't leave Netanyahu's bloc or negotiate with Eisenkot.",
-          "url": "https://www.ynetnews.com/article/hkre9ay6me",
-          "source": "Ynet"
+          "text": "Haredi sources tell the Jerusalem Post that Deri won't join an opposition-led government without Likud.",
+          "url": "https://www.jpost.com/israel-election-2026/article-913327",
+          "source": "Jerusalem Post"
         },
         {
           "party": "שס",
@@ -129,8 +129,8 @@
           "source": "Times of Israel"
         }
       ],
-      "url": "https://www.ynetnews.com/article/byjzm7ztmx",
-      "source": "Ynet"
+      "url": "https://www.jpost.com/israel-election-2026/article-913327",
+      "source": "Jerusalem Post"
     },
     {
       "id": "unity",
@@ -216,13 +216,13 @@
     },
     "רק": {
       "backs": "Change bloc",
-      "stance": "Bennett met Eisenkot about forming a government quickly; Lapid says the interference briefing gave no reason to challenge the results or delay the Knesset's swearing-in.",
+      "stance": "Lapid says Netanyahu has no way to form a government on these results, but forming an alternative will be complicated and is not guaranteed.",
       "red_lines": [
         "No Netanyahu government"
       ],
-      "date": "2026-10-29",
-      "url": "https://www.timesofisrael.com/liveblog_entry/after-briefing-lapid-says-election-interference-allegations-not-enough-to-warrant-vote-challenge/",
-      "source": "Times of Israel"
+      "date": "2026-10-30",
+      "url": "https://www.jpost.com/israel-election-2026/article-913339",
+      "source": "Jerusalem Post"
     },
     "אמת": {
       "backs": "Eisenkot",
@@ -251,36 +251,36 @@
     },
     "שס": {
       "backs": "Netanyahu (expected)",
-      "stance": "A Shas official says Deri won't leave Netanyahu's bloc or negotiate with Eisenkot; Shas still demands a draft-exemption law.",
+      "stance": "Unnamed Haredi sources say Deri has ruled out an opposition-led government without Likud and would join a unity government only alongside Likud.",
       "red_lines": [
         "Draft-exemption law"
       ],
-      "date": "2026-10-28",
-      "url": "https://www.ynetnews.com/article/hkre9ay6me",
-      "source": "Ynet",
+      "date": "2026-10-30",
+      "url": "https://www.jpost.com/israel-election-2026/article-913327",
+      "source": "Jerusalem Post (citing unnamed sources)",
       "lines_url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
       "lines_source": "Red lines: Times of Israel (Oct 14)"
     },
     "ג": {
-      "backs": "Netanyahu (expected)",
-      "stance": "Asher mocked the opposition's 'alliance of those who serve' label; separately, Channel 12 reports unnamed UTJ sources floating outside support for an Eisenkot government in exchange for draft concessions.",
+      "backs": "Undecided",
+      "stance": "Rabbi Dov Landau reportedly urged Degel HaTorah MKs to consider joining an opposition coalition, and unnamed UTJ sources voice cautious optimism about a draft compromise.",
       "red_lines": [
         "Draft-exemption law"
       ],
-      "date": "2026-10-29",
-      "url": "https://www.timesofisrael.com/liveblog_entry/utj-sources-proposing-to-back-eisenkot-from-outside-the-government-report/",
-      "source": "Times of Israel (citing Channel 12)",
+      "date": "2026-10-30",
+      "url": "https://www.jpost.com/israel-election-2026/article-913327",
+      "source": "Jerusalem Post",
       "lines_url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
       "lines_source": "Red lines: Times of Israel (Oct 14)"
     },
     "ב": {
       "backs": "Netanyahu",
-      "stance": "Ben-Gvir calls the interference allegations a \"political October 7\" and wants Arab party leaders arrested if there are legal grounds; he rejects unity with Eisenkot.",
+      "stance": "Ben-Gvir held a long meeting with Netanyahu on Oct 29 on preserving a right-wing government, his party says; he rejects unity with Eisenkot.",
       "red_lines": [
         "No unity with Eisenkot"
       ],
       "date": "2026-10-29",
-      "url": "https://www.jpost.com/israel-election-2026/article-913187",
+      "url": "https://www.jpost.com/israel-election-2026/article-913339",
       "source": "Jerusalem Post",
       "lines_url": "https://www.ynetnews.com/article/skmg7jc2ml",
       "lines_source": "Red lines: Ynet"
@@ -317,6 +317,38 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-10-30T09:33:00Z",
+      "who": "Yair Lapid",
+      "party": "רק",
+      "text": "Says Netanyahu cannot form a government on these results, while warning an alternative coalition is complicated and not guaranteed.",
+      "url": "https://www.jpost.com/israel-election-2026/article-913339",
+      "source": "Jerusalem Post"
+    },
+    {
+      "at": "2026-10-30",
+      "who": "Rabbi Dov Landau",
+      "party": "ג",
+      "text": "Degel HaTorah's senior rabbi reportedly urged its MKs to consider joining an opposition coalition, saying they belong to no one's bloc.",
+      "url": "https://www.jpost.com/israel-election-2026/article-913327",
+      "source": "Jerusalem Post"
+    },
+    {
+      "at": "2026-10-30T06:08:00Z",
+      "who": "Aryeh Deri",
+      "party": "שס",
+      "text": "Unnamed Haredi sources say he has ruled out joining an opposition-led government without Likud.",
+      "url": "https://www.jpost.com/israel-election-2026/article-913327",
+      "source": "Jerusalem Post (citing unnamed sources)"
+    },
+    {
+      "at": "2026-10-29",
+      "who": "Itamar Ben-Gvir",
+      "party": "ב",
+      "text": "Holds a lengthy meeting with Netanyahu on preserving a right-wing government, according to his party.",
+      "url": "https://www.jpost.com/israel-election-2026/article-913339",
+      "source": "Jerusalem Post"
+    },
     {
       "at": "2026-10-30",
       "who": "Central Elections Committee",
@@ -524,38 +556,6 @@
       "text": "Channel 12 sources close to him say he is choosing to lie in wait rather than commit to either camp.",
       "url": "https://www.jpost.com/israel-election-2026/article-913183",
       "source": "Jerusalem Post (citing Channel 12)"
-    },
-    {
-      "at": "2026-10-29T06:43:00Z",
-      "who": "Benjamin Netanyahu",
-      "party": "מחל",
-      "text": "Maariv reports, citing sources close to him, that he is considering a unity government with Eisenkot.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913183",
-      "source": "Jerusalem Post (citing Maariv)"
-    },
-    {
-      "at": "2026-10-29",
-      "who": "Itamar Ben-Gvir",
-      "party": "ב",
-      "text": "Calls on the Shin Bet to arrest Arab party leaders over the alleged foreign funding if there are legal grounds.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913187",
-      "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-10-29",
-      "who": "Likud",
-      "party": "מחל",
-      "text": "Calls the probe an earthquake and an attack on democracy, and demands the Shin Bet and police investigate immediately.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913187",
-      "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-10-28T23:16:00Z",
-      "who": "Rabbi Yitzhak Yosef",
-      "party": "שס",
-      "text": "Channel 13 and Kan report Shas's spiritual leader has begun moves to oust Deri as party chairman over the election result.",
-      "url": "https://www.timesofisrael.com/top-shas-rabbi-said-looking-to-oust-longtime-leader-deri-over-poor-election-result/",
-      "source": "Times of Israel (citing Channel 13, Kan)"
     }
   ]
 }
