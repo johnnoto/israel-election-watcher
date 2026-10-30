@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-29T22:29:19Z",
-  "summary": "The count is all but complete and Netanyahu's camp leads without a majority, while the interference allegations against the Arab parties remain a flashpoint; election officials say they are unlikely to change the outcome. Netanyahu met Smotrich on Oct 29 and is expected to talk to the Haredi parties next, and Ynet reports he has not raised a unity government with his partners. On the other side, Eisenkot met Bennett and Golan, and unnamed Haredi sources told Ynet they would negotiate with Eisenkot in return for a draft-exemption law, while Liberman told his party he still rules out sitting with the Haredi and Arab parties. President Herzog is expected to consult the factions next week, after official results are published.",
+  "updated": "2026-10-30T00:27:05Z",
+  "summary": "The count is all but complete and Netanyahu's camp leads without a majority, while the interference allegations against the Arab parties remain a flashpoint; election officials say they are unlikely to change the outcome. Netanyahu met Smotrich on Oct 29 and is expected to talk to the Haredi parties next, and Ynet reports he has not raised a unity government with his partners. On the other side, Eisenkot met Bennett and Golan, and unnamed Haredi sources told Ynet they would negotiate with Eisenkot in return for a draft-exemption law, while Liberman told his party he still rules out sitting with the Haredi and Arab parties, and Channel 12 reports Abbas privately doubts a minority government could work. President Herzog is expected to consult the factions next week, after official results are published.",
   "phase": {
     "now": "Double-envelope count almost complete; no change between the blocs",
     "next": "Official results are due Nov 4; Herzog then consults every faction and must assign the mandate by Nov 11.",
@@ -43,7 +43,7 @@
         "עם"
       ],
       "status": "floated",
-      "note": "Championed by Yair Golan, who met Lapid and then Abbas on Oct 29; the Times of Israel says he is the only Jewish-led bloc leader openly backing a coalition with Ra'am. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it.",
+      "note": "Championed by Yair Golan, who met Lapid and then Abbas on Oct 29; the Times of Israel says he is the only Jewish-led bloc leader openly backing a coalition with Ra'am. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it. Channel 12 reports Abbas himself privately called an Eisenkot minority government with outside Arab support weak or impossible.",
       "blockers": [
         {
           "party": "ל",
@@ -342,6 +342,14 @@
       "source": "Ynet"
     },
     {
+      "at": "2026-10-29T18:23:00Z",
+      "who": "Mansour Abbas",
+      "party": "עם",
+      "text": "Channel 12 reports he told party members that an Eisenkot minority government relying on outside Arab support would be weak or impossible.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/raams-abbas-reportedly-pessimistic-over-potential-to-establish-minority-government/",
+      "source": "Times of Israel (citing Channel 12)"
+    },
+    {
       "at": "2026-10-29T18:09:00Z",
       "who": "Central Elections Committee",
       "party": "",
@@ -547,14 +555,6 @@
       "party": "",
       "text": "Begins counting the double-envelope ballots of soldiers, diplomats and others.",
       "url": "https://www.timesofisrael.com/liveblog_entry/counting-of-double-envelope-votes-has-begun-says-central-elections-commission/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-28T21:38:00Z",
-      "who": "Joint List",
-      "party": "ודם",
-      "text": "Reiterates it is ready to cooperate politically to oust Netanyahu and help form an alternative government.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/joint-list-reiterates-its-ready-for-political-cooperation-to-oust-the-netanyahu-government/",
       "source": "Times of Israel"
     }
   ]
