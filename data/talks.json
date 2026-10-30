@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T12:53:21Z",
+  "updated": "2026-10-30T15:24:57Z",
   "summary": "The Central Elections Committee has published final results, with Netanyahu's camp ahead but short of a majority; Herzog receives the official results on Nov 4 and the new Knesset is sworn in on Nov 10. Netanyahu has met Smotrich and Ben-Gvir, and Haredi sources tell the Jerusalem Post that Deri won't join an opposition-led government without Likud. UTJ is emerging as the opposition's likeliest Haredi partner after senior rabbi Dov Landau reportedly told Degel HaTorah MKs to consider joining, though Liberman still rules out sitting with the Haredi and Arab parties. Lapid says Netanyahu has no path to a government but warns that building an alternative will be complicated.",
   "phase": {
     "now": "Final results published by the Central Elections Committee; no change between the blocs",
@@ -102,7 +102,7 @@
         "ג"
       ],
       "status": "blocked",
-      "note": "No Arab parties needed, but the Haredi draft splits it. The Jerusalem Post reports UTJ is emerging as a possible partner after Rabbi Dov Landau reportedly urged Degel HaTorah MKs to consider joining, with UTJ sources cautiously optimistic about a draft compromise; Shas is reported to be out.",
+      "note": "No Arab parties needed, but the Haredi draft splits it. A senior UTJ official told Ynet the party would offer Eisenkot the premiership in return for advancing draft exemptions, which clashes with his national-service condition; the Jerusalem Post reports Rabbi Dov Landau urged Degel HaTorah MKs to consider joining. Shas is reported to be out.",
       "blockers": [
         {
           "party": "שס",
@@ -194,13 +194,13 @@
   "parties": {
     "מחל": {
       "backs": "Netanyahu",
-      "stance": "Netanyahu says that, given the interference allegations, no Zionist party can partner with Ra'am or the Joint List; Likud says the election was stolen.",
+      "stance": "Netanyahu posted on Oct 30 that forming a government with the Arab-led parties is forbidden; Likud says the election was stolen.",
       "red_lines": [
         "No government that depends on Arab parties"
       ],
-      "date": "2026-10-29",
-      "url": "https://www.timesofisrael.com/arab-parties-pan-racist-campaign-as-pm-allies-claim-foreign-influence-plot-stole-election/",
-      "source": "Times of Israel"
+      "date": "2026-10-30",
+      "url": "https://www.aljazeera.com/news/2026/10/30/how-can-israel-break-its-election-deadlock",
+      "source": "Al Jazeera"
     },
     "דרך": {
       "backs": "Eisenkot",
@@ -318,6 +318,14 @@
   },
   "timeline": [
     {
+      "at": "2026-10-30",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "Posts on X that it is forbidden to form a government relying on the Arab-led parties, Al Jazeera reports.",
+      "url": "https://www.aljazeera.com/news/2026/10/30/how-can-israel-break-its-election-deadlock",
+      "source": "Al Jazeera"
+    },
+    {
       "at": "2026-10-30T09:33:00Z",
       "who": "Yair Lapid",
       "party": "רק",
@@ -430,6 +438,14 @@
       "source": "Times of Israel"
     },
     {
+      "at": "2026-10-29T15:12:00Z",
+      "who": "UTJ official",
+      "party": "ג",
+      "text": "A senior unnamed UTJ official tells Ynet the party intends to offer Eisenkot the premiership if draft-exemption legislation is advanced.",
+      "url": "https://www.ynetnews.com/article/rjxswybaze",
+      "source": "Ynet News"
+    },
+    {
       "at": "2026-10-29T15:02:00Z",
       "who": "Central Elections Committee",
       "party": "",
@@ -540,22 +556,6 @@
       "text": "The elections committee chair asks the Shin Bet to confirm or refute suspicions that foreign money, possibly from Qatar and Turkey, was used to boost Arab turnout.",
       "url": "https://www.jpost.com/israel-election-2026/article-913187",
       "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-10-29T07:24:00Z",
-      "who": "Netanyahu associates",
-      "party": "מחל",
-      "text": "The Jerusalem Post reports they are pushing a unity government with Eisenkot, possibly with a rotation and without the Haredi parties; change-bloc sources reject it.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913185",
-      "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-10-29T06:43:00Z",
-      "who": "Avigdor Liberman",
-      "party": "ל",
-      "text": "Channel 12 sources close to him say he is choosing to lie in wait rather than commit to either camp.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913183",
-      "source": "Jerusalem Post (citing Channel 12)"
     }
   ]
 }
