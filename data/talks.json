@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-31T09:22:19Z",
-  "summary": "The Central Elections Committee has published final results, with Netanyahu's camp ahead but short of a majority; Herzog receives the official results on Nov 4 and the new Knesset is sworn in on Nov 10. Netanyahu has met Smotrich and Ben-Gvir, and Haredi sources tell the Jerusalem Post that Deri won't join an opposition-led government without Likud. UTJ is emerging as the opposition's likeliest Haredi partner after senior rabbi Dov Landau reportedly told Degel HaTorah MKs to consider joining, though Liberman still rules out sitting with the Haredi and Arab parties. Lapid says Netanyahu has no path to a government but warns that building an alternative will be complicated.",
+  "updated": "2026-10-31T12:26:13Z",
+  "summary": "The Central Elections Committee has published final results, with Netanyahu's camp ahead but short of a majority; Herzog receives the official results on Nov 4 and the new Knesset is sworn in on Nov 10. Netanyahu has met Smotrich and Ben-Gvir, and Haredi sources tell the Jerusalem Post that Deri won't join an opposition-led government without Likud. UTJ is emerging as the opposition's likeliest Haredi partner after senior rabbi Dov Landau reportedly told Degel HaTorah MKs to consider joining, though Liberman, in a new Facebook post, again rules out the Arab parties and still rejects the Haredi ones. Lapid says Netanyahu has no path to a government but warns that building an alternative will be complicated.",
   "phase": {
     "now": "Final results published by the Central Elections Committee; no change between the blocs",
     "next": "Official results go to President Herzog on Nov 4, he then consults the factions, and the new Knesset is sworn in on Nov 10.",
@@ -236,16 +236,16 @@
     },
     "ל": {
       "backs": "Change bloc",
-      "stance": "Liberman told party members and branch heads on Oct 29 that his pledges not to join a government with the Haredi or Arab parties stand, and he still won't sit with Netanyahu.",
+      "stance": "In a Facebook post on Oct 30, Liberman again ruled out a coalition with the Arab parties, saying he won't sit with supporters of terrorism; he also still won't sit with Netanyahu or the Haredi parties.",
       "red_lines": [
         "No Likud under Netanyahu",
         "No Shas or UTJ",
         "No Ra'am or Joint List",
         "No minority government"
       ],
-      "date": "2026-10-29",
-      "url": "https://www.ynetnews.com/article/byjzm7ztmx",
-      "source": "Ynet",
+      "date": "2026-10-30",
+      "url": "https://www.israelnationalnews.com/news/435410",
+      "source": "Israel National News",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-911855",
       "lines_source": "Red lines: Jerusalem Post"
     },
@@ -317,6 +317,14 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-10-30",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Writes on Facebook that he will not sit with supporters of terrorism, again ruling out a coalition with the Arab parties.",
+      "url": "https://www.israelnationalnews.com/news/435410",
+      "source": "Israel National News"
+    },
     {
       "at": "2026-10-30",
       "who": "Benjamin Netanyahu",
@@ -547,14 +555,6 @@
       "party": "",
       "text": "Meets Eisenkot after briefing Netanyahu the day before on the interference probe; Eisenkot's party says he backed a swift, transparent investigation.",
       "url": "https://www.timesofisrael.com/liveblog_entry/shin-bet-chief-meets-netanyahu-eisenkot-to-discuss-probe-into-alleged-election-interference/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-29T10:46:00Z",
-      "who": "President Isaac Herzog",
-      "party": "",
-      "text": "Urges a thorough probe of alleged election interference, warns against tarnishing the whole Arab community, and asks parties to enter coalition talks with an open mind.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/herzog-urges-thorough-probe-into-alleged-election-interference-warns-against-tarnishing-arab-community/",
       "source": "Times of Israel"
     }
   ]
