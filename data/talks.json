@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T12:26:09Z",
+  "updated": "2026-11-01T15:25:36Z",
   "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; President Herzog says he will receive the official results on Wednesday, Nov 4, and then open consultations, and the new Knesset is sworn in on Nov 10. A senior Joint List official tells Walla that the Joint List and Ra'am are expected to recommend Eisenkot, while Netanyahu's partners are expected to back him. Ynet reports Eisenkot has had a minority government relying on Ra'am and UTJ abstentions examined, though his party says such reports don't speak for it and Liberman rejects any government dependent on Arab or Haredi parties. UTJ remains the swing party, with Ynet reporting it wants draft-exemption legislation before committing to either side.",
   "phase": {
     "now": "Final results published; President Herzog says consultations begin after he receives the official results on Nov 4",
@@ -229,13 +229,13 @@
     },
     "אמת": {
       "backs": "Eisenkot",
-      "stance": "Golan met Lapid and then Abbas on Oct 29 in his push to oust Netanyahu, and is the only Jewish-led opposition leader openly backing a coalition with Ra'am.",
+      "stance": "On Nov 1 Golan said Netanyahu should not lead another Iran war and urged forming an alternative government quickly; he has backed including Arab parties since the election.",
       "red_lines": [
         "No Netanyahu government"
       ],
-      "date": "2026-10-29",
-      "url": "https://www.timesofisrael.com/liveblog_entry/democrats-golan-meets-raam-chair-abbas-as-efforts-continue-to-oust-netanyahu/",
-      "source": "Times of Israel"
+      "date": "2026-11-01",
+      "url": "https://www.jpost.com/israel-election-2026/article-913432",
+      "source": "Jerusalem Post"
     },
     "ל": {
       "backs": "Change bloc",
@@ -320,6 +320,14 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-01",
+      "who": "Yair Golan",
+      "party": "אמת",
+      "text": "Posts that Netanyahu lacks public trust to lead another Iran war and calls for an alternative government led by the opposition leaders as soon as possible.",
+      "url": "https://www.jpost.com/israel-election-2026/article-913432",
+      "source": "Jerusalem Post"
+    },
     {
       "at": "2026-11-01T11:35:00Z",
       "who": "Gadi Eisenkot",
@@ -550,14 +558,6 @@
       "party": "דרך",
       "text": "Meets Bennett at his Ra'anana home; their joint statement says they discussed forming a good government as quickly as possible.",
       "url": "https://www.timesofisrael.com/liveblog_entry/eisenkot-and-bennett-meet-over-efforts-to-form-government/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-29T16:41:00Z",
-      "who": "Yair Lapid",
-      "party": "רק",
-      "text": "After briefings from the elections committee and the Shin Bet chief, says there is no reason to challenge the results or delay the Knesset's swearing-in.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/after-briefing-lapid-says-election-interference-allegations-not-enough-to-warrant-vote-challenge/",
       "source": "Times of Israel"
     }
   ]
