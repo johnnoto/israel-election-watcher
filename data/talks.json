@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-01T03:24:26Z",
-  "summary": "Final results are published, with Netanyahu's camp ahead but short of a majority; President Herzog receives the official results on Nov 4, Haaretz reports his faction consultations will be broadcast live, and the new Knesset is sworn in on Nov 10. Eisenkot has set four conditions for partners and says he will form only a Zionist government, but AFP reports he has not decided whether to seek Arab parties' support, as protesters in Tel Aviv and Jerusalem urged him to. Netanyahu is holding his partners together, Haredi sources say Deri won't join an opposition-led government without Likud, and UTJ is weighing talks. Liberman still rules out relying on Arab parties even from outside, while the Joint List's Jabareen says he would back Eisenkot without joining his government.",
+  "updated": "2026-11-01T06:23:03Z",
+  "summary": "Final results are published, with Netanyahu's camp ahead but short of a majority; President Herzog receives the official results on Nov 4, Haaretz reports his faction consultations will be broadcast live, and the new Knesset is sworn in on Nov 10. Eisenkot has set four conditions for partners and says he will form only a Zionist government, but AFP reports he has not decided whether to seek Arab parties' support, as some 2,000 protesters in Tel Aviv urged him to on Saturday night. Netanyahu is holding his partners together, Haredi sources say Deri won't join an opposition-led government without Likud, and UTJ is weighing talks. Liberman still rules out relying on Arab parties even from outside, while the Joint List's Jabareen says he would back Eisenkot without joining his government.",
   "phase": {
     "now": "Final results published by the Central Elections Committee; no change between the blocs",
     "next": "Official results go to President Herzog on Nov 4; Haaretz reports his consultations with the factions will be broadcast live, and the new Knesset is sworn in on Nov 10.",
@@ -330,9 +330,9 @@
       "at": "2026-10-31",
       "who": "Protesters",
       "party": "",
-      "text": "Hundreds rally in Tel Aviv and about 100 in Jerusalem urging the opposition to ally with the Arab parties to oust Netanyahu, AFP reports.",
-      "url": "https://www.arabnews.com/middle-east/israeli-protesters-demand-opposition-ally-with-arab-parties-to-oust-netanyahu-3009167",
-      "source": "Arab News (AFP)"
+      "text": "Some 2,000 people march through Tel Aviv demanding a Jewish-Arab government, the Times of Israel reports.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/some-2000-protesters-march-through-tel-aviv-to-demand-jewish-arab-government/",
+      "source": "Times of Israel"
     },
     {
       "at": "2026-10-31",
