@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-01T09:23:23Z",
-  "summary": "Final results are published, with Netanyahu's camp ahead but short of a majority; President Herzog receives the official results on Nov 4, his faction consultations will be broadcast live, and the new Knesset is sworn in on Nov 10. Eisenkot has set four conditions for partners and says he will form only a Zionist government, and a source close to him tells Ynet he is courting Shas and UTJ, with Liberman the main obstacle. Maariv reports the opposition has agreed its first move will be to replace Knesset Speaker Amir Ohana, while the Joint List's Tibi says his party won't join a government. Netanyahu is holding his partners together, and Ynet reports Likud is working to peel lawmakers away from the opposition's speaker bid.",
+  "updated": "2026-11-01T12:26:09Z",
+  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; President Herzog says he will receive the official results on Wednesday, Nov 4, and then open consultations, and the new Knesset is sworn in on Nov 10. A senior Joint List official tells Walla that the Joint List and Ra'am are expected to recommend Eisenkot, while Netanyahu's partners are expected to back him. Ynet reports Eisenkot has had a minority government relying on Ra'am and UTJ abstentions examined, though his party says such reports don't speak for it and Liberman rejects any government dependent on Arab or Haredi parties. UTJ remains the swing party, with Ynet reporting it wants draft-exemption legislation before committing to either side.",
   "phase": {
-    "now": "Final results published by the Central Elections Committee; no change between the blocs",
-    "next": "Official results go to President Herzog on Nov 4; Haaretz reports his consultations with the factions will be broadcast live, and the new Knesset is sworn in on Nov 10.",
-    "url": "https://www.tribuneindia.com/news/world/israel-publishes-final-election-results-new-knesset-to-be-sworn-in-nov-10",
-    "source": "The Tribune (ANI)"
+    "now": "Final results published; President Herzog says consultations begin after he receives the official results on Nov 4",
+    "next": "Ynet reports consultations start Nov 4 and may run into Thursday or Friday, with Herzog due to choose a candidate by Nov 11; the new Knesset is sworn in on Nov 10.",
+    "url": "https://www.ynetnews.com/article/sk8eaw4pge",
+    "source": "Ynet"
   },
   "scenarios": [
     {
@@ -43,7 +43,7 @@
         "עם"
       ],
       "status": "floated",
-      "note": "Championed by Yair Golan, who met Lapid and then Abbas on Oct 29; the Times of Israel says he is the only Jewish-led bloc leader openly backing a coalition with Ra'am. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it. Channel 12 reports Abbas himself privately called an Eisenkot minority government with outside Arab support weak or impossible. AFP reports Eisenkot has not decided whether to seek a coalition relying on Arab parties, and the Joint List's Jabareen says he would back him from outside.",
+      "note": "Championed by Yair Golan, who met Lapid and then Abbas on Oct 29; the Times of Israel says he is the only Jewish-led bloc leader openly backing a coalition with Ra'am. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it. Channel 12 reports Abbas himself privately called an Eisenkot minority government with outside Arab support weak or impossible. AFP reports Eisenkot has not decided whether to seek a coalition relying on Arab parties, and the Joint List's Jabareen says he would back him from outside. A senior Joint List official told Walla on Nov 1 that the Joint List and Ra'am are expected to recommend Eisenkot to the president.",
       "blockers": [
         {
           "party": "ל",
@@ -79,7 +79,7 @@
         "עם"
       ],
       "status": "short",
-      "note": "The 2021 Bennett–Lapid model. Abbas says both camps have contacted him, but this falls short of 61 even before Liberman's veto.",
+      "note": "The 2021 Bennett–Lapid model. Ynet reports, citing unnamed sources, that Eisenkot authorized examining a minority government with Ra'am inside and UTJ abstaining, possibly as leverage in unity talks; Yashar says such reports are not issued on its behalf. It falls short of 61 and Liberman rejects any government dependent on Arab or Haredi parties.",
       "blockers": [
         {
           "party": "ל",
@@ -87,7 +87,9 @@
           "url": "https://www.jpost.com/israel-election-2026/article-911855",
           "source": "Jerusalem Post"
         }
-      ]
+      ],
+      "url": "https://www.i24news.tv/en/news/israeli-elections/artc-eisenkot-explores-minority-government-backed-by-ra-am-utj-abstentions-report",
+      "source": "i24NEWS (citing Ynet)"
     },
     {
       "id": "change-haredi",
@@ -264,13 +266,13 @@
     },
     "ג": {
       "backs": "Undecided",
-      "stance": "Rabbi Dov Landau reportedly urged Degel HaTorah MKs to consider joining an opposition coalition, and unnamed UTJ sources voice cautious optimism about a draft compromise.",
+      "stance": "Chairman Yaakov Asher consulted the party's rabbis on Oct 31, and Ynet reports UTJ wants exemption legislation before committing to either candidate.",
       "red_lines": [
         "Draft-exemption law"
       ],
-      "date": "2026-10-30",
-      "url": "https://www.jpost.com/israel-election-2026/article-913327",
-      "source": "Jerusalem Post",
+      "date": "2026-11-01",
+      "url": "https://www.ynetnews.com/article/sk8eaw4pge",
+      "source": "Ynet",
       "lines_url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
       "lines_source": "Red lines: Times of Israel (Oct 14)"
     },
@@ -299,7 +301,7 @@
       "lines_source": "Red lines: Jerusalem Post (Oct 22)"
     },
     "עם": {
-      "backs": "Undecided",
+      "backs": "Eisenkot (expected, per Walla)",
       "stance": "Abbas denies any link to the alleged foreign interference, pledges full cooperation with investigators and accuses Netanyahu of inciting against Arab citizens; he has said he'd join a government that tackles crime and discrimination.",
       "red_lines": [],
       "date": "2026-10-29",
@@ -307,17 +309,41 @@
       "source": "Times of Israel"
     },
     "ודם": {
-      "backs": "Against Netanyahu",
-      "stance": "Joint List MK Ahmad Tibi said on Oct 31 the party will not be part of the government, though Jabareen has offered Eisenkot outside support; KAN reports its leaders felt snubbed by the opposition's talks.",
+      "backs": "Eisenkot (expected)",
+      "stance": "Tibi said on Oct 31 the Joint List is ready to recommend Eisenkot and replace the Knesset speaker but will not join the government, offering outside support.",
       "red_lines": [
         "No Netanyahu government"
       ],
       "date": "2026-10-31",
-      "url": "https://www.jpost.com/israel-election-2026/article-913430",
-      "source": "Jerusalem Post (Maariv, citing KAN)"
+      "url": "https://www.ynetnews.com/article/sk8eaw4pge",
+      "source": "Ynet"
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-01T11:35:00Z",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Ynet reports, citing unnamed sources, that he authorized examining a minority government with Ra'am and UTJ abstentions; Yashar says such reports don't speak for it.",
+      "url": "https://www.i24news.tv/en/news/israeli-elections/artc-eisenkot-explores-minority-government-backed-by-ra-am-utj-abstentions-report",
+      "source": "i24NEWS (citing Ynet)"
+    },
+    {
+      "at": "2026-11-01",
+      "who": "President Isaac Herzog",
+      "party": "",
+      "text": "Says he will receive the official results on Wednesday and then begin consultations, urging leaders to show flexibility.",
+      "url": "https://www.jpost.com/israel-election-2026/article-913448",
+      "source": "Jerusalem Post"
+    },
+    {
+      "at": "2026-11-01",
+      "who": "Joint List official",
+      "party": "ודם",
+      "text": "A senior Joint List official tells Walla the Joint List and Ra'am are expected to recommend Eisenkot for prime minister.",
+      "url": "https://www.jpost.com/israel-election-2026/article-913448",
+      "source": "Jerusalem Post (citing Walla)"
+    },
     {
       "at": "2026-11-01T06:00:00Z",
       "who": "Opposition bloc",
@@ -341,6 +367,14 @@
       "text": "A source close to him tells Ynet he is trying to bring Shas and UTJ into his government, with Liberman the main obstacle.",
       "url": "https://www.ynetnews.com/article/byfom0x6me",
       "source": "Ynet (citing unnamed source)"
+    },
+    {
+      "at": "2026-10-31",
+      "who": "Ahmad Tibi",
+      "party": "ודם",
+      "text": "Says the Joint List is prepared to recommend Eisenkot and to back replacing the Knesset speaker.",
+      "url": "https://www.ynetnews.com/article/sk8eaw4pge",
+      "source": "Ynet"
     },
     {
       "at": "2026-10-31",
@@ -524,38 +558,6 @@
       "party": "רק",
       "text": "After briefings from the elections committee and the Shin Bet chief, says there is no reason to challenge the results or delay the Knesset's swearing-in.",
       "url": "https://www.timesofisrael.com/liveblog_entry/after-briefing-lapid-says-election-interference-allegations-not-enough-to-warrant-vote-challenge/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-29T16:31:00Z",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Accuses Netanyahu of a coordinated bid to delegitimize the results, vows the Knesset will be sworn in on schedule, and says conscription and Oct. 7 inquiry bills are being prepared.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/eisenkot-accuses-netanyahu-of-delegitimizing-election-vows-not-to-give-centimeter-deviation-in-swearing-in-of-next-knesset-promises-state-inquiry-conscription-law/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-29T15:12:00Z",
-      "who": "UTJ official",
-      "party": "ג",
-      "text": "A senior unnamed UTJ official tells Ynet the party intends to offer Eisenkot the premiership if draft-exemption legislation is advanced.",
-      "url": "https://www.ynetnews.com/article/rjxswybaze",
-      "source": "Ynet News"
-    },
-    {
-      "at": "2026-10-29T15:02:00Z",
-      "who": "Central Elections Committee",
-      "party": "",
-      "text": "With the double-envelope count almost done, a seat moves from the Joint List to Ra'am, with no change between the blocs.",
-      "url": "https://www.timesofisrael.com/liveblog-october-29-2026/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-29",
-      "who": "Benjamin Netanyahu",
-      "party": "מחל",
-      "text": "Says that, given the interference allegations, no Zionist party can partner with Ra'am or the Joint List.",
-      "url": "https://www.timesofisrael.com/arab-parties-pan-racist-campaign-as-pm-allies-claim-foreign-influence-plot-stole-election/",
       "source": "Times of Israel"
     }
   ]
