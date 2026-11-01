@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-31T21:23:09Z",
-  "summary": "The Central Elections Committee has published final results, with Netanyahu's camp ahead but short of a majority; Herzog receives the official results on Nov 4 and the new Knesset is sworn in on Nov 10. Netanyahu has met Smotrich and Ben-Gvir, and Haredi sources tell the Jerusalem Post that Deri won't join an opposition-led government without Likud. UTJ is emerging as the opposition's likeliest Haredi partner after senior rabbi Dov Landau reportedly told Degel HaTorah MKs to consider joining, though Liberman, in a new Facebook post, again rules out the Arab parties and still rejects the Haredi ones. Lapid says Netanyahu has no path to a government but warns that building an alternative will be complicated.",
+  "updated": "2026-11-01T00:23:19Z",
+  "summary": "Final results are published, with Netanyahu's camp ahead but short of a majority; President Herzog receives the official results on Nov 4 and the new Knesset is sworn in on Nov 10. After meeting Lapid on Oct 31, Eisenkot set four conditions for coalition partners, including national service for all, and said he would use a Knesset majority to pass a state inquiry and a draft law, while his party accused Likud figures of courting its MKs. Netanyahu is holding his partners together, Haredi sources say Deri won't join an opposition-led government without Likud, and UTJ is weighing talks. Liberman still rules out both the Arab and Haredi parties, and Maariv reports senior opposition figures are discussing a direct vote for prime minister as one way out of the deadlock.",
   "phase": {
     "now": "Final results published by the Central Elections Committee; no change between the blocs",
     "next": "Official results go to President Herzog on Nov 4, he then consults the factions, and the new Knesset is sworn in on Nov 10.",
@@ -204,14 +204,15 @@
     },
     "דרך": {
       "backs": "Eisenkot",
-      "stance": "Eisenkot met Bennett and Golan on Oct 29, told supporters he will work to form a new government, and accuses Netanyahu of trying to delegitimize the election.",
+      "stance": "After meeting Lapid on Oct 31, Eisenkot said any MK accepting his four principles could be a partner, and vowed to use a Knesset majority for a state inquiry, national service and repealing judicial-overhaul laws.",
       "red_lines": [
         "National service for all",
         "Netanyahu out",
-        "No rotation with Netanyahu"
+        "No rotation with Netanyahu",
+        "Partners must accept his four principles"
       ],
-      "date": "2026-10-29",
-      "url": "https://www.ynetnews.com/article/byjzm7ztmx",
+      "date": "2026-10-31",
+      "url": "https://www.ynetnews.com/article/by6ffom6ml",
       "source": "Ynet"
     },
     "רק": {
@@ -317,6 +318,38 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-10-31T17:51:00Z",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Sets four conditions for coalition partners, including national service for all and treating Hamas as a terror group, and says he aims for a broad Zionist government.",
+      "url": "https://www.ynetnews.com/article/by6ffom6ml",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-10-31",
+      "who": "Yashar! party",
+      "party": "דרך",
+      "text": "Accuses Likud's Yoav Kisch, Almog Cohen and Yaakov Bardugo of phoning Yashar! members to try to win them over.",
+      "url": "https://www.ynetnews.com/article/by6ffom6ml",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-10-31",
+      "who": "Gadi Eisenkot & Yair Lapid",
+      "party": "רק",
+      "text": "Meet and say in a joint statement that they discussed the results and coordinated next steps.",
+      "url": "https://www.ynetnews.com/article/by6ffom6ml",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-10-31",
+      "who": "Opposition figures",
+      "party": "",
+      "text": "Maariv reports unnamed senior opposition figures are weighing a direct election for prime minister without dissolving the Knesset.",
+      "url": "https://www.jpost.com/israel-election-2026/article-913379",
+      "source": "Jerusalem Post (Maariv)"
+    },
     {
       "at": "2026-10-30",
       "who": "Avigdor Liberman",
@@ -523,38 +556,6 @@
       "party": "עם",
       "text": "Denies any role in the alleged foreign interference, welcomes the probe and accuses Netanyahu of incitement against Arab citizens.",
       "url": "https://www.timesofisrael.com/liveblog_entry/raam-leader-abbas-denies-involvement-in-alleged-election-interference-accuses-netanyahu-of-incitement-against-arabs/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-29T12:32:00Z",
-      "who": "Central Elections Committee",
-      "party": "",
-      "text": "Acting director Dean Livne tells a Yesh Atid MK the vote was conducted lawfully and the fraud claims appear baseless, saying the Shin Bet request concerns unverified intelligence.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/elections-panel-director-says-claims-of-widespread-fraud-appear-to-be-baseless-vote-was-conducted-lawfully/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-29T11:58:00Z",
-      "who": "Unnamed officials",
-      "party": "",
-      "text": "Tell Ynet and Kan the alleged Qatari interference is much smaller in scale than reported, though enough to require investigation.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/unnamed-officials-say-alleged-electoral-interference-on-a-smaller-scale-than-suggested/",
-      "source": "Times of Israel (citing Ynet, Kan)"
-    },
-    {
-      "at": "2026-10-29T11:31:00Z",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Accuses Netanyahu of trying to delegitimize the election with an unfinished probe, calls for an immediate impartial investigation and says the Knesset must convene on time.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/eisenkot-qatari-involvement-in-israel-is-grave-matter-whether-in-pms-office-or-election/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-29T11:20:00Z",
-      "who": "Shin Bet chief David Zini",
-      "party": "",
-      "text": "Meets Eisenkot after briefing Netanyahu the day before on the interference probe; Eisenkot's party says he backed a swift, transparent investigation.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/shin-bet-chief-meets-netanyahu-eisenkot-to-discuss-probe-into-alleged-election-interference/",
       "source": "Times of Israel"
     }
   ]
