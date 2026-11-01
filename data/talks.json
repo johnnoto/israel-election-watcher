@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-01T18:23:17Z",
-  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; President Herzog says he will receive the official results on Wednesday, Nov 4, and then open consultations, and the new Knesset is sworn in on Nov 10. A senior Joint List official tells Walla that the Joint List and Ra'am are expected to recommend Eisenkot, while Netanyahu's partners are expected to back him. Ynet reports Eisenkot has had a minority government relying on Ra'am and UTJ abstentions examined, though his party says such reports don't speak for it, Liberman rejects any government dependent on Arab or Haredi parties, and the bloc is still split over who should replace Knesset Speaker Ohana. UTJ remains the swing party, with Ynet reporting it wants draft-exemption legislation before committing to either side.",
+  "updated": "2026-11-01T21:23:59Z",
+  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; President Herzog receives the official results on Wednesday, Nov 4, and then opens consultations, and the new Knesset is sworn in on Nov 10. Bennett and Lapid's Together announced on Sunday evening that it will recommend Eisenkot, joining the Joint List and Ra'am, which a Joint List official says are expected to do the same, while Liberman has not said whom he will back and is due to address the media after his faction meets on Monday. Ynet reports, citing unnamed sources, that Liberman berated Eisenkot at a tense Saturday meeting over his push to examine a minority government, and Kan cites Netanyahu associate Benny Biton as saying Netanyahu wants a unity government with Eisenkot. UTJ remains the swing party and is expected to stay uncommitted at first, Ynet reports.",
   "phase": {
     "now": "Final results published; President Herzog says consultations begin after he receives the official results on Nov 4",
     "next": "Ynet reports consultations start Nov 4 and may run into Thursday or Friday, with Herzog due to choose a candidate by Nov 11; the new Knesset is sworn in on Nov 10.",
@@ -79,7 +79,7 @@
         "עם"
       ],
       "status": "short",
-      "note": "The 2021 Bennett–Lapid model. Ynet reports, citing unnamed sources, that Eisenkot authorized examining a minority government with Ra'am inside and UTJ abstaining, possibly as leverage in unity talks; Yashar says such reports are not issued on its behalf. It falls short of 61 and Liberman rejects any government dependent on Arab or Haredi parties.",
+      "note": "The 2021 Bennett–Lapid model. Ynet reports, citing unnamed sources, that Eisenkot authorized examining a minority government with Ra'am inside and UTJ abstaining, possibly as leverage in unity talks; Yashar says such reports are not issued on its behalf. It falls short of 61 and Liberman rejects any government dependent on Arab or Haredi parties. Unnamed sources tell Ynet that Liberman berated Eisenkot at a Saturday meeting, saying the minority-government push hurt the bloc.",
       "blockers": [
         {
           "party": "ל",
@@ -145,7 +145,7 @@
         "ל"
       ],
       "status": "floated",
-      "note": "The Jerusalem Post reports Netanyahu-linked sources are promoting it, possibly with a rotating premiership and without Shas and UTJ, but Ynet reports Netanyahu has not discussed it with his partners or Likud associates. Channel 12 reports Liberman wants Eisenkot to join Netanyahu, though not under his own banner. Who would lead it is the sticking point.",
+      "note": "The Jerusalem Post reports Netanyahu-linked sources are promoting it, possibly with a rotating premiership and without Shas and UTJ. Kan cites Netanyahu associate Benny Biton as saying Netanyahu wants unity, and an unnamed Likud official named Herzog and Trump as guarantors for Eisenkot. Channel 12 reports Liberman wants Eisenkot to join Netanyahu, though not under his own banner. Who would lead it is the sticking point.",
       "blockers": [
         {
           "party": "דרך",
@@ -166,8 +166,8 @@
           "source": "Ynet"
         }
       ],
-      "url": "https://www.jpost.com/israel-election-2026/article-913185",
-      "source": "Jerusalem Post"
+      "url": "https://www.newarab.com/news/netanyahu-interested-unity-govt-eisenkot-report",
+      "source": "The New Arab (citing Kan)"
     },
     {
       "id": "right-together",
@@ -218,14 +218,14 @@
       "source": "Ynet"
     },
     "רק": {
-      "backs": "Change bloc",
-      "stance": "Lapid says Netanyahu has no way to form a government on these results, but forming an alternative will be complicated and is not guaranteed.",
+      "backs": "Recommending Eisenkot (announced)",
+      "stance": "Together announced on Nov 1 it will recommend Eisenkot for prime minister, saying Bennett is respecting the voters' decision and has informed Eisenkot.",
       "red_lines": [
         "No Netanyahu government"
       ],
-      "date": "2026-10-30",
-      "url": "https://www.jpost.com/israel-election-2026/article-913339",
-      "source": "Jerusalem Post"
+      "date": "2026-11-01",
+      "url": "https://www.ynetnews.com/article/by8rlfbpgg",
+      "source": "Ynet"
     },
     "אמת": {
       "backs": "Eisenkot",
@@ -238,17 +238,17 @@
       "source": "Jerusalem Post"
     },
     "ל": {
-      "backs": "Change bloc",
-      "stance": "In a Facebook post on Oct 30, Liberman again ruled out a coalition with the Arab parties, saying he won't sit with supporters of terrorism; he also still won't sit with Netanyahu or the Haredi parties.",
+      "backs": "Not yet committed",
+      "stance": "Liberman has not said whether he will recommend Eisenkot and plans to speak after his faction meets on Nov 2; in an X post over the weekend he again refused to rely on Arab parties.",
       "red_lines": [
         "No Likud under Netanyahu",
         "No Shas or UTJ",
         "No Ra'am or Joint List",
         "No minority government"
       ],
-      "date": "2026-10-30",
-      "url": "https://www.israelnationalnews.com/news/435410",
-      "source": "Israel National News",
+      "date": "2026-11-01",
+      "url": "https://www.ynetnews.com/article/by8rlfbpgg",
+      "source": "Ynet",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-911855",
       "lines_source": "Red lines: Jerusalem Post"
     },
@@ -321,6 +321,38 @@
   },
   "timeline": [
     {
+      "at": "2026-11-01",
+      "who": "Together (Bennett & Lapid)",
+      "party": "רק",
+      "text": "Announces it will recommend Eisenkot for prime minister, saying Bennett has informed him of the decision.",
+      "url": "https://www.ynetnews.com/article/by8rlfbpgg",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-01",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Has not committed to recommending Eisenkot and is expected to speak to the media after his faction meets on Monday, Ynet reports.",
+      "url": "https://www.ynetnews.com/article/by8rlfbpgg",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-01",
+      "who": "Benny Biton",
+      "party": "מחל",
+      "text": "The Dimona mayor and Netanyahu associate tells Kan that Netanyahu wants a unity government, while warning against replacing the Knesset speaker.",
+      "url": "https://www.newarab.com/news/netanyahu-interested-unity-govt-eisenkot-report",
+      "source": "The New Arab (citing Kan)"
+    },
+    {
+      "at": "2026-11-01",
+      "who": "Opposition bloc",
+      "party": "",
+      "text": "Unnamed senior bloc officials tell Ynet they want Eisenkot to get the first mandate so they can repeal judicial laws before they take effect on Jan. 1, 2027.",
+      "url": "https://www.ynetnews.com/article/bkts0t4tgl",
+      "source": "Ynet (citing unnamed sources)"
+    },
+    {
       "at": "2026-11-01T10:20:00Z",
       "who": "Opposition bloc",
       "party": "",
@@ -375,6 +407,14 @@
       "text": "Has agreed that its first move will be to replace Knesset Speaker Amir Ohana, Maariv reports, citing local news reports.",
       "url": "https://www.jpost.com/israel-election-2026/article-913430",
       "source": "Jerusalem Post (Maariv)"
+    },
+    {
+      "at": "2026-10-31",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Berates Eisenkot at a tense meeting over his campaign and minority-government push, unnamed sources tell Ynet; they also discussed the speakership.",
+      "url": "https://www.ynetnews.com/article/by8rlfbpgg",
+      "source": "Ynet (citing unnamed sources)"
     },
     {
       "at": "2026-10-31",
@@ -519,46 +559,6 @@
       "text": "Holds a lengthy meeting with Netanyahu on preserving a right-wing government, according to his party.",
       "url": "https://www.jpost.com/israel-election-2026/article-913339",
       "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-10-29",
-      "who": "Haredi party sources",
-      "party": "ג",
-      "text": "Unnamed sources tell Ynet the Haredi parties would negotiate joining an Eisenkot government if a draft-exemption law is passed.",
-      "url": "https://www.ynetnews.com/article/byjzm7ztmx",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-10-29",
-      "who": "Avigdor Liberman",
-      "party": "ל",
-      "text": "Tells party members his pledges not to sit with the Haredi or Arab parties remain in place.",
-      "url": "https://www.ynetnews.com/article/byjzm7ztmx",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-10-29",
-      "who": "Benjamin Netanyahu",
-      "party": "מחל",
-      "text": "Meets Smotrich in person after calling him and Ben-Gvir the night before; Ynet says talks with the Haredi parties are expected next.",
-      "url": "https://www.ynetnews.com/article/byjzm7ztmx",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-10-29T19:31:00Z",
-      "who": "Yaakov Asher",
-      "party": "ג",
-      "text": "The UTJ chairman denies any feelers, talks or contacts with Eisenkot, after Channel 12 reported UTJ officials were weighing outside support for an Eisenkot minority government.",
-      "url": "https://www.israelnationalnews.com/news/435364",
-      "source": "Israel National News"
-    },
-    {
-      "at": "2026-10-29T18:23:00Z",
-      "who": "Mansour Abbas",
-      "party": "עם",
-      "text": "Channel 12 reports he told party members that an Eisenkot minority government relying on outside Arab support would be weak or impossible.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/raams-abbas-reportedly-pessimistic-over-potential-to-establish-minority-government/",
-      "source": "Times of Israel (citing Channel 12)"
     }
   ]
 }
