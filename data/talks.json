@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-01T15:25:36Z",
-  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; President Herzog says he will receive the official results on Wednesday, Nov 4, and then open consultations, and the new Knesset is sworn in on Nov 10. A senior Joint List official tells Walla that the Joint List and Ra'am are expected to recommend Eisenkot, while Netanyahu's partners are expected to back him. Ynet reports Eisenkot has had a minority government relying on Ra'am and UTJ abstentions examined, though his party says such reports don't speak for it and Liberman rejects any government dependent on Arab or Haredi parties. UTJ remains the swing party, with Ynet reporting it wants draft-exemption legislation before committing to either side.",
+  "updated": "2026-11-01T18:23:17Z",
+  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; President Herzog says he will receive the official results on Wednesday, Nov 4, and then open consultations, and the new Knesset is sworn in on Nov 10. A senior Joint List official tells Walla that the Joint List and Ra'am are expected to recommend Eisenkot, while Netanyahu's partners are expected to back him. Ynet reports Eisenkot has had a minority government relying on Ra'am and UTJ abstentions examined, though his party says such reports don't speak for it, Liberman rejects any government dependent on Arab or Haredi parties, and the bloc is still split over who should replace Knesset Speaker Ohana. UTJ remains the swing party, with Ynet reporting it wants draft-exemption legislation before committing to either side.",
   "phase": {
     "now": "Final results published; President Herzog says consultations begin after he receives the official results on Nov 4",
     "next": "Ynet reports consultations start Nov 4 and may run into Thursday or Friday, with Herzog due to choose a candidate by Nov 11; the new Knesset is sworn in on Nov 10.",
@@ -278,13 +278,13 @@
     },
     "ב": {
       "backs": "Netanyahu",
-      "stance": "Ben-Gvir held a long meeting with Netanyahu on Oct 29 on preserving a right-wing government, his party says; he rejects unity with Eisenkot.",
+      "stance": "Ben-Gvir attacked the idea of a government with the Joint List after Jabareen declined to call Hamas a terror group; he rejects unity with Eisenkot and backs keeping a right-wing government.",
       "red_lines": [
         "No unity with Eisenkot"
       ],
-      "date": "2026-10-29",
-      "url": "https://www.jpost.com/israel-election-2026/article-913339",
-      "source": "Jerusalem Post",
+      "date": "2026-11-01",
+      "url": "https://www.yahoo.com/news/politics/articles/netanyahu-main-rival-opens-door-110651092.html",
+      "source": "The Telegraph via Yahoo News",
       "lines_url": "https://www.ynetnews.com/article/skmg7jc2ml",
       "lines_source": "Red lines: Ynet"
     },
@@ -320,6 +320,22 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-01T10:20:00Z",
+      "who": "Opposition bloc",
+      "party": "",
+      "text": "Unnamed sources tell Ynet the bloc has not agreed on a new Knesset speaker, with Eisenkot wanting a Yashar! MK and Liberman pushing Oded Forer.",
+      "url": "https://www.ynetnews.com/article/r1unaf4tmx",
+      "source": "Ynet (citing unnamed sources)"
+    },
+    {
+      "at": "2026-11-01",
+      "who": "Itamar Ben-Gvir",
+      "party": "ב",
+      "text": "Shares a clip of Jabareen's interview and attacks the idea of forming a government with the Joint List, the Telegraph reports.",
+      "url": "https://www.yahoo.com/news/politics/articles/netanyahu-main-rival-opens-door-110651092.html",
+      "source": "The Telegraph via Yahoo News"
+    },
     {
       "at": "2026-11-01",
       "who": "Yair Golan",
@@ -359,6 +375,14 @@
       "text": "Has agreed that its first move will be to replace Knesset Speaker Amir Ohana, Maariv reports, citing local news reports.",
       "url": "https://www.jpost.com/israel-election-2026/article-913430",
       "source": "Jerusalem Post (Maariv)"
+    },
+    {
+      "at": "2026-10-31",
+      "who": "Yousef Jabareen",
+      "party": "ודם",
+      "text": "Declines to label Hamas a terror group in a Channel 12 interview, one of Eisenkot's four conditions for partners, the Telegraph reports.",
+      "url": "https://www.yahoo.com/news/politics/articles/netanyahu-main-rival-opens-door-110651092.html",
+      "source": "The Telegraph via Yahoo News"
     },
     {
       "at": "2026-10-31T21:31:00Z",
@@ -535,30 +559,6 @@
       "text": "Channel 12 reports he told party members that an Eisenkot minority government relying on outside Arab support would be weak or impossible.",
       "url": "https://www.timesofisrael.com/liveblog_entry/raams-abbas-reportedly-pessimistic-over-potential-to-establish-minority-government/",
       "source": "Times of Israel (citing Channel 12)"
-    },
-    {
-      "at": "2026-10-29T18:09:00Z",
-      "who": "Central Elections Committee",
-      "party": "",
-      "text": "Acting director Dean Livne tells Channel 12 he sees no likelihood the interference allegations will change the results, with individual votes voided only on direct proof.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/election-panel-director-i-see-no-likelihood-allegations-of-election-fraud-will-influence-results/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-29T17:50:00Z",
-      "who": "Yair Golan",
-      "party": "אמת",
-      "text": "Meets Ra'am chairman Mansour Abbas as part of his efforts to form a government without Netanyahu.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/democrats-golan-meets-raam-chair-abbas-as-efforts-continue-to-oust-netanyahu/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-29T17:23:00Z",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Meets Bennett at his Ra'anana home; their joint statement says they discussed forming a good government as quickly as possible.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/eisenkot-and-bennett-meet-over-efforts-to-form-government/",
-      "source": "Times of Israel"
     }
   ]
 }
