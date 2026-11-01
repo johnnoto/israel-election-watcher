@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-01T00:23:19Z",
-  "summary": "Final results are published, with Netanyahu's camp ahead but short of a majority; President Herzog receives the official results on Nov 4 and the new Knesset is sworn in on Nov 10. After meeting Lapid on Oct 31, Eisenkot set four conditions for coalition partners, including national service for all, and said he would use a Knesset majority to pass a state inquiry and a draft law, while his party accused Likud figures of courting its MKs. Netanyahu is holding his partners together, Haredi sources say Deri won't join an opposition-led government without Likud, and UTJ is weighing talks. Liberman still rules out both the Arab and Haredi parties, and Maariv reports senior opposition figures are discussing a direct vote for prime minister as one way out of the deadlock.",
+  "updated": "2026-11-01T03:24:26Z",
+  "summary": "Final results are published, with Netanyahu's camp ahead but short of a majority; President Herzog receives the official results on Nov 4, Haaretz reports his faction consultations will be broadcast live, and the new Knesset is sworn in on Nov 10. Eisenkot has set four conditions for partners and says he will form only a Zionist government, but AFP reports he has not decided whether to seek Arab parties' support, as protesters in Tel Aviv and Jerusalem urged him to. Netanyahu is holding his partners together, Haredi sources say Deri won't join an opposition-led government without Likud, and UTJ is weighing talks. Liberman still rules out relying on Arab parties even from outside, while the Joint List's Jabareen says he would back Eisenkot without joining his government.",
   "phase": {
     "now": "Final results published by the Central Elections Committee; no change between the blocs",
-    "next": "Official results go to President Herzog on Nov 4, he then consults the factions, and the new Knesset is sworn in on Nov 10.",
+    "next": "Official results go to President Herzog on Nov 4; Haaretz reports his consultations with the factions will be broadcast live, and the new Knesset is sworn in on Nov 10.",
     "url": "https://www.tribuneindia.com/news/world/israel-publishes-final-election-results-new-knesset-to-be-sworn-in-nov-10",
     "source": "The Tribune (ANI)"
   },
@@ -43,7 +43,7 @@
         "עם"
       ],
       "status": "floated",
-      "note": "Championed by Yair Golan, who met Lapid and then Abbas on Oct 29; the Times of Israel says he is the only Jewish-led bloc leader openly backing a coalition with Ra'am. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it. Channel 12 reports Abbas himself privately called an Eisenkot minority government with outside Arab support weak or impossible.",
+      "note": "Championed by Yair Golan, who met Lapid and then Abbas on Oct 29; the Times of Israel says he is the only Jewish-led bloc leader openly backing a coalition with Ra'am. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it. Channel 12 reports Abbas himself privately called an Eisenkot minority government with outside Arab support weak or impossible. AFP reports Eisenkot has not decided whether to seek a coalition relying on Arab parties, and the Joint List's Jabareen says he would back him from outside.",
       "blockers": [
         {
           "party": "ל",
@@ -308,16 +308,40 @@
     },
     "ודם": {
       "backs": "Against Netanyahu",
-      "stance": "The Joint List calls the interference accusations racist lies and says it won't apologize for its results; it remains ready to help oust Netanyahu.",
+      "stance": "Joint List MK Yousef Jabareen told AFP on Oct 31 he is willing to support Eisenkot in the Knesset without joining his government.",
       "red_lines": [
         "No Netanyahu government"
       ],
-      "date": "2026-10-29",
-      "url": "https://www.timesofisrael.com/arab-parties-pan-racist-campaign-as-pm-allies-claim-foreign-influence-plot-stole-election/",
-      "source": "Times of Israel"
+      "date": "2026-10-31",
+      "url": "https://www.arabnews.com/middle-east/israeli-protesters-demand-opposition-ally-with-arab-parties-to-oust-netanyahu-3009167",
+      "source": "Arab News (AFP)"
     }
   },
   "timeline": [
+    {
+      "at": "2026-10-31T21:31:00Z",
+      "who": "Yousef Jabareen",
+      "party": "ודם",
+      "text": "Tells AFP he is willing to support Eisenkot in the Knesset without joining his government.",
+      "url": "https://www.arabnews.com/middle-east/israeli-protesters-demand-opposition-ally-with-arab-parties-to-oust-netanyahu-3009167",
+      "source": "Arab News (AFP)"
+    },
+    {
+      "at": "2026-10-31",
+      "who": "Protesters",
+      "party": "",
+      "text": "Hundreds rally in Tel Aviv and about 100 in Jerusalem urging the opposition to ally with the Arab parties to oust Netanyahu, AFP reports.",
+      "url": "https://www.arabnews.com/middle-east/israeli-protesters-demand-opposition-ally-with-arab-parties-to-oust-netanyahu-3009167",
+      "source": "Arab News (AFP)"
+    },
+    {
+      "at": "2026-10-31",
+      "who": "President Isaac Herzog",
+      "party": "",
+      "text": "Plans to open coalition consultations with the Knesset factions next week and broadcast them live, dpa reports, citing Haaretz.",
+      "url": "https://www.yahoo.com/news/world/articles/report-israeli-president-launch-coalition-210329890.html",
+      "source": "dpa via Yahoo News"
+    },
     {
       "at": "2026-10-31T17:51:00Z",
       "who": "Gadi Eisenkot",
@@ -391,20 +415,20 @@
       "source": "Jerusalem Post (citing unnamed sources)"
     },
     {
-      "at": "2026-10-29",
-      "who": "Itamar Ben-Gvir",
-      "party": "ב",
-      "text": "Holds a lengthy meeting with Netanyahu on preserving a right-wing government, according to his party.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913339",
-      "source": "Jerusalem Post"
-    },
-    {
       "at": "2026-10-30",
       "who": "Central Elections Committee",
       "party": "",
       "text": "Publishes the final election results and says the new Knesset will be sworn in on Nov. 10.",
       "url": "https://www.timesofisrael.com/liveblog_entry/central-elections-committee-publishes-final-election-results-knesset-to-be-sworn-in-nov-10/",
       "source": "Times of Israel"
+    },
+    {
+      "at": "2026-10-29",
+      "who": "Itamar Ben-Gvir",
+      "party": "ב",
+      "text": "Holds a lengthy meeting with Netanyahu on preserving a right-wing government, according to his party.",
+      "url": "https://www.jpost.com/israel-election-2026/article-913339",
+      "source": "Jerusalem Post"
     },
     {
       "at": "2026-10-29",
@@ -533,30 +557,6 @@
       "text": "Channel 12 reports they are floating outside support for an Eisenkot government, abstaining rather than opposing it, in exchange for draft concessions.",
       "url": "https://www.timesofisrael.com/liveblog_entry/utj-sources-proposing-to-back-eisenkot-from-outside-the-government-report/",
       "source": "Times of Israel (citing Channel 12)"
-    },
-    {
-      "at": "2026-10-29T13:46:00Z",
-      "who": "Yair Golan",
-      "party": "אמת",
-      "text": "Meets Lapid and says the two will keep working together to bring change.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/golan-and-lapid-meet-as-part-of-effort-to-save-israel-following-election/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-29T13:23:00Z",
-      "who": "Central Elections Committee",
-      "party": "",
-      "text": "Partial double-envelope count moves a seat from Shas to Likud, with no change between the blocs.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/as-vote-count-continues-likud-gains-a-seat-at-expense-of-ally-shas-no-change-in-blocs/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-29T12:44:00Z",
-      "who": "Mansour Abbas",
-      "party": "עם",
-      "text": "Denies any role in the alleged foreign interference, welcomes the probe and accuses Netanyahu of incitement against Arab citizens.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/raam-leader-abbas-denies-involvement-in-alleged-election-interference-accuses-netanyahu-of-incitement-against-arabs/",
-      "source": "Times of Israel"
     }
   ]
 }
