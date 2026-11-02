@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-02T00:24:01Z",
-  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; President Herzog receives the official results on Wednesday, Nov 4, and then opens consultations, and the new Knesset is sworn in on Nov 10. Bennett and Lapid's Together announced on Sunday evening that it will recommend Eisenkot, joining the Joint List and Ra'am, which a Joint List official says are expected to do the same, while Liberman has not said whom he will back and is due to address the media after his faction meets on Monday. Ynet reports, citing unnamed sources, that Liberman berated Eisenkot at a tense Saturday meeting over his push to examine a minority government, and Kan cites Netanyahu associate Benny Biton as saying Netanyahu wants a unity government with Eisenkot. UTJ remains the swing party and is expected to stay uncommitted at first, Ynet reports.",
+  "updated": "2026-11-02T03:22:44Z",
+  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; the President's Residence has confirmed that Herzog's consultations with the factions open on Wednesday, Nov 4, after he receives the official results, and the new Knesset is sworn in on Nov 10. Together has said it will recommend Eisenkot, and the Joint List and Ra'am are expected to do the same, while Liberman has yet to commit and is due to speak after his faction meets on Monday. Herzog urged leaders to stop climbing trees and face reality, which the Times of Israel reads as a push for unity, but Likud whip Ofir Katz said the party opposes a rotation, and Channel 14 reports, citing unnamed sources, that Netanyahu is now preparing for a new election. UTJ remains the swing party, with unnamed senior figures floating outside support for an Eisenkot government.",
   "phase": {
-    "now": "Final results published; President Herzog says consultations begin after he receives the official results on Nov 4",
-    "next": "Ynet reports consultations start Nov 4 and may run into Thursday or Friday, with Herzog due to choose a candidate by Nov 11; the new Knesset is sworn in on Nov 10.",
-    "url": "https://www.ynetnews.com/article/sk8eaw4pge",
-    "source": "Ynet"
+    "now": "Final results published; consultations confirmed to open Wednesday, Nov 4, once Herzog receives the official results",
+    "next": "Herzog will ask each faction whom it recommends and then choose a candidate for the mandate; the new Knesset is sworn in on Nov 10.",
+    "url": "https://www.timesofisrael.com/stop-climbing-trees-and-face-reality-in-appeal-to-leaders-herzog-signals-push-for-unity-government/",
+    "source": "Times of Israel"
   },
   "scenarios": [
     {
@@ -104,7 +104,7 @@
         "ג"
       ],
       "status": "blocked",
-      "note": "No Arab parties needed, but the Haredi draft splits it. A source close to Eisenkot tells Ynet he is trying to bring Shas and UTJ into a government he leads, naming Liberman as the main obstacle. A senior UTJ official told Ynet the party would offer Eisenkot the premiership for draft exemptions, which clashes with his national-service condition; Shas is reported to be out.",
+      "note": "No Arab parties needed, but the Haredi draft splits it. A source close to Eisenkot tells Ynet he is trying to bring Shas and UTJ into a government he leads, naming Liberman as the main obstacle. A senior UTJ official told Ynet the party would offer Eisenkot the premiership for draft exemptions, which clashes with his national-service condition; Shas is reported to be out. Unnamed senior UTJ figures say the party might back an Eisenkot government from outside without a draft law first, the Times of Israel reports.",
       "blockers": [
         {
           "party": "שס",
@@ -145,8 +145,14 @@
         "ל"
       ],
       "status": "floated",
-      "note": "The Jerusalem Post reports Netanyahu-linked sources are promoting it, possibly with a rotating premiership and without Shas and UTJ. Kan cites Netanyahu associate Benny Biton as saying Netanyahu wants unity, and an unnamed Likud official named Herzog and Trump as guarantors for Eisenkot. Channel 12 reports Liberman wants Eisenkot to join Netanyahu, though not under his own banner. Who would lead it is the sticking point.",
+      "note": "The Jerusalem Post reports Netanyahu-linked sources are promoting it, possibly with a rotating premiership and without Shas and UTJ. Kan cites Netanyahu associate Benny Biton as saying Netanyahu wants unity, and an unnamed Likud official named Herzog and Trump as guarantors for Eisenkot. Channel 12 reports Liberman wants Eisenkot to join Netanyahu, though not under his own banner. Who would lead it is the sticking point. Likud whip Ofir Katz told Army Radio the party opposes rotation and others can join the existing coalition. Channel 14 reports, citing unnamed sources, that Netanyahu has given up on unity talks and is preparing for a new election.",
       "blockers": [
+        {
+          "party": "מחל",
+          "text": "Likud whip Ofir Katz said the party opposes a rotation of the premiership.",
+          "url": "https://www.timesofisrael.com/stop-climbing-trees-and-face-reality-in-appeal-to-leaders-herzog-signals-push-for-unity-government/",
+          "source": "Times of Israel (citing Army Radio)"
+        },
         {
           "party": "דרך",
           "text": "Eisenkot rules out serving under Netanyahu, including in a rotation.",
@@ -196,13 +202,16 @@
   "parties": {
     "מחל": {
       "backs": "Netanyahu",
-      "stance": "Netanyahu posted on Oct 30 that forming a government with the Arab-led parties is forbidden; Likud says the election was stolen.",
+      "stance": "Likud whip Ofir Katz said on Nov 1 the party opposes rotation and that others may join on the basis of the existing coalition.",
       "red_lines": [
-        "No government that depends on Arab parties"
+        "No government that depends on Arab parties",
+        "No rotation"
       ],
-      "date": "2026-10-30",
-      "url": "https://www.aljazeera.com/news/2026/10/30/how-can-israel-break-its-election-deadlock",
-      "source": "Al Jazeera"
+      "date": "2026-11-01",
+      "url": "https://www.timesofisrael.com/stop-climbing-trees-and-face-reality-in-appeal-to-leaders-herzog-signals-push-for-unity-government/",
+      "source": "Times of Israel (citing Army Radio)",
+      "lines_url": "https://www.aljazeera.com/news/2026/10/30/how-can-israel-break-its-election-deadlock",
+      "lines_source": "Red lines: Al Jazeera"
     },
     "דרך": {
       "backs": "Eisenkot",
@@ -266,13 +275,13 @@
     },
     "ג": {
       "backs": "Undecided",
-      "stance": "Chairman Yaakov Asher consulted the party's rabbis on Oct 31, and Ynet reports UTJ wants exemption legislation before committing to either candidate.",
+      "stance": "Unnamed senior UTJ figures say the party may support an Eisenkot-led government from outside without first passing a draft law, though Asher had said UTJ would not join a government without one.",
       "red_lines": [
         "Draft-exemption law"
       ],
       "date": "2026-11-01",
-      "url": "https://www.ynetnews.com/article/sk8eaw4pge",
-      "source": "Ynet",
+      "url": "https://www.timesofisrael.com/stop-climbing-trees-and-face-reality-in-appeal-to-leaders-herzog-signals-push-for-unity-government/",
+      "source": "Times of Israel (citing unnamed sources)",
       "lines_url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
       "lines_source": "Red lines: Times of Israel (Oct 14)"
     },
@@ -320,6 +329,46 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-02T02:49:00Z",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "Channel 14 reports, citing unnamed sources, that he has abandoned unity talks with Eisenkot and is readying his camp for a new election.",
+      "url": "https://sundayguardianlive.com/world/israel-election-results-will-israel-go-to-elections-again-benjamin-netanyahu-reportedly-abandons-coalition-talks-amid-political-deadlock-315618/",
+      "source": "Sunday Guardian (citing Channel 14)"
+    },
+    {
+      "at": "2026-11-01",
+      "who": "Ofir Katz",
+      "party": "מחל",
+      "text": "The Likud whip tells Army Radio the party opposes a rotation and others can join the existing coalition.",
+      "url": "https://www.timesofisrael.com/stop-climbing-trees-and-face-reality-in-appeal-to-leaders-herzog-signals-push-for-unity-government/",
+      "source": "Times of Israel (citing Army Radio)"
+    },
+    {
+      "at": "2026-11-01",
+      "who": "UTJ figures",
+      "party": "ג",
+      "text": "Unnamed senior UTJ figures say the party might support an Eisenkot government from outside without a draft law first.",
+      "url": "https://www.timesofisrael.com/stop-climbing-trees-and-face-reality-in-appeal-to-leaders-herzog-signals-push-for-unity-government/",
+      "source": "Times of Israel (citing unnamed sources)"
+    },
+    {
+      "at": "2026-11-01",
+      "who": "Yair Golan",
+      "party": "אמת",
+      "text": "Has spoken with Joint List leaders Jabareen and Tibi, Hebrew media report.",
+      "url": "https://www.timesofisrael.com/stop-climbing-trees-and-face-reality-in-appeal-to-leaders-herzog-signals-push-for-unity-government/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-01T15:36:00Z",
+      "who": "President Isaac Herzog",
+      "party": "",
+      "text": "Urges party leaders to stop climbing trees and face reality, as his office confirms consultations begin Wednesday.",
+      "url": "https://www.timesofisrael.com/stop-climbing-trees-and-face-reality-in-appeal-to-leaders-herzog-signals-push-for-unity-government/",
+      "source": "Times of Israel"
+    },
     {
       "at": "2026-11-01",
       "who": "Together (Bennett & Lapid)",
@@ -519,46 +568,6 @@
       "text": "Posts on X that it is forbidden to form a government relying on the Arab-led parties, Al Jazeera reports.",
       "url": "https://www.aljazeera.com/news/2026/10/30/how-can-israel-break-its-election-deadlock",
       "source": "Al Jazeera"
-    },
-    {
-      "at": "2026-10-30T09:33:00Z",
-      "who": "Yair Lapid",
-      "party": "רק",
-      "text": "Says Netanyahu cannot form a government on these results, while warning an alternative coalition is complicated and not guaranteed.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913339",
-      "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-10-30",
-      "who": "Rabbi Dov Landau",
-      "party": "ג",
-      "text": "Degel HaTorah's senior rabbi reportedly urged its MKs to consider joining an opposition coalition, saying they belong to no one's bloc.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913327",
-      "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-10-30T06:08:00Z",
-      "who": "Aryeh Deri",
-      "party": "שס",
-      "text": "Unnamed Haredi sources say he has ruled out joining an opposition-led government without Likud.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913327",
-      "source": "Jerusalem Post (citing unnamed sources)"
-    },
-    {
-      "at": "2026-10-30",
-      "who": "Central Elections Committee",
-      "party": "",
-      "text": "Publishes the final election results and says the new Knesset will be sworn in on Nov. 10.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/central-elections-committee-publishes-final-election-results-knesset-to-be-sworn-in-nov-10/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-10-29",
-      "who": "Itamar Ben-Gvir",
-      "party": "ב",
-      "text": "Holds a lengthy meeting with Netanyahu on preserving a right-wing government, according to his party.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913339",
-      "source": "Jerusalem Post"
     }
   ]
 }
