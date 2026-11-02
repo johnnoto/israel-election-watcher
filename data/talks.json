@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-02T03:22:44Z",
-  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; the President's Residence has confirmed that Herzog's consultations with the factions open on Wednesday, Nov 4, after he receives the official results, and the new Knesset is sworn in on Nov 10. Together has said it will recommend Eisenkot, and the Joint List and Ra'am are expected to do the same, while Liberman has yet to commit and is due to speak after his faction meets on Monday. Herzog urged leaders to stop climbing trees and face reality, which the Times of Israel reads as a push for unity, but Likud whip Ofir Katz said the party opposes a rotation, and Channel 14 reports, citing unnamed sources, that Netanyahu is now preparing for a new election. UTJ remains the swing party, with unnamed senior figures floating outside support for an Eisenkot government.",
+  "updated": "2026-11-02T06:25:38Z",
+  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; Herzog receives the official results and opens consultations with the factions on Wednesday, Nov 4, and the new Knesset is sworn in on Nov 10. Together and the Democrats will recommend Eisenkot, the Joint List and Ra'am are expected to as well, and Tibi says change is impossible without the Arab parties, while Liberman has yet to commit and is due to speak after his faction meets on Monday. Likud says it opposes a rotation and has questioned the election's integrity after the elections committee chief said the vote was properly run, and Channel 14 reports, citing unnamed sources, that Netanyahu is preparing for a new election. UTJ remains the swing party, with unnamed senior figures floating outside support for an Eisenkot government.",
   "phase": {
     "now": "Final results published; consultations confirmed to open Wednesday, Nov 4, once Herzog receives the official results",
     "next": "Herzog will ask each faction whom it recommends and then choose a candidate for the mandate; the new Knesset is sworn in on Nov 10.",
@@ -319,16 +319,40 @@
     },
     "ודם": {
       "backs": "Eisenkot (expected)",
-      "stance": "Tibi said on Oct 31 the Joint List is ready to recommend Eisenkot and replace the Knesset speaker but will not join the government, offering outside support.",
+      "stance": "Tibi told Channel 12 the Arab parties are essential to any change and he wants to help bring down the government without seeking a ministry; he has said the Joint List will recommend Eisenkot but stay outside the government.",
       "red_lines": [
         "No Netanyahu government"
       ],
-      "date": "2026-10-31",
-      "url": "https://www.ynetnews.com/article/sk8eaw4pge",
-      "source": "Ynet"
+      "date": "2026-11-02",
+      "url": "https://www.thenationalnews.com/news/mena/2026/11/02/netanyahus-opponents-have-the-numbers-now-can-they-make-a-deal/",
+      "source": "The National (citing Channel 12)"
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-02",
+      "who": "Ahmad Tibi",
+      "party": "ודם",
+      "text": "Tells Channel 12 he wants to help anyone trying to topple the government, argues change is impossible without the Arab parties, and says he isn't seeking a ministry.",
+      "url": "https://www.thenationalnews.com/news/mena/2026/11/02/netanyahus-opponents-have-the-numbers-now-can-they-make-a-deal/",
+      "source": "The National (citing Channel 12)"
+    },
+    {
+      "at": "2026-11-01",
+      "who": "Likud",
+      "party": "מחל",
+      "text": "Calls the elections committee chief's statement that the vote was properly conducted perplexing and says a cloud hangs over the results.",
+      "url": "https://www.thenationalnews.com/news/mena/2026/11/02/netanyahus-opponents-have-the-numbers-now-can-they-make-a-deal/",
+      "source": "The National"
+    },
+    {
+      "at": "2026-11-01",
+      "who": "Noam Sohlberg",
+      "party": "",
+      "text": "The Central Elections Committee chair, with the attorney general and internal security chief, says the elections were conducted properly.",
+      "url": "https://www.thenationalnews.com/news/mena/2026/11/02/netanyahus-opponents-have-the-numbers-now-can-they-make-a-deal/",
+      "source": "The National"
+    },
     {
       "at": "2026-11-02T02:49:00Z",
       "who": "Benjamin Netanyahu",
@@ -544,30 +568,6 @@
       "text": "Meet and say in a joint statement that they discussed the results and coordinated next steps.",
       "url": "https://www.ynetnews.com/article/by6ffom6ml",
       "source": "Ynet"
-    },
-    {
-      "at": "2026-10-31",
-      "who": "Opposition figures",
-      "party": "",
-      "text": "Maariv reports unnamed senior opposition figures are weighing a direct election for prime minister without dissolving the Knesset.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913379",
-      "source": "Jerusalem Post (Maariv)"
-    },
-    {
-      "at": "2026-10-30",
-      "who": "Avigdor Liberman",
-      "party": "ל",
-      "text": "Writes on Facebook that he will not sit with supporters of terrorism, again ruling out a coalition with the Arab parties.",
-      "url": "https://www.israelnationalnews.com/news/435410",
-      "source": "Israel National News"
-    },
-    {
-      "at": "2026-10-30",
-      "who": "Benjamin Netanyahu",
-      "party": "מחל",
-      "text": "Posts on X that it is forbidden to form a government relying on the Arab-led parties, Al Jazeera reports.",
-      "url": "https://www.aljazeera.com/news/2026/10/30/how-can-israel-break-its-election-deadlock",
-      "source": "Al Jazeera"
     }
   ]
 }
