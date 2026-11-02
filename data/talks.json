@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-02T09:23:42Z",
-  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; Herzog receives the official results and opens consultations with the factions on Wednesday, Nov 4, and the new Knesset is sworn in on Nov 10. Together and the Democrats will recommend Eisenkot, the Joint List and Ra'am are expected to as well, and Tibi says change is impossible without the Arab parties, while Liberman has yet to commit and is due to speak after his faction meets on Monday. Likud says it opposes a rotation and has questioned the election's integrity after the elections committee chief said the vote was properly run, and Channel 14 reports, citing unnamed sources, that Netanyahu is preparing for a new election. UTJ remains the swing party, with unnamed senior figures floating outside support for an Eisenkot government.",
+  "updated": "2026-11-02T12:33:44Z",
+  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; Herzog receives the official results and opens consultations with the factions on Wednesday, Nov 4, and the new Knesset is sworn in on Nov 10. Liberman ended speculation on Monday by saying Yisrael Beiteinu will recommend Eisenkot for prime minister and Lapid for Knesset speaker, joining Together and the Democrats, while the Joint List and Ra'am are expected to back Eisenkot as well. Likud says it opposes a rotation and has questioned the election's integrity, and Channel 14 reports, citing unnamed sources, that Netanyahu is preparing for a new election. UTJ remains the swing party, with unnamed senior figures floating outside support for an Eisenkot government.",
   "phase": {
     "now": "Final results published; consultations confirmed to open Wednesday, Nov 4, once Herzog receives the official results",
     "next": "Herzog will ask each faction whom it recommends and then choose a candidate for the mandate; the new Knesset is sworn in on Nov 10.",
@@ -247,17 +247,17 @@
       "source": "Jerusalem Post"
     },
     "ל": {
-      "backs": "Not yet committed",
-      "stance": "Liberman has not said whether he will recommend Eisenkot and plans to speak after his faction meets on Nov 2; in an X post over the weekend he again refused to rely on Arab parties.",
+      "backs": "Recommending Eisenkot (announced)",
+      "stance": "Liberman said on Nov 2 he will recommend Eisenkot for prime minister and Lapid for Knesset speaker, while blaming Eisenkot for the election result, Israel Hayom reports.",
       "red_lines": [
         "No Likud under Netanyahu",
         "No Shas or UTJ",
         "No Ra'am or Joint List",
         "No minority government"
       ],
-      "date": "2026-11-01",
-      "url": "https://www.ynetnews.com/article/by8rlfbpgg",
-      "source": "Ynet",
+      "date": "2026-11-02",
+      "url": "https://www.israelhayom.com/2026/11/02/liberman-backs-eisenkot-for-prime-minister-blames-him-for-election-result",
+      "source": "Israel Hayom",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-911855",
       "lines_source": "Red lines: Jerusalem Post"
     },
@@ -329,6 +329,14 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-02",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Announces Yisrael Beiteinu will recommend Eisenkot for prime minister and Yair Lapid for Knesset speaker.",
+      "url": "https://www.jpost.com/israel-election-2026/article-913564",
+      "source": "Jerusalem Post"
+    },
     {
       "at": "2026-11-02",
       "who": "Ahmad Tibi",
@@ -558,14 +566,6 @@
       "who": "Yashar! party",
       "party": "דרך",
       "text": "Accuses Likud's Yoav Kisch, Almog Cohen and Yaakov Bardugo of phoning Yashar! members to try to win them over.",
-      "url": "https://www.ynetnews.com/article/by6ffom6ml",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-10-31",
-      "who": "Gadi Eisenkot & Yair Lapid",
-      "party": "רק",
-      "text": "Meet and say in a joint statement that they discussed the results and coordinated next steps.",
       "url": "https://www.ynetnews.com/article/by6ffom6ml",
       "source": "Ynet"
     }
