@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T15:25:00Z",
+  "updated": "2026-11-03T18:22:58Z",
   "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; Herzog's consultations open Wednesday, Nov 4, and the new Knesset is sworn in on Nov 10. Meeting in Herzliya on Tuesday, Eisenkot, Bennett, Lapid, Liberman and Golan agreed to launch coalition talks, back Eisenkot for the mandate and form an emergency government quickly, but gave no sign of how they would reach a majority without Arab parties, which Liberman still rejects. Netanyahu says he should lead any broad government; the elections committee chair rejected Likud's request to delay certification, and Haaretz reports Likud is weighing whether to recognize the results. Shas is reported to be heading toward recommending Netanyahu, while the Haredi parties publicly say no final decision has been made.",
   "phase": {
     "now": "Final results published; Herzog's consultations open Wednesday, Nov 4 at 5 pm with Religious Zionism, ending with Likud on Thursday evening",
@@ -344,6 +344,14 @@
   "timeline": [
     {
       "at": "2026-11-03",
+      "who": "Joint List",
+      "party": "ודם",
+      "text": "Joint List leader Jabareen says the opposition must accept political reality and join forces with Arab parties to remove Netanyahu, AFP reports.",
+      "url": "https://www.aljazeera.com/news/2026/11/3/israeli-opposition-leaders-back-eisenkot-to-oust-netanyahu",
+      "source": "Al Jazeera (AFP)"
+    },
+    {
+      "at": "2026-11-03",
       "who": "Likud",
       "party": "מחל",
       "text": "Haaretz's live coverage reports Likud is weighing whether to refuse to recognize the election results.",
@@ -571,14 +579,6 @@
       "who": "Benjamin Netanyahu",
       "party": "מחל",
       "text": "Ynet reports he has privately said he is not ruling out any option, including a rotation with Eisenkot, despite Likud's public stance.",
-      "url": "https://www.ynetnews.com/article/sywrjwhagx",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-02T02:04:00Z",
-      "who": "UTJ",
-      "party": "ג",
-      "text": "Has decided not to recommend any candidate for prime minister for now, Ynet reports.",
       "url": "https://www.ynetnews.com/article/sywrjwhagx",
       "source": "Ynet"
     }
