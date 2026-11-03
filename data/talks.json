@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-03T06:23:41Z",
-  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; Herzog's consultations open Wednesday, Nov 4, and the new Knesset is sworn in on Nov 10. Together, Yisrael Beiteinu and the Democrats will recommend Eisenkot, and the Joint List and Ra'am appear likely to do the same, though Liberman says he would oppose an Eisenkot minority government. Netanyahu says he should lead any broad government and wants to keep Shas, Otzma Yehudit and Religious Zionism, while Israel Hayom reports a Likud source floating a rotation that would end with Netanyahu as president. Shas is reported to have settled on recommending Netanyahu, UTJ remains undecided, and the five opposition leaders meet in Herzliya on Tuesday morning.",
+  "updated": "2026-11-03T09:22:47Z",
+  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; Herzog's consultations open Wednesday, Nov 4, and the new Knesset is sworn in on Nov 10. Together, Yisrael Beiteinu and the Democrats will recommend Eisenkot, and the Joint List and Ra'am appear likely to do the same, though Liberman opposes an Eisenkot minority government and Ynet reports Bennett also rejects one relying on Arab parties. Netanyahu says he should lead any broad government and wants to keep Shas, Otzma Yehudit and Religious Zionism; Shas is reported to have settled on recommending him, while UTJ remains undecided. The five opposition leaders meet in Herzliya on Tuesday, with senior bloc figures telling Ynet their first aim is control of the Knesset, starting with replacing Speaker Ohana.",
   "phase": {
     "now": "Final results published; Herzog's consultations open Wednesday, Nov 4 at 5 pm with Religious Zionism, ending with Likud on Thursday evening",
     "next": "Herzog will ask each faction whom it recommends and then choose a candidate for the mandate; his office does not rule out a second round. The new Knesset is sworn in on Nov 10.",
@@ -43,7 +43,7 @@
         "עם"
       ],
       "status": "floated",
-      "note": "Championed by Yair Golan, who met Lapid and then Abbas on Oct 29; the Times of Israel says he is the only Jewish-led bloc leader openly backing a coalition with Ra'am. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it. Channel 12 reports Abbas himself privately called an Eisenkot minority government with outside Arab support weak or impossible. AFP reports Eisenkot has not decided whether to seek a coalition relying on Arab parties, and the Joint List's Jabareen says he would back him from outside. A senior Joint List official told Walla on Nov 1 that the Joint List and Ra'am are expected to recommend Eisenkot to the president. Ynet reports Joint List and Ra'am leaders met in Nazareth on Nov 2 and will coordinate their recommendations.",
+      "note": "Championed by Yair Golan, who met Lapid and then Abbas on Oct 29; the Times of Israel says he is the only Jewish-led bloc leader openly backing a coalition with Ra'am. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it. Channel 12 reports Abbas himself privately called an Eisenkot minority government with outside Arab support weak or impossible. AFP reports Eisenkot has not decided whether to seek a coalition relying on Arab parties, and the Joint List's Jabareen says he would back him from outside. A senior Joint List official told Walla on Nov 1 that the Joint List and Ra'am are expected to recommend Eisenkot to the president. Ynet reports Joint List and Ra'am leaders met in Nazareth on Nov 2 and will coordinate their recommendations. Ynet reports Bennett sides with Liberman against a government relying on Arab parties, believing it would collapse.",
       "blockers": [
         {
           "party": "ל",
@@ -62,6 +62,12 @@
           "text": "Ben-Gvir urged the Shin Bet to arrest Arab party leaders if there are legal grounds over alleged Qatari funding.",
           "url": "https://www.jpost.com/israel-election-2026/article-913187",
           "source": "Jerusalem Post"
+        },
+        {
+          "party": "רק",
+          "text": "Ynet reports Bennett opposes any government reliant on Arab parties, expecting it to collapse.",
+          "url": "https://www.ynetnews.com/article/sy4mp6upfg",
+          "source": "Ynet"
         }
       ],
       "url": "https://www.jta.org/2026/10/28/israel/israels-election-deadlock-3-scenarios-for-what-comes-next",
@@ -86,6 +92,12 @@
           "text": "Liberman ruled out Ra'am and said on Nov 2 he would oppose an Eisenkot minority government.",
           "url": "https://www.ynetnews.com/article/s111ftzitfe",
           "source": "Ynet"
+        },
+        {
+          "party": "רק",
+          "text": "Ynet reports Bennett opposes any government reliant on Arab parties, expecting it to collapse.",
+          "url": "https://www.ynetnews.com/article/sy4mp6upfg",
+          "source": "Ynet"
         }
       ],
       "url": "https://www.i24news.tv/en/news/israeli-elections/artc-eisenkot-explores-minority-government-backed-by-ra-am-utj-abstentions-report",
@@ -104,7 +116,7 @@
         "ג"
       ],
       "status": "blocked",
-      "note": "No Arab parties needed, but the Haredi draft splits it. A source close to Eisenkot tells Ynet he is trying to bring Shas and UTJ into a government he leads, naming Liberman as the main obstacle. A senior UTJ official told Ynet the party would offer Eisenkot the premiership for draft exemptions, which clashes with his national-service condition; Shas is reported to be out. Unnamed senior UTJ figures say the party might back an Eisenkot government from outside without a draft law first, the Times of Israel reports. On Nov 2 Liberman declined to rule out cooperating with UTJ, saying the bloc will have to see what happens.",
+      "note": "No Arab parties needed, but the Haredi draft splits it. A source close to Eisenkot tells Ynet he is trying to bring Shas and UTJ into a government he leads, naming Liberman as the main obstacle. A senior UTJ official told Ynet the party would offer Eisenkot the premiership for draft exemptions, which clashes with his national-service condition; Shas is reported to be out. Unnamed senior UTJ figures say the party might back an Eisenkot government from outside without a draft law first, the Times of Israel reports. On Nov 2 Liberman declined to rule out cooperating with UTJ, saying the bloc will have to see what happens. Ynet reports on Nov 3 that Eisenkot is focusing on courting the Haredi parties and that Liberman has left the door open to talks on including them.",
       "blockers": [
         {
           "party": "שס",
@@ -228,12 +240,13 @@
     },
     "רק": {
       "backs": "Recommending Eisenkot (announced)",
-      "stance": "Together announced on Nov 1 it will recommend Eisenkot for prime minister, saying Bennett is respecting the voters' decision and has informed Eisenkot.",
+      "stance": "Together has announced it will recommend Eisenkot; Ynet reports Bennett opposes a government relying on Arab parties and wants Lapid as Knesset speaker.",
       "red_lines": [
-        "No Netanyahu government"
+        "No Netanyahu government",
+        "No government reliant on Arab parties (per Ynet)"
       ],
-      "date": "2026-11-01",
-      "url": "https://www.ynetnews.com/article/by8rlfbpgg",
+      "date": "2026-11-03",
+      "url": "https://www.ynetnews.com/article/sy4mp6upfg",
       "source": "Ynet"
     },
     "אמת": {
@@ -329,6 +342,30 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-03T02:57:00Z",
+      "who": "Opposition bloc",
+      "party": "דרך",
+      "text": "Senior bloc figures tell Ynet their most urgent task is controlling the Knesset: replacing Speaker Ohana, forming the Arrangements Committee and repealing coalition laws.",
+      "url": "https://www.ynetnews.com/article/sy4mp6upfg",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-03T02:57:00Z",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Ynet reports Eisenkot wants a speaker from his own party, while Liberman and Bennett favor Lapid.",
+      "url": "https://www.ynetnews.com/article/sy4mp6upfg",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-03T02:57:00Z",
+      "who": "Naftali Bennett",
+      "party": "רק",
+      "text": "Ynet reports Bennett sides with Liberman against a government reliant on Arab parties, believing it would collapse.",
+      "url": "https://www.ynetnews.com/article/sy4mp6upfg",
+      "source": "Ynet"
+    },
     {
       "at": "2026-11-02T20:02:00Z",
       "who": "Benjamin Netanyahu",
@@ -544,30 +581,6 @@
       "text": "The Dimona mayor and Netanyahu associate tells Kan that Netanyahu wants a unity government, while warning against replacing the Knesset speaker.",
       "url": "https://www.newarab.com/news/netanyahu-interested-unity-govt-eisenkot-report",
       "source": "The New Arab (citing Kan)"
-    },
-    {
-      "at": "2026-11-01",
-      "who": "Opposition bloc",
-      "party": "",
-      "text": "Unnamed senior bloc officials tell Ynet they want Eisenkot to get the first mandate so they can repeal judicial laws before they take effect on Jan. 1, 2027.",
-      "url": "https://www.ynetnews.com/article/bkts0t4tgl",
-      "source": "Ynet (citing unnamed sources)"
-    },
-    {
-      "at": "2026-11-01",
-      "who": "Itamar Ben-Gvir",
-      "party": "ב",
-      "text": "Shares a clip of Jabareen's interview and attacks the idea of forming a government with the Joint List, the Telegraph reports.",
-      "url": "https://www.yahoo.com/news/politics/articles/netanyahu-main-rival-opens-door-110651092.html",
-      "source": "The Telegraph via Yahoo News"
-    },
-    {
-      "at": "2026-11-01",
-      "who": "Yair Golan",
-      "party": "אמת",
-      "text": "Posts that Netanyahu lacks public trust to lead another Iran war and calls for an alternative government led by the opposition leaders as soon as possible.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913432",
-      "source": "Jerusalem Post"
     }
   ]
 }
