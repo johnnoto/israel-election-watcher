@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-02T21:23:19Z",
-  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; Herzog's consultations open Wednesday, Nov 4, starting with the smaller parties, and the new Knesset is sworn in on Nov 10. Together, Yisrael Beiteinu and the Democrats will recommend Eisenkot, and the Joint List and Ra'am, which met in Nazareth on Monday, appear likely to do the same, though Liberman says he would oppose an Eisenkot minority government. In his first public remarks since election night, Netanyahu said he should lead any broad government and wants to keep Shas, Otzma Yehudit and Religious Zionism, while privately not ruling out a rotation. Shas is reported to have settled on recommending Netanyahu, UTJ remains undecided, and opposition leaders meet on Tuesday ahead of the consultations.",
+  "updated": "2026-11-03T00:25:00Z",
+  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; Herzog's consultations open Wednesday, Nov 4, and the new Knesset is sworn in on Nov 10. Together, Yisrael Beiteinu and the Democrats will recommend Eisenkot, and the Joint List and Ra'am appear likely to do the same, though Liberman says he would oppose an Eisenkot minority government. Netanyahu says he should lead any broad government and wants to keep Shas, Otzma Yehudit and Religious Zionism, while Israel Hayom reports a Likud source floating a rotation that would end with Netanyahu as president. Shas is reported to have settled on recommending Netanyahu, UTJ remains undecided, and the five opposition leaders meet in Herzliya on Tuesday morning.",
   "phase": {
     "now": "Final results published; Herzog's consultations open Wednesday, Nov 4 at 5 pm with Religious Zionism, ending with Likud on Thursday evening",
     "next": "Herzog will ask each faction whom it recommends and then choose a candidate for the mandate; his office does not rule out a second round. The new Knesset is sworn in on Nov 10.",
@@ -145,7 +145,7 @@
         "ל"
       ],
       "status": "floated",
-      "note": "The Jerusalem Post reports Netanyahu-linked sources are promoting it, possibly with a rotating premiership and without Shas and UTJ. Kan cites Netanyahu associate Benny Biton as saying Netanyahu wants unity, and an unnamed Likud official named Herzog and Trump as guarantors for Eisenkot. Channel 12 reports Liberman wants Eisenkot to join Netanyahu, though not under his own banner. Who would lead it is the sticking point. Likud whip Ofir Katz told Army Radio the party opposes rotation and others can join the existing coalition. Channel 14 reports, citing unnamed sources, that Netanyahu has given up on unity talks and is preparing for a new election. Ynet reports Netanyahu told associates privately he is not ruling out any option, including rotation, and that Katz says unity is off if the opposition ousts Speaker Ohana. On Nov 2 Netanyahu said publicly he is open to a broad government with any party that does not support terrorism but that he should lead it; an associate told Ynet no unity proposal has yet been made.",
+      "note": "The Jerusalem Post reports Netanyahu-linked sources are promoting it, possibly with a rotating premiership and without Shas and UTJ. Kan cites Netanyahu associate Benny Biton as saying Netanyahu wants unity, and an unnamed Likud official named Herzog and Trump as guarantors for Eisenkot. Channel 12 reports Liberman wants Eisenkot to join Netanyahu, though not under his own banner. Who would lead it is the sticking point. Likud whip Ofir Katz told Army Radio the party opposes rotation and others can join the existing coalition. Channel 14 reports, citing unnamed sources, that Netanyahu has given up on unity talks and is preparing for a new election. Ynet reports Netanyahu told associates privately he is not ruling out any option, including rotation, and that Katz says unity is off if the opposition ousts Speaker Ohana. On Nov 2 Netanyahu said publicly he is open to a broad government with any party that does not support terrorism but that he should lead it; an associate told Ynet no unity proposal has yet been made. Israel Hayom reports a Likud source's assessment, not a negotiated offer, that Netanyahu could accept unity if he served about two years and then became president, with Eisenkot taking over.",
       "blockers": [
         {
           "party": "מחל",
@@ -370,6 +370,14 @@
       "source": "Ynet"
     },
     {
+      "at": "2026-11-02T16:09:00Z",
+      "who": "Opposition bloc",
+      "party": "דרך",
+      "text": "Eisenkot, Bennett, Lapid, Liberman and Golan will meet Tuesday at 11:30 in Herzliya, their first joint meeting since the results, JFeed reports.",
+      "url": "https://www.jfeed.com/news-israel/tnvsug",
+      "source": "JFeed"
+    },
+    {
       "at": "2026-11-02T15:03:00Z",
       "who": "Shas",
       "party": "שס",
@@ -402,6 +410,38 @@
       "source": "Ynet"
     },
     {
+      "at": "2026-11-02",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "A Likud source tells Israel Hayom he could accept unity with Eisenkot if he serves about two years and then succeeds Herzog as president.",
+      "url": "https://www.theyeshivaworld.com/news/israel-news/2617942/political-deadlock-netanyahu-could-become-israels-president-under-proposed-rotation-deal-with-eisenkot.html",
+      "source": "Yeshiva World News (citing Israel Hayom)"
+    },
+    {
+      "at": "2026-11-02",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Announces Yisrael Beiteinu will recommend Eisenkot for prime minister and Yair Lapid for Knesset speaker.",
+      "url": "https://www.jpost.com/israel-election-2026/article-913564",
+      "source": "Jerusalem Post"
+    },
+    {
+      "at": "2026-11-02",
+      "who": "Ahmad Tibi",
+      "party": "ודם",
+      "text": "Tells Channel 12 he wants to help anyone trying to topple the government, argues change is impossible without the Arab parties, and says he isn't seeking a ministry.",
+      "url": "https://www.thenationalnews.com/news/mena/2026/11/02/netanyahus-opponents-have-the-numbers-now-can-they-make-a-deal/",
+      "source": "The National (citing Channel 12)"
+    },
+    {
+      "at": "2026-11-02T02:49:00Z",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "Channel 14 reports, citing unnamed sources, that he has abandoned unity talks with Eisenkot and is readying his camp for a new election.",
+      "url": "https://sundayguardianlive.com/world/israel-election-results-will-israel-go-to-elections-again-benjamin-netanyahu-reportedly-abandons-coalition-talks-amid-political-deadlock-315618/",
+      "source": "Sunday Guardian (citing Channel 14)"
+    },
+    {
       "at": "2026-11-02T02:04:00Z",
       "who": "Benjamin Netanyahu",
       "party": "מחל",
@@ -426,20 +466,20 @@
       "source": "Ynet"
     },
     {
-      "at": "2026-11-02",
-      "who": "Avigdor Liberman",
-      "party": "ל",
-      "text": "Announces Yisrael Beiteinu will recommend Eisenkot for prime minister and Yair Lapid for Knesset speaker.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913564",
-      "source": "Jerusalem Post"
+      "at": "2026-11-01T15:36:00Z",
+      "who": "President Isaac Herzog",
+      "party": "",
+      "text": "Urges party leaders to stop climbing trees and face reality, as his office confirms consultations begin Wednesday.",
+      "url": "https://www.timesofisrael.com/stop-climbing-trees-and-face-reality-in-appeal-to-leaders-herzog-signals-push-for-unity-government/",
+      "source": "Times of Israel"
     },
     {
-      "at": "2026-11-02",
-      "who": "Ahmad Tibi",
-      "party": "ודם",
-      "text": "Tells Channel 12 he wants to help anyone trying to topple the government, argues change is impossible without the Arab parties, and says he isn't seeking a ministry.",
-      "url": "https://www.thenationalnews.com/news/mena/2026/11/02/netanyahus-opponents-have-the-numbers-now-can-they-make-a-deal/",
-      "source": "The National (citing Channel 12)"
+      "at": "2026-11-01",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Channel 13 reports a delegation of Likud mayors met him on Sunday and failed to persuade him to back Netanyahu.",
+      "url": "https://www.jfeed.com/news-israel/tnvsug",
+      "source": "JFeed (citing Channel 13)"
     },
     {
       "at": "2026-11-01",
@@ -456,14 +496,6 @@
       "text": "The Central Elections Committee chair, with the attorney general and internal security chief, says the elections were conducted properly.",
       "url": "https://www.thenationalnews.com/news/mena/2026/11/02/netanyahus-opponents-have-the-numbers-now-can-they-make-a-deal/",
       "source": "The National"
-    },
-    {
-      "at": "2026-11-02T02:49:00Z",
-      "who": "Benjamin Netanyahu",
-      "party": "מחל",
-      "text": "Channel 14 reports, citing unnamed sources, that he has abandoned unity talks with Eisenkot and is readying his camp for a new election.",
-      "url": "https://sundayguardianlive.com/world/israel-election-results-will-israel-go-to-elections-again-benjamin-netanyahu-reportedly-abandons-coalition-talks-amid-political-deadlock-315618/",
-      "source": "Sunday Guardian (citing Channel 14)"
     },
     {
       "at": "2026-11-01",
@@ -486,14 +518,6 @@
       "who": "Yair Golan",
       "party": "אמת",
       "text": "Has spoken with Joint List leaders Jabareen and Tibi, Hebrew media report.",
-      "url": "https://www.timesofisrael.com/stop-climbing-trees-and-face-reality-in-appeal-to-leaders-herzog-signals-push-for-unity-government/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-01T15:36:00Z",
-      "who": "President Isaac Herzog",
-      "party": "",
-      "text": "Urges party leaders to stop climbing trees and face reality, as his office confirms consultations begin Wednesday.",
       "url": "https://www.timesofisrael.com/stop-climbing-trees-and-face-reality-in-appeal-to-leaders-herzog-signals-push-for-unity-government/",
       "source": "Times of Israel"
     },
@@ -530,14 +554,6 @@
       "source": "Ynet (citing unnamed sources)"
     },
     {
-      "at": "2026-11-01T10:20:00Z",
-      "who": "Opposition bloc",
-      "party": "",
-      "text": "Unnamed sources tell Ynet the bloc has not agreed on a new Knesset speaker, with Eisenkot wanting a Yashar! MK and Liberman pushing Oded Forer.",
-      "url": "https://www.ynetnews.com/article/r1unaf4tmx",
-      "source": "Ynet (citing unnamed sources)"
-    },
-    {
       "at": "2026-11-01",
       "who": "Itamar Ben-Gvir",
       "party": "ב",
@@ -551,22 +567,6 @@
       "party": "אמת",
       "text": "Posts that Netanyahu lacks public trust to lead another Iran war and calls for an alternative government led by the opposition leaders as soon as possible.",
       "url": "https://www.jpost.com/israel-election-2026/article-913432",
-      "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-11-01T11:35:00Z",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Ynet reports, citing unnamed sources, that he authorized examining a minority government with Ra'am and UTJ abstentions; Yashar says such reports don't speak for it.",
-      "url": "https://www.i24news.tv/en/news/israeli-elections/artc-eisenkot-explores-minority-government-backed-by-ra-am-utj-abstentions-report",
-      "source": "i24NEWS (citing Ynet)"
-    },
-    {
-      "at": "2026-11-01",
-      "who": "President Isaac Herzog",
-      "party": "",
-      "text": "Says he will receive the official results on Wednesday and then begin consultations, urging leaders to show flexibility.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913448",
       "source": "Jerusalem Post"
     }
   ]
