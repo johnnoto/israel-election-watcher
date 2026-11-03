@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-03T12:45:00Z",
-  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; Herzog's consultations open Wednesday, Nov 4, and the new Knesset is sworn in on Nov 10. Meeting in Herzliya on Tuesday, Eisenkot, Bennett, Lapid, Liberman and Golan agreed to launch coalition talks and back Eisenkot for the mandate, but gave no sign of how they would reach a majority without Arab parties, which Liberman still rejects. Netanyahu says he should lead any broad government, and Likud's request to delay certifying the results was rejected by the elections committee chair. Shas is reported to be leaning toward Netanyahu, while the Haredi parties publicly say no decision has been made.",
+  "updated": "2026-11-03T15:25:00Z",
+  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; Herzog's consultations open Wednesday, Nov 4, and the new Knesset is sworn in on Nov 10. Meeting in Herzliya on Tuesday, Eisenkot, Bennett, Lapid, Liberman and Golan agreed to launch coalition talks, back Eisenkot for the mandate and form an emergency government quickly, but gave no sign of how they would reach a majority without Arab parties, which Liberman still rejects. Netanyahu says he should lead any broad government; the elections committee chair rejected Likud's request to delay certification, and Haaretz reports Likud is weighing whether to recognize the results. Shas is reported to be heading toward recommending Netanyahu, while the Haredi parties publicly say no final decision has been made.",
   "phase": {
     "now": "Final results published; Herzog's consultations open Wednesday, Nov 4 at 5 pm with Religious Zionism, ending with Likud on Thursday evening",
     "next": "Herzog will ask each faction whom it recommends and then choose a candidate for the mandate; his office does not rule out a second round. The new Knesset is sworn in on Nov 10.",
@@ -343,6 +343,30 @@
   },
   "timeline": [
     {
+      "at": "2026-11-03",
+      "who": "Likud",
+      "party": "מחל",
+      "text": "Haaretz's live coverage reports Likud is weighing whether to refuse to recognize the election results.",
+      "url": "https://www.haaretz.com/israel-news/elections/2026-11-03/ty-article-live/netanyahus-likud-weighs-refusing-to-recognize-election-results/000001a1-9f6e-db9a-a1b3-9f7e8c340004",
+      "source": "Haaretz"
+    },
+    {
+      "at": "2026-11-03",
+      "who": "Shas",
+      "party": "שס",
+      "text": "Anadolu reports Shas will recommend Netanyahu to form the next government.",
+      "url": "https://www.anews.com.tr/middle-east/2026/11/03/israels-ultra-orthodox-shas-party-to-recommend-netanyahu-to-form-next-government",
+      "source": "A News (Anadolu)"
+    },
+    {
+      "at": "2026-11-03",
+      "who": "Opposition bloc",
+      "party": "דרך",
+      "text": "After their meeting, Eisenkot and the other opposition leaders vow to form an emergency government as soon as possible, the Jerusalem Post reports.",
+      "url": "https://www.jpost.com/israel-election-2026/article-913678",
+      "source": "Jerusalem Post"
+    },
+    {
       "at": "2026-11-03T12:11:00Z",
       "who": "Opposition bloc",
       "party": "דרך",
@@ -557,30 +581,6 @@
       "text": "Has decided not to recommend any candidate for prime minister for now, Ynet reports.",
       "url": "https://www.ynetnews.com/article/sywrjwhagx",
       "source": "Ynet"
-    },
-    {
-      "at": "2026-11-02T02:04:00Z",
-      "who": "Ofir Katz",
-      "party": "מחל",
-      "text": "Says a unity government is impossible if the opposition bloc ousts Speaker Amir Ohana, Ynet reports.",
-      "url": "https://www.ynetnews.com/article/sywrjwhagx",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-01T15:36:00Z",
-      "who": "President Isaac Herzog",
-      "party": "",
-      "text": "Urges party leaders to stop climbing trees and face reality, as his office confirms consultations begin Wednesday.",
-      "url": "https://www.timesofisrael.com/stop-climbing-trees-and-face-reality-in-appeal-to-leaders-herzog-signals-push-for-unity-government/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-01",
-      "who": "Avigdor Liberman",
-      "party": "ל",
-      "text": "Channel 13 reports a delegation of Likud mayors met him on Sunday and failed to persuade him to back Netanyahu.",
-      "url": "https://www.jfeed.com/news-israel/tnvsug",
-      "source": "JFeed (citing Channel 13)"
     }
   ]
 }
