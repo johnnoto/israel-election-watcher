@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-04T12:24:24Z",
-  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; Herzog's two days of consultations open Wednesday evening, Nov 4, starting with the smaller parties, and his office says further rounds are possible. Eisenkot, Bennett, Lapid, Liberman and Golan back Eisenkot for the mandate, and Ynet projects he will receive more recommendations than Netanyahu, but the bloc has not said how it would reach a majority without Arab parties, which Liberman rejects. Religious Zionism and, per Israel National News, Shas's rabbinic council back Netanyahu, while UTJ has not committed to a recommendation. Netanyahu insists he should lead any broad government, while Eisenkot says Netanyahu lacks a majority and the opposition will form the government.",
+  "updated": "2026-11-04T15:24:24Z",
+  "summary": "The Central Elections Committee certified the results on Nov 4, saying it found no irregularities, and Herzog's consultations are under way, starting with the smaller parties on Wednesday evening and ending with Likud on Thursday night. Eisenkot, Bennett, Lapid, Liberman and Golan back Eisenkot for the mandate, while Likud, Religious Zionism, Otzma Yehudit and Shas back Netanyahu; Ynet projects Eisenkot will get more recommendations. UTJ, Ra'am and the Joint List have not formally announced their picks, though an unnamed Joint List source told Fox News it is likely to endorse Eisenkot. Neither camp has shown a path to a majority, and Herzog has urged leaders to face reality and avoid another election.",
   "phase": {
-    "now": "Final results published; Herzog's consultations open Wednesday, Nov 4 at 5 pm with Religious Zionism, ending with Likud on Thursday evening",
-    "next": "Herzog will ask each faction whom it recommends and then choose a candidate for the mandate; his office does not rule out a second round. The new Knesset is sworn in on Nov 10.",
-    "url": "https://www.ynetnews.com/article/hy3hwbiagx",
+    "now": "Results certified; Herzog's consultations under way (Nov 4 evening and Nov 5), smallest parties first, Likud last on Thursday at 8:30 pm",
+    "next": "Herzog chooses a candidate for the mandate, which Ynet expects between Friday and next Tuesday; the new Knesset is sworn in on Nov 10.",
+    "url": "https://www.ynetnews.com/article/hygsh5ptgx",
     "source": "Ynet"
   },
   "scenarios": [
@@ -299,14 +299,14 @@
       "lines_source": "Red lines: Times of Israel (Oct 14)"
     },
     "ב": {
-      "backs": "Netanyahu",
-      "stance": "Ben-Gvir attacked the idea of a government with the Joint List after Jabareen declined to call Hamas a terror group; he rejects unity with Eisenkot and backs keeping a right-wing government.",
+      "backs": "Netanyahu (confirmed to Fox News)",
+      "stance": "Otzma Yehudit confirmed to Fox News Digital on Nov 3 that it will recommend Netanyahu to Herzog.",
       "red_lines": [
         "No unity with Eisenkot"
       ],
-      "date": "2026-11-01",
-      "url": "https://www.yahoo.com/news/politics/articles/netanyahu-main-rival-opens-door-110651092.html",
-      "source": "The Telegraph via Yahoo News",
+      "date": "2026-11-03",
+      "url": "https://www.foxnews.com/world/netanyahu-faces-coalition-showdown-rivals-maneuver-form-israels-next-government",
+      "source": "Fox News",
       "lines_url": "https://www.ynetnews.com/article/skmg7jc2ml",
       "lines_source": "Red lines: Ynet"
     },
@@ -342,6 +342,30 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-04T09:46:00Z",
+      "who": "Central Elections Committee",
+      "party": "",
+      "text": "The election committee certified the results, saying it found no irregularities or evidence that the outcome was altered; Likud and Shas abstained in the presidium vote.",
+      "url": "https://www.ynetnews.com/article/syxx2dutfg",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-04T09:46:00Z",
+      "who": "Isaac Herzog",
+      "party": "",
+      "text": "Receiving the official results, Herzog said the elections are over and it is time to face reality.",
+      "url": "https://www.ynetnews.com/article/syxx2dutfg",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-04",
+      "who": "Joint List",
+      "party": "ודם",
+      "text": "An unnamed Joint List source told Fox News the alliance is likely to endorse Eisenkot.",
+      "url": "https://www.foxnews.com/world/netanyahu-faces-coalition-showdown-rivals-maneuver-form-israels-next-government",
+      "source": "Fox News"
+    },
     {
       "at": "2026-11-04",
       "who": "Gadi Eisenkot",
@@ -557,30 +581,6 @@
       "text": "The UTJ figure tells Radio Jerusalem the party does not rule out cooperating with Arab parties.",
       "url": "https://www.ynetnews.com/article/hy3hwbiagx",
       "source": "Ynet"
-    },
-    {
-      "at": "2026-11-02T16:09:00Z",
-      "who": "Opposition bloc",
-      "party": "דרך",
-      "text": "Eisenkot, Bennett, Lapid, Liberman and Golan will meet Tuesday at 11:30 in Herzliya, their first joint meeting since the results, JFeed reports.",
-      "url": "https://www.jfeed.com/news-israel/tnvsug",
-      "source": "JFeed"
-    },
-    {
-      "at": "2026-11-02T15:03:00Z",
-      "who": "Shas",
-      "party": "שס",
-      "text": "Channel 12's Amit Segal reports Shas has settled on recommending Netanyahu for prime minister.",
-      "url": "https://www.jfeed.com/news-israel/shas-recommend-netanyahu-eisenkot-mandate",
-      "source": "JFeed"
-    },
-    {
-      "at": "2026-11-02T15:03:00Z",
-      "who": "Rabbi Moshe Maya",
-      "party": "שס",
-      "text": "The Shas Council elder denies reports he was approached about backing Eisenkot.",
-      "url": "https://www.jfeed.com/news-israel/shas-recommend-netanyahu-eisenkot-mandate",
-      "source": "JFeed"
     }
   ]
 }
