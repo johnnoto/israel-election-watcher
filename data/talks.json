@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-04T15:24:24Z",
-  "summary": "The Central Elections Committee certified the results on Nov 4, saying it found no irregularities, and Herzog's consultations are under way, starting with the smaller parties on Wednesday evening and ending with Likud on Thursday night. Eisenkot, Bennett, Lapid, Liberman and Golan back Eisenkot for the mandate, while Likud, Religious Zionism, Otzma Yehudit and Shas back Netanyahu; Ynet projects Eisenkot will get more recommendations. UTJ, Ra'am and the Joint List have not formally announced their picks, though an unnamed Joint List source told Fox News it is likely to endorse Eisenkot. Neither camp has shown a path to a majority, and Herzog has urged leaders to face reality and avoid another election.",
+  "updated": "2026-11-04T18:26:20Z",
+  "summary": "Herzog's consultations began on Wednesday evening with Religious Zionism and Shas, both of which back Netanyahu, with Yisrael Beiteinu next and the remaining parties on Thursday, ending with Likud. Eisenkot, Bennett, Lapid, Liberman and Golan back Eisenkot for the mandate, while Likud, Religious Zionism, Otzma Yehudit and Shas back Netanyahu; Ynet projects Eisenkot will get more recommendations. UTJ, Ra'am and the Joint List have not formally announced their picks, though Joint List sources expect to endorse Eisenkot. Neither camp has shown a path to a majority, and Herzog has told factions that not every campaign promise can be kept if another election is to be avoided.",
   "phase": {
-    "now": "Results certified; Herzog's consultations under way (Nov 4 evening and Nov 5), smallest parties first, Likud last on Thursday at 8:30 pm",
-    "next": "Herzog chooses a candidate for the mandate, which Ynet expects between Friday and next Tuesday; the new Knesset is sworn in on Nov 10.",
-    "url": "https://www.ynetnews.com/article/hygsh5ptgx",
-    "source": "Ynet"
+    "now": "Herzog's consultations under way: Religious Zionism and Shas met him on Nov 4, Yisrael Beiteinu that evening; the rest on Nov 5, Likud last at 8:30 pm",
+    "next": "Herzog chooses a candidate for the mandate, which Ynet expects between Friday and next Tuesday (legal deadline Nov 11); the new Knesset is sworn in on Nov 10.",
+    "url": "https://www.timesofisrael.com/liveblog_entry/herzog-begins-consultation-with-shas-party/",
+    "source": "Times of Israel"
   },
   "scenarios": [
     {
@@ -275,14 +275,14 @@
       "lines_source": "Red lines: Jerusalem Post"
     },
     "שס": {
-      "backs": "Netanyahu (rabbinic council decision)",
-      "stance": "Israel National News reports Shas's Council of Torah Sages decided to recommend Netanyahu after he committed to regularizing yeshiva students' status.",
+      "backs": "Netanyahu (met Herzog Nov 4)",
+      "stance": "Shas began its consultation with Herzog on Nov 4 as a Netanyahu supporter, following its rabbinic council's decision to back him, the Times of Israel reports.",
       "red_lines": [
         "Draft-exemption law"
       ],
-      "date": "2026-11-03",
-      "url": "https://www.israelnationalnews.com/news/435594",
-      "source": "Israel National News",
+      "date": "2026-11-04",
+      "url": "https://www.timesofisrael.com/liveblog_entry/herzog-begins-consultation-with-shas-party/",
+      "source": "Times of Israel",
       "lines_url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
       "lines_source": "Red lines: Times of Israel (Oct 14)"
     },
@@ -311,14 +311,14 @@
       "lines_source": "Red lines: Ynet"
     },
     "ט": {
-      "backs": "Netanyahu (announced)",
-      "stance": "Religious Zionism said on Nov 3 it will recommend Netanyahu as head of the largest party and bloc and urge the left to drop boycotts for a broad Jewish government.",
+      "backs": "Netanyahu (met Herzog Nov 4)",
+      "stance": "Religious Zionism met Herzog first on Nov 4 and backs Netanyahu, the Times of Israel reports.",
       "red_lines": [
         "No government that boycotts Ben-Gvir"
       ],
-      "date": "2026-11-03",
-      "url": "https://www.israelnationalnews.com/news/435594",
-      "source": "Israel National News",
+      "date": "2026-11-04",
+      "url": "https://www.timesofisrael.com/liveblog_entry/herzog-begins-consultation-with-shas-party/",
+      "source": "Times of Israel",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-912494",
       "lines_source": "Red lines: Jerusalem Post (Oct 22)"
     },
@@ -342,6 +342,30 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-04T16:23:00Z",
+      "who": "Isaac Herzog",
+      "party": "",
+      "text": "Herzog wrapped up his consultation with Religious Zionism and began meeting Shas, both of which back Netanyahu.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/herzog-begins-consultation-with-shas-party/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-04T15:57:00Z",
+      "who": "Isaac Herzog",
+      "party": "",
+      "text": "Herzog suggested that a far-right minister's opposition to including Arab parties is racist, the Times of Israel reports.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/really-bothers-me-herzog-suggests-far-right-ministers-opposition-to-arab-parties-is-racist/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-04",
+      "who": "Isaac Herzog",
+      "party": "",
+      "text": "Herzog told factions that, to avoid another election, they must accept that not every campaign commitment can be fulfilled.",
+      "url": "https://www.jfeed.com/news/herzog-coalition-consultations-election-deadlock",
+      "source": "JFeed"
+    },
     {
       "at": "2026-11-04T09:46:00Z",
       "who": "Central Elections Committee",
@@ -556,30 +580,6 @@
       "party": "מחל",
       "text": "Says the public does not want a government dependent on Ra'am and the Joint List.",
       "url": "https://www.ynetnews.com/article/sks7huutfl",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-02T18:34:00Z",
-      "who": "Isaac Herzog",
-      "party": "",
-      "text": "His office publishes the consultation schedule: Religious Zionism, Shas and Yisrael Beiteinu on Wednesday; UTJ through Likud on Thursday.",
-      "url": "https://www.ynetnews.com/article/hy3hwbiagx",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-02T18:34:00Z",
-      "who": "Joint List and Ra'am",
-      "party": "עם",
-      "text": "Leaders of the two Arab parties meet in Nazareth and will coordinate their recommendations, Ynet reports.",
-      "url": "https://www.ynetnews.com/article/hy3hwbiagx",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-02T18:34:00Z",
-      "who": "Yaakov Justman",
-      "party": "ג",
-      "text": "The UTJ figure tells Radio Jerusalem the party does not rule out cooperating with Arab parties.",
-      "url": "https://www.ynetnews.com/article/hy3hwbiagx",
       "source": "Ynet"
     }
   ]
