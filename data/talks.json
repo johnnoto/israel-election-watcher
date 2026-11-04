@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-03T21:23:12Z",
-  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; Herzog's consultations open Wednesday, Nov 4, and the new Knesset is sworn in on Nov 10. Meeting in Herzliya on Tuesday, Eisenkot, Bennett, Lapid, Liberman and Golan agreed to launch coalition talks, back Eisenkot for the mandate and form an emergency government quickly, but gave no sign of how they would reach a majority without Arab parties, which Liberman still rejects. Netanyahu says he should lead any broad government; the elections committee chair rejected Likud's request to delay certification, and Haaretz reports Likud is weighing whether to recognize the results. Shas is reported to be heading toward recommending Netanyahu, while the Haredi parties publicly say no final decision has been made.",
+  "updated": "2026-11-04T00:23:08Z",
+  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; Herzog's consultations open Wednesday, Nov 4, and the new Knesset is sworn in on Nov 10. Eisenkot, Bennett, Lapid, Liberman and Golan agreed on Tuesday to launch coalition talks, back Eisenkot for the mandate and form an emergency government quickly, but gave no sign of how they would reach a majority without Arab parties, which Liberman still rejects. Religious Zionism says it will recommend Netanyahu and urge a broad Jewish government, and Israel National News reports Shas's rabbinic council has backed Netanyahu after his pledge on yeshiva students' status. UTJ has not committed to a recommendation, while Netanyahu insists he should lead any broad government.",
   "phase": {
     "now": "Final results published; Herzog's consultations open Wednesday, Nov 4 at 5 pm with Religious Zionism, ending with Likud on Thursday evening",
     "next": "Herzog will ask each faction whom it recommends and then choose a candidate for the mandate; his office does not rule out a second round. The new Knesset is sworn in on Nov 10.",
@@ -275,14 +275,14 @@
       "lines_source": "Red lines: Jerusalem Post"
     },
     "שס": {
-      "backs": "Netanyahu (expected)",
-      "stance": "Channel 12's Amit Segal reports Shas has settled on recommending Netanyahu, who on Nov 2 called Deri and Shas important partners.",
+      "backs": "Netanyahu (rabbinic council decision)",
+      "stance": "Israel National News reports Shas's Council of Torah Sages decided to recommend Netanyahu after he committed to regularizing yeshiva students' status.",
       "red_lines": [
         "Draft-exemption law"
       ],
-      "date": "2026-11-02",
-      "url": "https://www.jfeed.com/news-israel/shas-recommend-netanyahu-eisenkot-mandate",
-      "source": "JFeed (citing Amit Segal)",
+      "date": "2026-11-03",
+      "url": "https://www.israelnationalnews.com/news/435594",
+      "source": "Israel National News",
       "lines_url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
       "lines_source": "Red lines: Times of Israel (Oct 14)"
     },
@@ -311,14 +311,14 @@
       "lines_source": "Red lines: Ynet"
     },
     "ט": {
-      "backs": "Netanyahu (expected)",
-      "stance": "Smotrich met Netanyahu in person on Oct 29, Ynet reports, and says the Arab party heads should be questioned by the Shin Bet over alleged foreign funding.",
+      "backs": "Netanyahu (announced)",
+      "stance": "Religious Zionism said on Nov 3 it will recommend Netanyahu as head of the largest party and bloc and urge the left to drop boycotts for a broad Jewish government.",
       "red_lines": [
         "No government that boycotts Ben-Gvir"
       ],
-      "date": "2026-10-29",
-      "url": "https://www.ynetnews.com/article/byjzm7ztmx",
-      "source": "Ynet",
+      "date": "2026-11-03",
+      "url": "https://www.israelnationalnews.com/news/435594",
+      "source": "Israel National News",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-912494",
       "lines_source": "Red lines: Jerusalem Post (Oct 22)"
     },
@@ -373,6 +373,30 @@
       "text": "After their meeting, Eisenkot and the other opposition leaders vow to form an emergency government as soon as possible, the Jerusalem Post reports.",
       "url": "https://www.jpost.com/israel-election-2026/article-913678",
       "source": "Jerusalem Post"
+    },
+    {
+      "at": "2026-11-03T14:31:00Z",
+      "who": "Religious Zionism",
+      "party": "ט",
+      "text": "Announces it will recommend Netanyahu to Herzog and call on left-wing parties to end boycotts and join a broad Jewish government.",
+      "url": "https://www.israelnationalnews.com/news/435594",
+      "source": "Israel National News"
+    },
+    {
+      "at": "2026-11-03T14:31:00Z",
+      "who": "Moshe Feiglin",
+      "party": "ט",
+      "text": "The Zehut chair says he will also recommend Netanyahu but ask Herzog to push for new elections, claiming the vote's integrity was compromised.",
+      "url": "https://www.israelnationalnews.com/news/435594",
+      "source": "Israel National News"
+    },
+    {
+      "at": "2026-11-03T14:31:00Z",
+      "who": "Shas",
+      "party": "שס",
+      "text": "The party's Council of Torah Sages backs recommending Netanyahu after his commitment on yeshiva students' status, Israel National News reports.",
+      "url": "https://www.israelnationalnews.com/news/435594",
+      "source": "Israel National News"
     },
     {
       "at": "2026-11-03T12:11:00Z",
@@ -557,30 +581,6 @@
       "text": "Announces Yisrael Beiteinu will recommend Eisenkot for prime minister and Yair Lapid for Knesset speaker.",
       "url": "https://www.jpost.com/israel-election-2026/article-913564",
       "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-11-02",
-      "who": "Ahmad Tibi",
-      "party": "ודם",
-      "text": "Tells Channel 12 he wants to help anyone trying to topple the government, argues change is impossible without the Arab parties, and says he isn't seeking a ministry.",
-      "url": "https://www.thenationalnews.com/news/mena/2026/11/02/netanyahus-opponents-have-the-numbers-now-can-they-make-a-deal/",
-      "source": "The National (citing Channel 12)"
-    },
-    {
-      "at": "2026-11-02T02:49:00Z",
-      "who": "Benjamin Netanyahu",
-      "party": "מחל",
-      "text": "Channel 14 reports, citing unnamed sources, that he has abandoned unity talks with Eisenkot and is readying his camp for a new election.",
-      "url": "https://sundayguardianlive.com/world/israel-election-results-will-israel-go-to-elections-again-benjamin-netanyahu-reportedly-abandons-coalition-talks-amid-political-deadlock-315618/",
-      "source": "Sunday Guardian (citing Channel 14)"
-    },
-    {
-      "at": "2026-11-02T02:04:00Z",
-      "who": "Benjamin Netanyahu",
-      "party": "מחל",
-      "text": "Ynet reports he has privately said he is not ruling out any option, including a rotation with Eisenkot, despite Likud's public stance.",
-      "url": "https://www.ynetnews.com/article/sywrjwhagx",
-      "source": "Ynet"
     }
   ]
 }
