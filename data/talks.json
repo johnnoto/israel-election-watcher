@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-04T00:23:08Z",
-  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; Herzog's consultations open Wednesday, Nov 4, and the new Knesset is sworn in on Nov 10. Eisenkot, Bennett, Lapid, Liberman and Golan agreed on Tuesday to launch coalition talks, back Eisenkot for the mandate and form an emergency government quickly, but gave no sign of how they would reach a majority without Arab parties, which Liberman still rejects. Religious Zionism says it will recommend Netanyahu and urge a broad Jewish government, and Israel National News reports Shas's rabbinic council has backed Netanyahu after his pledge on yeshiva students' status. UTJ has not committed to a recommendation, while Netanyahu insists he should lead any broad government.",
+  "updated": "2026-11-04T03:23:34Z",
+  "summary": "Final results are in, with Netanyahu's camp ahead but short of a majority; Herzog's two days of consultations open Wednesday, Nov 4, starting with the smaller parties, and his office says further rounds are possible. Eisenkot, Bennett, Lapid, Liberman and Golan have agreed to launch coalition talks and back Eisenkot for the mandate, but have not said how they would reach a majority without Arab parties, which Liberman rejects. Religious Zionism and, per Israel National News, Shas's rabbinic council back Netanyahu, while UTJ has not committed to a recommendation. Netanyahu insists he should lead any broad government, and AFP reports the attorney general says no evidence has yet been submitted for claims of fraud by Arab parties.",
   "phase": {
     "now": "Final results published; Herzog's consultations open Wednesday, Nov 4 at 5 pm with Religious Zionism, ending with Likud on Thursday evening",
     "next": "Herzog will ask each faction whom it recommends and then choose a candidate for the mandate; his office does not rule out a second round. The new Knesset is sworn in on Nov 10.",
@@ -343,6 +343,22 @@
   },
   "timeline": [
     {
+      "at": "2026-11-04T01:47:00Z",
+      "who": "Attorney General",
+      "party": "",
+      "text": "The attorney general asked the Shin Bet to report on its probe into Arab parties' alleged electoral fraud, saying no evidence had yet been submitted, AFP reports.",
+      "url": "https://www.rte.ie/news/world/2026/1104/1597892-israel-election/",
+      "source": "RTÉ (AFP)"
+    },
+    {
+      "at": "2026-11-04T01:47:00Z",
+      "who": "Isaac Herzog",
+      "party": "",
+      "text": "Herzog's office says he will start with smaller parties to hear all views and may hold further rounds of consultations before choosing a candidate.",
+      "url": "https://www.rte.ie/news/world/2026/1104/1597892-israel-election/",
+      "source": "RTÉ (AFP)"
+    },
+    {
       "at": "2026-11-03",
       "who": "Joint List",
       "party": "ודם",
@@ -565,22 +581,6 @@
       "text": "Declines to rule out cooperation with UTJ and says opposition leaders will meet on Tuesday.",
       "url": "https://www.ynetnews.com/article/s111ftzitfe",
       "source": "Ynet"
-    },
-    {
-      "at": "2026-11-02",
-      "who": "Benjamin Netanyahu",
-      "party": "מחל",
-      "text": "A Likud source tells Israel Hayom he could accept unity with Eisenkot if he serves about two years and then succeeds Herzog as president.",
-      "url": "https://www.theyeshivaworld.com/news/israel-news/2617942/political-deadlock-netanyahu-could-become-israels-president-under-proposed-rotation-deal-with-eisenkot.html",
-      "source": "Yeshiva World News (citing Israel Hayom)"
-    },
-    {
-      "at": "2026-11-02",
-      "who": "Avigdor Liberman",
-      "party": "ל",
-      "text": "Announces Yisrael Beiteinu will recommend Eisenkot for prime minister and Yair Lapid for Knesset speaker.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913564",
-      "source": "Jerusalem Post"
     }
   ]
 }
