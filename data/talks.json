@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-04T18:26:20Z",
-  "summary": "Herzog's consultations began on Wednesday evening with Religious Zionism and Shas, both of which back Netanyahu, with Yisrael Beiteinu next and the remaining parties on Thursday, ending with Likud. Eisenkot, Bennett, Lapid, Liberman and Golan back Eisenkot for the mandate, while Likud, Religious Zionism, Otzma Yehudit and Shas back Netanyahu; Ynet projects Eisenkot will get more recommendations. UTJ, Ra'am and the Joint List have not formally announced their picks, though Joint List sources expect to endorse Eisenkot. Neither camp has shown a path to a majority, and Herzog has told factions that not every campaign promise can be kept if another election is to be avoided.",
+  "updated": "2026-11-04T21:23:32Z",
+  "summary": "Herzog held the first day of consultations on Wednesday: Religious Zionism and Shas recommended Netanyahu, and Yisrael Beiteinu formally recommended Eisenkot while ruling out a government relying on Arab parties. Ynet reports Ra'am will also recommend Eisenkot, while UTJ's Degel HaTorah faction was told by its rabbi not to recommend anyone and its Porush–Stark faction is expected to back Netanyahu. Eisenkot has finished a first round of coalition talks with Bennett and Lapid's party, the Democrats and Yisrael Beiteinu, aiming for what he calls a national emergency government. The remaining parties meet Herzog on Thursday, ending with Likud, and neither candidate yet has a path to a majority.",
   "phase": {
-    "now": "Herzog's consultations under way: Religious Zionism and Shas met him on Nov 4, Yisrael Beiteinu that evening; the rest on Nov 5, Likud last at 8:30 pm",
-    "next": "Herzog chooses a candidate for the mandate, which Ynet expects between Friday and next Tuesday (legal deadline Nov 11); the new Knesset is sworn in on Nov 10.",
-    "url": "https://www.timesofisrael.com/liveblog_entry/herzog-begins-consultation-with-shas-party/",
-    "source": "Times of Israel"
+    "now": "Herzog's consultations under way: Religious Zionism, Shas and Yisrael Beiteinu met him on Nov 4; the rest meet him on Nov 5, Likud last",
+    "next": "Herzog chooses a candidate for the mandate (legal deadline Nov 11); the new Knesset is sworn in on Nov 10.",
+    "url": "https://www.ynetnews.com/article/sjzk4rutmg",
+    "source": "Ynet"
   },
   "scenarios": [
     {
@@ -43,7 +43,7 @@
         "עם"
       ],
       "status": "floated",
-      "note": "Championed by Yair Golan, who met Lapid and then Abbas on Oct 29; the Times of Israel says he is the only Jewish-led bloc leader openly backing a coalition with Ra'am. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it. Channel 12 reports Abbas himself privately called an Eisenkot minority government with outside Arab support weak or impossible. AFP reports Eisenkot has not decided whether to seek a coalition relying on Arab parties, and the Joint List's Jabareen says he would back him from outside. A senior Joint List official told Walla on Nov 1 that the Joint List and Ra'am are expected to recommend Eisenkot to the president. Ynet reports Joint List and Ra'am leaders met in Nazareth on Nov 2 and will coordinate their recommendations. Ynet reports Bennett sides with Liberman against a government relying on Arab parties, believing it would collapse. On Nov 3 Golan met Joint List leaders and they agreed to keep coordinating, while the Times of Israel notes the bloc's joint statement gave no indication of how it would govern without Arab parties.",
+      "note": "Championed by Yair Golan, who met Lapid and then Abbas on Oct 29; the Times of Israel says he is the only Jewish-led bloc leader openly backing a coalition with Ra'am. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it. Channel 12 reports Abbas himself privately called an Eisenkot minority government with outside Arab support weak or impossible. AFP reports Eisenkot has not decided whether to seek a coalition relying on Arab parties, and the Joint List's Jabareen says he would back him from outside. A senior Joint List official told Walla on Nov 1 that the Joint List and Ra'am are expected to recommend Eisenkot to the president. Ynet reports Joint List and Ra'am leaders met in Nazareth on Nov 2 and will coordinate their recommendations. Ynet reports Bennett sides with Liberman against a government relying on Arab parties, believing it would collapse. On Nov 3 Golan met Joint List leaders and they agreed to keep coordinating, while the Times of Israel notes the bloc's joint statement gave no indication of how it would govern without Arab parties. On Nov 4 Ra'am announced it will recommend Eisenkot, while Yisrael Beiteinu told Herzog a government cannot be formed with Arab parties.",
       "blockers": [
         {
           "party": "ל",
@@ -116,7 +116,7 @@
         "ג"
       ],
       "status": "blocked",
-      "note": "No Arab parties needed, but the Haredi draft splits it. A source close to Eisenkot tells Ynet he is trying to bring Shas and UTJ into a government he leads, naming Liberman as the main obstacle. A senior UTJ official told Ynet the party would offer Eisenkot the premiership for draft exemptions, which clashes with his national-service condition; Shas is reported to be out. Unnamed senior UTJ figures say the party might back an Eisenkot government from outside without a draft law first, the Times of Israel reports. On Nov 2 Liberman declined to rule out cooperating with UTJ, saying the bloc will have to see what happens. Ynet reports on Nov 3 that Eisenkot is focusing on courting the Haredi parties and that Liberman has left the door open to talks on including them. The Jerusalem Post reports on Nov 3 that Shas and UTJ stress no decision has been made, with their rabbis due back around the start of consultations.",
+      "note": "No Arab parties needed, but the Haredi draft splits it. A source close to Eisenkot tells Ynet he is trying to bring Shas and UTJ into a government he leads, naming Liberman as the main obstacle. A senior UTJ official told Ynet the party would offer Eisenkot the premiership for draft exemptions, which clashes with his national-service condition; Shas is reported to be out. Unnamed senior UTJ figures say the party might back an Eisenkot government from outside without a draft law first, the Times of Israel reports. On Nov 2 Liberman declined to rule out cooperating with UTJ, saying the bloc will have to see what happens. Ynet reports on Nov 3 that Eisenkot is focusing on courting the Haredi parties and that Liberman has left the door open to talks on including them. The Jerusalem Post reports on Nov 3 that Shas and UTJ stress no decision has been made, with their rabbis due back around the start of consultations. On Nov 4 Shas recommended Netanyahu, and Yisrael Beiteinu told Herzog it would not compromise key priorities to bring Haredi parties in, Ynet reports.",
       "blockers": [
         {
           "party": "שס",
@@ -141,6 +141,12 @@
           "text": "Eisenkot's core promise is national service for all.",
           "url": "https://www.timesofisrael.com/eisenkot-i-will-do-my-utmost-to-form-a-zionist-government-with-national-service-for-all-netanyahu-should-step-down/",
           "source": "Times of Israel"
+        },
+        {
+          "party": "ל",
+          "text": "Yisrael Beiteinu told Herzog it rejects compromising security and economic priorities to include Haredi parties.",
+          "url": "https://www.ynetnews.com/article/sjzk4rutmg",
+          "source": "Ynet"
         }
       ],
       "url": "https://www.ynetnews.com/article/byfom0x6me",
@@ -227,16 +233,16 @@
     },
     "דרך": {
       "backs": "Eisenkot",
-      "stance": "On Nov 3 Eisenkot and the other opposition leaders agreed to start coalition talks at once and reaffirmed backing him for the first mandate.",
+      "stance": "Eisenkot completed a first round of coalition talks with Together, the Democrats and Yisrael Beiteinu, aiming for a national emergency government, Ynet reports.",
       "red_lines": [
         "National service for all",
         "Netanyahu out",
         "No rotation with Netanyahu",
         "Partners must accept his four principles"
       ],
-      "date": "2026-11-03",
-      "url": "https://www.timesofisrael.com/liveblog_entry/at-meeting-opposition-chiefs-agree-to-launch-coalition-talks-but-path-remains-unclear/",
-      "source": "Times of Israel"
+      "date": "2026-11-04",
+      "url": "https://www.ynetnews.com/article/sjzk4rutmg",
+      "source": "Ynet"
     },
     "רק": {
       "backs": "Recommending Eisenkot (announced)",
@@ -260,40 +266,40 @@
       "source": "Times of Israel"
     },
     "ל": {
-      "backs": "Recommending Eisenkot (announced)",
-      "stance": "Liberman said on Nov 3 a government can be formed without Arab parties and another election must be prevented; he will recommend Eisenkot and won't sit with Netanyahu.",
+      "backs": "Recommended Eisenkot",
+      "stance": "At Yisrael Beiteinu's Nov 4 consultation, MK Oded Forer recommended Eisenkot as most likely to form a government, ruled out relying on Arab parties, and rejected security or economic concessions to bring in Haredi parties.",
       "red_lines": [
         "No Likud under Netanyahu",
         "No Shas or UTJ",
         "No Ra'am or Joint List",
         "No minority government"
       ],
-      "date": "2026-11-03",
-      "url": "https://www.timesofisrael.com/liveblog-november-03-2026/#liveblog-entry-3926766",
-      "source": "Times of Israel",
+      "date": "2026-11-04",
+      "url": "https://www.ynetnews.com/article/sjzk4rutmg",
+      "source": "Ynet",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-911855",
       "lines_source": "Red lines: Jerusalem Post"
     },
     "שס": {
-      "backs": "Netanyahu (met Herzog Nov 4)",
-      "stance": "Shas began its consultation with Herzog on Nov 4 as a Netanyahu supporter, following its rabbinic council's decision to back him, the Times of Israel reports.",
+      "backs": "Recommended Netanyahu",
+      "stance": "At its Nov 4 consultation Shas recommended Netanyahu, with MK Malkieli voicing hope for a coalition of at least 61 and saying the Council of Torah Sages fully backs Deri.",
       "red_lines": [
         "Draft-exemption law"
       ],
       "date": "2026-11-04",
-      "url": "https://www.timesofisrael.com/liveblog_entry/herzog-begins-consultation-with-shas-party/",
-      "source": "Times of Israel",
+      "url": "https://www.ynetnews.com/article/sjzk4rutmg",
+      "source": "Ynet",
       "lines_url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
       "lines_source": "Red lines: Times of Israel (Oct 14)"
     },
     "ג": {
-      "backs": "No recommendation for now (per Ynet)",
-      "stance": "Ynet reports UTJ decided not to recommend any candidate for now and will weigh replacing Speaker Ohana only after a concrete Eisenkot proposal; Goldknopf favors backing Eisenkot while Porush is skeptical.",
+      "backs": "Split: Degel none, Porush–Stark expected Netanyahu (per Ynet)",
+      "stance": "Ynet reports Rabbi Dov Landau told Degel HaTorah not to recommend either candidate and Goldknopf won't endorse, while the breakaway Porush–Stark faction is expected to back Netanyahu.",
       "red_lines": [
         "Draft-exemption law"
       ],
-      "date": "2026-11-02",
-      "url": "https://www.ynetnews.com/article/sywrjwhagx",
+      "date": "2026-11-04",
+      "url": "https://www.ynetnews.com/article/sjzk4rutmg",
       "source": "Ynet",
       "lines_url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
       "lines_source": "Red lines: Times of Israel (Oct 14)"
@@ -311,23 +317,23 @@
       "lines_source": "Red lines: Ynet"
     },
     "ט": {
-      "backs": "Netanyahu (met Herzog Nov 4)",
-      "stance": "Religious Zionism met Herzog first on Nov 4 and backs Netanyahu, the Times of Israel reports.",
+      "backs": "Recommended Netanyahu",
+      "stance": "Religious Zionism recommended Netanyahu on Nov 4, with its delegation arguing Arab nationalist parties are not legitimate partners in forming a government, Ynet reports.",
       "red_lines": [
         "No government that boycotts Ben-Gvir"
       ],
       "date": "2026-11-04",
-      "url": "https://www.timesofisrael.com/liveblog_entry/herzog-begins-consultation-with-shas-party/",
-      "source": "Times of Israel",
+      "url": "https://www.ynetnews.com/article/sjzk4rutmg",
+      "source": "Ynet",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-912494",
       "lines_source": "Red lines: Jerusalem Post (Oct 22)"
     },
     "עם": {
-      "backs": "Eisenkot (expected, per Walla)",
-      "stance": "Ra'am met the Joint List in Nazareth on Nov 2; Ynet reports the two will coordinate their recommendations and appear likely to back Eisenkot.",
+      "backs": "Eisenkot (announced)",
+      "stance": "Ra'am announced it will recommend Eisenkot to Herzog, Ynet reports.",
       "red_lines": [],
-      "date": "2026-11-02",
-      "url": "https://www.ynetnews.com/article/hy3hwbiagx",
+      "date": "2026-11-04",
+      "url": "https://www.ynetnews.com/article/sjzk4rutmg",
       "source": "Ynet"
     },
     "ודם": {
@@ -342,6 +348,62 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-04",
+      "who": "Oded Forer",
+      "party": "ל",
+      "text": "Yisrael Beiteinu formally recommended Eisenkot to Herzog and ruled out a government relying on Arab parties, though it allows cooperation on single bills.",
+      "url": "https://www.ynetnews.com/article/sjzk4rutmg",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-04",
+      "who": "Mansour Abbas",
+      "party": "עם",
+      "text": "Ra'am announced it will recommend Eisenkot for the mandate, Ynet reports.",
+      "url": "https://www.ynetnews.com/article/sjzk4rutmg",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-04",
+      "who": "UTJ",
+      "party": "ג",
+      "text": "Rabbi Dov Landau instructed Degel HaTorah not to recommend either candidate, while the Porush–Stark faction is expected to back Netanyahu, Ynet reports.",
+      "url": "https://www.ynetnews.com/article/sjzk4rutmg",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-04",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Eisenkot's party finished a first round of coalition talks with Together, the Democrats and Yisrael Beiteinu toward a national emergency government.",
+      "url": "https://www.ynetnews.com/article/sjzk4rutmg",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-04",
+      "who": "Michael Malkieli",
+      "party": "שס",
+      "text": "Shas recommended Netanyahu and hoped for a coalition of at least 61; Herzog asked the delegation why it was not pushing for unity.",
+      "url": "https://www.ynetnews.com/article/sjzk4rutmg",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-04",
+      "who": "Moshe Feiglin",
+      "party": "ט",
+      "text": "Zehut's Feiglin said he will recommend Netanyahu but questioned the result's legitimacy and called for another election.",
+      "url": "https://www.ynetnews.com/article/sjzk4rutmg",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-04",
+      "who": "Orit Strock",
+      "party": "ט",
+      "text": "Religious Zionism recommended Netanyahu, and its delegates argued Arab nationalist parties should not help form a government or replace the Speaker.",
+      "url": "https://www.yahoo.com/news/politics/articles/herzog-holds-first-consultations-parties-165151734.html",
+      "source": "Jerusalem Post (via Yahoo News)"
+    },
     {
       "at": "2026-11-04T16:23:00Z",
       "who": "Isaac Herzog",
@@ -525,62 +587,6 @@
       "text": "Arriving at the opposition meeting, says Netanyahu must be removed and warns of a dangerous attempt to undermine the results.",
       "url": "https://www.timesofisrael.com/liveblog_entry/lapid-were-facing-an-attempt-to-undermine-election-results-we-need-to-remove-netanyahu/",
       "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-03",
-      "who": "Likud",
-      "party": "מחל",
-      "text": "Likud asks to delay certification of the results, citing an interference probe; the elections committee chair rejects the request.",
-      "url": "https://www.timesofisrael.com/likud-seeks-delay-in-certification-of-election-results-citing-interference-probe/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-03",
-      "who": "Shas and UTJ",
-      "party": "ג",
-      "text": "Haredi party representatives stress no decision has been made on recommendations, with their rabbis due back as consultations begin.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913674",
-      "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-11-03T02:57:00Z",
-      "who": "Opposition bloc",
-      "party": "דרך",
-      "text": "Senior bloc figures tell Ynet their most urgent task is controlling the Knesset: replacing Speaker Ohana, forming the Arrangements Committee and repealing coalition laws.",
-      "url": "https://www.ynetnews.com/article/sy4mp6upfg",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-03T02:57:00Z",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Ynet reports Eisenkot wants a speaker from his own party, while Liberman and Bennett favor Lapid.",
-      "url": "https://www.ynetnews.com/article/sy4mp6upfg",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-03T02:57:00Z",
-      "who": "Naftali Bennett",
-      "party": "רק",
-      "text": "Ynet reports Bennett sides with Liberman against a government reliant on Arab parties, believing it would collapse.",
-      "url": "https://www.ynetnews.com/article/sy4mp6upfg",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-02T20:02:00Z",
-      "who": "Benjamin Netanyahu",
-      "party": "מחל",
-      "text": "In his first public remarks on the government since election night, says he should lead any broad government and wants Shas, Otzma Yehudit and Religious Zionism kept in it.",
-      "url": "https://www.ynetnews.com/article/sks7huutfl",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-02T20:02:00Z",
-      "who": "Benjamin Netanyahu",
-      "party": "מחל",
-      "text": "Says the public does not want a government dependent on Ra'am and the Joint List.",
-      "url": "https://www.ynetnews.com/article/sks7huutfl",
-      "source": "Ynet"
     }
   ]
 }
