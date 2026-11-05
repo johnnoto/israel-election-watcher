@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-05T00:22:24Z",
-  "summary": "Herzog held the first day of consultations on Wednesday: Religious Zionism and Shas recommended Netanyahu, and Yisrael Beiteinu formally recommended Eisenkot while ruling out a government relying on Arab parties. Ynet reports Ra'am will also recommend Eisenkot, while UTJ's Degel HaTorah faction was told by its rabbi not to recommend anyone and its Porush–Stark faction is expected to back Netanyahu. Eisenkot has finished a first round of coalition talks with Bennett and Lapid's party, the Democrats and Yisrael Beiteinu, aiming for what he calls a national emergency government. The remaining parties meet Herzog on Thursday, ending with Likud, and neither candidate yet has a path to a majority.",
+  "updated": "2026-11-05T03:25:00Z",
+  "summary": "On the first day of Herzog's consultations, Religious Zionism and Shas recommended Netanyahu, while Yisrael Beiteinu recommended Eisenkot and ruled out a government relying on Arab parties. UTJ's Degel HaTorah faction confirmed on its rabbis' instructions that it will not recommend anyone, and the stance of UTJ's Agudat Yisrael MKs remains unclear. Ra'am says it will recommend Eisenkot, and Joint List MK Ofer Cassif told Anadolu his alliance would likely do the same, so the Times of Israel reports Eisenkot is expected to get the first shot at forming a government. The remaining parties meet Herzog on Thursday, ending with Likud, and neither candidate yet has a clear path to a majority.",
   "phase": {
-    "now": "Herzog's consultations under way: Religious Zionism, Shas and Yisrael Beiteinu met him on Nov 4; the rest meet him on Nov 5, Likud last",
+    "now": "Herzog's consultations resume on Nov 5: UTJ at 8:30 a.m., then the remaining parties, with Likud last",
     "next": "Herzog chooses a candidate for the mandate (legal deadline Nov 11); the new Knesset is sworn in on Nov 10.",
-    "url": "https://www.ynetnews.com/article/sjzk4rutmg",
-    "source": "Ynet"
+    "url": "https://www.timesofisrael.com/as-herzog-consults-party-heads-haredi-faction-says-it-wont-recommend-netanyahu-as-pm/",
+    "source": "Times of Israel"
   },
   "scenarios": [
     {
@@ -293,14 +293,14 @@
       "lines_source": "Red lines: Times of Israel (Oct 14)"
     },
     "ג": {
-      "backs": "Split: Degel none, Porush–Stark expected Netanyahu (per Ynet)",
-      "stance": "Ynet reports Rabbi Dov Landau told Degel HaTorah not to recommend either candidate and Goldknopf won't endorse, while the breakaway Porush–Stark faction is expected to back Netanyahu.",
+      "backs": "Degel: no recommendation; Agudat unclear",
+      "stance": "Degel HaTorah, with four of UTJ's seven MKs, said it will not recommend any candidate on the instructions of Rabbis Lando and Hirsch; Agudat Yisrael's three MKs have not said whether they will back Netanyahu.",
       "red_lines": [
         "Draft-exemption law"
       ],
       "date": "2026-11-04",
-      "url": "https://www.ynetnews.com/article/sjzk4rutmg",
-      "source": "Ynet",
+      "url": "https://www.timesofisrael.com/liveblog_entry/4-member-degel-hatorah-faction-of-utj-declines-to-endorse-prime-minister-candidate/",
+      "source": "Times of Israel",
       "lines_url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
       "lines_source": "Red lines: Times of Israel (Oct 14)"
     },
@@ -337,17 +337,41 @@
       "source": "Ynet"
     },
     "ודם": {
-      "backs": "Eisenkot (expected)",
-      "stance": "Joint List leaders Jabareen and Tibi met Golan on Nov 3 and agreed to keep coordinating toward a change government, a Democrats statement said.",
+      "backs": "Eisenkot (likely, per Cassif)",
+      "stance": "MK Ofer Cassif told Anadolu the Joint List would likely recommend Eisenkot when it meets Herzog on Thursday, though it was still discussing its position.",
       "red_lines": [
         "No Netanyahu government"
       ],
-      "date": "2026-11-03",
-      "url": "https://www.timesofisrael.com/liveblog_entry/golan-discusses-coalition-coordination-with-joint-list-leaders/",
-      "source": "Times of Israel"
+      "date": "2026-11-04",
+      "url": "https://www.aa.com.tr/en/middle-east/netanyahu-eisenkot-draw-rival-endorsements-as-herzog-opens-israel-s-government-talks/4111985",
+      "source": "Anadolu Agency"
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-04",
+      "who": "Ofer Cassif",
+      "party": "ודם",
+      "text": "Cassif told Anadolu the Joint List would likely recommend Eisenkot at its Thursday meeting with Herzog but was still deliberating.",
+      "url": "https://www.aa.com.tr/en/middle-east/netanyahu-eisenkot-draw-rival-endorsements-as-herzog-opens-israel-s-government-talks/4111985",
+      "source": "Anadolu Agency"
+    },
+    {
+      "at": "2026-11-04T21:47:00Z",
+      "who": "Isaac Herzog",
+      "party": "",
+      "text": "The Times of Israel reports Eisenkot is expected to receive the mandate after Ra'am confirmed its endorsement, with consultations resuming Thursday morning.",
+      "url": "https://www.timesofisrael.com/as-herzog-consults-party-heads-haredi-faction-says-it-wont-recommend-netanyahu-as-pm/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-04T18:30:00Z",
+      "who": "Degel HaTorah",
+      "party": "ג",
+      "text": "UTJ's Degel HaTorah faction confirmed it will not recommend any candidate, following its rabbis' instructions; Agudat Yisrael's position is unclear.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/4-member-degel-hatorah-faction-of-utj-declines-to-endorse-prime-minister-candidate/",
+      "source": "Times of Israel"
+    },
     {
       "at": "2026-11-04",
       "who": "Oded Forer",
@@ -361,14 +385,6 @@
       "who": "Mansour Abbas",
       "party": "עם",
       "text": "Ra'am announced it will recommend Eisenkot for the mandate, Ynet reports.",
-      "url": "https://www.ynetnews.com/article/sjzk4rutmg",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-04",
-      "who": "UTJ",
-      "party": "ג",
-      "text": "Rabbi Dov Landau instructed Degel HaTorah not to recommend either candidate, while the Porush–Stark faction is expected to back Netanyahu, Ynet reports.",
       "url": "https://www.ynetnews.com/article/sjzk4rutmg",
       "source": "Ynet"
     },
@@ -562,30 +578,6 @@
       "party": "רק",
       "text": "Says his party will mobilize all its efforts to help Eisenkot form a government and urges quickly replacing Speaker Ohana.",
       "url": "https://www.timesofisrael.com/liveblog_entry/bennett-vows-to-help-eisenkot-form-government-urges-opposition-to-act-quickly/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-03T10:58:00Z",
-      "who": "Yair Golan",
-      "party": "אמת",
-      "text": "Meets Joint List leaders Jabareen and Tibi; the sides agree to keep coordinating toward a change government.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/golan-discusses-coalition-coordination-with-joint-list-leaders/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-03T10:40:00Z",
-      "who": "Avigdor Liberman",
-      "party": "ל",
-      "text": "Says a government can be formed without Arab parties and another election must be prevented.",
-      "url": "https://www.timesofisrael.com/liveblog-november-03-2026/#liveblog-entry-3926766",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-03T10:10:00Z",
-      "who": "Yair Lapid",
-      "party": "רק",
-      "text": "Arriving at the opposition meeting, says Netanyahu must be removed and warns of a dangerous attempt to undermine the results.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/lapid-were-facing-an-attempt-to-undermine-election-results-we-need-to-remove-netanyahu/",
       "source": "Times of Israel"
     }
   ]
