@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T03:25:00Z",
+  "updated": "2026-11-05T06:24:16Z",
   "summary": "On the first day of Herzog's consultations, Religious Zionism and Shas recommended Netanyahu, while Yisrael Beiteinu recommended Eisenkot and ruled out a government relying on Arab parties. UTJ's Degel HaTorah faction confirmed on its rabbis' instructions that it will not recommend anyone, and the stance of UTJ's Agudat Yisrael MKs remains unclear. Ra'am says it will recommend Eisenkot, and Joint List MK Ofer Cassif told Anadolu his alliance would likely do the same, so the Times of Israel reports Eisenkot is expected to get the first shot at forming a government. The remaining parties meet Herzog on Thursday, ending with Likud, and neither candidate yet has a clear path to a majority.",
   "phase": {
     "now": "Herzog's consultations resume on Nov 5: UTJ at 8:30 a.m., then the remaining parties, with Likud last",
@@ -348,6 +348,14 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-05T01:53:00Z",
+      "who": "Joint List",
+      "party": "ודם",
+      "text": "Al Jazeera, citing Channel 12, reports the Joint List is expected to coordinate with Eisenkot, endorsing him if asked or abstaining if he prefers.",
+      "url": "https://www.aljazeera.com/news/2026/11/5/israels-herzog-accepts-vote-results-opens-talks-on-forming-a-government",
+      "source": "Al Jazeera (citing Channel 12)"
+    },
     {
       "at": "2026-11-04",
       "who": "Ofer Cassif",
