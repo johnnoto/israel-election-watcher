@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-05T15:25:30Z",
-  "summary": "The Joint List announced on Nov 5 that it unanimously decided to recommend Eisenkot, which Al Jazeera and ANI report gives him the backing of a majority of Knesset members, though the Joint List says it will not join his coalition and may only support it from outside. Yisrael Beiteinu, the Democrats, Together, Ra'am and Yashar back Eisenkot, while Likud, Shas, Otzma Yehudit and Religious Zionism back Netanyahu and UTJ recommended no one, tying any support to draft-exemption legislation. Eisenkot's camp remains split, as Liberman and Bennett reject a government relying on Arab parties while Liberman also refuses concessions to the Haredi parties. Likud meets Herzog last on Thursday evening, after which the president is expected to choose a candidate.",
+  "updated": "2026-11-05T18:23:39Z",
+  "summary": "Together formally recommended Eisenkot to Herzog on Nov 5, joining Yisrael Beiteinu, the Democrats, Ra'am and the Joint List, which dpa says gives him a majority of recommendations, though the Joint List will not join his coalition. Likud, Shas, Otzma Yehudit and Religious Zionism back Netanyahu, while UTJ recommended no one and ties any support to draft-exemption legislation. Eisenkot's camp remains split, as Liberman and Bennett reject a government relying on Arab parties, and Together says it will not accept a draft-exemption law. Yashar and Likud were the last parties scheduled to meet Herzog on Thursday evening, after which the president is expected to choose a candidate.",
   "phase": {
-    "now": "Herzog's consultations conclude on Nov 5; the Joint List says it will recommend Eisenkot, with Likud meeting Herzog last in the evening",
+    "now": "Herzog's consultations conclude on Nov 5, with Yashar and Likud the last parties scheduled to meet him in the evening",
     "next": "Herzog chooses a candidate for the mandate (legal deadline Nov 11); the new Knesset is sworn in on Nov 10.",
-    "url": "https://www.tribuneindia.com/news/world/israel-eisenkot-clears-pm-mandate-threshold-with-67-endorsements-leaving-netanyahus-bloc-at-46-seats-utj-abstains/",
-    "source": "The Tribune (ANI)"
+    "url": "https://www.yahoo.com/news/politics/articles/majority-israeli-lawmakers-back-eisenkot-161836019.html",
+    "source": "dpa (via Yahoo News)"
   },
   "scenarios": [
     {
@@ -116,7 +116,7 @@
         "ג"
       ],
       "status": "blocked",
-      "note": "No Arab parties needed, but the Haredi draft splits it. A source close to Eisenkot tells Ynet he is trying to bring Shas and UTJ into a government he leads, naming Liberman as the main obstacle. A senior UTJ official told Ynet the party would offer Eisenkot the premiership for draft exemptions, which clashes with his national-service condition; Shas is reported to be out. Unnamed senior UTJ figures say the party might back an Eisenkot government from outside without a draft law first, the Times of Israel reports. On Nov 2 Liberman declined to rule out cooperating with UTJ, saying the bloc will have to see what happens. Ynet reports on Nov 3 that Eisenkot is focusing on courting the Haredi parties and that Liberman has left the door open to talks on including them. The Jerusalem Post reports on Nov 3 that Shas and UTJ stress no decision has been made, with their rabbis due back around the start of consultations. On Nov 4 Shas recommended Netanyahu, and Yisrael Beiteinu told Herzog it would not compromise key priorities to bring Haredi parties in, Ynet reports. On Nov 5 UTJ declined to recommend either candidate, with Goldknopf telling Herzog the party is not bound to any bloc, Ynet reports. ANI reports UTJ told Herzog its support for any government depends on legislation exempting yeshiva students from service.",
+      "note": "No Arab parties needed, but the Haredi draft splits it. A source close to Eisenkot tells Ynet he is trying to bring Shas and UTJ into a government he leads, naming Liberman as the main obstacle. A senior UTJ official told Ynet the party would offer Eisenkot the premiership for draft exemptions, which clashes with his national-service condition; Shas is reported to be out. Unnamed senior UTJ figures say the party might back an Eisenkot government from outside without a draft law first, the Times of Israel reports. On Nov 2 Liberman declined to rule out cooperating with UTJ, saying the bloc will have to see what happens. Ynet reports on Nov 3 that Eisenkot is focusing on courting the Haredi parties and that Liberman has left the door open to talks on including them. The Jerusalem Post reports on Nov 3 that Shas and UTJ stress no decision has been made, with their rabbis due back around the start of consultations. On Nov 4 Shas recommended Netanyahu, and Yisrael Beiteinu told Herzog it would not compromise key priorities to bring Haredi parties in, Ynet reports. On Nov 5 UTJ declined to recommend either candidate, with Goldknopf telling Herzog the party is not bound to any bloc, Ynet reports. ANI reports UTJ told Herzog its support for any government depends on legislation exempting yeshiva students from service. On Nov 5 Together told Herzog it will not accept a draft-evasion law, Israel National News reports.",
       "blockers": [
         {
           "party": "שס",
@@ -147,6 +147,12 @@
           "text": "Yisrael Beiteinu told Herzog it rejects compromising security and economic priorities to include Haredi parties.",
           "url": "https://www.ynetnews.com/article/sjzk4rutmg",
           "source": "Ynet"
+        },
+        {
+          "party": "רק",
+          "text": "Together told Herzog it will not accept a law exempting Haredim from the draft.",
+          "url": "https://www.israelnationalnews.com/news/435737",
+          "source": "Israel National News"
         }
       ],
       "url": "https://www.ynetnews.com/article/byfom0x6me",
@@ -188,6 +194,12 @@
           "text": "Ben-Gvir warned Netanyahu against a unity government with Eisenkot.",
           "url": "https://www.ynetnews.com/article/skmg7jc2ml",
           "source": "Ynet"
+        },
+        {
+          "party": "רק",
+          "text": "Together MK Merav Cohen warned against a unity deal with Likud, saying \"You don't make deals with scorpions.\"",
+          "url": "https://www.israelnationalnews.com/news/435737",
+          "source": "Israel National News"
         }
       ],
       "url": "https://www.newarab.com/news/netanyahu-interested-unity-govt-eisenkot-report",
@@ -245,15 +257,15 @@
       "source": "Ynet"
     },
     "רק": {
-      "backs": "Recommending Eisenkot (announced)",
-      "stance": "Bennett said on Nov 3 his whole party will work to help Eisenkot form a government and urged quickly replacing Speaker Ohana; Ynet reports he opposes a government relying on Arab parties.",
+      "backs": "Recommended Eisenkot",
+      "stance": "Together recommended Eisenkot to Herzog on Nov 5, with faction chair Ginzburg vowing to help him form a government quickly and MK Merav Cohen rejecting both a draft-exemption law and a unity deal.",
       "red_lines": [
         "No Netanyahu government",
         "No government reliant on Arab parties (per Ynet)"
       ],
-      "date": "2026-11-03",
-      "url": "https://www.timesofisrael.com/liveblog_entry/bennett-vows-to-help-eisenkot-form-government-urges-opposition-to-act-quickly/",
-      "source": "Times of Israel"
+      "date": "2026-11-05",
+      "url": "https://www.israelnationalnews.com/news/435737",
+      "source": "Israel National News"
     },
     "אמת": {
       "backs": "Recommended Eisenkot",
@@ -348,6 +360,30 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-05T17:47:00Z",
+      "who": "Merav Cohen",
+      "party": "רק",
+      "text": "Together MK Merav Cohen told Herzog the party rejects a draft-exemption law and warned against a unity deal with Likud.",
+      "url": "https://www.israelnationalnews.com/news/435737",
+      "source": "Israel National News"
+    },
+    {
+      "at": "2026-11-05T17:47:00Z",
+      "who": "Eitan Ginzburg",
+      "party": "רק",
+      "text": "Together recommended Eisenkot to Herzog, with faction chair Ginzburg pledging to help him form a government as quickly as possible.",
+      "url": "https://www.israelnationalnews.com/news/435737",
+      "source": "Israel National News"
+    },
+    {
+      "at": "2026-11-05T16:18:00Z",
+      "who": "Isaac Herzog",
+      "party": "",
+      "text": "dpa reports Herzog was due to meet Likud and Yashar on Thursday evening before deciding whom to task with forming a government.",
+      "url": "https://www.yahoo.com/news/politics/articles/majority-israeli-lawmakers-back-eisenkot-161836019.html",
+      "source": "dpa (via Yahoo News)"
+    },
     {
       "at": "2026-11-05",
       "who": "Rabbi Moshe Maya",
@@ -562,30 +598,6 @@
       "party": "",
       "text": "Receiving the official results, Herzog said the elections are over and it is time to face reality.",
       "url": "https://www.ynetnews.com/article/syxx2dutfg",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-04",
-      "who": "Joint List",
-      "party": "ודם",
-      "text": "An unnamed Joint List source told Fox News the alliance is likely to endorse Eisenkot.",
-      "url": "https://www.foxnews.com/world/netanyahu-faces-coalition-showdown-rivals-maneuver-form-israels-next-government",
-      "source": "Fox News"
-    },
-    {
-      "at": "2026-11-04",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Says Netanyahu lacks a majority and that the opposition bloc will form the next government, the Jerusalem Post reports.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913738",
-      "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-11-04",
-      "who": "Isaac Herzog",
-      "party": "",
-      "text": "Ahead of the consultations, Ynet projects Eisenkot is poised to receive more recommendations than Netanyahu.",
-      "url": "https://www.ynetnews.com/article/sk8eaw4pge",
       "source": "Ynet"
     }
   ]
