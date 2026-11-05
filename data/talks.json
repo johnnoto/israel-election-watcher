@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-05T12:24:49Z",
-  "summary": "On the second day of Herzog's consultations, United Torah Judaism as a whole declined to recommend any candidate, withholding its support from Netanyahu, while Otzma Yehudit recommended Netanyahu and claimed without evidence that votes were bought. Shas and Religious Zionism back Netanyahu, while Yisrael Beiteinu and the Democrats have formally recommended Eisenkot and Yashar, Together and Ra'am have announced they will do the same; the Joint List has not yet said publicly. Ynet projects Eisenkot will receive more recommendations than Netanyahu and the Jerusalem Post says he is still expected to get the mandate, though neither candidate has a clear path to a majority. Likud meets Herzog last on Thursday evening, after which the president will choose a candidate.",
+  "updated": "2026-11-05T15:25:30Z",
+  "summary": "The Joint List announced on Nov 5 that it unanimously decided to recommend Eisenkot, which Al Jazeera and ANI report gives him the backing of a majority of Knesset members, though the Joint List says it will not join his coalition and may only support it from outside. Yisrael Beiteinu, the Democrats, Together, Ra'am and Yashar back Eisenkot, while Likud, Shas, Otzma Yehudit and Religious Zionism back Netanyahu and UTJ recommended no one, tying any support to draft-exemption legislation. Eisenkot's camp remains split, as Liberman and Bennett reject a government relying on Arab parties while Liberman also refuses concessions to the Haredi parties. Likud meets Herzog last on Thursday evening, after which the president is expected to choose a candidate.",
   "phase": {
-    "now": "Herzog's consultations continue on Nov 5; UTJ, Otzma Yehudit and the Democrats have met him, with Likud last in the evening",
+    "now": "Herzog's consultations conclude on Nov 5; the Joint List says it will recommend Eisenkot, with Likud meeting Herzog last in the evening",
     "next": "Herzog chooses a candidate for the mandate (legal deadline Nov 11); the new Knesset is sworn in on Nov 10.",
-    "url": "https://www.ynetnews.com/article/rydawnytgl",
-    "source": "Ynet"
+    "url": "https://www.tribuneindia.com/news/world/israel-eisenkot-clears-pm-mandate-threshold-with-67-endorsements-leaving-netanyahus-bloc-at-46-seats-utj-abstains/",
+    "source": "The Tribune (ANI)"
   },
   "scenarios": [
     {
@@ -43,7 +43,7 @@
         "עם"
       ],
       "status": "floated",
-      "note": "Championed by Yair Golan, who met Lapid and then Abbas on Oct 29; the Times of Israel says he is the only Jewish-led bloc leader openly backing a coalition with Ra'am. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it. Channel 12 reports Abbas himself privately called an Eisenkot minority government with outside Arab support weak or impossible. AFP reports Eisenkot has not decided whether to seek a coalition relying on Arab parties, and the Joint List's Jabareen says he would back him from outside. A senior Joint List official told Walla on Nov 1 that the Joint List and Ra'am are expected to recommend Eisenkot to the president. Ynet reports Joint List and Ra'am leaders met in Nazareth on Nov 2 and will coordinate their recommendations. Ynet reports Bennett sides with Liberman against a government relying on Arab parties, believing it would collapse. On Nov 3 Golan met Joint List leaders and they agreed to keep coordinating, while the Times of Israel notes the bloc's joint statement gave no indication of how it would govern without Arab parties. On Nov 4 Ra'am announced it will recommend Eisenkot, while Yisrael Beiteinu told Herzog a government cannot be formed with Arab parties.",
+      "note": "Championed by Yair Golan, who met Lapid and then Abbas on Oct 29; the Times of Israel says he is the only Jewish-led bloc leader openly backing a coalition with Ra'am. Without Yisrael Beiteinu it falls short, and analysts told JTA the public is not ready for it. Channel 12 reports Abbas himself privately called an Eisenkot minority government with outside Arab support weak or impossible. AFP reports Eisenkot has not decided whether to seek a coalition relying on Arab parties, and the Joint List's Jabareen says he would back him from outside. A senior Joint List official told Walla on Nov 1 that the Joint List and Ra'am are expected to recommend Eisenkot to the president. Ynet reports Joint List and Ra'am leaders met in Nazareth on Nov 2 and will coordinate their recommendations. Ynet reports Bennett sides with Liberman against a government relying on Arab parties, believing it would collapse. On Nov 3 Golan met Joint List leaders and they agreed to keep coordinating, while the Times of Israel notes the bloc's joint statement gave no indication of how it would govern without Arab parties. On Nov 4 Ra'am announced it will recommend Eisenkot, while Yisrael Beiteinu told Herzog a government cannot be formed with Arab parties. On Nov 5 the Joint List said it will recommend Eisenkot but will not formally join his coalition, offering possible outside support, Al Jazeera and ANI report.",
       "blockers": [
         {
           "party": "ל",
@@ -116,7 +116,7 @@
         "ג"
       ],
       "status": "blocked",
-      "note": "No Arab parties needed, but the Haredi draft splits it. A source close to Eisenkot tells Ynet he is trying to bring Shas and UTJ into a government he leads, naming Liberman as the main obstacle. A senior UTJ official told Ynet the party would offer Eisenkot the premiership for draft exemptions, which clashes with his national-service condition; Shas is reported to be out. Unnamed senior UTJ figures say the party might back an Eisenkot government from outside without a draft law first, the Times of Israel reports. On Nov 2 Liberman declined to rule out cooperating with UTJ, saying the bloc will have to see what happens. Ynet reports on Nov 3 that Eisenkot is focusing on courting the Haredi parties and that Liberman has left the door open to talks on including them. The Jerusalem Post reports on Nov 3 that Shas and UTJ stress no decision has been made, with their rabbis due back around the start of consultations. On Nov 4 Shas recommended Netanyahu, and Yisrael Beiteinu told Herzog it would not compromise key priorities to bring Haredi parties in, Ynet reports. On Nov 5 UTJ declined to recommend either candidate, with Goldknopf telling Herzog the party is not bound to any bloc, Ynet reports.",
+      "note": "No Arab parties needed, but the Haredi draft splits it. A source close to Eisenkot tells Ynet he is trying to bring Shas and UTJ into a government he leads, naming Liberman as the main obstacle. A senior UTJ official told Ynet the party would offer Eisenkot the premiership for draft exemptions, which clashes with his national-service condition; Shas is reported to be out. Unnamed senior UTJ figures say the party might back an Eisenkot government from outside without a draft law first, the Times of Israel reports. On Nov 2 Liberman declined to rule out cooperating with UTJ, saying the bloc will have to see what happens. Ynet reports on Nov 3 that Eisenkot is focusing on courting the Haredi parties and that Liberman has left the door open to talks on including them. The Jerusalem Post reports on Nov 3 that Shas and UTJ stress no decision has been made, with their rabbis due back around the start of consultations. On Nov 4 Shas recommended Netanyahu, and Yisrael Beiteinu told Herzog it would not compromise key priorities to bring Haredi parties in, Ynet reports. On Nov 5 UTJ declined to recommend either candidate, with Goldknopf telling Herzog the party is not bound to any bloc, Ynet reports. ANI reports UTJ told Herzog its support for any government depends on legislation exempting yeshiva students from service.",
       "blockers": [
         {
           "party": "שס",
@@ -163,7 +163,7 @@
         "ל"
       ],
       "status": "floated",
-      "note": "The Jerusalem Post reports Netanyahu-linked sources are promoting it, possibly with a rotating premiership and without Shas and UTJ. Kan cites Netanyahu associate Benny Biton as saying Netanyahu wants unity, and an unnamed Likud official named Herzog and Trump as guarantors for Eisenkot. Channel 12 reports Liberman wants Eisenkot to join Netanyahu, though not under his own banner. Who would lead it is the sticking point. Likud whip Ofir Katz told Army Radio the party opposes rotation and others can join the existing coalition. Channel 14 reports, citing unnamed sources, that Netanyahu has given up on unity talks and is preparing for a new election. Ynet reports Netanyahu told associates privately he is not ruling out any option, including rotation, and that Katz says unity is off if the opposition ousts Speaker Ohana. On Nov 2 Netanyahu said publicly he is open to a broad government with any party that does not support terrorism but that he should lead it; an associate told Ynet no unity proposal has yet been made. Israel Hayom reports a Likud source's assessment, not a negotiated offer, that Netanyahu could accept unity if he served about two years and then became president, with Eisenkot taking over.",
+      "note": "The Jerusalem Post reports Netanyahu-linked sources are promoting it, possibly with a rotating premiership and without Shas and UTJ. Kan cites Netanyahu associate Benny Biton as saying Netanyahu wants unity, and an unnamed Likud official named Herzog and Trump as guarantors for Eisenkot. Channel 12 reports Liberman wants Eisenkot to join Netanyahu, though not under his own banner. Who would lead it is the sticking point. Likud whip Ofir Katz told Army Radio the party opposes rotation and others can join the existing coalition. Channel 14 reports, citing unnamed sources, that Netanyahu has given up on unity talks and is preparing for a new election. Ynet reports Netanyahu told associates privately he is not ruling out any option, including rotation, and that Katz says unity is off if the opposition ousts Speaker Ohana. On Nov 2 Netanyahu said publicly he is open to a broad government with any party that does not support terrorism but that he should lead it; an associate told Ynet no unity proposal has yet been made. Israel Hayom reports a Likud source's assessment, not a negotiated offer, that Netanyahu could accept unity if he served about two years and then became president, with Eisenkot taking over. ANI, citing the Times of Israel, reports Shas Council of Torah Sages member Rabbi Moshe Maya urged a unity government.",
       "blockers": [
         {
           "party": "מחל",
@@ -337,17 +337,49 @@
       "source": "Ynet"
     },
     "ודם": {
-      "backs": "Eisenkot (likely, per Cassif)",
-      "stance": "MK Ofer Cassif told Anadolu the Joint List would likely recommend Eisenkot when it meets Herzog on Thursday, though it was still discussing its position.",
+      "backs": "Recommending Eisenkot (announced)",
+      "stance": "The Joint List announced a unanimous decision to recommend Eisenkot to Herzog, saying it will not formally join his coalition but may support it from outside, ANI reports.",
       "red_lines": [
         "No Netanyahu government"
       ],
-      "date": "2026-11-04",
-      "url": "https://www.aa.com.tr/en/middle-east/netanyahu-eisenkot-draw-rival-endorsements-as-herzog-opens-israel-s-government-talks/4111985",
-      "source": "Anadolu Agency"
+      "date": "2026-11-05",
+      "url": "https://www.tribuneindia.com/news/world/israel-eisenkot-clears-pm-mandate-threshold-with-67-endorsements-leaving-netanyahus-bloc-at-46-seats-utj-abstains/",
+      "source": "The Tribune (ANI)"
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-05",
+      "who": "Rabbi Moshe Maya",
+      "party": "שס",
+      "text": "Shas Council of Torah Sages member Rabbi Moshe Maya called a unity government the only solution, ANI reports citing the Times of Israel.",
+      "url": "https://www.tribuneindia.com/news/world/israel-eisenkot-clears-pm-mandate-threshold-with-67-endorsements-leaving-netanyahus-bloc-at-46-seats-utj-abstains/",
+      "source": "The Tribune (ANI)"
+    },
+    {
+      "at": "2026-11-05",
+      "who": "UTJ",
+      "party": "ג",
+      "text": "UTJ told Herzog its backing for any future government depends on legislation granting military-service exemptions, ANI reports.",
+      "url": "https://www.tribuneindia.com/news/world/israel-eisenkot-clears-pm-mandate-threshold-with-67-endorsements-leaving-netanyahus-bloc-at-46-seats-utj-abstains/",
+      "source": "The Tribune (ANI)"
+    },
+    {
+      "at": "2026-11-05",
+      "who": "Joint List",
+      "party": "ודם",
+      "text": "The Joint List said it will not formally join an Eisenkot coalition but may support it from outside, to keep Netanyahu from returning.",
+      "url": "https://www.tribuneindia.com/news/world/israel-eisenkot-clears-pm-mandate-threshold-with-67-endorsements-leaving-netanyahus-bloc-at-46-seats-utj-abstains/",
+      "source": "The Tribune (ANI)"
+    },
+    {
+      "at": "2026-11-05",
+      "who": "Joint List",
+      "party": "ודם",
+      "text": "The Joint List announced it will tell Herzog it recommends Eisenkot, which Al Jazeera says gives him a majority of recommendations.",
+      "url": "https://www.aljazeera.com/news/2026/11/5/joint-list-says-it-will-back-eisenkot-to-form-israels-next-government",
+      "source": "Al Jazeera"
+    },
     {
       "at": "2026-11-05",
       "who": "The Democrats",
@@ -555,38 +587,6 @@
       "text": "Ahead of the consultations, Ynet projects Eisenkot is poised to receive more recommendations than Netanyahu.",
       "url": "https://www.ynetnews.com/article/sk8eaw4pge",
       "source": "Ynet"
-    },
-    {
-      "at": "2026-11-04T01:47:00Z",
-      "who": "Attorney General",
-      "party": "",
-      "text": "The attorney general asked the Shin Bet to report on its probe into Arab parties' alleged electoral fraud, saying no evidence had yet been submitted, AFP reports.",
-      "url": "https://www.rte.ie/news/world/2026/1104/1597892-israel-election/",
-      "source": "RTÉ (AFP)"
-    },
-    {
-      "at": "2026-11-04T01:47:00Z",
-      "who": "Isaac Herzog",
-      "party": "",
-      "text": "Herzog's office says he will start with smaller parties to hear all views and may hold further rounds of consultations before choosing a candidate.",
-      "url": "https://www.rte.ie/news/world/2026/1104/1597892-israel-election/",
-      "source": "RTÉ (AFP)"
-    },
-    {
-      "at": "2026-11-03",
-      "who": "Joint List",
-      "party": "ודם",
-      "text": "Joint List leader Jabareen says the opposition must accept political reality and join forces with Arab parties to remove Netanyahu, AFP reports.",
-      "url": "https://www.aljazeera.com/news/2026/11/3/israeli-opposition-leaders-back-eisenkot-to-oust-netanyahu",
-      "source": "Al Jazeera (AFP)"
-    },
-    {
-      "at": "2026-11-03",
-      "who": "Likud",
-      "party": "מחל",
-      "text": "Haaretz's live coverage reports Likud is weighing whether to refuse to recognize the election results.",
-      "url": "https://www.haaretz.com/israel-news/elections/2026-11-03/ty-article-live/netanyahus-likud-weighs-refusing-to-recognize-election-results/000001a1-9f6e-db9a-a1b3-9f7e8c340004",
-      "source": "Haaretz"
     }
   ]
 }
