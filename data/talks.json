@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-05T09:24:02Z",
-  "summary": "On the second day of Herzog's consultations, United Torah Judaism as a whole declined to recommend any candidate, withholding its support from Netanyahu, while Otzma Yehudit recommended Netanyahu and claimed without evidence that votes were bought. Shas and Religious Zionism back Netanyahu, while Yisrael Beiteinu has recommended Eisenkot and Yashar, Together, the Democrats and Ra'am have announced they will do the same; the Joint List has not yet said publicly. Ynet projects Eisenkot will receive more recommendations than Netanyahu and the Jerusalem Post says he is still expected to get the mandate, though neither candidate has a clear path to a majority. Likud meets Herzog last on Thursday evening, after which the president will choose a candidate.",
+  "updated": "2026-11-05T12:24:49Z",
+  "summary": "On the second day of Herzog's consultations, United Torah Judaism as a whole declined to recommend any candidate, withholding its support from Netanyahu, while Otzma Yehudit recommended Netanyahu and claimed without evidence that votes were bought. Shas and Religious Zionism back Netanyahu, while Yisrael Beiteinu and the Democrats have formally recommended Eisenkot and Yashar, Together and Ra'am have announced they will do the same; the Joint List has not yet said publicly. Ynet projects Eisenkot will receive more recommendations than Netanyahu and the Jerusalem Post says he is still expected to get the mandate, though neither candidate has a clear path to a majority. Likud meets Herzog last on Thursday evening, after which the president will choose a candidate.",
   "phase": {
-    "now": "Herzog's consultations continue on Nov 5; UTJ and Otzma Yehudit have met him, with Likud last in the evening",
+    "now": "Herzog's consultations continue on Nov 5; UTJ, Otzma Yehudit and the Democrats have met him, with Likud last in the evening",
     "next": "Herzog chooses a candidate for the mandate (legal deadline Nov 11); the new Knesset is sworn in on Nov 10.",
     "url": "https://www.ynetnews.com/article/rydawnytgl",
     "source": "Ynet"
@@ -256,14 +256,14 @@
       "source": "Times of Israel"
     },
     "אמת": {
-      "backs": "Eisenkot",
-      "stance": "Golan met Joint List leaders Jabareen and Tibi on Nov 3, and the two sides agreed to keep coordinating toward a change government.",
+      "backs": "Recommended Eisenkot",
+      "stance": "The Democrats formally recommended Yashar leader Eisenkot to Herzog to form the next government on Nov 5, Haaretz reports.",
       "red_lines": [
         "No Netanyahu government"
       ],
-      "date": "2026-11-03",
-      "url": "https://www.timesofisrael.com/liveblog_entry/golan-discusses-coalition-coordination-with-joint-list-leaders/",
-      "source": "Times of Israel"
+      "date": "2026-11-05",
+      "url": "https://www.haaretz.com/israel-news/elections/2026-11-05/ty-article-live/netanyahu-warns-against-arab-jewish-coalition-in-first-appearance-since-election/000001a1-a9ee-defa-a7f7-adfff1720000",
+      "source": "Haaretz"
     },
     "ל": {
       "backs": "Recommended Eisenkot",
@@ -348,6 +348,22 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-05",
+      "who": "The Democrats",
+      "party": "אמת",
+      "text": "The Democrats recommended Eisenkot to Herzog as the candidate to form the next government, Haaretz reports.",
+      "url": "https://www.haaretz.com/israel-news/elections/2026-11-05/ty-article-live/netanyahu-warns-against-arab-jewish-coalition-in-first-appearance-since-election/000001a1-a9ee-defa-a7f7-adfff1720000",
+      "source": "Haaretz"
+    },
+    {
+      "at": "2026-11-05",
+      "who": "Opposition MKs",
+      "party": "",
+      "text": "Opposition lawmakers demanded the Knesset speaker's removal, and he pledged a debate on the motion if a majority wants it, the Times of Israel reports.",
+      "url": "https://www.timesofisrael.com/liveblog-november-5-2026/",
+      "source": "Times of Israel"
+    },
     {
       "at": "2026-11-05T08:28:00Z",
       "who": "Yitzhak Pindrus",
@@ -571,22 +587,6 @@
       "text": "Haaretz's live coverage reports Likud is weighing whether to refuse to recognize the election results.",
       "url": "https://www.haaretz.com/israel-news/elections/2026-11-03/ty-article-live/netanyahus-likud-weighs-refusing-to-recognize-election-results/000001a1-9f6e-db9a-a1b3-9f7e8c340004",
       "source": "Haaretz"
-    },
-    {
-      "at": "2026-11-03",
-      "who": "Shas",
-      "party": "שס",
-      "text": "Anadolu reports Shas will recommend Netanyahu to form the next government.",
-      "url": "https://www.anews.com.tr/middle-east/2026/11/03/israels-ultra-orthodox-shas-party-to-recommend-netanyahu-to-form-next-government",
-      "source": "A News (Anadolu)"
-    },
-    {
-      "at": "2026-11-03",
-      "who": "Opposition bloc",
-      "party": "דרך",
-      "text": "After their meeting, Eisenkot and the other opposition leaders vow to form an emergency government as soon as possible, the Jerusalem Post reports.",
-      "url": "https://www.jpost.com/israel-election-2026/article-913678",
-      "source": "Jerusalem Post"
     }
   ]
 }
