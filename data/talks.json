@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-05T21:24:08Z",
-  "summary": "Herzog's consultations ended on Nov 5 with a majority of incoming MKs recommending Eisenkot, after Yashar and Together joined Yisrael Beiteinu, the Democrats, Ra'am and the Joint List, while Likud, Shas, Otzma Yehudit and Religious Zionism backed Netanyahu and UTJ recommended no one. The Times of Israel reports Herzog will hand over the mandate only on Sunday, Nov 8. Yashar rejected a unity government with Netanyahu and says it will negotiate first with its bloc partners, while Likud warned it would be dangerous to rely on the Joint List. Channel 12 reports Liberman is now open to sitting with UTJ, which Yisrael Beiteinu denied knowing about.",
+  "updated": "2026-11-06T00:23:34Z",
+  "summary": "Herzog's consultations ended on Nov 5 with a majority of incoming MKs recommending Eisenkot, after Yashar and Together joined Yisrael Beiteinu, the Democrats, Ra'am and the Joint List, while Likud, Shas, Otzma Yehudit and Religious Zionism backed Netanyahu and UTJ recommended no one. Herzog said he will name his choice on Sunday, Nov 8, after personal talks with some party leaders, citing mutual vetoes between and within the blocs. Yashar rejected a unity government with Netanyahu and says it will negotiate first with its bloc partners, while Likud warned it would be dangerous to rely on the Joint List. Channel 12 reports Liberman is now open to sitting with UTJ, which Yisrael Beiteinu denied knowing about.",
   "phase": {
-    "now": "Herzog's consultations are complete; he will hand over the mandate on Sunday, Nov 8",
+    "now": "Herzog's consultations are complete; he is holding personal talks with some party leaders and will name his choice on Sunday, Nov 8",
     "next": "Eisenkot is expected to receive the mandate, with 28 days to form a government plus up to 14 more; the new Knesset is sworn in on Nov 10.",
-    "url": "https://www.timesofisrael.com/liveblog-november-5-2026/",
-    "source": "Times of Israel liveblog"
+    "url": "https://www.newcastleherald.com.au/story/9386830/majority-of-israeli-mps-back-eisenkot-to-form-govt/",
+    "source": "Reuters/AAP via Newcastle Herald"
   },
   "scenarios": [
     {
@@ -364,6 +364,14 @@
       "at": "2026-11-05",
       "who": "Isaac Herzog",
       "party": "",
+      "text": "Herzog said the results may look clear but cited mutual vetoes between and within the blocs, and said he would hold personal talks with some party leaders before choosing on Sunday.",
+      "url": "https://www.newcastleherald.com.au/story/9386830/majority-of-israeli-mps-back-eisenkot-to-form-govt/",
+      "source": "Reuters/AAP via Newcastle Herald"
+    },
+    {
+      "at": "2026-11-05",
+      "who": "Isaac Herzog",
+      "party": "",
       "text": "Herzog said Eisenkot received the most recommendations but that he will hand over the mandate only on Sunday, the Times of Israel reports.",
       "url": "https://www.timesofisrael.com/liveblog-november-5-2026/",
       "source": "Times of Israel"
@@ -589,14 +597,6 @@
       "who": "Gadi Eisenkot",
       "party": "דרך",
       "text": "Eisenkot's party finished a first round of coalition talks with Together, the Democrats and Yisrael Beiteinu toward a national emergency government.",
-      "url": "https://www.ynetnews.com/article/sjzk4rutmg",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-04",
-      "who": "Michael Malkieli",
-      "party": "שס",
-      "text": "Shas recommended Netanyahu and hoped for a coalition of at least 61; Herzog asked the delegation why it was not pushing for unity.",
       "url": "https://www.ynetnews.com/article/sjzk4rutmg",
       "source": "Ynet"
     }
