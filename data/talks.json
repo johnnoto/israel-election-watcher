@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-06T15:25:09Z",
-  "summary": "Herzog's consultations ended on Nov 5 with a majority of incoming MKs recommending Eisenkot, while Likud, Shas, Otzma Yehudit and Religious Zionism backed Netanyahu and UTJ recommended no one; Herzog will name his choice on Sunday, Nov 8. On Friday Liberman said he is open to a coalition with Haredi parties and to compromise on the draft law, and Eisenkot then claimed significant progress in coalition talks while restating his demand for national service for all, France 24 and the Times of Israel report. UTJ says it will support whoever provides a solution to the draft issue, Israel National News reports, while Shas still stands with Likud. Yashar has rejected unity with Netanyahu, and the Joint List has offered only possible outside support for an Eisenkot-led government.",
+  "updated": "2026-11-06T18:24:00Z",
+  "summary": "Herzog's consultations ended on Nov 5 with a majority of incoming MKs recommending Eisenkot, while Likud, Shas, Otzma Yehudit and Religious Zionism backed Netanyahu and UTJ recommended no one; Herzog will name his choice on Sunday, Nov 8. On Friday Liberman said he is open to a coalition with Haredi parties and to painful compromise on the draft law, while rejecting a minority government reliant on Ra'am and the Joint List; Eisenkot and Golan then reported substantial progress in talks, and Eisenkot restated his demand for national service for all. UTJ leader Yaakov Asher welcomed the new flexibility but said no coalition offer has yet been put to the party and its rabbis will decide, the Times of Israel reports, while Shas still stands with Likud. Yashar has rejected unity with Netanyahu, and the Joint List has offered only possible outside support for an Eisenkot-led government.",
   "phase": {
     "now": "Herzog's consultations are complete; he is taking the weekend and will name his choice on Sunday, Nov 8",
     "next": "Eisenkot is expected to receive the mandate, with 28 days to form a government plus up to 14 more; the new Knesset is sworn in on Nov 10.",
@@ -116,7 +116,7 @@
         "ג"
       ],
       "status": "blocked",
-      "note": "No Arab parties needed, but the Haredi draft splits it. A source close to Eisenkot tells Ynet he is trying to bring Shas and UTJ into a government he leads, naming Liberman as the main obstacle. A senior UTJ official told Ynet the party would offer Eisenkot the premiership for draft exemptions, which clashes with his national-service condition; Shas is reported to be out. Unnamed senior UTJ figures say the party might back an Eisenkot government from outside without a draft law first, the Times of Israel reports. On Nov 2 Liberman declined to rule out cooperating with UTJ, saying the bloc will have to see what happens. Ynet reports on Nov 3 that Eisenkot is focusing on courting the Haredi parties and that Liberman has left the door open to talks on including them. The Jerusalem Post reports on Nov 3 that Shas and UTJ stress no decision has been made, with their rabbis due back around the start of consultations. On Nov 4 Shas recommended Netanyahu, and Yisrael Beiteinu told Herzog it would not compromise key priorities to bring Haredi parties in, Ynet reports. On Nov 5 UTJ declined to recommend either candidate, with Goldknopf telling Herzog the party is not bound to any bloc, Ynet reports. ANI reports UTJ told Herzog its support for any government depends on legislation exempting yeshiva students from service. On Nov 5 Together told Herzog it will not accept a draft-evasion law, Israel National News reports. Channel 12 reports Liberman has dropped his refusal to sit with UTJ and that the opposition is in talks with it, but Yisrael Beiteinu told the Jerusalem Post it was not aware of this. Channel 12 reports the bloc is examining a coalition with UTJ and Shas, with draft talks starting from Liberman's 2018 bill, while Shas still stands with Likud. On Nov 6 Liberman said he is willing to be flexible and compromise on the Haredi draft law, the Jerusalem Post reports. The Times of Israel reports Liberman has confirmed he is open to a coalition with Haredi parties, reversing a key promise. After Liberman's shift, Eisenkot reiterated his demand for mandatory national service, the Times of Israel reports, and UTJ said it will back whoever solves the draft issue, Israel National News reports.",
+      "note": "No Arab parties needed, but the Haredi draft splits it. A source close to Eisenkot tells Ynet he is trying to bring Shas and UTJ into a government he leads, naming Liberman as the main obstacle. A senior UTJ official told Ynet the party would offer Eisenkot the premiership for draft exemptions, which clashes with his national-service condition; Shas is reported to be out. Unnamed senior UTJ figures say the party might back an Eisenkot government from outside without a draft law first, the Times of Israel reports. On Nov 2 Liberman declined to rule out cooperating with UTJ, saying the bloc will have to see what happens. Ynet reports on Nov 3 that Eisenkot is focusing on courting the Haredi parties and that Liberman has left the door open to talks on including them. The Jerusalem Post reports on Nov 3 that Shas and UTJ stress no decision has been made, with their rabbis due back around the start of consultations. On Nov 4 Shas recommended Netanyahu, and Yisrael Beiteinu told Herzog it would not compromise key priorities to bring Haredi parties in, Ynet reports. On Nov 5 UTJ declined to recommend either candidate, with Goldknopf telling Herzog the party is not bound to any bloc, Ynet reports. ANI reports UTJ told Herzog its support for any government depends on legislation exempting yeshiva students from service. On Nov 5 Together told Herzog it will not accept a draft-evasion law, Israel National News reports. Channel 12 reports Liberman has dropped his refusal to sit with UTJ and that the opposition is in talks with it, but Yisrael Beiteinu told the Jerusalem Post it was not aware of this. Channel 12 reports the bloc is examining a coalition with UTJ and Shas, with draft talks starting from Liberman's 2018 bill, while Shas still stands with Likud. On Nov 6 Liberman said he is willing to be flexible and compromise on the Haredi draft law, the Jerusalem Post reports. The Times of Israel reports Liberman has confirmed he is open to a coalition with Haredi parties, reversing a key promise. After Liberman's shift, Eisenkot reiterated his demand for mandatory national service, the Times of Israel reports, and UTJ said it will back whoever solves the draft issue, Israel National News reports. UTJ leader Asher said on Nov 6 that no coalition proposal has yet been made to the party and that its rabbis will decide on any offer, the Times of Israel reports.",
       "blockers": [
         {
           "party": "שס",
@@ -269,13 +269,13 @@
     },
     "אמת": {
       "backs": "Recommended Eisenkot",
-      "stance": "The Democrats formally recommended Yashar leader Eisenkot to Herzog to form the next government on Nov 5, Haaretz reports.",
+      "stance": "On Nov 6 Golan said substantial progress has been made toward a national emergency government and that the anti-Netanyahu parties are preparing to take control of the Knesset on Tuesday, the Times of Israel reports.",
       "red_lines": [
         "No Netanyahu government"
       ],
-      "date": "2026-11-05",
-      "url": "https://www.haaretz.com/israel-news/elections/2026-11-05/ty-article-live/netanyahu-warns-against-arab-jewish-coalition-in-first-appearance-since-election/000001a1-a9ee-defa-a7f7-adfff1720000",
-      "source": "Haaretz"
+      "date": "2026-11-06",
+      "url": "https://www.timesofisrael.com/liberman-urges-painful-compromise-on-haredi-enlistment-bucking-years-long-vow/",
+      "source": "Times of Israel"
     },
     "ל": {
       "backs": "Recommended Eisenkot",
@@ -305,13 +305,13 @@
     },
     "ג": {
       "backs": "No recommendation",
-      "stance": "On Nov 6 UTJ said it will support whoever provides a solution to the draft issue, Israel National News reports.",
+      "stance": "On Nov 6 UTJ leader Asher welcomed the new flexibility on the draft but said no coalition offer has been made and the party's rabbis will have the final say, the Times of Israel reports.",
       "red_lines": [
         "Draft-exemption law"
       ],
       "date": "2026-11-06",
-      "url": "https://www.israelnationalnews.com/news/435766",
-      "source": "Israel National News",
+      "url": "https://www.timesofisrael.com/liberman-urges-painful-compromise-on-haredi-enlistment-bucking-years-long-vow/",
+      "source": "Times of Israel",
       "lines_url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
       "lines_source": "Red lines: Times of Israel (Oct 14)"
     },
@@ -359,6 +359,22 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-06T14:36:00Z",
+      "who": "Yaakov Asher",
+      "party": "ג",
+      "text": "Asher welcomed the sudden flexibility on the draft but said UTJ has received no coalition offer and its rabbis will decide.",
+      "url": "https://www.timesofisrael.com/liberman-urges-painful-compromise-on-haredi-enlistment-bucking-years-long-vow/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-06T14:36:00Z",
+      "who": "Yair Golan",
+      "party": "אמת",
+      "text": "Golan said substantial progress has been made toward a national emergency government and that he is more optimistic than after the election.",
+      "url": "https://www.timesofisrael.com/liberman-urges-painful-compromise-on-haredi-enlistment-bucking-years-long-vow/",
+      "source": "Times of Israel"
+    },
     {
       "at": "2026-11-06",
       "who": "United Torah Judaism",
@@ -582,22 +598,6 @@
       "text": "JFeed, citing Channel 12's Amit Segal, reports Otzma's party vote to recommend Netanyahu passed 19 to 7.",
       "url": "https://www.jfeed.com/news/otzma-yehudit-endorses-netanyahu",
       "source": "JFeed (citing Channel 12)"
-    },
-    {
-      "at": "2026-11-05T07:50:00Z",
-      "who": "Isaac Herzog",
-      "party": "",
-      "text": "Herzog rejected Otzma's vote-buying claims as unsubstantiated, saying \"There is no evidence or proof.\"",
-      "url": "https://www.ynetnews.com/article/rydawnytgl",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-05T07:50:00Z",
-      "who": "Yitzhak Wasserlauf",
-      "party": "ב",
-      "text": "Otzma Yehudit recommended Netanyahu and claimed without evidence that some votes in the election were bought.",
-      "url": "https://www.ynetnews.com/article/rydawnytgl",
-      "source": "Ynet"
     }
   ]
 }
