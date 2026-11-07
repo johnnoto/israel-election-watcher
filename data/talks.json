@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T15:21:54Z",
+  "updated": "2026-11-07T18:22:16Z",
   "summary": "Herzog's consultations ended on Nov 5 with a majority of incoming MKs recommending Eisenkot, while Likud, Shas, Otzma Yehudit and Religious Zionism backed Netanyahu and UTJ recommended no one; Herzog will name his choice on Sunday, Nov 8. On Friday Liberman said he is open to a coalition with Haredi parties and to painful compromise on the draft law, while rejecting a minority government reliant on Ra'am and the Joint List; Eisenkot and Golan then reported substantial progress in talks, and Eisenkot restated his demand for national service for all. UTJ leader Yaakov Asher welcomed the new flexibility but said no coalition offer has yet been put to the party and its rabbis will decide, the Times of Israel reports, while Shas still stands with Likud. Yashar has rejected unity with Netanyahu, and the Joint List has offered only possible outside support for an Eisenkot-led government.",
   "phase": {
     "now": "Herzog's consultations are complete; he is taking the weekend and will name his choice on Sunday, Nov 8",
@@ -360,6 +360,14 @@
   },
   "timeline": [
     {
+      "at": "2026-11-07",
+      "who": "United Torah Judaism",
+      "party": "ג",
+      "text": "Haaretz reports UTJ welcomed Liberman's reversal on the Haredi draft, though a coalition deal with the party is not assured.",
+      "url": "https://www.haaretz.com/israel-news/elections/2026-11-07/ty-article/.premium/united-torah-judaism-celebrates-liebermans-climbdown-but-not-a-government/000001a1-b233-dfe0-aba3-f37fa8ef0000",
+      "source": "Haaretz"
+    },
+    {
       "at": "2026-11-06",
       "who": "Gadi Eisenkot",
       "party": "דרך",
@@ -590,14 +598,6 @@
       "text": "Opposition lawmakers demanded the Knesset speaker's removal, and he pledged a debate on the motion if a majority wants it, the Times of Israel reports.",
       "url": "https://www.timesofisrael.com/liveblog-november-5-2026/",
       "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-05T08:28:00Z",
-      "who": "Yitzhak Pindrus",
-      "party": "ג",
-      "text": "UTJ told Herzog it recommends no one, Pindrus saying \"We came to talk about issues, not people.\"",
-      "url": "https://www.i24news.tv/en/news/israel-election-s-2026/artc-a-traditional-ally-of-netanyahu-the-united-torah-judaism-party-is-not-recommending-any-candidate-to-form-the-government",
-      "source": "i24NEWS"
     }
   ]
 }
