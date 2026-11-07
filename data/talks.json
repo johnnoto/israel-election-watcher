@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T21:22:26Z",
+  "updated": "2026-11-07T00:23:15Z",
   "summary": "Herzog's consultations ended on Nov 5 with a majority of incoming MKs recommending Eisenkot, while Likud, Shas, Otzma Yehudit and Religious Zionism backed Netanyahu and UTJ recommended no one; Herzog will name his choice on Sunday, Nov 8. On Friday Liberman said he is open to a coalition with Haredi parties and to painful compromise on the draft law, while rejecting a minority government reliant on Ra'am and the Joint List; Eisenkot and Golan then reported substantial progress in talks, and Eisenkot restated his demand for national service for all. UTJ leader Yaakov Asher welcomed the new flexibility but said no coalition offer has yet been put to the party and its rabbis will decide, the Times of Israel reports, while Shas still stands with Likud. Yashar has rejected unity with Netanyahu, and the Joint List has offered only possible outside support for an Eisenkot-led government.",
   "phase": {
     "now": "Herzog's consultations are complete; he is taking the weekend and will name his choice on Sunday, Nov 8",
@@ -360,6 +360,14 @@
   },
   "timeline": [
     {
+      "at": "2026-11-06",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "In a pre-Shabbat statement, Eisenkot said he plans a government of the four Zionist parties in his bloc, open to others who accept his principles \"now or later.\"",
+      "url": "https://www.israelnationalnews.com/news/435785",
+      "source": "Israel National News"
+    },
+    {
       "at": "2026-11-06T14:36:00Z",
       "who": "Yaakov Asher",
       "party": "ג",
@@ -590,14 +598,6 @@
       "text": "UTJ told Herzog it recommends no one, Pindrus saying \"We came to talk about issues, not people.\"",
       "url": "https://www.i24news.tv/en/news/israel-election-s-2026/artc-a-traditional-ally-of-netanyahu-the-united-torah-judaism-party-is-not-recommending-any-candidate-to-form-the-government",
       "source": "i24NEWS"
-    },
-    {
-      "at": "2026-11-05T07:55:00Z",
-      "who": "Otzma Yehudit",
-      "party": "ב",
-      "text": "JFeed, citing Channel 12's Amit Segal, reports Otzma's party vote to recommend Netanyahu passed 19 to 7.",
-      "url": "https://www.jfeed.com/news/otzma-yehudit-endorses-netanyahu",
-      "source": "JFeed (citing Channel 12)"
     }
   ]
 }
