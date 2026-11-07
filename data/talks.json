@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-07T18:22:16Z",
-  "summary": "Herzog's consultations ended on Nov 5 with a majority of incoming MKs recommending Eisenkot, while Likud, Shas, Otzma Yehudit and Religious Zionism backed Netanyahu and UTJ recommended no one; Herzog will name his choice on Sunday, Nov 8. On Friday Liberman said he is open to a coalition with Haredi parties and to painful compromise on the draft law, while rejecting a minority government reliant on Ra'am and the Joint List; Eisenkot and Golan then reported substantial progress in talks, and Eisenkot restated his demand for national service for all. UTJ leader Yaakov Asher welcomed the new flexibility but said no coalition offer has yet been put to the party and its rabbis will decide, the Times of Israel reports, while Shas still stands with Likud. Yashar has rejected unity with Netanyahu, and the Joint List has offered only possible outside support for an Eisenkot-led government.",
+  "updated": "2026-11-07T21:22:30Z",
+  "summary": "On Saturday evening President Herzog told Eisenkot he will get the first chance to form a government, after parties representing a majority of incoming MKs recommended him; the mandate is to be formally handed over at a ceremony on Sunday, Nov 8, Al Jazeera reports. Eisenkot will then have 28 days, extendable by up to 14, to assemble a majority, and he has ruled out a government with the Arab-led parties, leaving the Haredi parties as the likeliest route. Liberman has said he is open to compromise on the Haredi draft, but UTJ says it has received no coalition offer and its rabbis will decide, while Shas still stands with Likud. Hours before Herzog's decision, Netanyahu warned that an opposition government relying on Arab-party support would lead to Israel's collapse, Al Jazeera reports.",
   "phase": {
-    "now": "Herzog's consultations are complete; he is taking the weekend and will name his choice on Sunday, Nov 8",
-    "next": "Eisenkot is expected to receive the mandate, with 28 days to form a government plus up to 14 more; the new Knesset is sworn in on Nov 10.",
-    "url": "https://www.abc.net.au/news/2026-11-06/israel-president-coalition-talks/107353572",
-    "source": "ABC News"
+    "now": "Herzog has chosen Eisenkot; the mandate is to be formally presented at a ceremony on Sunday, Nov 8",
+    "next": "Eisenkot then has 28 days to form a government, with a possible 14-day extension; the new Knesset is sworn in on Nov 10.",
+    "url": "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government",
+    "source": "Al Jazeera"
   },
   "scenarios": [
     {
@@ -20,7 +20,7 @@
         "ט"
       ],
       "status": "short",
-      "note": "His existing partners. On Nov 2 Netanyahu said publicly he wants Shas, Otzma Yehudit and Religious Zionism in any future government and that the public does not want one dependent on Ra'am and the Joint List. Without a majority, he needs defectors or a new partner from the other side. On Nov 5 UTJ declined to recommend any candidate, leaving Netanyahu without its endorsements, while Otzma Yehudit recommended him. Likud's delegation, last to meet Herzog, urged him to give Netanyahu the mandate, the Jerusalem Post reports.",
+      "note": "His existing partners. On Nov 2 Netanyahu said publicly he wants Shas, Otzma Yehudit and Religious Zionism in any future government and that the public does not want one dependent on Ra'am and the Joint List. Without a majority, he needs defectors or a new partner from the other side. On Nov 5 UTJ declined to recommend any candidate, leaving Netanyahu without its endorsements, while Otzma Yehudit recommended him. Likud's delegation, last to meet Herzog, urged him to give Netanyahu the mandate, the Jerusalem Post reports. On Nov 7 Herzog chose Eisenkot rather than Netanyahu to try first to form a government, Al Jazeera reports.",
       "blockers": [
         {
           "party": "ל",
@@ -116,7 +116,7 @@
         "ג"
       ],
       "status": "blocked",
-      "note": "No Arab parties needed, but the Haredi draft splits it. A source close to Eisenkot tells Ynet he is trying to bring Shas and UTJ into a government he leads, naming Liberman as the main obstacle. A senior UTJ official told Ynet the party would offer Eisenkot the premiership for draft exemptions, which clashes with his national-service condition; Shas is reported to be out. Unnamed senior UTJ figures say the party might back an Eisenkot government from outside without a draft law first, the Times of Israel reports. On Nov 2 Liberman declined to rule out cooperating with UTJ, saying the bloc will have to see what happens. Ynet reports on Nov 3 that Eisenkot is focusing on courting the Haredi parties and that Liberman has left the door open to talks on including them. The Jerusalem Post reports on Nov 3 that Shas and UTJ stress no decision has been made, with their rabbis due back around the start of consultations. On Nov 4 Shas recommended Netanyahu, and Yisrael Beiteinu told Herzog it would not compromise key priorities to bring Haredi parties in, Ynet reports. On Nov 5 UTJ declined to recommend either candidate, with Goldknopf telling Herzog the party is not bound to any bloc, Ynet reports. ANI reports UTJ told Herzog its support for any government depends on legislation exempting yeshiva students from service. On Nov 5 Together told Herzog it will not accept a draft-evasion law, Israel National News reports. Channel 12 reports Liberman has dropped his refusal to sit with UTJ and that the opposition is in talks with it, but Yisrael Beiteinu told the Jerusalem Post it was not aware of this. Channel 12 reports the bloc is examining a coalition with UTJ and Shas, with draft talks starting from Liberman's 2018 bill, while Shas still stands with Likud. On Nov 6 Liberman said he is willing to be flexible and compromise on the Haredi draft law, the Jerusalem Post reports. The Times of Israel reports Liberman has confirmed he is open to a coalition with Haredi parties, reversing a key promise. After Liberman's shift, Eisenkot reiterated his demand for mandatory national service, the Times of Israel reports, and UTJ said it will back whoever solves the draft issue, Israel National News reports. UTJ leader Asher said on Nov 6 that no coalition proposal has yet been made to the party and that its rabbis will decide on any offer, the Times of Israel reports.",
+      "note": "No Arab parties needed, but the Haredi draft splits it. A source close to Eisenkot tells Ynet he is trying to bring Shas and UTJ into a government he leads, naming Liberman as the main obstacle. A senior UTJ official told Ynet the party would offer Eisenkot the premiership for draft exemptions, which clashes with his national-service condition; Shas is reported to be out. Unnamed senior UTJ figures say the party might back an Eisenkot government from outside without a draft law first, the Times of Israel reports. On Nov 2 Liberman declined to rule out cooperating with UTJ, saying the bloc will have to see what happens. Ynet reports on Nov 3 that Eisenkot is focusing on courting the Haredi parties and that Liberman has left the door open to talks on including them. The Jerusalem Post reports on Nov 3 that Shas and UTJ stress no decision has been made, with their rabbis due back around the start of consultations. On Nov 4 Shas recommended Netanyahu, and Yisrael Beiteinu told Herzog it would not compromise key priorities to bring Haredi parties in, Ynet reports. On Nov 5 UTJ declined to recommend either candidate, with Goldknopf telling Herzog the party is not bound to any bloc, Ynet reports. ANI reports UTJ told Herzog its support for any government depends on legislation exempting yeshiva students from service. On Nov 5 Together told Herzog it will not accept a draft-evasion law, Israel National News reports. Channel 12 reports Liberman has dropped his refusal to sit with UTJ and that the opposition is in talks with it, but Yisrael Beiteinu told the Jerusalem Post it was not aware of this. Channel 12 reports the bloc is examining a coalition with UTJ and Shas, with draft talks starting from Liberman's 2018 bill, while Shas still stands with Likud. On Nov 6 Liberman said he is willing to be flexible and compromise on the Haredi draft law, the Jerusalem Post reports. The Times of Israel reports Liberman has confirmed he is open to a coalition with Haredi parties, reversing a key promise. After Liberman's shift, Eisenkot reiterated his demand for mandatory national service, the Times of Israel reports, and UTJ said it will back whoever solves the draft issue, Israel National News reports. UTJ leader Asher said on Nov 6 that no coalition proposal has yet been made to the party and that its rabbis will decide on any offer, the Times of Israel reports. Al Jazeera notes that adding UTJ and Shas would give Eisenkot a bare majority, as Herzog prepares to hand him the mandate.",
       "blockers": [
         {
           "party": "שס",
@@ -232,14 +232,14 @@
   "parties": {
     "מחל": {
       "backs": "Recommended Netanyahu",
-      "stance": "Likud told Herzog on Nov 5 the mandate should go to Netanyahu and said relying on the Joint List would be dangerous, the Jerusalem Post reports.",
+      "stance": "Hours before Herzog chose Eisenkot on Nov 7, Netanyahu warned that an opposition government backed by Arab-led parties would lead to Israel's collapse, Al Jazeera reports.",
       "red_lines": [
         "No government that depends on Arab parties",
         "No rotation"
       ],
-      "date": "2026-11-05",
-      "url": "https://www.jpost.com/israel-election-2026/article-913989",
-      "source": "Jerusalem Post",
+      "date": "2026-11-07",
+      "url": "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government",
+      "source": "Al Jazeera",
       "lines_url": "https://www.aljazeera.com/news/2026/10/30/how-can-israel-break-its-election-deadlock",
       "lines_source": "Red lines: Al Jazeera"
     },
@@ -359,6 +359,22 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-07",
+      "who": "Isaac Herzog",
+      "party": "",
+      "text": "Herzog told Eisenkot on Saturday evening that he will be tasked with forming a government, with the formal handover set for a Sunday ceremony.",
+      "url": "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government",
+      "source": "Al Jazeera"
+    },
+    {
+      "at": "2026-11-07",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "Hours before Herzog's decision, Netanyahu warned that an opposition government relying on Arab-led parties would bring Israel's collapse.",
+      "url": "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government",
+      "source": "Al Jazeera"
+    },
     {
       "at": "2026-11-07",
       "who": "United Torah Judaism",
@@ -582,22 +598,6 @@
       "text": "The Joint List announced it will tell Herzog it recommends Eisenkot, which Al Jazeera says gives him a majority of recommendations.",
       "url": "https://www.aljazeera.com/news/2026/11/5/joint-list-says-it-will-back-eisenkot-to-form-israels-next-government",
       "source": "Al Jazeera"
-    },
-    {
-      "at": "2026-11-05",
-      "who": "The Democrats",
-      "party": "אמת",
-      "text": "The Democrats recommended Eisenkot to Herzog as the candidate to form the next government, Haaretz reports.",
-      "url": "https://www.haaretz.com/israel-news/elections/2026-11-05/ty-article-live/netanyahu-warns-against-arab-jewish-coalition-in-first-appearance-since-election/000001a1-a9ee-defa-a7f7-adfff1720000",
-      "source": "Haaretz"
-    },
-    {
-      "at": "2026-11-05",
-      "who": "Opposition MKs",
-      "party": "",
-      "text": "Opposition lawmakers demanded the Knesset speaker's removal, and he pledged a debate on the motion if a majority wants it, the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/liveblog-november-5-2026/",
-      "source": "Times of Israel"
     }
   ]
 }
