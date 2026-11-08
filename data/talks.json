@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-08T06:21:57Z",
-  "summary": "President Herzog is due to formally hand Eisenkot the mandate to form a government at the President's Residence on Sunday, Nov 8, at 5 p.m., after 67 MKs recommended him, 46 recommended Netanyahu and UTJ backed neither. Eisenkot says it is time for a national emergency government, and with the Arab-led parties ruled out his likeliest route runs through the Haredi parties, whom Liberman and Golan now say they could sit with on conditions such as Haredi enlistment. UTJ says it has not yet received an offer and its rabbis will decide, while Shas calls reports it could join an Eisenkot government fake news and says it remains in the right-wing bloc. Netanyahu responded to Herzog's decision by calling for a national unity government that includes all his current allies, which the Times of Israel describes as a likely non-starter.",
+  "updated": "2026-11-08T09:22:41Z",
+  "summary": "President Herzog is due to formally hand Eisenkot the mandate to form a government at the President's Residence on Sunday, Nov 8, at 5 p.m., after 67 MKs recommended him, 46 recommended Netanyahu and UTJ backed neither. Eisenkot says it is time for a national emergency government; Liberman and Golan now say they could sit with the Haredi parties on conditions such as Haredi enlistment, while Shas calls reports it could join fake news and UTJ says no offer has been made. Citing Haaretz, ANI reports that Ra'am will support an Eisenkot government and that the Joint List is likely to abstain rather than vote for it, and that the bloc's leaders plan to agree on a Knesset speaker before MKs are sworn in on Tuesday, Nov 10. Netanyahu has answered Herzog's decision by calling for a national unity government that includes all his current allies.",
   "phase": {
     "now": "Herzog has chosen Eisenkot; the mandate is to be formally presented on Sunday, Nov 8, at 5 p.m. at the President's Residence",
     "next": "Eisenkot then has 28 days to form a government, extendable by up to 14 days; if he fails, Netanyahu is next in line. The new Knesset is sworn in on Nov 10.",
@@ -85,7 +85,7 @@
         "עם"
       ],
       "status": "short",
-      "note": "The 2021 Bennett–Lapid model. Ynet reports, citing unnamed sources, that Eisenkot authorized examining a minority government with Ra'am inside and UTJ abstaining, possibly as leverage in unity talks; Yashar says such reports are not issued on its behalf. It falls short of 61 and Liberman rejects any government dependent on Arab or Haredi parties. Unnamed sources tell Ynet that Liberman berated Eisenkot at a Saturday meeting, saying the minority-government push hurt the bloc.",
+      "note": "The 2021 Bennett–Lapid model. Ynet reports, citing unnamed sources, that Eisenkot authorized examining a minority government with Ra'am inside and UTJ abstaining, possibly as leverage in unity talks; Yashar says such reports are not issued on its behalf. It falls short of 61 and Liberman rejects any government dependent on Arab or Haredi parties. Unnamed sources tell Ynet that Liberman berated Eisenkot at a Saturday meeting, saying the minority-government push hurt the bloc. On Nov 8 ANI, citing Haaretz and an unnamed senior Ra'am member, reported that Ra'am will support an Eisenkot government.",
       "blockers": [
         {
           "party": "ל",
@@ -366,6 +366,30 @@
   },
   "timeline": [
     {
+      "at": "2026-11-08",
+      "who": "Ra'am",
+      "party": "עם",
+      "text": "ANI, citing Haaretz and an unnamed senior Ra'am member, reports that Ra'am will support a government led by Eisenkot.",
+      "url": "https://www.tribuneindia.com/news/world/israel-president-to-formally-handover-govt-formation-mandate-to-eisenkot-today-swearing-in-of-knesset-members-on-tuesday",
+      "source": "The Tribune (ANI)"
+    },
+    {
+      "at": "2026-11-08",
+      "who": "Joint List",
+      "party": "ודם",
+      "text": "ANI, citing Haaretz, reports the Joint List will not vote for an Eisenkot government but is likely to abstain rather than topple it.",
+      "url": "https://www.tribuneindia.com/news/world/israel-president-to-formally-handover-govt-formation-mandate-to-eisenkot-today-swearing-in-of-knesset-members-on-tuesday",
+      "source": "The Tribune (ANI)"
+    },
+    {
+      "at": "2026-11-08",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "ANI reports the Eisenkot bloc's leaders are set to announce an agreement on the next Knesset speaker before MKs are sworn in on Tuesday.",
+      "url": "https://www.tribuneindia.com/news/world/israel-president-to-formally-handover-govt-formation-mandate-to-eisenkot-today-swearing-in-of-knesset-members-on-tuesday",
+      "source": "The Tribune (ANI)"
+    },
+    {
       "at": "2026-11-07",
       "who": "Gadi Eisenkot",
       "party": "דרך",
@@ -580,30 +604,6 @@
       "text": "Yisrael Beiteinu told the Jerusalem Post it was not aware of any change in Liberman's stance on Haredi parties.",
       "url": "https://www.jpost.com/israel-election-2026/article-914006",
       "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-11-05T17:45:00Z",
-      "who": "Ynet",
-      "party": "",
-      "text": "Ynet tallies 67 recommendations for Eisenkot and 46 for Netanyahu once consultations ended, with UTJ backing neither.",
-      "url": "https://www.ynetnews.com/article/ryuqebc6zg",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-05T17:47:00Z",
-      "who": "Merav Cohen",
-      "party": "רק",
-      "text": "Together MK Merav Cohen told Herzog the party rejects a draft-exemption law and warned against a unity deal with Likud.",
-      "url": "https://www.israelnationalnews.com/news/435737",
-      "source": "Israel National News"
-    },
-    {
-      "at": "2026-11-05T17:47:00Z",
-      "who": "Eitan Ginzburg",
-      "party": "רק",
-      "text": "Together recommended Eisenkot to Herzog, with faction chair Ginzburg pledging to help him form a government as quickly as possible.",
-      "url": "https://www.israelnationalnews.com/news/435737",
-      "source": "Israel National News"
     }
   ]
 }
