@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-09T06:28:29Z",
-  "summary": "Gadi Eisenkot holds the mandate from President Herzog, received on Nov 8 after 67 MKs recommended him and 46 recommended Netanyahu, with 28 days to form a government, extendable by up to 14. He opened coalition talks with Bennett on Sunday evening and was due to meet Liberman on Monday, while Netanyahu keeps pressing for a unity government that includes all his current allies. Eisenkot's bloc lacks a majority without either the Arab parties, which Liberman told Ynet he will not support in a minority government, or the Haredi parties, whose draft demands clash with Eisenkot's national-service pledge. A Ynet analysis citing people close to Eisenkot says he may bring a minority government to a confidence vote without full agreement, and the new Knesset is sworn in on Tuesday, Nov 10.",
+  "updated": "2026-11-09T09:23:28Z",
+  "summary": "Gadi Eisenkot holds the mandate from President Herzog, received on Nov 8 after 67 MKs recommended him and 46 recommended Netanyahu, with 28 days to form a government, extendable by up to 14. He opened coalition talks with Bennett on Sunday evening and was due to meet Liberman on Monday about the talks and the change bloc's Knesset leadership, which ANI reports Eisenkot is likely to take, while Netanyahu keeps pressing for a unity government that includes all his current allies. Eisenkot's bloc lacks a majority without either the Arab parties, which Liberman told Ynet he will not support in a minority government, or the Haredi parties, whose draft demands clash with Eisenkot's national-service pledge. A Ynet analysis citing people close to Eisenkot says he may bring a minority government to a confidence vote without full agreement, and the new Knesset is sworn in on Tuesday, Nov 10.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "If Eisenkot fails, Herzog can task another MK, who would get 28 days with no extension. The new Knesset is sworn in on Nov 10.",
@@ -366,6 +366,14 @@
   },
   "timeline": [
     {
+      "at": "2026-11-09T07:57:00Z",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Citing Israel's N21, ANI reports Eisenkot is likely to lead the change bloc in the new Knesset and was to meet Liberman on Monday about that role and the government talks.",
+      "url": "https://www.tribuneindia.com/news/avigdor-lieberman/israel-eisenkot-liberman-to-meet-today-over-govt-formation-yashar-party-boss-to-head-change-bloc-in-knesset",
+      "source": "ANI via The Tribune"
+    },
+    {
       "at": "2026-11-08T21:46:00Z",
       "who": "Gadi Eisenkot",
       "party": "דרך",
@@ -596,14 +604,6 @@
       "text": "Eisenkot reiterated his demand for mandatory national service after Liberman opened the door to a coalition with Haredi parties.",
       "url": "https://www.timesofisrael.com/liveblog-november-06-2026/",
       "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-06",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Eisenkot said significant progress has been made in coalition talks and warned that Netanyahu's continued caretaker government is dangerous.",
-      "url": "https://www.france24.com/en/middle-east/20261106-israel-s-eisenkot-claims-significant-progress-in-coalition-talks-as-opposition-eases-on-ultra-orthodox-draft",
-      "source": "France 24"
     }
   ]
 }
