@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-09T00:22:20Z",
-  "summary": "Gadi Eisenkot formally received the mandate from President Herzog on Sunday, Nov 8, after 67 MKs recommended him and 46 recommended Netanyahu, and has 28 days, extendable by up to 14. Accepting it, he called for a national emergency government and invited Likud and Smotrich's party to join under his leadership, while Netanyahu keeps pressing for a unity government that includes all his current allies. Eisenkot's bloc lacks a majority without either the Arab parties, which Liberman again refused to rely on, or the Haredi parties, whose draft demands clash with Eisenkot's national-service pledge. Ynet reports Eisenkot was due to meet Bennett on Sunday evening and Liberman on Monday, and the new Knesset is sworn in on Tuesday, Nov 10.",
+  "updated": "2026-11-09T03:25:00Z",
+  "summary": "Gadi Eisenkot holds the mandate from President Herzog, received on Nov 8 after 67 MKs recommended him and 46 recommended Netanyahu, with 28 days to form a government, extendable by up to 14. He opened coalition talks with Bennett on Sunday evening and was due to meet Liberman on Monday, while Netanyahu keeps pressing for a unity government that includes all his current allies. Eisenkot's bloc lacks a majority without either the Arab parties, which Liberman told Ynet he will not support in a minority government, or the Haredi parties, whose draft demands clash with Eisenkot's national-service pledge. A Ynet analysis citing people close to Eisenkot says he may bring a minority government to a confidence vote without full agreement, and the new Knesset is sworn in on Tuesday, Nov 10.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "If Eisenkot fails, Herzog can task another MK, who would get 28 days with no extension. The new Knesset is sworn in on Nov 10.",
@@ -85,12 +85,12 @@
         "עם"
       ],
       "status": "short",
-      "note": "The 2021 Bennett–Lapid model. Ynet reports, citing unnamed sources, that Eisenkot authorized examining a minority government with Ra'am inside and UTJ abstaining, possibly as leverage in unity talks; Yashar says such reports are not issued on its behalf. It falls short of 61 and Liberman rejects any government dependent on Arab or Haredi parties. Unnamed sources tell Ynet that Liberman berated Eisenkot at a Saturday meeting, saying the minority-government push hurt the bloc. On Nov 8 ANI, citing Haaretz and an unnamed senior Ra'am member, reported that Ra'am will support an Eisenkot government. A senior bloc figure told Ynet on Nov 8 that Liberman has no intention of backing a narrower emergency government without a majority. Eisenkot formally received the mandate on Nov 8 with 28 days to form a government, the Jerusalem Post reports. On Nov 8 Liberman posted that he would not help establish a government dependent on Arab parties, Ynet reports.",
+      "note": "The 2021 Bennett–Lapid model. Ynet reports, citing unnamed sources, that Eisenkot authorized examining a minority government with Ra'am inside and UTJ abstaining, possibly as leverage in unity talks; Yashar says such reports are not issued on its behalf. It falls short of 61 and Liberman rejects any government dependent on Arab or Haredi parties. Unnamed sources tell Ynet that Liberman berated Eisenkot at a Saturday meeting, saying the minority-government push hurt the bloc. On Nov 8 ANI, citing Haaretz and an unnamed senior Ra'am member, reported that Ra'am will support an Eisenkot government. A senior bloc figure told Ynet on Nov 8 that Liberman has no intention of backing a narrower emergency government without a majority. Eisenkot formally received the mandate on Nov 8 with 28 days to form a government, the Jerusalem Post reports. On Nov 8 Liberman posted that he would not help establish a government dependent on Arab parties, Ynet reports. A Ynet analysis on Nov 8, citing people close to Eisenkot, says he sees unity with Netanyahu as a last resort and may bring a minority government to a confidence vote without full coalition agreement.",
       "blockers": [
         {
           "party": "ל",
-          "text": "Liberman ruled out Ra'am and said on Nov 2 he would oppose an Eisenkot minority government.",
-          "url": "https://www.ynetnews.com/article/s111ftzitfe",
+          "text": "Liberman told Ynet that supporting a minority government would hand Netanyahu the premiership.",
+          "url": "https://www.ynetnews.com/article/rjya9vaaml",
           "source": "Ynet"
         },
         {
@@ -285,14 +285,14 @@
     },
     "ל": {
       "backs": "Recommended Eisenkot",
-      "stance": "On Nov 8 Liberman posted that the premiership is an option, not an obsession, and that he will not help form a government dependent on Arab parties, Ynet reports.",
+      "stance": "In a Ynet interview, Liberman said backing a minority government would hand Netanyahu the premiership and that he will not help establish one.",
       "red_lines": [
         "No Likud under Netanyahu",
         "No Ra'am or Joint List",
         "No minority government"
       ],
       "date": "2026-11-08",
-      "url": "https://www.ynetnews.com/article/sjygemraml",
+      "url": "https://www.ynetnews.com/article/rjya9vaaml",
       "source": "Ynet",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-911855",
       "lines_source": "Red lines: Jerusalem Post"
@@ -366,6 +366,30 @@
   },
   "timeline": [
     {
+      "at": "2026-11-08T21:46:00Z",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "A Ynet analysis, citing people close to Eisenkot, says he views unity with Netanyahu as a last resort and may seek a confidence vote on a minority government.",
+      "url": "https://www.ynetnews.com/opinions-analysis/article/hj7aopa6zg",
+      "source": "Ynet (analysis)"
+    },
+    {
+      "at": "2026-11-08T18:22:00Z",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Liberman told Ynet that \"Supporting a minority government means handing Netanyahu the premiership as a gift.\"",
+      "url": "https://www.ynetnews.com/article/rjya9vaaml",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-08T18:22:00Z",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Eisenkot opened coalition talks with Bennett on Sunday evening, hours after receiving the mandate, Ynet reports.",
+      "url": "https://www.ynetnews.com/article/rjya9vaaml",
+      "source": "Ynet"
+    },
+    {
       "at": "2026-11-08T17:19:00Z",
       "who": "Gadi Eisenkot",
       "party": "דרך",
@@ -422,14 +446,6 @@
       "source": "Ynet"
     },
     {
-      "at": "2026-11-07T19:46:00Z",
-      "who": "Yashar",
-      "party": "דרך",
-      "text": "Yashar called Netanyahu's unity address hysterical and said Likud must break \"their alliance with the extremists\" and accept Eisenkot's four principles.",
-      "url": "https://www.ynetnews.com/article/rkcsjwpage",
-      "source": "Ynet"
-    },
-    {
       "at": "2026-11-08",
       "who": "Ra'am",
       "party": "עם",
@@ -452,6 +468,22 @@
       "text": "ANI reports the Eisenkot bloc's leaders are set to announce an agreement on the next Knesset speaker before MKs are sworn in on Tuesday.",
       "url": "https://www.tribuneindia.com/news/world/israel-president-to-formally-handover-govt-formation-mandate-to-eisenkot-today-swearing-in-of-knesset-members-on-tuesday",
       "source": "The Tribune (ANI)"
+    },
+    {
+      "at": "2026-11-07T19:46:00Z",
+      "who": "Yashar",
+      "party": "דרך",
+      "text": "Yashar called Netanyahu's unity address hysterical and said Likud must break \"their alliance with the extremists\" and accept Eisenkot's four principles.",
+      "url": "https://www.ynetnews.com/article/rkcsjwpage",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-07T19:34:00Z",
+      "who": "Isaac Herzog",
+      "party": "",
+      "text": "Herzog's office said the mandate will be presented to Eisenkot at the President's Residence on Sunday at 5 p.m.",
+      "url": "https://www.israelnationalnews.com/news/435806",
+      "source": "Israel National News"
     },
     {
       "at": "2026-11-07",
@@ -486,14 +518,6 @@
       "source": "Times of Israel"
     },
     {
-      "at": "2026-11-07T19:34:00Z",
-      "who": "Isaac Herzog",
-      "party": "",
-      "text": "Herzog's office said the mandate will be presented to Eisenkot at the President's Residence on Sunday at 5 p.m.",
-      "url": "https://www.israelnationalnews.com/news/435806",
-      "source": "Israel National News"
-    },
-    {
       "at": "2026-11-07",
       "who": "Isaac Herzog",
       "party": "",
@@ -518,14 +542,6 @@
       "source": "Haaretz"
     },
     {
-      "at": "2026-11-06",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "In a pre-Shabbat statement, Eisenkot said he plans a government of the four Zionist parties in his bloc, open to others who accept his principles \"now or later.\"",
-      "url": "https://www.israelnationalnews.com/news/435785",
-      "source": "Israel National News"
-    },
-    {
       "at": "2026-11-06T14:36:00Z",
       "who": "Yaakov Asher",
       "party": "ג",
@@ -540,6 +556,30 @@
       "text": "Golan said substantial progress has been made toward a national emergency government and that he is more optimistic than after the election.",
       "url": "https://www.timesofisrael.com/liberman-urges-painful-compromise-on-haredi-enlistment-bucking-years-long-vow/",
       "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-06T08:50:00Z",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Liberman laid out terms for joining an Eisenkot coalition, offering draft-law flexibility and saying rotation \"must be consigned to oblivion.\"",
+      "url": "https://www.jpost.com/israel-election-2026/article-914045",
+      "source": "Jerusalem Post"
+    },
+    {
+      "at": "2026-11-06T01:57:00Z",
+      "who": "Shaul Meridor",
+      "party": "דרך",
+      "text": "After Herzog raised a unity deal, Yashar MK Shaul Meridor told him the public had sent the Oct. 7 government home, a Times of Israel analysis reports.",
+      "url": "https://www.timesofisrael.com/eisenkot-bolstered-by-pm-recommendations-but-still-well-short-of-a-government/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-06",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "In a pre-Shabbat statement, Eisenkot said he plans a government of the four Zionist parties in his bloc, open to others who accept his principles \"now or later.\"",
+      "url": "https://www.israelnationalnews.com/news/435785",
+      "source": "Israel National News"
     },
     {
       "at": "2026-11-06",
@@ -564,46 +604,6 @@
       "text": "Eisenkot said significant progress has been made in coalition talks and warned that Netanyahu's continued caretaker government is dangerous.",
       "url": "https://www.france24.com/en/middle-east/20261106-israel-s-eisenkot-claims-significant-progress-in-coalition-talks-as-opposition-eases-on-ultra-orthodox-draft",
       "source": "France 24"
-    },
-    {
-      "at": "2026-11-06",
-      "who": "Avigdor Liberman",
-      "party": "ל",
-      "text": "Liberman confirmed he is open to a coalition with Haredi parties, going back on a key campaign promise, the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/liveblog-november-06-2026/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-06T08:50:00Z",
-      "who": "Avigdor Liberman",
-      "party": "ל",
-      "text": "Liberman laid out terms for joining an Eisenkot coalition, offering draft-law flexibility and saying rotation \"must be consigned to oblivion.\"",
-      "url": "https://www.jpost.com/israel-election-2026/article-914045",
-      "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-11-06T01:57:00Z",
-      "who": "Shaul Meridor",
-      "party": "דרך",
-      "text": "After Herzog raised a unity deal, Yashar MK Shaul Meridor told him the public had sent the Oct. 7 government home, a Times of Israel analysis reports.",
-      "url": "https://www.timesofisrael.com/eisenkot-bolstered-by-pm-recommendations-but-still-well-short-of-a-government/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-05T20:10:00Z",
-      "who": "Isaac Herzog",
-      "party": "",
-      "text": "Herzog challenged Likud's Miri Regev for calling Eisenkot's camp a 'disaster bloc' while claiming to extend a hand.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/likud-presses-opposition-to-end-netanyahu-boycott-as-herzog-challenges-partys-rhetoric/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-05T20:10:00Z",
-      "who": "Yoav Kisch",
-      "party": "מחל",
-      "text": "Likud MK Yoav Kisch called for a broad national government of Zionist parties and urged the opposition to end its boycott and talk.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/likud-presses-opposition-to-end-netanyahu-boycott-as-herzog-challenges-partys-rhetoric/",
-      "source": "Times of Israel"
     }
   ]
 }
