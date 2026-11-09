@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-09T15:27:28Z",
-  "summary": "Gadi Eisenkot holds the mandate from President Herzog, received on Nov 8 with 28 days to form a government, extendable by up to 14, and Ynet reports his talks with Liberman were described by both as substantive and productive, while Bennett has made no public statement since meeting him. Eisenkot's bloc lacks a majority without either the Arab parties, which Liberman refuses to rely on, or the Haredi parties; UTJ has not agreed to join and Shas is seen as waiting for UTJ to move first. Public sparring between Liberman and Golan over the Haredi draft and a minority government has exposed rifts in the bloc, while the Jerusalem Post reports Netanyahu is campaigning to keep the Haredi parties on the right. The new Knesset is sworn in on Tuesday, Nov 10; Ynet reports UTJ declined Yashar's invitation to back an early vote to replace Speaker Ohana and Shas was not expected to support it.",
+  "updated": "2026-11-09T18:25:00Z",
+  "summary": "Gadi Eisenkot holds the mandate from President Herzog, received on Nov 8 with 28 days to form a government, extendable by up to 14, and Ynet reports his talks with Liberman were described by both as substantive and productive, while Bennett has made no public statement since meeting him. Eisenkot's bloc lacks a majority without either the Arab parties, which Liberman refuses to rely on, or the Haredi parties; UTJ has not agreed to join and Shas is seen as waiting for UTJ to move first. Public sparring between Liberman and Golan over the Haredi draft and a minority government has exposed rifts in the bloc, and Maariv reports Eisenkot has not yet agreed to Liberman's push for Lapid as Speaker, while the Jerusalem Post reports Netanyahu is campaigning to keep the Haredi parties on the right. The new Knesset is sworn in on Tuesday, Nov 10; Ynet reports UTJ declined Yashar's invitation to back an early vote to replace Speaker Ohana and Shas was not expected to support it.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "If Eisenkot fails, Herzog can task another MK, who would get 28 days with no extension. The new Knesset is sworn in on Nov 10.",
@@ -366,6 +366,22 @@
   },
   "timeline": [
     {
+      "at": "2026-11-09T15:16:00Z",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Maariv reports Liberman backs Lapid for Knesset Speaker, but Eisenkot has not agreed to nominate him at this stage.",
+      "url": "https://dailybeirut.com/en/world/yesterday-allies-turn-eisenkot-prepares-pull-haredim-netanyahu-grip/",
+      "source": "Daily Beirut (citing Maariv)"
+    },
+    {
+      "at": "2026-11-09T15:16:00Z",
+      "who": "Likud",
+      "party": "מחל",
+      "text": "An unnamed Likud official told Maariv that Likud MK David Bitan is in contact with Liberman but will not leave the party.",
+      "url": "https://dailybeirut.com/en/world/yesterday-allies-turn-eisenkot-prepares-pull-haredim-netanyahu-grip/",
+      "source": "Daily Beirut (citing Maariv)"
+    },
+    {
       "at": "2026-11-09T14:45:00Z",
       "who": "UTJ",
       "party": "ג",
@@ -588,22 +604,6 @@
       "text": "Golan set conditions for partnering with Haredi parties, saying \"Whoever wants a partnership with us needs to come meet us in Ramat Gan.\"",
       "url": "https://www.timesofisrael.com/president-herzog-taps-eisenkot-to-form-coalition-but-path-remains-fraught/",
       "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-07",
-      "who": "Shas",
-      "party": "שס",
-      "text": "Shas called reports that it could join an Eisenkot-led government fake news and said it is part of the right-wing bloc.",
-      "url": "https://www.timesofisrael.com/president-herzog-taps-eisenkot-to-form-coalition-but-path-remains-fraught/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-07",
-      "who": "Isaac Herzog",
-      "party": "",
-      "text": "Herzog told Eisenkot on Saturday evening that he will be tasked with forming a government, with the formal handover set for a Sunday ceremony.",
-      "url": "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government",
-      "source": "Al Jazeera"
     }
   ]
 }
