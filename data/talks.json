@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T18:23:26Z",
+  "updated": "2026-11-10T21:23:59Z",
   "summary": "The 26th Knesset was sworn in on Nov 10, and Eisenkot, who holds the mandate from President Herzog until Dec 6 (extendable by up to 14 days), had his bloc submit signatures to replace Speaker Ohana with Yashar!'s Matan Kahana and file bills including an Oct 7 state inquiry. In his Knesset speech Netanyahu urged a national unity government, and Eisenkot called the address hate-filled and said Netanyahu is unfit to stay in office. UTJ has set conditions on draft exemptions, school funding and the religion-state status quo while confirming preliminary contacts with Eisenkot's camp, and Shas says it still backs Netanyahu. Herzog urged lawmakers to compromise and avoid a repeat election.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
@@ -380,6 +380,22 @@
   },
   "timeline": [
     {
+      "at": "2026-11-10T20:04:00Z",
+      "who": "Joint List",
+      "party": "ודם",
+      "text": "The Joint List denounced Netanyahu's Knesset speech as deranged, inciting and racist.",
+      "url": "https://www.timesofisrael.com/in-furious-speech-demanding-unity-government-netanyahu-claims-arab-mks-want-israels-destruction/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-10T20:04:00Z",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "In his speech Netanyahu branded the Arab parties terror supporters and urged Haredi MKs not to back a narrow Eisenkot government.",
+      "url": "https://www.timesofisrael.com/in-furious-speech-demanding-unity-government-netanyahu-claims-arab-mks-want-israels-destruction/",
+      "source": "Times of Israel"
+    },
+    {
       "at": "2026-11-10",
       "who": "Gadi Eisenkot",
       "party": "דרך",
@@ -602,22 +618,6 @@
       "text": "Maariv reports Liberman backs Lapid for Knesset Speaker, but Eisenkot has not agreed to nominate him at this stage.",
       "url": "https://dailybeirut.com/en/world/yesterday-allies-turn-eisenkot-prepares-pull-haredim-netanyahu-grip/",
       "source": "Daily Beirut (citing Maariv)"
-    },
-    {
-      "at": "2026-11-09T15:16:00Z",
-      "who": "Likud",
-      "party": "מחל",
-      "text": "An unnamed Likud official told Maariv that Likud MK David Bitan is in contact with Liberman but will not leave the party.",
-      "url": "https://dailybeirut.com/en/world/yesterday-allies-turn-eisenkot-prepares-pull-haredim-netanyahu-grip/",
-      "source": "Daily Beirut (citing Maariv)"
-    },
-    {
-      "at": "2026-11-09T15:10:00Z",
-      "who": "Benjamin Netanyahu",
-      "party": "מחל",
-      "text": "In a Monday video, Netanyahu invited all Zionist parties into a unity government that he, as head of the largest party, would lead.",
-      "url": "https://www.jpost.com/israel-election-2026/article-914356",
-      "source": "Jerusalem Post"
     }
   ]
 }
