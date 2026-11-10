@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-09T21:40:00Z",
-  "summary": "Gadi Eisenkot holds the mandate from President Herzog, with a deadline of Dec 6 extendable by up to 14 days, and after meeting Liberman on Nov 9 the two expressed confidence they can form a stable four-year government. Kan and Channel 12 report that Eisenkot and Liberman agreed to open early-stage talks with Shas and UTJ on a softened draft law, though UTJ has reportedly not been formally approached and Shas has publicly said it remains on the right. Channel 12 reports Netanyahu has tried, so far unsuccessfully, to reach senior UTJ rabbis to get the party to vote against an Eisenkot government rather than abstain. The new Knesset is sworn in on Tuesday, Nov 10, and Israel Hayom reports political assessments that Eisenkot himself will be the bloc's candidate for Speaker.",
+  "updated": "2026-11-10T00:35:00Z",
+  "summary": "Gadi Eisenkot holds the mandate from President Herzog, with a deadline of Dec 6 extendable by up to 14 days, and after meeting Liberman on Nov 9 the two expressed confidence they can form a stable four-year government and agreed on a Yashar! candidate for Speaker whose name they are withholding. Kan and Channel 12 report early-stage talks with Shas and UTJ on a softened draft law; UTJ is seeking guarantees on that law, while Ynet reports Shas remains aligned with Netanyahu's bloc. Netanyahu released a video on Nov 9 inviting all Zionist parties into a unity government that he would lead. The new Knesset is due to be sworn in on Tuesday, Nov 10, with Speaker Ohana presiding.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "If Eisenkot fails, Herzog can task another MK, who would get 28 days with no extension. The new Knesset is sworn in on Nov 10.",
@@ -238,14 +238,14 @@
   "parties": {
     "מחל": {
       "backs": "Recommended Netanyahu",
-      "stance": "After Herzog chose Eisenkot, Netanyahu called in a Nov 7 video for a national unity government that includes all his current allies, the Times of Israel reports.",
+      "stance": "In a Nov 9 video, Netanyahu invited every Zionist party into a unity government and said he should lead it as head of the largest party, the Jerusalem Post reports.",
       "red_lines": [
         "No government that depends on Arab parties",
         "No rotation"
       ],
-      "date": "2026-11-07",
-      "url": "https://www.timesofisrael.com/president-herzog-taps-eisenkot-to-form-coalition-but-path-remains-fraught/",
-      "source": "Times of Israel",
+      "date": "2026-11-09",
+      "url": "https://www.jpost.com/israel-election-2026/article-914356",
+      "source": "Jerusalem Post",
       "lines_url": "https://www.aljazeera.com/news/2026/10/30/how-can-israel-break-its-election-deadlock",
       "lines_source": "Red lines: Al Jazeera"
     },
@@ -311,13 +311,13 @@
     },
     "ג": {
       "backs": "No recommendation",
-      "stance": "An unnamed senior UTJ source told JFeed on Nov 9 that a significant week lies ahead on cooperation with the change bloc, requiring full preservation of the religious status quo.",
+      "stance": "UTJ declined to sign the bloc's letter seeking Ohana's replacement, saying the Speaker should change alongside a new government, and is seeking guarantees that a draft law survives court review, Ynet reports.",
       "red_lines": [
         "Draft-exemption law"
       ],
       "date": "2026-11-09",
-      "url": "https://www.jfeed.com/news-israel/to8pt7",
-      "source": "JFeed",
+      "url": "https://www.ynetnews.com/article/syteack0fe",
+      "source": "Ynet",
       "lines_url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
       "lines_source": "Red lines: Times of Israel (Oct 14)"
     },
@@ -366,6 +366,14 @@
   },
   "timeline": [
     {
+      "at": "2026-11-09T20:27:00Z",
+      "who": "UTJ",
+      "party": "ג",
+      "text": "Ynet reports UTJ had proposed its MK Yaakov Asher as interim Speaker, an idea effectively ruled out by the Eisenkot–Liberman agreement.",
+      "url": "https://www.ynetnews.com/article/syteack0fe",
+      "source": "Ynet"
+    },
+    {
       "at": "2026-11-09T19:54:00Z",
       "who": "Gadi Eisenkot",
       "party": "דרך",
@@ -374,12 +382,28 @@
       "source": "Times of Israel (citing Kan, Channel 12)"
     },
     {
+      "at": "2026-11-09T19:33:00Z",
+      "who": "Likud",
+      "party": "מחל",
+      "text": "Channel 12 reports Netanyahu confidant Natan Eshel repeatedly sounded out Ra'am's Abbas; Likud says Netanyahu did not know and Eshel denies passing messages.",
+      "url": "https://www.jpost.com/israel-election-2026/article-914380",
+      "source": "Jerusalem Post (citing Channel 12)"
+    },
+    {
       "at": "2026-11-09T18:47:00Z",
       "who": "Benjamin Netanyahu",
       "party": "מחל",
       "text": "Channel 12 reports Netanyahu sought to meet senior UTJ rabbis to get the party to vote against an Eisenkot government, but was rebuffed.",
       "url": "https://www.timesofisrael.com/liveblog_entry/report-netanyahu-pressing-senior-haredi-rabbis-to-oppose-eisenkot-led-government-after-lawmakers-rebuff-him/",
       "source": "Times of Israel (citing Channel 12)"
+    },
+    {
+      "at": "2026-11-09T17:42:00Z",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Ynet reports Eisenkot and Liberman agreed on a Yashar! MK for Speaker but are withholding the name pending Bennett and Golan's approval.",
+      "url": "https://www.ynetnews.com/article/bkbp4kkrmg",
+      "source": "Ynet"
     },
     {
       "at": "2026-11-09T17:41:00Z",
@@ -422,6 +446,14 @@
       "source": "Daily Beirut (citing Maariv)"
     },
     {
+      "at": "2026-11-09T15:10:00Z",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "In a Monday video, Netanyahu invited all Zionist parties into a unity government that he, as head of the largest party, would lead.",
+      "url": "https://www.jpost.com/israel-election-2026/article-914356",
+      "source": "Jerusalem Post"
+    },
+    {
       "at": "2026-11-09T14:45:00Z",
       "who": "UTJ",
       "party": "ג",
@@ -443,14 +475,6 @@
       "party": "רק",
       "text": "Bennett has not commented on his meeting with Eisenkot, while his MKs told Ynet the party won't compromise on wider military service.",
       "url": "https://www.ynetnews.com/article/hy00x00ljagl",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-09T09:26:00Z",
-      "who": "Golan",
-      "party": "אמת",
-      "text": "Golan said Liberman can form a government with Netanyahu if he wants one that won't draft the Haredim, and Liberman called Golan's criticism stupid and malicious, Ynet reports.",
-      "url": "https://www.ynetnews.com/article/rkybgmkrmx",
       "source": "Ynet"
     },
     {
@@ -476,6 +500,14 @@
       "text": "Unnamed UTJ sources tell the Jerusalem Post the party has not agreed to join Eisenkot and has conditions on religion-and-state issues.",
       "url": "https://www.jpost.com/israel-election-2026/article-914311",
       "source": "Jerusalem Post"
+    },
+    {
+      "at": "2026-11-09T09:26:00Z",
+      "who": "Golan",
+      "party": "אמת",
+      "text": "Golan said Liberman can form a government with Netanyahu if he wants one that won't draft the Haredim, and Liberman called Golan's criticism stupid and malicious, Ynet reports.",
+      "url": "https://www.ynetnews.com/article/rkybgmkrmx",
+      "source": "Ynet"
     },
     {
       "at": "2026-11-09T07:57:00Z",
@@ -572,38 +604,6 @@
       "text": "Ynet reports Likud officials are focusing their pressure on Deri to keep Shas from joining an Eisenkot government, which they see as likely but not certain.",
       "url": "https://www.ynetnews.com/article/sy487dttgx",
       "source": "Ynet"
-    },
-    {
-      "at": "2026-11-08T03:13:00Z",
-      "who": "Avigdor Liberman",
-      "party": "ל",
-      "text": "A senior bloc figure told Ynet that Liberman will not back a minority emergency government, leaving a deal with the Haredi parties or another election.",
-      "url": "https://www.ynetnews.com/article/sy487dttgx",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-08",
-      "who": "Ra'am",
-      "party": "עם",
-      "text": "ANI, citing Haaretz and an unnamed senior Ra'am member, reports that Ra'am will support a government led by Eisenkot.",
-      "url": "https://www.tribuneindia.com/news/world/israel-president-to-formally-handover-govt-formation-mandate-to-eisenkot-today-swearing-in-of-knesset-members-on-tuesday",
-      "source": "The Tribune (ANI)"
-    },
-    {
-      "at": "2026-11-08",
-      "who": "Joint List",
-      "party": "ודם",
-      "text": "ANI, citing Haaretz, reports the Joint List will not vote for an Eisenkot government but is likely to abstain rather than topple it.",
-      "url": "https://www.tribuneindia.com/news/world/israel-president-to-formally-handover-govt-formation-mandate-to-eisenkot-today-swearing-in-of-knesset-members-on-tuesday",
-      "source": "The Tribune (ANI)"
-    },
-    {
-      "at": "2026-11-08",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "ANI reports the Eisenkot bloc's leaders are set to announce an agreement on the next Knesset speaker before MKs are sworn in on Tuesday.",
-      "url": "https://www.tribuneindia.com/news/world/israel-president-to-formally-handover-govt-formation-mandate-to-eisenkot-today-swearing-in-of-knesset-members-on-tuesday",
-      "source": "The Tribune (ANI)"
     }
   ]
 }
