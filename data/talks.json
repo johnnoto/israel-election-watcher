@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-10T03:22:00Z",
-  "summary": "Gadi Eisenkot holds the mandate from President Herzog, with a deadline of Dec 6 extendable by up to 14 days, and after meeting Liberman on Nov 9 the two expressed confidence they can form a stable four-year government and agreed on a Yashar! candidate for Speaker whose name they are withholding. Kan and Channel 12 report early-stage talks with Shas and UTJ on a softened draft law; UTJ is seeking guarantees on that law, while Ynet reports Shas remains aligned with Netanyahu's bloc. Netanyahu released a video on Nov 9 inviting all Zionist parties into a unity government that he would lead. The new Knesset is due to be sworn in on Tuesday, Nov 10, with Speaker Ohana presiding.",
+  "updated": "2026-11-10T06:27:00Z",
+  "summary": "Gadi Eisenkot holds the mandate from President Herzog, with a deadline of Dec 6 extendable by up to 14 days, and after meeting Liberman on Nov 9 the two expressed confidence they can form a stable four-year government and agreed on a Yashar! candidate for Speaker whose name they are withholding. Kan and Channel 12 report early-stage talks with Shas and UTJ on a softened draft law; UTJ is seeking guarantees on that law, while Ynet reports Shas remains aligned with Netanyahu's bloc. Netanyahu released a video on Nov 9 inviting all Zionist parties into a unity government that he would lead. The new Knesset is being sworn in on Tuesday, Nov 10, with Speaker Ohana presiding, as Eisenkot says unconventional steps will be needed to form a government.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
-    "next": "If Eisenkot fails, Herzog can task another MK, who would get 28 days with no extension. The new Knesset is sworn in on Nov 10.",
+    "next": "If Eisenkot fails, Herzog can task another MK, who would get 28 days with no extension. The new Knesset is sworn in today, Nov 10.",
     "url": "https://www.jpost.com/israel-election-2026/article-914236",
     "source": "Jerusalem Post"
   },
@@ -366,12 +366,28 @@
   },
   "timeline": [
     {
+      "at": "2026-11-10T05:38:00Z",
+      "who": "Right-wing groups",
+      "party": "",
+      "text": "The Jerusalem Post reports Im Tirtzu and other groups plan to protest at the Knesset swearing-in against replacing Speaker Ohana with Arab parties' votes.",
+      "url": "https://www.jpost.com/israel-election-2026/article-914409",
+      "source": "Jerusalem Post"
+    },
+    {
       "at": "2026-11-09T20:27:00Z",
       "who": "UTJ",
       "party": "ג",
       "text": "Ynet reports UTJ had proposed its MK Yaakov Asher as interim Speaker, an idea effectively ruled out by the Eisenkot–Liberman agreement.",
       "url": "https://www.ynetnews.com/article/syteack0fe",
       "source": "Ynet"
+    },
+    {
+      "at": "2026-11-09T19:58:00Z",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Eisenkot has said unconventional steps will be needed to form a government and that he is confident it can be done, the Jerusalem Post reports.",
+      "url": "https://www.jpost.com/israel-election-2026/article-914382",
+      "source": "Jerusalem Post"
     },
     {
       "at": "2026-11-09T19:54:00Z",
@@ -587,22 +603,6 @@
       "party": "מחל",
       "text": "Defense Minister Katz echoed Netanyahu's unity appeal at a memorial on Sunday, Ynet reports.",
       "url": "https://www.ynetnews.com/article/sjygemraml",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-08T14:59:00Z",
-      "who": "Isaac Herzog",
-      "party": "",
-      "text": "Herzog formally handed Eisenkot the mandate at the President's Residence, giving him 28 days with a possible 14-day extension.",
-      "url": "https://www.jpost.com/israel-election-2026/article-914236",
-      "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-11-08T03:13:00Z",
-      "who": "Likud",
-      "party": "מחל",
-      "text": "Ynet reports Likud officials are focusing their pressure on Deri to keep Shas from joining an Eisenkot government, which they see as likely but not certain.",
-      "url": "https://www.ynetnews.com/article/sy487dttgx",
       "source": "Ynet"
     }
   ]
