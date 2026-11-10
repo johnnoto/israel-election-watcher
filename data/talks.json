@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-10T06:27:00Z",
-  "summary": "Gadi Eisenkot holds the mandate from President Herzog, with a deadline of Dec 6 extendable by up to 14 days, and after meeting Liberman on Nov 9 the two expressed confidence they can form a stable four-year government and agreed on a Yashar! candidate for Speaker whose name they are withholding. Kan and Channel 12 report early-stage talks with Shas and UTJ on a softened draft law; UTJ is seeking guarantees on that law, while Ynet reports Shas remains aligned with Netanyahu's bloc. Netanyahu released a video on Nov 9 inviting all Zionist parties into a unity government that he would lead. The new Knesset is being sworn in on Tuesday, Nov 10, with Speaker Ohana presiding, as Eisenkot says unconventional steps will be needed to form a government.",
+  "updated": "2026-11-10T09:30:00Z",
+  "summary": "Gadi Eisenkot holds the mandate from President Herzog, with a deadline of Dec 6 extendable by up to 14 days, and on the morning of Nov 10 he and the leaders of Together, the Democrats and Yisrael Beiteinu announced they will nominate Yashar! MK Matan Kahana as Knesset Speaker, with Liberman to chair the Foreign Affairs and Defense Committee. Ynet reports the bloc intends first to try forming a government with the Haredi parties, and that Liberman has told Eisenkot he will bring them in, while UTJ is still seeking guarantees on a draft law and Shas remains aligned with Netanyahu. Netanyahu continues to call for a unity government of all Zionist parties under his leadership. The 26th Knesset is being sworn in this afternoon, with Speaker Ohana saying a vote on his successor needs a majority request.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
-    "next": "If Eisenkot fails, Herzog can task another MK, who would get 28 days with no extension. The new Knesset is sworn in today, Nov 10.",
-    "url": "https://www.jpost.com/israel-election-2026/article-914236",
-    "source": "Jerusalem Post"
+    "next": "If Eisenkot fails, Herzog can task another MK, who would get 28 days with no extension. The new Knesset is sworn in today, Nov 10; the bloc plans to bring committee line-ups to the plenum on Wednesday.",
+    "url": "https://www.timesofisrael.com/liveblog_entry/eisenkot-led-bloc-agrees-on-matan-kahana-as-next-knesset-speaker-liberman-to-head-powerful-defense-committee",
+    "source": "Times of Israel"
   },
   "scenarios": [
     {
@@ -20,7 +20,7 @@
         "ט"
       ],
       "status": "short",
-      "note": "His existing partners. On Nov 2 Netanyahu said publicly he wants Shas, Otzma Yehudit and Religious Zionism in any future government and that the public does not want one dependent on Ra'am and the Joint List. Without a majority, he needs defectors or a new partner from the other side. On Nov 5 UTJ declined to recommend any candidate, leaving Netanyahu without its endorsements, while Otzma Yehudit recommended him. Likud's delegation, last to meet Herzog, urged him to give Netanyahu the mandate, the Jerusalem Post reports. On Nov 7 Herzog chose Eisenkot rather than Netanyahu to try first to form a government, Al Jazeera reports. Channel 12 reports Netanyahu tried to reach senior UTJ rabbis to have the party vote against an Eisenkot government, but was rebuffed, the Times of Israel reports.",
+      "note": "His existing partners. On Nov 2 Netanyahu said publicly he wants Shas, Otzma Yehudit and Religious Zionism in any future government and that the public does not want one dependent on Ra'am and the Joint List. Without a majority, he needs defectors or a new partner from the other side. On Nov 5 UTJ declined to recommend any candidate, leaving Netanyahu without its endorsements, while Otzma Yehudit recommended him. Likud's delegation, last to meet Herzog, urged him to give Netanyahu the mandate, the Jerusalem Post reports. On Nov 7 Herzog chose Eisenkot rather than Netanyahu to try first to form a government, Al Jazeera reports. Channel 12 reports Netanyahu tried to reach senior UTJ rabbis to have the party vote against an Eisenkot government, but was rebuffed, the Times of Israel reports. Ynet reports that an attempt by Netanyahu's associates to arrange a call with UTJ's Rabbi Dov Landau failed.",
       "blockers": [
         {
           "party": "ל",
@@ -85,7 +85,7 @@
         "עם"
       ],
       "status": "short",
-      "note": "The 2021 Bennett–Lapid model. Ynet reports, citing unnamed sources, that Eisenkot authorized examining a minority government with Ra'am inside and UTJ abstaining, possibly as leverage in unity talks; Yashar says such reports are not issued on its behalf. It falls short of 61 and Liberman rejects any government dependent on Arab or Haredi parties. Unnamed sources tell Ynet that Liberman berated Eisenkot at a Saturday meeting, saying the minority-government push hurt the bloc. On Nov 8 ANI, citing Haaretz and an unnamed senior Ra'am member, reported that Ra'am will support an Eisenkot government. A senior bloc figure told Ynet on Nov 8 that Liberman has no intention of backing a narrower emergency government without a majority. Eisenkot formally received the mandate on Nov 8 with 28 days to form a government, the Jerusalem Post reports. On Nov 8 Liberman posted that he would not help establish a government dependent on Arab parties, Ynet reports. A Ynet analysis on Nov 8, citing people close to Eisenkot, says he sees unity with Netanyahu as a last resort and may bring a minority government to a confidence vote without full coalition agreement. On Nov 8 Golan said that if Liberman wants a government that won't draft the Haredim he can form one with Netanyahu, while Liberman called Golan's criticism stupid and malicious, Ynet reports.",
+      "note": "The 2021 Bennett–Lapid model. Ynet reports, citing unnamed sources, that Eisenkot authorized examining a minority government with Ra'am inside and UTJ abstaining, possibly as leverage in unity talks; Yashar says such reports are not issued on its behalf. It falls short of 61 and Liberman rejects any government dependent on Arab or Haredi parties. Unnamed sources tell Ynet that Liberman berated Eisenkot at a Saturday meeting, saying the minority-government push hurt the bloc. On Nov 8 ANI, citing Haaretz and an unnamed senior Ra'am member, reported that Ra'am will support an Eisenkot government. A senior bloc figure told Ynet on Nov 8 that Liberman has no intention of backing a narrower emergency government without a majority. Eisenkot formally received the mandate on Nov 8 with 28 days to form a government, the Jerusalem Post reports. On Nov 8 Liberman posted that he would not help establish a government dependent on Arab parties, Ynet reports. A Ynet analysis on Nov 8, citing people close to Eisenkot, says he sees unity with Netanyahu as a last resort and may bring a minority government to a confidence vote without full coalition agreement. On Nov 8 Golan said that if Liberman wants a government that won't draft the Haredim he can form one with Netanyahu, while Liberman called Golan's criticism stupid and malicious, Ynet reports. Ynet reports that at their Nov 9 meeting Liberman asked Eisenkot to drop the idea of a minority government backed by Arab parties.",
       "blockers": [
         {
           "party": "ל",
@@ -116,7 +116,7 @@
         "ג"
       ],
       "status": "blocked",
-      "note": "No Arab parties needed, but the Haredi draft splits it. A source close to Eisenkot tells Ynet he is trying to bring Shas and UTJ into a government he leads, naming Liberman as the main obstacle. A senior UTJ official told Ynet the party would offer Eisenkot the premiership for draft exemptions, which clashes with his national-service condition; Shas is reported to be out. Unnamed senior UTJ figures say the party might back an Eisenkot government from outside without a draft law first, the Times of Israel reports. On Nov 2 Liberman declined to rule out cooperating with UTJ, saying the bloc will have to see what happens. Ynet reports on Nov 3 that Eisenkot is focusing on courting the Haredi parties and that Liberman has left the door open to talks on including them. The Jerusalem Post reports on Nov 3 that Shas and UTJ stress no decision has been made, with their rabbis due back around the start of consultations. On Nov 4 Shas recommended Netanyahu, and Yisrael Beiteinu told Herzog it would not compromise key priorities to bring Haredi parties in, Ynet reports. On Nov 5 UTJ declined to recommend either candidate, with Goldknopf telling Herzog the party is not bound to any bloc, Ynet reports. ANI reports UTJ told Herzog its support for any government depends on legislation exempting yeshiva students from service. On Nov 5 Together told Herzog it will not accept a draft-evasion law, Israel National News reports. Channel 12 reports Liberman has dropped his refusal to sit with UTJ and that the opposition is in talks with it, but Yisrael Beiteinu told the Jerusalem Post it was not aware of this. Channel 12 reports the bloc is examining a coalition with UTJ and Shas, with draft talks starting from Liberman's 2018 bill, while Shas still stands with Likud. On Nov 6 Liberman said he is willing to be flexible and compromise on the Haredi draft law, the Jerusalem Post reports. The Times of Israel reports Liberman has confirmed he is open to a coalition with Haredi parties, reversing a key promise. After Liberman's shift, Eisenkot reiterated his demand for mandatory national service, the Times of Israel reports, and UTJ said it will back whoever solves the draft issue, Israel National News reports. UTJ leader Asher said on Nov 6 that no coalition proposal has yet been made to the party and that its rabbis will decide on any offer, the Times of Israel reports. Al Jazeera notes that adding UTJ and Shas would give Eisenkot a bare majority, as Herzog prepares to hand him the mandate. On Nov 7 Golan said he is open to a government with the Haredim on conditions including enlistment of young Haredim and no blank check, adding that they must come to meet his party in Ramat Gan. An unnamed Shas Council of Torah Sages source told Channel 12 that Shas would not act against UTJ's rabbis if they approve a deal, but Shas itself called reports it could join an Eisenkot government fake news, the Times of Israel reports. Ynet reports on Nov 8 that Likud's main pressure is on Deri, whom Likud officials expect, though not with certainty, to refuse the opposition; a senior bloc figure told Ynet the only option is the bloc plus the Haredi parties, or another election. Eisenkot formally received the mandate on Nov 8 with 28 days to form a government, the Jerusalem Post reports. On Nov 8 Liberman said he still backs military service for Haredi men while seeking understandings with the Haredi parties, Ynet reports. On Nov 9 the Jerusalem Post, citing unnamed UTJ sources, reports no agreement yet on joining Eisenkot, with conditions on Shabbat, kashrut, conversion and the religious status quo, and assessments that Shas would follow if UTJ joins first. Kikar HaShabbat reporter Yishai Cohen told 103FM that Shas could consider backing Eisenkot if yeshiva students' status is settled, but is waiting for UTJ to move first. On Nov 9 Ynet reported that Yashar invited Shas and UTJ to back a bid to replace Speaker Ohana at the Knesset's opening session; UTJ declined and Shas was not expected to join, while UTJ has not denied talks with the change bloc. On Nov 9 Kan reported that Eisenkot and Liberman agreed to open talks with Shas and UTJ, offering a softened draft law with a transition period, and Channel 12 said the talks were at an early stage, the Times of Israel reports. An unnamed senior UTJ source told JFeed a significant week lies ahead on cooperation with the change bloc, conditional on preserving the religious status quo.",
+      "note": "No Arab parties needed, but the Haredi draft splits it. A source close to Eisenkot tells Ynet he is trying to bring Shas and UTJ into a government he leads, naming Liberman as the main obstacle. A senior UTJ official told Ynet the party would offer Eisenkot the premiership for draft exemptions, which clashes with his national-service condition; Shas is reported to be out. Unnamed senior UTJ figures say the party might back an Eisenkot government from outside without a draft law first, the Times of Israel reports. On Nov 2 Liberman declined to rule out cooperating with UTJ, saying the bloc will have to see what happens. Ynet reports on Nov 3 that Eisenkot is focusing on courting the Haredi parties and that Liberman has left the door open to talks on including them. The Jerusalem Post reports on Nov 3 that Shas and UTJ stress no decision has been made, with their rabbis due back around the start of consultations. On Nov 4 Shas recommended Netanyahu, and Yisrael Beiteinu told Herzog it would not compromise key priorities to bring Haredi parties in, Ynet reports. On Nov 5 UTJ declined to recommend either candidate, with Goldknopf telling Herzog the party is not bound to any bloc, Ynet reports. ANI reports UTJ told Herzog its support for any government depends on legislation exempting yeshiva students from service. On Nov 5 Together told Herzog it will not accept a draft-evasion law, Israel National News reports. Channel 12 reports Liberman has dropped his refusal to sit with UTJ and that the opposition is in talks with it, but Yisrael Beiteinu told the Jerusalem Post it was not aware of this. Channel 12 reports the bloc is examining a coalition with UTJ and Shas, with draft talks starting from Liberman's 2018 bill, while Shas still stands with Likud. On Nov 6 Liberman said he is willing to be flexible and compromise on the Haredi draft law, the Jerusalem Post reports. The Times of Israel reports Liberman has confirmed he is open to a coalition with Haredi parties, reversing a key promise. After Liberman's shift, Eisenkot reiterated his demand for mandatory national service, the Times of Israel reports, and UTJ said it will back whoever solves the draft issue, Israel National News reports. UTJ leader Asher said on Nov 6 that no coalition proposal has yet been made to the party and that its rabbis will decide on any offer, the Times of Israel reports. Al Jazeera notes that adding UTJ and Shas would give Eisenkot a bare majority, as Herzog prepares to hand him the mandate. On Nov 7 Golan said he is open to a government with the Haredim on conditions including enlistment of young Haredim and no blank check, adding that they must come to meet his party in Ramat Gan. An unnamed Shas Council of Torah Sages source told Channel 12 that Shas would not act against UTJ's rabbis if they approve a deal, but Shas itself called reports it could join an Eisenkot government fake news, the Times of Israel reports. Ynet reports on Nov 8 that Likud's main pressure is on Deri, whom Likud officials expect, though not with certainty, to refuse the opposition; a senior bloc figure told Ynet the only option is the bloc plus the Haredi parties, or another election. Eisenkot formally received the mandate on Nov 8 with 28 days to form a government, the Jerusalem Post reports. On Nov 8 Liberman said he still backs military service for Haredi men while seeking understandings with the Haredi parties, Ynet reports. On Nov 9 the Jerusalem Post, citing unnamed UTJ sources, reports no agreement yet on joining Eisenkot, with conditions on Shabbat, kashrut, conversion and the religious status quo, and assessments that Shas would follow if UTJ joins first. Kikar HaShabbat reporter Yishai Cohen told 103FM that Shas could consider backing Eisenkot if yeshiva students' status is settled, but is waiting for UTJ to move first. On Nov 9 Ynet reported that Yashar invited Shas and UTJ to back a bid to replace Speaker Ohana at the Knesset's opening session; UTJ declined and Shas was not expected to join, while UTJ has not denied talks with the change bloc. On Nov 9 Kan reported that Eisenkot and Liberman agreed to open talks with Shas and UTJ, offering a softened draft law with a transition period, and Channel 12 said the talks were at an early stage, the Times of Israel reports. An unnamed senior UTJ source told JFeed a significant week lies ahead on cooperation with the change bloc, conditional on preserving the religious status quo. On Nov 10 Ynet reported, citing unnamed sources, that the bloc's parties intend first to try a government with the Haredi parties, and that Liberman has told Eisenkot he will bring them in.",
       "blockers": [
         {
           "party": "שס",
@@ -251,27 +251,27 @@
     },
     "דרך": {
       "backs": "Recommended Eisenkot; holds the mandate",
-      "stance": "Accepting the mandate on Nov 8, Eisenkot called for a national emergency government and invited Likud and Smotrich's party to join with him as prime minister, AFP reports.",
+      "stance": "On Nov 10 Eisenkot and the bloc's leaders announced they will nominate Yashar! MK Matan Kahana as Knesset Speaker, Eisenkot dropping the idea of taking the post himself, Ynet and the Times of Israel report.",
       "red_lines": [
         "National service for all",
         "Netanyahu out",
         "No rotation with Netanyahu",
         "Partners must accept his four principles"
       ],
-      "date": "2026-11-08",
-      "url": "https://www.rte.ie/news/middle-east/2026/1108/1598444-israel-govt-talks/",
-      "source": "RTÉ (AFP)"
+      "date": "2026-11-10",
+      "url": "https://www.ynetnews.com/article/r1flu8erfe",
+      "source": "Ynet"
     },
     "רק": {
       "backs": "Recommended Eisenkot",
-      "stance": "Bennett has said nothing publicly since meeting Eisenkot on Nov 8, while his MKs told Ynet the party will not compromise on its push for wider military service.",
+      "stance": "Bennett and Lapid joined the bloc's Nov 10 statement nominating Kahana for Speaker, with Together's Liran Avishar Ben-Horin slated to chair the Finance Committee, the Times of Israel reports.",
       "red_lines": [
         "No Netanyahu government",
         "No government reliant on Arab parties (per Ynet)"
       ],
-      "date": "2026-11-09",
-      "url": "https://www.ynetnews.com/article/hy00x00ljagl",
-      "source": "Ynet"
+      "date": "2026-11-10",
+      "url": "https://www.timesofisrael.com/liveblog_entry/eisenkot-led-bloc-agrees-on-matan-kahana-as-next-knesset-speaker-liberman-to-head-powerful-defense-committee",
+      "source": "Times of Israel"
     },
     "אמת": {
       "backs": "Recommended Eisenkot",
@@ -285,15 +285,15 @@
     },
     "ל": {
       "backs": "Recommended Eisenkot",
-      "stance": "After meeting Eisenkot on Nov 9, Liberman said any draft law must first be able to pass the High Court, JFeed reports.",
+      "stance": "Under the bloc's Nov 10 agreement Liberman is to chair the Foreign Affairs and Defense Committee, and Ynet reports he has told Eisenkot he will bring the Haredi parties into a government.",
       "red_lines": [
         "No Likud under Netanyahu",
         "No Ra'am or Joint List",
         "No minority government"
       ],
-      "date": "2026-11-09",
-      "url": "https://www.jfeed.com/news-israel/to8pt7",
-      "source": "JFeed",
+      "date": "2026-11-10",
+      "url": "https://www.timesofisrael.com/liveblog_entry/eisenkot-led-bloc-agrees-on-matan-kahana-as-next-knesset-speaker-liberman-to-head-powerful-defense-committee",
+      "source": "Times of Israel",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-911855",
       "lines_source": "Red lines: Jerusalem Post"
     },
@@ -365,6 +365,46 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-10T08:41:00Z",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Ynet reports, citing unnamed sources, that the bloc's parties intend first to try forming a government with the Haredi parties.",
+      "url": "https://www.ynetnews.com/article/r1flu8erfe",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-10T08:26:00Z",
+      "who": "Change bloc leaders",
+      "party": "דרך",
+      "text": "Eisenkot, Bennett, Lapid, Golan and Liberman said in a joint statement they will nominate Yashar!'s Matan Kahana as Knesset Speaker.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/eisenkot-led-bloc-agrees-on-matan-kahana-as-next-knesset-speaker-liberman-to-head-powerful-defense-committee",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-10T08:26:00Z",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Under the bloc's agreement Liberman will chair the Foreign Affairs and Defense Committee and Together's Liran Avishar Ben-Horin the Finance Committee.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/eisenkot-led-bloc-agrees-on-matan-kahana-as-next-knesset-speaker-liberman-to-head-powerful-defense-committee",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-10T04:29:00Z",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Ynet reports Liberman asked Eisenkot to drop an Arab-backed minority government and promised to bring in the Haredi parties.",
+      "url": "https://www.ynetnews.com/article/hjwy1tk0mg",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-10T04:29:00Z",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "Ynet reports an attempt by Netanyahu's associates to arrange a call with UTJ's Rabbi Dov Landau failed.",
+      "url": "https://www.ynetnews.com/article/hjwy1tk0mg",
+      "source": "Ynet"
+    },
     {
       "at": "2026-11-10T05:38:00Z",
       "who": "Right-wing groups",
@@ -563,46 +603,6 @@
       "party": "ל",
       "text": "Liberman told Ynet that \"Supporting a minority government means handing Netanyahu the premiership as a gift.\"",
       "url": "https://www.ynetnews.com/article/rjya9vaaml",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-08T18:22:00Z",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Eisenkot opened coalition talks with Bennett on Sunday evening, hours after receiving the mandate, Ynet reports.",
-      "url": "https://www.ynetnews.com/article/rjya9vaaml",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-08T17:19:00Z",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Eisenkot appealed to Likud and Smotrich's party to join a government he would lead, saying \"My door is open and my hand is extended.\"",
-      "url": "https://www.rte.ie/news/middle-east/2026/1108/1598444-israel-govt-talks/",
-      "source": "RTÉ (AFP)"
-    },
-    {
-      "at": "2026-11-08T15:44:00Z",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Ynet reports Eisenkot was expected to meet Bennett on Sunday evening and Liberman on Monday, and does not plan to swear in a government this week.",
-      "url": "https://www.ynetnews.com/article/sjygemraml",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-08T15:44:00Z",
-      "who": "Avigdor Liberman",
-      "party": "ל",
-      "text": "Liberman posted that he will not help establish a government dependent on Arab parties and that the premiership is not an obsession for him.",
-      "url": "https://www.ynetnews.com/article/sjygemraml",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-08T15:44:00Z",
-      "who": "Israel Katz",
-      "party": "מחל",
-      "text": "Defense Minister Katz echoed Netanyahu's unity appeal at a memorial on Sunday, Ynet reports.",
-      "url": "https://www.ynetnews.com/article/sjygemraml",
       "source": "Ynet"
     }
   ]
