@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T18:30:00Z",
+  "updated": "2026-11-11T21:30:00Z",
   "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and on Nov 11 his bloc and the Arab parties elected Yashar!'s Roy Folkman to chair the Knesset Arrangements Committee, with a vote to replace Speaker Ohana with Matan Kahana expected on Nov 17. The planned Likud–Yashar! meeting is off; Netanyahu says unity is still possible but under his leadership and without rotation, while Yashar! says he does not really want unity. UTJ is weighing its options after Asher met Netanyahu without committing, Shas says it still backs Netanyahu, and the Jerusalem Post reports divisions in Eisenkot's bloc, including over the Speaker pick. Herzog has urged lawmakers to compromise and avoid a repeat election.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
@@ -367,11 +367,11 @@
     },
     "עם": {
       "backs": "Recommended Eisenkot",
-      "stance": "Entering the Knesset on Nov 10, Abbas said Ra'am will keep up the process of replacing the government and wants to be part of the solution, Al-Monitor reports.",
+      "stance": "On Nov 11 Abbas told Kan that a Netanyahu confidant recently contacted him about Ra'am's coalition plans, and said Ra'am has always tried to help form a government to replace the current one, the Times of Israel reports.",
       "red_lines": [],
-      "date": "2026-11-10",
-      "url": "https://www.al-monitor.com/originals/2026/11/new-israeli-parliament-take-aim-netanyahu-eisenkot-seeks-government",
-      "source": "Al-Monitor"
+      "date": "2026-11-11",
+      "url": "https://www.timesofisrael.com/raam-chair-abbas-says-netanyahu-once-told-him-sinwar-and-i-understand-each-other/",
+      "source": "Times of Israel"
     },
     "ודם": {
       "backs": "Recommended Eisenkot",
@@ -385,6 +385,22 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-11",
+      "who": "Likud",
+      "party": "מחל",
+      "text": "Likud called Abbas's account of a 2021 Netanyahu remark about Sinwar a complete lie, the Times of Israel reports.",
+      "url": "https://www.timesofisrael.com/raam-chair-abbas-says-netanyahu-once-told-him-sinwar-and-i-understand-each-other/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-11",
+      "who": "Mansour Abbas",
+      "party": "עם",
+      "text": "Abbas told Kan that Netanyahu confidant Natan Eshel recently asked whether Ra'am would join a coalition to replace the government, the Times of Israel reports.",
+      "url": "https://www.timesofisrael.com/raam-chair-abbas-says-netanyahu-once-told-him-sinwar-and-i-understand-each-other/",
+      "source": "Times of Israel"
+    },
     {
       "at": "2026-11-11",
       "who": "Roy Folkman",
@@ -607,22 +623,6 @@
       "party": "ב",
       "text": "Ben-Gvir and other lawmakers heckled the Eisenkot bloc during the anthem over the absence of Arab party MKs.",
       "url": "https://www.timesofisrael.com/liveblog_entry/arab-mks-mostly-absent-during-singing-of-national-anthem-ben-gvir-taunts-eisenkot-bloc-where-are-your-partners/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-10T14:33:00Z",
-      "who": "Isaac Herzog",
-      "party": "",
-      "text": "Opening the 26th Knesset, Herzog urged compromise between rivals, a shared burden of service and every effort to avoid a repeat election.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/herzog-to-26th-knesset-we-must-investigate-october-7-strengthen-ties-with-us-share-responsibility-for-service/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-10T14:02:00Z",
-      "who": "Shas",
-      "party": "שס",
-      "text": "Shas said it continues to support Netanyahu and is not in talks with any other player.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/shas-says-it-is-sticking-by-netanyahu-wont-negotiate-with-any-other-player/",
       "source": "Times of Israel"
     }
   ]
