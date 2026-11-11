@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-11T06:28:19Z",
-  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and his bloc has asked for a vote to replace Speaker Ohana with Yashar!'s Matan Kahana. Ynet reports the planned Likud–Yashar! meeting is off and adviser-level contacts are drifting further from a deal, with Netanyahu calling for unity under his own leadership and ruling out rotation. UTJ is weighing its options after Asher met Netanyahu without committing, while Shas says it still backs Netanyahu. Herzog has urged lawmakers to compromise and avoid a repeat election.",
+  "updated": "2026-11-11T09:23:51Z",
+  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and Speaker Ohana has set a Nov 17 vote on replacing him with Yashar!'s Matan Kahana. Ynet reports the planned Likud–Yashar! meeting is off and contacts are drifting further from a deal, with Netanyahu calling for unity under his own leadership and ruling out rotation. UTJ is weighing its options after Asher met Netanyahu without committing, Shas says it still backs Netanyahu, and Ynet reports, citing unnamed sources, that Ra'am's Abbas has agreed in principle to Eisenkot's demand to recognize Hamas as a terrorist organization. Herzog has urged lawmakers to compromise and avoid a repeat election.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "If Eisenkot fails, Herzog can task another MK, who would get 28 days with no extension. HNGN reports Ohana has set the vote on replacing him as Speaker for Nov 17 after Yashar! submitted a majority request.",
@@ -85,7 +85,7 @@
         "עם"
       ],
       "status": "short",
-      "note": "The 2021 Bennett–Lapid model. Ynet reports, citing unnamed sources, that Eisenkot authorized examining a minority government with Ra'am inside and UTJ abstaining, possibly as leverage in unity talks; Yashar says such reports are not issued on its behalf. It falls short of 61 and Liberman rejects any government dependent on Arab or Haredi parties. Unnamed sources tell Ynet that Liberman berated Eisenkot at a Saturday meeting, saying the minority-government push hurt the bloc. On Nov 8 ANI, citing Haaretz and an unnamed senior Ra'am member, reported that Ra'am will support an Eisenkot government. A senior bloc figure told Ynet on Nov 8 that Liberman has no intention of backing a narrower emergency government without a majority. Eisenkot formally received the mandate on Nov 8 with 28 days to form a government, the Jerusalem Post reports. On Nov 8 Liberman posted that he would not help establish a government dependent on Arab parties, Ynet reports. A Ynet analysis on Nov 8, citing people close to Eisenkot, says he sees unity with Netanyahu as a last resort and may bring a minority government to a confidence vote without full coalition agreement. On Nov 8 Golan said that if Liberman wants a government that won't draft the Haredim he can form one with Netanyahu, while Liberman called Golan's criticism stupid and malicious, Ynet reports. Ynet reports that at their Nov 9 meeting Liberman asked Eisenkot to drop the idea of a minority government backed by Arab parties.",
+      "note": "The 2021 Bennett–Lapid model. Ynet reports, citing unnamed sources, that Eisenkot authorized examining a minority government with Ra'am inside and UTJ abstaining, possibly as leverage in unity talks; Yashar says such reports are not issued on its behalf. It falls short of 61 and Liberman rejects any government dependent on Arab or Haredi parties. Unnamed sources tell Ynet that Liberman berated Eisenkot at a Saturday meeting, saying the minority-government push hurt the bloc. On Nov 8 ANI, citing Haaretz and an unnamed senior Ra'am member, reported that Ra'am will support an Eisenkot government. A senior bloc figure told Ynet on Nov 8 that Liberman has no intention of backing a narrower emergency government without a majority. Eisenkot formally received the mandate on Nov 8 with 28 days to form a government, the Jerusalem Post reports. On Nov 8 Liberman posted that he would not help establish a government dependent on Arab parties, Ynet reports. A Ynet analysis on Nov 8, citing people close to Eisenkot, says he sees unity with Netanyahu as a last resort and may bring a minority government to a confidence vote without full coalition agreement. On Nov 8 Golan said that if Liberman wants a government that won't draft the Haredim he can form one with Netanyahu, while Liberman called Golan's criticism stupid and malicious, Ynet reports. Ynet reports that at their Nov 9 meeting Liberman asked Eisenkot to drop the idea of a minority government backed by Arab parties. On Nov 10 Ynet reported, citing unnamed sources, that Abbas has agreed in principle to Eisenkot's condition of recognizing Hamas as a terrorist organization, and Golan confirmed talks with Ra'am are underway.",
       "blockers": [
         {
           "party": "ל",
@@ -293,12 +293,12 @@
     },
     "אמת": {
       "backs": "Recommended Eisenkot",
-      "stance": "On Nov 8 Golan said that if Liberman wants a government that does not draft the Haredim, he can form one with Netanyahu, Ynet reports.",
+      "stance": "On Nov 10 Golan confirmed talks with Ra'am are underway and said recognizing Hamas as a terrorist group should not be an obstacle for Abbas, Ynet reports.",
       "red_lines": [
         "No Netanyahu government"
       ],
-      "date": "2026-11-08",
-      "url": "https://www.ynetnews.com/article/rkybgmkrmx",
+      "date": "2026-11-10",
+      "url": "https://www.ynetnews.com/article/rkybvtecme",
       "source": "Ynet"
     },
     "ל": {
@@ -424,6 +424,30 @@
       "text": "HNGN reports Ohana has set the vote on replacing him as Speaker for Tuesday, Nov 17.",
       "url": "https://www.hngn.com/articles/273746/20261110/eisenkot-gets-28-days-form-israel-government-13-seats-short.htm",
       "source": "HNGN"
+    },
+    {
+      "at": "2026-11-10T12:11:00Z",
+      "who": "Mansour Abbas",
+      "party": "עם",
+      "text": "Ynet reports, citing unnamed sources in the talks, that Abbas has agreed in principle to Eisenkot's condition of recognizing Hamas as a terrorist organization, seeking proof of a real partnership in return.",
+      "url": "https://www.ynetnews.com/article/rkybvtecme",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-10T12:11:00Z",
+      "who": "Yair Golan",
+      "party": "אמת",
+      "text": "Golan confirmed that talks with Ra'am are underway and said recognizing Hamas should not be an obstacle for Abbas, Ynet reports.",
+      "url": "https://www.ynetnews.com/article/rkybvtecme",
+      "source": "Ynet"
+    },
+    {
+      "at": "2026-11-10T12:11:00Z",
+      "who": "Likud",
+      "party": "מחל",
+      "text": "Ynet cites a Channel 12 report that Netanyahu confidant Natan Eshel repeatedly contacted Abbas, while Likud said any such contacts were not on Netanyahu's behalf.",
+      "url": "https://www.ynetnews.com/article/rkybvtecme",
+      "source": "Ynet"
     },
     {
       "at": "2026-11-10",
@@ -599,30 +623,6 @@
       "party": "ל",
       "text": "Ynet reports Liberman asked Eisenkot to drop an Arab-backed minority government and promised to bring in the Haredi parties.",
       "url": "https://www.ynetnews.com/article/hjwy1tk0mg",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-10T04:29:00Z",
-      "who": "Benjamin Netanyahu",
-      "party": "מחל",
-      "text": "Ynet reports an attempt by Netanyahu's associates to arrange a call with UTJ's Rabbi Dov Landau failed.",
-      "url": "https://www.ynetnews.com/article/hjwy1tk0mg",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-10T05:38:00Z",
-      "who": "Right-wing groups",
-      "party": "",
-      "text": "The Jerusalem Post reports Im Tirtzu and other groups plan to protest at the Knesset swearing-in against replacing Speaker Ohana with Arab parties' votes.",
-      "url": "https://www.jpost.com/israel-election-2026/article-914409",
-      "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-11-09T20:27:00Z",
-      "who": "UTJ",
-      "party": "ג",
-      "text": "Ynet reports UTJ had proposed its MK Yaakov Asher as interim Speaker, an idea effectively ruled out by the Eisenkot–Liberman agreement.",
-      "url": "https://www.ynetnews.com/article/syteack0fe",
       "source": "Ynet"
     }
   ]
