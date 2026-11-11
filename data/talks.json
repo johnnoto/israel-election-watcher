@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-11T12:25:48Z",
-  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and Speaker Ohana has set a Nov 17 vote on replacing him with Yashar!'s Matan Kahana. The planned Likud–Yashar! meeting is off, with Netanyahu calling for unity under his own leadership and ruling out rotation, and Haaretz reports Eisenkot's partners learned of those talks only after they were cancelled. UTJ is weighing its options after Asher met Netanyahu without committing, Shas says it still backs Netanyahu, and the Jerusalem Post reports internal divisions in Eisenkot's bloc over the Haredi talks. Herzog has urged lawmakers to compromise and avoid a repeat election.",
+  "updated": "2026-11-11T15:30:00Z",
+  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and Speaker Ohana has set a Nov 17 vote on replacing him with Yashar!'s Matan Kahana. The planned Likud–Yashar! meeting is off; Netanyahu says unity is still possible but under his leadership and without rotation, while Yashar! says he does not really want unity. UTJ is weighing its options after Asher met Netanyahu without committing, Shas says it still backs Netanyahu, and the Jerusalem Post reports internal divisions in Eisenkot's bloc over the Haredi talks. Herzog has urged lawmakers to compromise and avoid a repeat election.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "If Eisenkot fails, Herzog can task another MK, who would get 28 days with no extension. HNGN reports Ohana has set the vote on replacing him as Speaker for Nov 17 after Yashar! submitted a majority request.",
@@ -256,14 +256,14 @@
   "parties": {
     "מחל": {
       "backs": "Recommended Netanyahu",
-      "stance": "In his Nov 10 Knesset speech Netanyahu said he is ready to talk with any party on unity but ruled out rotation, saying Likud under him won the most votes, Ynet reports.",
+      "stance": "On Nov 11 Netanyahu said a unity government is still possible and that he will keep extending a hand, after ruling out rotation in his Nov 10 Knesset speech, Israel Hayom reports.",
       "red_lines": [
         "No government that depends on Arab parties",
         "No rotation"
       ],
-      "date": "2026-11-10",
-      "url": "https://www.ynetnews.com/article/bjnjwzw0gx",
-      "source": "Ynet",
+      "date": "2026-11-11",
+      "url": "https://www.israelhayom.com/2026/11/11/netanyahu-unity-government-eisenkot-knesset-speech/",
+      "source": "Israel Hayom",
       "lines_url": "https://www.aljazeera.com/news/2026/10/30/how-can-israel-break-its-election-deadlock",
       "lines_source": "Red lines: Al Jazeera"
     },
@@ -385,6 +385,22 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-11T13:02:00Z",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "On Nov 11 Netanyahu said a unity government is still possible and that he will keep extending a hand, adding \"I can't share everything I know here,\" Israel Hayom reports.",
+      "url": "https://www.israelhayom.com/2026/11/11/netanyahu-unity-government-eisenkot-knesset-speech/",
+      "source": "Israel Hayom"
+    },
+    {
+      "at": "2026-11-11T13:02:00Z",
+      "who": "Yashar!",
+      "party": "דרך",
+      "text": "Yashar! said Netanyahu does not want unity and will always put himself first, Israel Hayom reports.",
+      "url": "https://www.israelhayom.com/2026/11/11/netanyahu-unity-government-eisenkot-knesset-speech/",
+      "source": "Israel Hayom"
+    },
     {
       "at": "2026-11-11",
       "who": "Gadi Eisenkot",
@@ -608,22 +624,6 @@
       "text": "Abbas said Ra'am will keep up the process of replacing the government.",
       "url": "https://www.al-monitor.com/originals/2026/11/new-israeli-parliament-take-aim-netanyahu-eisenkot-seeks-government",
       "source": "Al-Monitor"
-    },
-    {
-      "at": "2026-11-10T08:41:00Z",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Ynet reports, citing unnamed sources, that the bloc's parties intend first to try forming a government with the Haredi parties.",
-      "url": "https://www.ynetnews.com/article/r1flu8erfe",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-10T08:26:00Z",
-      "who": "Change bloc leaders",
-      "party": "דרך",
-      "text": "Eisenkot, Bennett, Lapid, Golan and Liberman said in a joint statement they will nominate Yashar!'s Matan Kahana as Knesset Speaker.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/eisenkot-led-bloc-agrees-on-matan-kahana-as-next-knesset-speaker-liberman-to-head-powerful-defense-committee",
-      "source": "Times of Israel"
     }
   ]
 }
