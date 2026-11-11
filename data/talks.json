@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-10T21:23:59Z",
-  "summary": "The 26th Knesset was sworn in on Nov 10, and Eisenkot, who holds the mandate from President Herzog until Dec 6 (extendable by up to 14 days), had his bloc submit signatures to replace Speaker Ohana with Yashar!'s Matan Kahana and file bills including an Oct 7 state inquiry. In his Knesset speech Netanyahu urged a national unity government, and Eisenkot called the address hate-filled and said Netanyahu is unfit to stay in office. UTJ has set conditions on draft exemptions, school funding and the religion-state status quo while confirming preliminary contacts with Eisenkot's camp, and Shas says it still backs Netanyahu. Herzog urged lawmakers to compromise and avoid a repeat election.",
+  "updated": "2026-11-11T00:23:05Z",
+  "summary": "The 26th Knesset was sworn in on Nov 10, and Eisenkot, who holds the mandate from President Herzog until Dec 6 (extendable by up to 14 days), has had his bloc request a vote to replace Speaker Ohana with Yashar!'s Matan Kahana. After Netanyahu used his Knesset speech to call for a national unity government, Eisenkot called the address hate-filled and cancelled a preliminary meeting with Likud set for Nov 11, while Likud said it remains willing to meet any faction seeking unity. Eisenkot says his bloc will not give way on military service for all, even as UTJ sets draft-exemption conditions while confirming preliminary contacts with his camp, and Shas says it still backs Netanyahu. Herzog has urged lawmakers to compromise and avoid a repeat election.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "If Eisenkot fails, Herzog can task another MK, who would get 28 days with no extension. Ohana has said he will schedule a vote on a new Speaker within a week if a majority asks, and Yashar! submitted such a request on Nov 10.",
@@ -187,8 +187,14 @@
         "ל"
       ],
       "status": "floated",
-      "note": "The Jerusalem Post reports Netanyahu-linked sources are promoting it, possibly with a rotating premiership and without Shas and UTJ. Kan cites Netanyahu associate Benny Biton as saying Netanyahu wants unity, and an unnamed Likud official named Herzog and Trump as guarantors for Eisenkot. Channel 12 reports Liberman wants Eisenkot to join Netanyahu, though not under his own banner. Who would lead it is the sticking point. Likud whip Ofir Katz told Army Radio the party opposes rotation and others can join the existing coalition. Channel 14 reports, citing unnamed sources, that Netanyahu has given up on unity talks and is preparing for a new election. Ynet reports Netanyahu told associates privately he is not ruling out any option, including rotation, and that Katz says unity is off if the opposition ousts Speaker Ohana. On Nov 2 Netanyahu said publicly he is open to a broad government with any party that does not support terrorism but that he should lead it; an associate told Ynet no unity proposal has yet been made. Israel Hayom reports a Likud source's assessment, not a negotiated offer, that Netanyahu could accept unity if he served about two years and then became president, with Eisenkot taking over. ANI, citing the Times of Israel, reports Shas Council of Torah Sages member Rabbi Moshe Maya urged a unity government. On Nov 5 Yashar's delegation rejected a unity government with Netanyahu and called him the obstacle to unity, the Times of Israel reports. On Nov 5 Likud MK Yoav Kisch urged a broad national government and called on the opposition to end its boycott, the Times of Israel reports. After Herzog's decision on Nov 7, Netanyahu called in a video for a national unity government including all his current allies, which the Times of Israel calls a likely non-starter. Kan reports, citing an unnamed associate, that Netanyahu would discuss rotation if unity talks were held, and that an envoy's approach to Eisenkot was rebuffed; Yashar said it knew of no such approach and that Likud can join an Eisenkot-led coalition without extremists. Ynet reports on Nov 8 that Netanyahu is expected to pursue unity in the coming days, though unnamed senior Likud ministers had privately called it too costly and preferred another election; Yashar called his speech hysterical and said it would consider unity only if Likud breaks with its extremists. On receiving the mandate on Nov 8, Eisenkot appealed to Likud and Smotrich's party to join a government he would lead, AFP reports. The Jerusalem Post reports on Nov 9 that Netanyahu has launched an effort to block an Eisenkot government while still calling for unity, with disputes over who would lead it. In his Nov 10 Knesset speech Netanyahu again asked MKs to form a national unity government, and Eisenkot replied that the speech was hate-filled and Netanyahu unfit for office, urging a national emergency government instead, the Jerusalem Post reports.",
+      "note": "The Jerusalem Post reports Netanyahu-linked sources are promoting it, possibly with a rotating premiership and without Shas and UTJ. Kan cites Netanyahu associate Benny Biton as saying Netanyahu wants unity, and an unnamed Likud official named Herzog and Trump as guarantors for Eisenkot. Channel 12 reports Liberman wants Eisenkot to join Netanyahu, though not under his own banner. Who would lead it is the sticking point. Likud whip Ofir Katz told Army Radio the party opposes rotation and others can join the existing coalition. Channel 14 reports, citing unnamed sources, that Netanyahu has given up on unity talks and is preparing for a new election. Ynet reports Netanyahu told associates privately he is not ruling out any option, including rotation, and that Katz says unity is off if the opposition ousts Speaker Ohana. On Nov 2 Netanyahu said publicly he is open to a broad government with any party that does not support terrorism but that he should lead it; an associate told Ynet no unity proposal has yet been made. Israel Hayom reports a Likud source's assessment, not a negotiated offer, that Netanyahu could accept unity if he served about two years and then became president, with Eisenkot taking over. ANI, citing the Times of Israel, reports Shas Council of Torah Sages member Rabbi Moshe Maya urged a unity government. On Nov 5 Yashar's delegation rejected a unity government with Netanyahu and called him the obstacle to unity, the Times of Israel reports. On Nov 5 Likud MK Yoav Kisch urged a broad national government and called on the opposition to end its boycott, the Times of Israel reports. After Herzog's decision on Nov 7, Netanyahu called in a video for a national unity government including all his current allies, which the Times of Israel calls a likely non-starter. Kan reports, citing an unnamed associate, that Netanyahu would discuss rotation if unity talks were held, and that an envoy's approach to Eisenkot was rebuffed; Yashar said it knew of no such approach and that Likud can join an Eisenkot-led coalition without extremists. Ynet reports on Nov 8 that Netanyahu is expected to pursue unity in the coming days, though unnamed senior Likud ministers had privately called it too costly and preferred another election; Yashar called his speech hysterical and said it would consider unity only if Likud breaks with its extremists. On receiving the mandate on Nov 8, Eisenkot appealed to Likud and Smotrich's party to join a government he would lead, AFP reports. The Jerusalem Post reports on Nov 9 that Netanyahu has launched an effort to block an Eisenkot government while still calling for unity, with disputes over who would lead it. In his Nov 10 Knesset speech Netanyahu again asked MKs to form a national unity government, and Eisenkot replied that the speech was hate-filled and Netanyahu unfit for office, urging a national emergency government instead, the Jerusalem Post reports. Yashar had announced a preliminary negotiating meeting with Likud for Nov 11, but Eisenkot cancelled it after Netanyahu's Nov 10 speech, while Likud said it would meet any faction seeking unity, the Jerusalem Post reports.",
       "blockers": [
+        {
+          "party": "דרך",
+          "text": "Eisenkot cancelled a planned preliminary meeting with Likud after Netanyahu's Nov 10 Knesset speech.",
+          "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-914502",
+          "source": "Jerusalem Post"
+        },
         {
           "party": "מחל",
           "text": "Likud whip Ofir Katz said the party opposes a rotation of the premiership.",
@@ -250,20 +256,20 @@
   "parties": {
     "מחל": {
       "backs": "Recommended Netanyahu",
-      "stance": "In his Nov 10 Knesset address, Netanyahu warned of pressure to accept a nuclear Iran and asked MKs to set aside other priorities and form a national unity government, the Jerusalem Post reports.",
+      "stance": "Responding to Yashar's cancellation of talks on Nov 10, Likud said Netanyahu will pursue national unity, is willing to meet any faction seeking it, and questioned Yashar's continued contacts with Arab parties, the Jerusalem Post reports.",
       "red_lines": [
         "No government that depends on Arab parties",
         "No rotation"
       ],
       "date": "2026-11-10",
-      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-914488",
+      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-914502",
       "source": "Jerusalem Post",
       "lines_url": "https://www.aljazeera.com/news/2026/10/30/how-can-israel-break-its-election-deadlock",
       "lines_source": "Red lines: Al Jazeera"
     },
     "דרך": {
       "backs": "Recommended Eisenkot; holds the mandate",
-      "stance": "Responding to Netanyahu's Nov 10 speech, Eisenkot called it divisive and hate-filled, said Netanyahu is unfit to stay in office, and urged a national emergency government, the Jerusalem Post reports.",
+      "stance": "After Netanyahu's Nov 10 speech, Eisenkot called it hate-filled and cancelled a preliminary negotiating meeting with Likud that had been set for the next day, the Jerusalem Post reports.",
       "red_lines": [
         "National service for all",
         "Netanyahu out",
@@ -271,7 +277,7 @@
         "Partners must accept his four principles"
       ],
       "date": "2026-11-10",
-      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-914488",
+      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-914502",
       "source": "Jerusalem Post"
     },
     "רק": {
@@ -379,6 +385,38 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-10",
+      "who": "Likud",
+      "party": "מחל",
+      "text": "Likud said it is willing to meet any faction seeking unity and called Yashar's ongoing contacts with Arab parties puzzling.",
+      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-914502",
+      "source": "Jerusalem Post"
+    },
+    {
+      "at": "2026-11-10",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Eisenkot cancelled a preliminary negotiating meeting with Likud scheduled for Nov 11, citing Netanyahu's Knesset speech.",
+      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-914502",
+      "source": "Jerusalem Post"
+    },
+    {
+      "at": "2026-11-10",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "At the bloc's faction meetings, Liberman said Eisenkot is in charge of forming the government and he would be his right-hand man.",
+      "url": "https://www.jpost.com/israel-election-2026/article-914472",
+      "source": "Jerusalem Post"
+    },
+    {
+      "at": "2026-11-10",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Eisenkot told Yashar's first faction meeting the bloc will \"not surrender on the issue of service\" and would need unconventional steps to form a government.",
+      "url": "https://www.jpost.com/israel-election-2026/article-914472",
+      "source": "Jerusalem Post"
+    },
     {
       "at": "2026-11-10T20:04:00Z",
       "who": "Joint List",
@@ -586,38 +624,6 @@
       "text": "Ynet reports Eisenkot and Liberman agreed on a Yashar! MK for Speaker but are withholding the name pending Bennett and Golan's approval.",
       "url": "https://www.ynetnews.com/article/bkbp4kkrmg",
       "source": "Ynet"
-    },
-    {
-      "at": "2026-11-09T17:41:00Z",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Israel Hayom cites political assessments that Eisenkot himself will be the bloc's candidate for Knesset Speaker.",
-      "url": "https://www.israelhayom.com/2026/11/09/eisenkot-liberman-meet-for-coalition-talks-as-major-hurdles-remain/",
-      "source": "Israel Hayom"
-    },
-    {
-      "at": "2026-11-09T17:03:00Z",
-      "who": "Avigdor Liberman",
-      "party": "ל",
-      "text": "Liberman said any draft law must be able to pass the High Court, and denied reports that draft talks had collapsed.",
-      "url": "https://www.jfeed.com/news-israel/to8pt7",
-      "source": "JFeed"
-    },
-    {
-      "at": "2026-11-09T17:03:00Z",
-      "who": "UTJ",
-      "party": "ג",
-      "text": "An unnamed senior UTJ source told JFeed the party faces a significant week on cooperation with the change bloc, conditional on the religious status quo.",
-      "url": "https://www.jfeed.com/news-israel/to8pt7",
-      "source": "JFeed"
-    },
-    {
-      "at": "2026-11-09T15:16:00Z",
-      "who": "Avigdor Liberman",
-      "party": "ל",
-      "text": "Maariv reports Liberman backs Lapid for Knesset Speaker, but Eisenkot has not agreed to nominate him at this stage.",
-      "url": "https://dailybeirut.com/en/world/yesterday-allies-turn-eisenkot-prepares-pull-haredim-netanyahu-grip/",
-      "source": "Daily Beirut (citing Maariv)"
     }
   ]
 }
