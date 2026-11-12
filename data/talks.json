@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T12:25:14Z",
+  "updated": "2026-11-12T15:24:28Z",
   "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and his bloc, with Arab MKs' votes, won the first Knesset test on Nov 11 by electing Yashar!'s Roy Folkman to chair the Arrangements Committee; a vote to replace Speaker Ohana with Matan Kahana is set for Nov 17. Channel 12 reports a senior UTJ rabbi has authorized the party to open talks with Eisenkot's bloc, though he publicly doubts a deal is realistic and both sides say no formal negotiations are underway. Netanyahu says unity is still possible under his leadership and without rotation, while Shas says it still backs him and Smotrich has urged Netanyahu and Eisenkot to sit together. Herzog has urged lawmakers to compromise and avoid a repeat election.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
@@ -386,6 +386,14 @@
   },
   "timeline": [
     {
+      "at": "2026-11-12T10:13:00Z",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Netanyahu agreed to brief Eisenkot on the security situation at his request, as there is currently no opposition leader, Jewish Insider reports.",
+      "url": "https://jewishinsider.com/2026/11/eisenkot-netanyahu-war-iran-coalition-talks-security-briefing/",
+      "source": "Jewish Insider"
+    },
+    {
       "at": "2026-11-12T07:47:00Z",
       "who": "Moshe Hillel Hirsch",
       "party": "ג",
@@ -614,14 +622,6 @@
       "who": "Mansour Abbas",
       "party": "עם",
       "text": "Ynet reports, citing unnamed sources in the talks, that Abbas has agreed in principle to Eisenkot's condition of recognizing Hamas as a terrorist organization, seeking proof of a real partnership in return.",
-      "url": "https://www.ynetnews.com/article/rkybvtecme",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-10T12:11:00Z",
-      "who": "Yair Golan",
-      "party": "אמת",
-      "text": "Golan confirmed that talks with Ra'am are underway and said recognizing Hamas should not be an obstacle for Abbas, Ynet reports.",
       "url": "https://www.ynetnews.com/article/rkybvtecme",
       "source": "Ynet"
     }
