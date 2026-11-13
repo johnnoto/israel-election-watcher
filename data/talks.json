@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-13T16:02:36Z",
-  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and his bloc, with Arab MKs' votes, has begun taking control of Knesset posts; a vote to replace Speaker Ohana with Matan Kahana is set for Nov 17. A senior UTJ rabbi has reportedly authorized talks with Eisenkot's bloc, which Ynet reports is weighing a one-year freeze on draft enforcement to win UTJ's backing, though both sides say no formal negotiations are underway. Netanyahu says unity is still possible under his leadership and is personally lobbying Haredi rabbis against joining Eisenkot, the Jerusalem Post reports, while Shas says it still backs him. Netanyahu and Eisenkot met for a security briefing on Nov 12, and Herzog has urged lawmakers to compromise and avoid a repeat election.",
+  "updated": "2026-11-13T18:23:13Z",
+  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and his bloc, with Arab MKs' votes, has begun taking control of Knesset posts; a vote to replace Speaker Ohana with Matan Kahana is set for Nov 17. A senior UTJ rabbi has reportedly authorized talks with Eisenkot's bloc, which Ynet reports is weighing a one-year freeze on draft enforcement to win UTJ's backing, though both sides say no formal negotiations are underway. Netanyahu says unity is still possible under his leadership and is personally lobbying Haredi rabbis against joining Eisenkot, the Jerusalem Post reports, while Shas says it still backs him. Netanyahu and Eisenkot met for a security briefing on Nov 12, and on Nov 13 Eisenkot pushed back against attacks on Arab lawmakers by Netanyahu and right-wing figures, AFP reports.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "If Eisenkot fails, Herzog can task another MK, who would get 28 days with no extension. The Jerusalem Post reports the change bloc is expected to replace Speaker Ohana on Tuesday, Nov 17, after electing Folkman Arrangements Committee chair.",
@@ -269,16 +269,16 @@
     },
     "דרך": {
       "backs": "Recommended Eisenkot; holds the mandate",
-      "stance": "After Netanyahu's Nov 10 speech, Eisenkot called it hate-filled and cancelled a preliminary negotiating meeting with Likud that had been set for the next day, the Jerusalem Post reports.",
+      "stance": "On Nov 13 Eisenkot urged respect for Israel's Arab minority, rejecting attacks by Netanyahu and right-wing figures that linked Arab lawmakers to Hamas, AFP reports.",
       "red_lines": [
         "National service for all",
         "Netanyahu out",
         "No rotation with Netanyahu",
         "Partners must accept his four principles"
       ],
-      "date": "2026-11-10",
-      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-914502",
-      "source": "Jerusalem Post"
+      "date": "2026-11-13",
+      "url": "https://www.24newshd.tv/13-Nov-2026/eisenkot-urges-respect-israel-s-arab-minority-netanyahu-attacks",
+      "source": "24NewsHD (AFP)"
     },
     "רק": {
       "backs": "Recommended Eisenkot",
@@ -385,6 +385,14 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-13",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Eisenkot posted on X that Arab citizens are an integral part of Israel and called it illegitimate to malign an entire community, after Netanyahu and others linked Arab lawmakers to Hamas, AFP reports.",
+      "url": "https://www.24newshd.tv/13-Nov-2026/eisenkot-urges-respect-israel-s-arab-minority-netanyahu-attacks",
+      "source": "24NewsHD (AFP)"
+    },
     {
       "at": "2026-11-13",
       "who": "Benjamin Netanyahu",
@@ -614,14 +622,6 @@
       "who": "Likud",
       "party": "מחל",
       "text": "Ynet reports the planned Likud–Yashar! meeting is cancelled and adviser-level contacts are moving further from a deal.",
-      "url": "https://www.ynetnews.com/article/bjnjwzw0gx",
-      "source": "Ynet"
-    },
-    {
-      "at": "2026-11-10T21:55:00Z",
-      "who": "Yaakov Asher",
-      "party": "ג",
-      "text": "Ynet reports Netanyahu met Asher to keep UTJ from joining Eisenkot, and Asher made no commitment.",
       "url": "https://www.ynetnews.com/article/bjnjwzw0gx",
       "source": "Ynet"
     }
