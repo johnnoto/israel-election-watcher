@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-13T06:22:27Z",
-  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and his bloc, with Arab MKs' votes, has begun taking control of Knesset posts, recommending Liberman to chair the Foreign Affairs and Defense Committee; a vote to replace Speaker Ohana with Matan Kahana is set for Nov 17. A senior UTJ rabbi has reportedly authorized talks with Eisenkot's bloc, and Kan reports UTJ is also keeping in regular touch with Ra'am and the Joint List, though UTJ calls those contacts casual and both sides say no formal negotiations are underway. Netanyahu says unity is still possible under his leadership and without rotation, while Shas says it still backs him and Smotrich has urged Netanyahu and Eisenkot to sit together. Herzog has urged lawmakers to compromise and avoid a repeat election.",
+  "updated": "2026-11-13T09:24:18Z",
+  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and his bloc, with Arab MKs' votes, has begun taking control of Knesset posts, recommending Liberman to chair the Foreign Affairs and Defense Committee; a vote to replace Speaker Ohana with Matan Kahana is set for Nov 17. A senior UTJ rabbi has reportedly authorized talks with Eisenkot's bloc, and Kan reports UTJ is also keeping in regular touch with Ra'am and the Joint List, though UTJ calls those contacts casual and both sides say no formal negotiations are underway. Netanyahu says unity is still possible under his leadership and without rotation, while Shas says it still backs him and Smotrich has urged Netanyahu and Eisenkot to sit together. Netanyahu and Eisenkot met for a two-hour security briefing on Nov 12, and Herzog has urged lawmakers to compromise and avoid a repeat election.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "If Eisenkot fails, Herzog can task another MK, who would get 28 days with no extension. The Jerusalem Post reports the change bloc is expected to replace Speaker Ohana on Tuesday, Nov 17, after electing Folkman Arrangements Committee chair.",
@@ -386,6 +386,14 @@
   },
   "timeline": [
     {
+      "at": "2026-11-12",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Netanyahu and Eisenkot held a two-hour security briefing at the Prime Minister's Office and said in a joint statement they would exchange updates as needed, JNS reports.",
+      "url": "https://www.jns.org/news/israel-news/netanyahu-eisenkot-meet-for-security-briefing-after-clash-over-letter-to-attorney-general",
+      "source": "JNS"
+    },
+    {
       "at": "2026-11-12T15:44:00Z",
       "who": "Yaakov Asher",
       "party": "ג",
@@ -616,14 +624,6 @@
       "text": "HNGN reports Ohana has set the vote on replacing him as Speaker for Tuesday, Nov 17.",
       "url": "https://www.hngn.com/articles/273746/20261110/eisenkot-gets-28-days-form-israel-government-13-seats-short.htm",
       "source": "HNGN"
-    },
-    {
-      "at": "2026-11-10T15:16:00Z",
-      "who": "Change bloc",
-      "party": "דרך",
-      "text": "On the Knesset's first day, Eisenkot's bloc filed bills for an Oct 7 state inquiry, PM term limits and repealing the judicial overhaul.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/knesset-swearing-in-completed-kicking-off-new-parliament/",
-      "source": "Times of Israel"
     }
   ]
 }
