@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-16T18:23:23Z",
-  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and his bloc goes into a Tuesday, Nov 17 vote to replace Speaker Ohana with Yashar!'s Matan Kahana. On Nov 16 Smotrich offered right-bloc votes for Kahana on conditions including no deputy speakers from Ra'am or the Joint List, and after Kahana rejected them Smotrich called a speakership won with Arab votes illegitimate. The first Likud–Yashar! meeting on Nov 15 reportedly made no progress over who would lead, and Yisrael Beiteinu reaffirmed it won't join a Netanyahu-led unity government. Haaretz reports UTJ sources citing significant progress with Eisenkot's bloc, while Asher has played down such reports and Shas still backs Netanyahu.",
+  "updated": "2026-11-16T21:23:06Z",
+  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and his bloc goes into a Tuesday, Nov 17 vote to replace Speaker Ohana with Yashar!'s Matan Kahana. On Nov 16 Smotrich offered right-bloc votes for Kahana on conditions including no deputy speakers from Ra'am or the Joint List, and after Kahana rejected them Smotrich called a speakership won with Arab votes illegitimate. The first Likud–Yashar! meeting on Nov 15 reportedly made no progress over who would lead, and Yisrael Beiteinu reaffirmed it won't join a Netanyahu-led unity government. UTJ sources tell Haaretz and the Jerusalem Post of real progress with Eisenkot's bloc, including a negotiating team, while Asher has played down such reports, Liberman says a draft law needs Rabbi Lando's approval alongside the army and court, and Shas still backs Netanyahu.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "Knesset vote on Tuesday, Nov 17 to replace Speaker Ohana with Kahana, after Kahana rejected Smotrich's conditions for right-bloc support; further Likud–Yashar! talks after a first meeting that reportedly made no progress. If Eisenkot fails, Herzog can task another MK for 28 days with no extension.",
@@ -303,15 +303,15 @@
     },
     "ל": {
       "backs": "Recommended Eisenkot",
-      "stance": "On Nov 16 MK Yulia Malinovsky reaffirmed that Yisrael Beiteinu won't sit in a Netanyahu-led unity government, the Jerusalem Post reports.",
+      "stance": "On Nov 16 Liberman told the Foreign Affairs and Defense Committee a draft law must satisfy the IDF chief, the High Court and UTJ's Rabbi Lando, the Jerusalem Post reports.",
       "red_lines": [
         "No Likud under Netanyahu",
         "No Ra'am or Joint List",
         "No minority government"
       ],
       "date": "2026-11-16",
-      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-915007",
-      "source": "Jerusalem Post (citing N12)",
+      "url": "https://www.jpost.com/israel-news/article-915082",
+      "source": "Jerusalem Post",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-911855",
       "lines_source": "Red lines: Jerusalem Post"
     },
@@ -385,6 +385,22 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-16",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Liberman said a conscription law must win approval from the IDF chief of staff, the High Court and Rabbi Dov Lando, the Jerusalem Post reports.",
+      "url": "https://www.jpost.com/israel-news/article-915082",
+      "source": "Jerusalem Post"
+    },
+    {
+      "at": "2026-11-16",
+      "who": "UTJ",
+      "party": "ג",
+      "text": "Unnamed UTJ sources say talks with Eisenkot's bloc have moved past the preliminary stage and a negotiating team was formed, the Jerusalem Post reports.",
+      "url": "https://www.jpost.com/israel-news/article-915082",
+      "source": "Jerusalem Post"
+    },
     {
       "at": "2026-11-16T14:30:00Z",
       "who": "Matan Kahana",
@@ -608,22 +624,6 @@
       "text": "Religious Zionism's Strock called for a unity government and warned against relying on Arab parties, the Jerusalem Post reports.",
       "url": "https://www.jpost.com/israel-election-2026/2026-11-15/live-updates-914894",
       "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-11-14T21:17:00Z",
-      "who": "Likud",
-      "party": "מחל",
-      "text": "An unnamed senior Likud minister tells Ynet that Netanyahu would insist on serving first in any rotation deal, as Likud and Yashar! teams prepare to meet Sunday.",
-      "url": "https://www.ynetnews.com/article/h17p1i80zg",
-      "source": "Ynet News"
-    },
-    {
-      "at": "2026-11-14T17:37:00Z",
-      "who": "Yashar!",
-      "party": "דרך",
-      "text": "Channel 13 reports, unconfirmed, that Yashar! would offer Likud a place in an Eisenkot-led government without rotation and would also invite Religious Zionism, the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/netanyahu-again-urges-unity-talks-without-preconditions-eisenkot-rejects-pms-spin/",
-      "source": "Times of Israel (citing Channel 13)"
     }
   ]
 }
