@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T03:22:00Z",
+  "updated": "2026-11-16T06:25:00Z",
   "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and his bloc plans a Tuesday, Nov 17 vote to replace Speaker Ohana with Yashar!'s Matan Kahana after refusing a Likud request to delay it, Channel 12 reports. Hebrew media report no progress at the first Likud–Yashar! meeting on Nov 15, and Liberman reportedly called the talks a trap. A senior UTJ source describes real progress in daily contacts with Eisenkot's bloc, but UTJ leader Asher calls reports of dramatic progress baseless, while Shas still backs Netanyahu. Golan rejects talks with Likud and wants the bloc to engage the Arab parties.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
@@ -458,6 +458,14 @@
       "source": "Times of Israel"
     },
     {
+      "at": "2026-11-15T15:37:00Z",
+      "who": "Naftali Bennett",
+      "party": "רק",
+      "text": "Bennett sent political adviser Shalom Shlomo, a former cabinet secretary, to represent Together at the Likud–Yashar! talks in Herzliya, Ynet reports.",
+      "url": "https://www.ynetnews.com/article/bjijg8wrfl",
+      "source": "Ynet News"
+    },
+    {
       "at": "2026-11-15T08:29:00Z",
       "who": "Ahmad Tibi",
       "party": "ודם",
@@ -616,14 +624,6 @@
       "text": "Joint List leader Jabareen outlined demands for cooperating with Eisenkot's bloc, including repealing the Kaminitz Law and five-year economic and anti-crime plans for Arab towns, the Jerusalem Post reports.",
       "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-914817",
       "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-11-13",
-      "who": "UTJ rabbinic advisers",
-      "party": "ג",
-      "text": "Channel 12 reports Agudat Yisrael's rabbinic advisers want all MKs in Eisenkot's bloc to sign a pledge to pass a Haredi draft-exemption law with a court override clause, the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/report-utj-rabbis-urge-signed-commitments-on-draft-evasion-law-from-entire-eisenkot-bloc/",
-      "source": "Times of Israel"
     }
   ]
 }
