@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T00:24:00Z",
+  "updated": "2026-11-16T03:22:00Z",
   "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and his bloc plans a Tuesday, Nov 17 vote to replace Speaker Ohana with Yashar!'s Matan Kahana after refusing a Likud request to delay it, Channel 12 reports. Hebrew media report no progress at the first Likud–Yashar! meeting on Nov 15, and Liberman reportedly called the talks a trap. A senior UTJ source describes real progress in daily contacts with Eisenkot's bloc, but UTJ leader Asher calls reports of dramatic progress baseless, while Shas still backs Netanyahu. Golan rejects talks with Likud and wants the bloc to engage the Arab parties.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
@@ -458,6 +458,14 @@
       "source": "Times of Israel"
     },
     {
+      "at": "2026-11-15T08:29:00Z",
+      "who": "Ahmad Tibi",
+      "party": "ודם",
+      "text": "Tibi said Netanyahu associate Natan Eshel contacted him to sway the Arab parties, which Likud called a complete lie, the Jerusalem Post reports.",
+      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-914903",
+      "source": "Jerusalem Post"
+    },
+    {
       "at": "2026-11-15",
       "who": "Yair Golan",
       "party": "אמת",
@@ -616,14 +624,6 @@
       "text": "Channel 12 reports Agudat Yisrael's rabbinic advisers want all MKs in Eisenkot's bloc to sign a pledge to pass a Haredi draft-exemption law with a court override clause, the Times of Israel reports.",
       "url": "https://www.timesofisrael.com/report-utj-rabbis-urge-signed-commitments-on-draft-evasion-law-from-entire-eisenkot-bloc/",
       "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-13",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Eisenkot posted on X that Arab citizens are an integral part of Israel and called it illegitimate to malign an entire community, after Netanyahu and others linked Arab lawmakers to Hamas, AFP reports.",
-      "url": "https://www.24newshd.tv/13-Nov-2026/eisenkot-urges-respect-israel-s-arab-minority-netanyahu-attacks",
-      "source": "24NewsHD (AFP)"
     }
   ]
 }
