@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-16T15:28:00Z",
-  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and his bloc goes into a Tuesday, Nov 17 vote to replace Speaker Ohana with Yashar!'s Matan Kahana. On Nov 16 Smotrich offered right-bloc votes for Kahana on conditions including no deputy speakers from Ra'am or the Joint List, and Kahana rejected them. The first Likud–Yashar! meeting on Nov 15 reportedly made no progress over who would lead, and Yisrael Beiteinu reaffirmed it won't join a Netanyahu-led unity government. Haaretz reports UTJ sources citing significant progress with Eisenkot's bloc, while Asher has played down such reports and Shas still backs Netanyahu.",
+  "updated": "2026-11-16T18:23:23Z",
+  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and his bloc goes into a Tuesday, Nov 17 vote to replace Speaker Ohana with Yashar!'s Matan Kahana. On Nov 16 Smotrich offered right-bloc votes for Kahana on conditions including no deputy speakers from Ra'am or the Joint List, and after Kahana rejected them Smotrich called a speakership won with Arab votes illegitimate. The first Likud–Yashar! meeting on Nov 15 reportedly made no progress over who would lead, and Yisrael Beiteinu reaffirmed it won't join a Netanyahu-led unity government. Haaretz reports UTJ sources citing significant progress with Eisenkot's bloc, while Asher has played down such reports and Shas still backs Netanyahu.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "Knesset vote on Tuesday, Nov 17 to replace Speaker Ohana with Kahana, after Kahana rejected Smotrich's conditions for right-bloc support; further Likud–Yashar! talks after a first meeting that reportedly made no progress. If Eisenkot fails, Herzog can task another MK for 28 days with no extension.",
@@ -355,13 +355,13 @@
     },
     "ט": {
       "backs": "Recommended Netanyahu",
-      "stance": "On Nov 16 Smotrich offered to back Kahana for speaker if his term is tied to forming a government and no deputy speakers come from Ra'am or the Joint List, the Jerusalem Post reports.",
+      "stance": "On Nov 16, after Kahana rejected his conditions, Smotrich said appointing deputy speakers who won't call Hamas a terrorist group is a red line, Arutz Sheva reports.",
       "red_lines": [
         "No government that boycotts Ben-Gvir"
       ],
       "date": "2026-11-16",
-      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-915057",
-      "source": "Jerusalem Post",
+      "url": "https://www.israelnationalnews.com/news/436331",
+      "source": "Arutz Sheva",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-912494",
       "lines_source": "Red lines: Jerusalem Post (Oct 22)"
     },
@@ -400,6 +400,14 @@
       "text": "Smotrich offered right-bloc votes for Kahana as speaker if no deputy speakers come from Ra'am or the Joint List and his term is tied to forming a government, the Jerusalem Post reports.",
       "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-915057",
       "source": "Jerusalem Post"
+    },
+    {
+      "at": "2026-11-16T13:50:00Z",
+      "who": "Bezalel Smotrich",
+      "party": "ט",
+      "text": "After Kahana rejected his terms, Smotrich called a speakership won with Arab parties' votes illegitimate and urged Yashar! MKs Elisaf Peretz and Shira Shapira to reconsider, Arutz Sheva reports.",
+      "url": "https://www.israelnationalnews.com/news/436331",
+      "source": "Arutz Sheva"
     },
     {
       "at": "2026-11-16",
@@ -616,14 +624,6 @@
       "text": "Channel 13 reports, unconfirmed, that Yashar! would offer Likud a place in an Eisenkot-led government without rotation and would also invite Religious Zionism, the Times of Israel reports.",
       "url": "https://www.timesofisrael.com/netanyahu-again-urges-unity-talks-without-preconditions-eisenkot-rejects-pms-spin/",
       "source": "Times of Israel (citing Channel 13)"
-    },
-    {
-      "at": "2026-11-14T17:37:00Z",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Eisenkot dismissed Netanyahu's appeal as spin, saying \"these tricks don't work on me,\" and that Likud can join only if it accepts his principles and breaks with extremists; he called Tuesday's Kahana speaker vote Likud's test.",
-      "url": "https://www.ynetnews.com/article/r1retgl0ml",
-      "source": "Ynet News"
     }
   ]
 }
