@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-16T21:23:06Z",
-  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and his bloc goes into a Tuesday, Nov 17 vote to replace Speaker Ohana with Yashar!'s Matan Kahana. On Nov 16 Smotrich offered right-bloc votes for Kahana on conditions including no deputy speakers from Ra'am or the Joint List, and after Kahana rejected them Smotrich called a speakership won with Arab votes illegitimate. The first Likud–Yashar! meeting on Nov 15 reportedly made no progress over who would lead, and Yisrael Beiteinu reaffirmed it won't join a Netanyahu-led unity government. UTJ sources tell Haaretz and the Jerusalem Post of real progress with Eisenkot's bloc, including a negotiating team, while Asher has played down such reports, Liberman says a draft law needs Rabbi Lando's approval alongside the army and court, and Shas still backs Netanyahu.",
+  "updated": "2026-11-17T00:23:49Z",
+  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and his bloc goes into a Tuesday, Nov 17 vote to replace Speaker Ohana with Yashar!'s Matan Kahana, after Kahana rejected Smotrich's conditions for right-bloc support and Smotrich called a speakership won with Arab votes illegitimate. The first Likud–Yashar! meeting on Nov 15 reportedly made no progress over who would lead, Netanyahu on Nov 16 renewed his call for a broad government that would anchor Torah students' status in law, and Yisrael Beiteinu reaffirmed it won't join a Netanyahu-led unity government. UTJ sources tell Haaretz and the Jerusalem Post of real progress with Eisenkot's bloc, including a negotiating team, while Asher has played down such reports and Liberman says a draft law needs Rabbi Lando's approval alongside the army and court. Shas still backs Netanyahu.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "Knesset vote on Tuesday, Nov 17 to replace Speaker Ohana with Kahana, after Kahana rejected Smotrich's conditions for right-bloc support; further Likud–Yashar! talks after a first meeting that reportedly made no progress. If Eisenkot fails, Herzog can task another MK for 28 days with no extension.",
@@ -256,14 +256,14 @@
   "parties": {
     "מחל": {
       "backs": "Recommended Netanyahu",
-      "stance": "On Nov 14 Netanyahu called for unity talks with Eisenkot without preconditions and said the draft can be resolved with Haredi representatives, the Times of Israel reports.",
+      "stance": "On Nov 16 Netanyahu renewed his call for a broad government and pledged that any government would work with the Haredi parties to anchor Torah students' status in law, Open magazine reports citing ANI.",
       "red_lines": [
         "No government that depends on Arab parties",
         "No rotation"
       ],
-      "date": "2026-11-14",
-      "url": "https://www.timesofisrael.com/netanyahu-again-urges-unity-talks-without-preconditions-eisenkot-rejects-pms-spin/",
-      "source": "Times of Israel",
+      "date": "2026-11-16",
+      "url": "https://openthemagazine.com/world/israel-government-formation-netanyahu-pushes-unity-deal-as-eisenkot-faces-haredi-coalition-test",
+      "source": "Open (with ANI)",
       "lines_url": "https://www.aljazeera.com/news/2026/10/30/how-can-israel-break-its-election-deadlock",
       "lines_source": "Red lines: Al Jazeera"
     },
@@ -385,6 +385,14 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-16",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "Netanyahu posted a renewed appeal for a broad government, promising to anchor Torah students' status in law with his Haredi partners, Open magazine reports citing ANI.",
+      "url": "https://openthemagazine.com/world/israel-government-formation-netanyahu-pushes-unity-deal-as-eisenkot-faces-haredi-coalition-test",
+      "source": "Open (with ANI)"
+    },
     {
       "at": "2026-11-16",
       "who": "Avigdor Liberman",
@@ -615,14 +623,6 @@
       "party": "רק",
       "text": "Lapid said it would be madness if no government is formed, as the Jerusalem Post reports Eisenkot plans talks with Religious Zionism but not Otzma Yehudit.",
       "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-914903",
-      "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-11-15T08:16:00Z",
-      "who": "Orit Strock",
-      "party": "ט",
-      "text": "Religious Zionism's Strock called for a unity government and warned against relying on Arab parties, the Jerusalem Post reports.",
-      "url": "https://www.jpost.com/israel-election-2026/2026-11-15/live-updates-914894",
       "source": "Jerusalem Post"
     }
   ]
