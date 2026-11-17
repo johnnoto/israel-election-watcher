@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-17T09:40:00Z",
+  "updated": "2026-11-17T12:25:27Z",
   "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and the Knesset votes today on replacing Speaker Ohana with Yashar!'s Matan Kahana. UTJ leader Asher said the party won't back Kahana, though it has not decided whether to vote against or abstain, while Smotrich's offer of right-bloc support was rejected by Kahana over deputy speakers from Arab parties. Likud–Yashar! unity talks have stalled over who would lead, and an unnamed senior Eisenkot-bloc official told Kan there is no chance of unity, as the attorney general and police examine reports that the Prime Minister's Office prompted election-eve arrests of Ra'am-linked suspects. UTJ sources report progress with Eisenkot's bloc, Shas still backs Netanyahu, and Ra'am's Abbas warned that a minority government without the Haredi parties would not survive.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
-    "next": "Knesset vote today, Nov 17, on replacing Speaker Ohana with Kahana; UTJ won't back Kahana and has yet to decide between opposing and abstaining. If Eisenkot fails, Herzog can task another MK for 28 days with no extension.",
-    "url": "https://www.timesofisrael.com/liveblog-november-17-2026/",
+    "next": "Knesset votes this evening, Nov 17, on replacing Speaker Ohana with Kahana, who is expected to win with the Eisenkot bloc and the Arab parties; UTJ won't back him. If Eisenkot fails, Herzog can task another MK for 28 days with no extension.",
+    "url": "https://www.timesofisrael.com/liveblog_entry/knesset-set-to-vote-on-appointment-of-yashars-matan-kahana-as-speaker/",
     "source": "Times of Israel"
   },
   "scenarios": [
@@ -387,6 +387,14 @@
   "timeline": [
     {
       "at": "2026-11-17",
+      "who": "Ahmad Tibi",
+      "party": "ודם",
+      "text": "Tibi told Al Jazeera the Joint List will do what it takes to support replacing the Knesset speaker, ahead of today's vote on Kahana.",
+      "url": "https://www.aljazeera.com/news/2026/11/17/as-knesset-readies-for-new-speaker-israeli-opposition-holds-powerful-role",
+      "source": "Al Jazeera"
+    },
+    {
+      "at": "2026-11-17",
       "who": "Yaakov Asher",
       "party": "ג",
       "text": "Asher said UTJ won't support Kahana in today's speaker vote and has not decided whether its MKs will oppose or abstain, the Times of Israel reports.",
@@ -615,14 +623,6 @@
       "party": "ודם",
       "text": "Tibi said Netanyahu associate Natan Eshel contacted him to sway the Arab parties, which Likud called a complete lie, the Jerusalem Post reports.",
       "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-914903",
-      "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-11-15",
-      "who": "Yair Golan",
-      "party": "אמת",
-      "text": "Golan rejected talks with Netanyahu and Likud and urged the bloc to meet the leaders of the Arab parties, the Jerusalem Post reports.",
-      "url": "https://www.jpost.com/israel-election-2026/article-914935",
       "source": "Jerusalem Post"
     }
   ]
