@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-17T12:25:27Z",
-  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and the Knesset votes today on replacing Speaker Ohana with Yashar!'s Matan Kahana. UTJ leader Asher said the party won't back Kahana, though it has not decided whether to vote against or abstain, while Smotrich's offer of right-bloc support was rejected by Kahana over deputy speakers from Arab parties. Likud–Yashar! unity talks have stalled over who would lead, and an unnamed senior Eisenkot-bloc official told Kan there is no chance of unity, as the attorney general and police examine reports that the Prime Minister's Office prompted election-eve arrests of Ra'am-linked suspects. UTJ sources report progress with Eisenkot's bloc, Shas still backs Netanyahu, and Ra'am's Abbas warned that a minority government without the Haredi parties would not survive.",
+  "updated": "2026-11-17T15:24:42Z",
+  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and the Knesset convened this afternoon to replace Speaker Ohana, with Yashar!'s Matan Kahana expected to beat Likud's nominee Ofir Katz with votes from Eisenkot's bloc and the Arab parties. Likud fielded Katz after Yashar! rejected its condition on Arab-party deputy speakers; Arutz Sheva reports Shas and UTJ will back Katz, while the Times of Israel says UTJ has not decided whether to oppose Kahana or abstain. Likud–Yashar! unity talks have stalled over who would lead, as the attorney general and police examine reports that the Prime Minister's Office prompted election-eve arrests of Ra'am-linked suspects. UTJ sources report progress with Eisenkot's bloc, Shas still backs Netanyahu, and Ra'am's Abbas warned that a minority government without the Haredi parties would not survive.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
-    "next": "Knesset votes this evening, Nov 17, on replacing Speaker Ohana with Kahana, who is expected to win with the Eisenkot bloc and the Arab parties; UTJ won't back him. If Eisenkot fails, Herzog can task another MK for 28 days with no extension.",
-    "url": "https://www.timesofisrael.com/liveblog_entry/knesset-set-to-vote-on-appointment-of-yashars-matan-kahana-as-speaker/",
+    "next": "Knesset vote under way on Nov 17 to replace Speaker Ohana: Yashar!'s Kahana is favored over Likud's Ofir Katz. If Eisenkot fails to form a government, Herzog can task another MK for 28 days with no extension.",
+    "url": "https://www.timesofisrael.com/liveblog_entry/knesset-convenes-to-vote-on-new-speaker-with-yashars-kahana-expected-to-win/",
     "source": "Times of Israel"
   },
   "scenarios": [
@@ -317,13 +317,13 @@
     },
     "שס": {
       "backs": "Recommended Netanyahu",
-      "stance": "On Nov 15 Channel 12 reported Deri privately says a Haredi draft law cannot pass before a government is sworn in, and a Shas figure said it won't negotiate with Eisenkot's bloc, the Times of Israel reports.",
+      "stance": "On Nov 17 Shas said it would oppose Kahana for Knesset speaker and back Likud's candidate Ofir Katz, Arutz Sheva reports.",
       "red_lines": [
         "Draft-exemption law"
       ],
-      "date": "2026-11-15",
-      "url": "https://www.timesofisrael.com/no-progress-reported-in-yashar-likud-unity-talks-netanyahu-said-open-to-excluding-ben-gvir/",
-      "source": "Times of Israel (citing Channel 12)",
+      "date": "2026-11-17",
+      "url": "https://www.israelnationalnews.com/news/436436",
+      "source": "Arutz Sheva",
       "lines_url": "https://www.timesofisrael.com/liveblog_entry/deri-says-shas-wont-join-next-government-unless-haredi-draft-exemptions-are-enshrined-in-law/",
       "lines_source": "Red lines: Times of Israel (Oct 14)"
     },
@@ -385,6 +385,38 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-17T14:12:00Z",
+      "who": "Matan Kahana",
+      "party": "דרך",
+      "text": "The Knesset convened to replace Speaker Ohana, with Yashar!'s Kahana expected to beat Likud's Ofir Katz with the Eisenkot bloc and Arab parties.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/knesset-convenes-to-vote-on-new-speaker-with-yashars-kahana-expected-to-win/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-17T14:10:00Z",
+      "who": "Likud",
+      "party": "מחל",
+      "text": "Likud nominated Ofir Katz for speaker after Yashar! refused its condition barring deputies from parties Likud calls terror supporters, Arutz Sheva reports.",
+      "url": "https://www.israelnationalnews.com/news/436436",
+      "source": "Arutz Sheva"
+    },
+    {
+      "at": "2026-11-17T14:10:00Z",
+      "who": "Shas",
+      "party": "שס",
+      "text": "Shas said it will oppose Kahana's candidacy, and Arutz Sheva reports Shas and UTJ will back Likud's Ofir Katz.",
+      "url": "https://www.israelnationalnews.com/news/436436",
+      "source": "Arutz Sheva"
+    },
+    {
+      "at": "2026-11-17T13:19:00Z",
+      "who": "Likud",
+      "party": "מחל",
+      "text": "A Likud statement urged lawmakers to refrain from \"severe, unilateral measures\" as the speaker vote approached, AFP reports.",
+      "url": "https://www.arabnews.com/middle-east/israel-set-for-new-parliament-speaker-as-netanyahu-grip-loosens-3012498",
+      "source": "AFP via Arab News"
+    },
     {
       "at": "2026-11-17",
       "who": "Ahmad Tibi",
@@ -592,38 +624,6 @@
       "text": "Likud and Yashar! negotiators met for about an hour in Herzliya and said in a joint statement the talks were businesslike and would continue, JFeed reports.",
       "url": "https://www.jfeed.com/news-israel/tojxp6",
       "source": "JFeed"
-    },
-    {
-      "at": "2026-11-15T16:09:00Z",
-      "who": "Yashar!",
-      "party": "דרך",
-      "text": "Yashar! denied offering a rotation deal, saying its only proposal is for Likud to join an Eisenkot-led government, the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/yashar-likud-meet-for-unity-talks-as-eisenkot-bloc-moves-to-assert-control-over-knesset/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-15T16:09:00Z",
-      "who": "UTJ",
-      "party": "ג",
-      "text": "UTJ has yet to commit on Tuesday's vote to replace Speaker Ohana, while Netanyahu presses it to oppose Kahana, the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/yashar-likud-meet-for-unity-talks-as-eisenkot-bloc-moves-to-assert-control-over-knesset/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-15T15:37:00Z",
-      "who": "Naftali Bennett",
-      "party": "רק",
-      "text": "Bennett sent political adviser Shalom Shlomo, a former cabinet secretary, to represent Together at the Likud–Yashar! talks in Herzliya, Ynet reports.",
-      "url": "https://www.ynetnews.com/article/bjijg8wrfl",
-      "source": "Ynet News"
-    },
-    {
-      "at": "2026-11-15T08:29:00Z",
-      "who": "Ahmad Tibi",
-      "party": "ודם",
-      "text": "Tibi said Netanyahu associate Natan Eshel contacted him to sway the Arab parties, which Likud called a complete lie, the Jerusalem Post reports.",
-      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-914903",
-      "source": "Jerusalem Post"
     }
   ]
 }
