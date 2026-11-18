@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-18T03:22:35Z",
-  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and late on Nov 17 the Knesset elected Yashar!'s Matan Kahana as speaker 66–52 over Likud's Ofir Katz after a six-hour filibuster by Netanyahu's bloc, giving Eisenkot's camp control of the legislative agenda. Kahana won with the four parties of Eisenkot's bloc plus Ra'am and the Joint List, while Shas and UTJ backed Katz. Netanyahu renewed his call for a national unity government that includes the Haredi parties but not Ra'am, while Likud–Yashar! talks remain stalled over who would lead and Eisenkot's bloc officials see no chance of unity. UTJ sources report progress in coalition talks with Eisenkot's bloc, Shas still backs Netanyahu, and Ra'am's Abbas warned that a minority government without the Haredi parties would not survive.",
+  "updated": "2026-11-18T06:23:39Z",
+  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and late on Nov 17 the Knesset elected Yashar!'s Matan Kahana as speaker 66–52 over Likud's Ofir Katz after a six-hour filibuster by Netanyahu's bloc, giving Eisenkot's camp control of the legislative agenda; Netanyahu called the vote a disgrace and accused Eisenkot, Bennett and Liberman of relying on those he calls terror supporters. Kahana won with the four parties of Eisenkot's bloc plus Ra'am and the Joint List, while Shas and UTJ backed Katz. Netanyahu renewed his call for a national unity government that includes the Haredi parties but not Ra'am, while Likud–Yashar! talks remain stalled over who would lead and Eisenkot's bloc officials see no chance of unity. UTJ sources report progress in coalition talks with Eisenkot's bloc, Shas still backs Netanyahu, and Ra'am's Abbas warned that a minority government without the Haredi parties would not survive.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "With Kahana elected speaker on Nov 17, Eisenkot's bloc continues coalition talks, chiefly with UTJ. If Eisenkot fails to form a government, Herzog can task another MK for 28 days with no extension.",
@@ -387,6 +387,22 @@
   "timeline": [
     {
       "at": "2026-11-17",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "Netanyahu called Kahana's election \"a disgrace for all eternity\" and accused Eisenkot, Bennett and Liberman of choosing those he calls terror supporters over unity.",
+      "url": "https://openthemagazine.com/world/disgrace-netanyahu-slams-election-of-eisenkot-factions-matan-kahana-as-knesset-speaker",
+      "source": "Open Magazine (with ANI)"
+    },
+    {
+      "at": "2026-11-17",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Eisenkot congratulated Kahana on his election as speaker, calling it a new chapter, and Lapid also congratulated him.",
+      "url": "https://openthemagazine.com/world/disgrace-netanyahu-slams-election-of-eisenkot-factions-matan-kahana-as-knesset-speaker",
+      "source": "Open Magazine (with ANI)"
+    },
+    {
+      "at": "2026-11-17",
       "who": "Likud",
       "party": "מחל",
       "text": "After the vote Likud said Kahana was installed with the votes of those it calls terror supporters, and Smotrich and Ben-Gvir also condemned it, the Times of Israel reports.",
@@ -608,22 +624,6 @@
       "text": "UTJ MK Pindrus told Meet the Press that Shas could eventually join if a deal on yeshiva students is reached, while Shas denied it plans to join, The Media Line reports.",
       "url": "https://www.taylorvilledailynews.com/the-media-line-netanyahu-eisenkot-set-for-coalition-talks-as-change-bloc-moves-to-reverse-judicial-reform/",
       "source": "The Media Line"
-    },
-    {
-      "at": "2026-11-15T21:56:00Z",
-      "who": "Likud / Yashar!",
-      "party": "דרך",
-      "text": "Hebrew media report no progress at the Likud–Yashar! talks, and Channel 12 says Yashar! refused a Likud request to delay naming Kahana as speaker, the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/no-progress-reported-in-yashar-likud-unity-talks-netanyahu-said-open-to-excluding-ben-gvir/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-15T21:56:00Z",
-      "who": "Avigdor Liberman",
-      "party": "ל",
-      "text": "Channel 13 reports Liberman opposed the meeting with Likud, calling it a trap, the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/no-progress-reported-in-yashar-likud-unity-talks-netanyahu-said-open-to-excluding-ben-gvir/",
-      "source": "Times of Israel (citing Channel 13)"
     }
   ]
 }
