@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T21:24:13Z",
+  "updated": "2026-11-18T00:23:09Z",
   "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and late on Nov 17 the Knesset elected Yashar!'s Matan Kahana as speaker 66–52 over Likud's Ofir Katz after a six-hour filibuster by Netanyahu's bloc, giving Eisenkot's camp control of the legislative agenda. Kahana won with the four parties of Eisenkot's bloc plus Ra'am and the Joint List, while Shas and UTJ backed Katz. Netanyahu renewed his call for a national unity government that includes the Haredi parties but not Ra'am, while Likud–Yashar! talks remain stalled over who would lead and Eisenkot's bloc officials see no chance of unity. UTJ sources report progress in coalition talks with Eisenkot's bloc, Shas still backs Netanyahu, and Ra'am's Abbas warned that a minority government without the Haredi parties would not survive.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
@@ -386,6 +386,22 @@
   },
   "timeline": [
     {
+      "at": "2026-11-17",
+      "who": "Likud",
+      "party": "מחל",
+      "text": "After the vote Likud said Kahana was installed with the votes of those it calls terror supporters, and Smotrich and Ben-Gvir also condemned it, the Times of Israel reports.",
+      "url": "https://www.timesofisrael.com/knesset-votes-66-52-to-elect-yashars-matan-kahana-as-speaker-in-boost-to-eisenkot-bloc/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-17",
+      "who": "Eisenkot bloc",
+      "party": "דרך",
+      "text": "Unnamed sources told Ynet the bloc agreed not to advance repealing the judicial overhaul until Monday in return for the Netanyahu bloc ending its filibuster, the Times of Israel reports.",
+      "url": "https://www.timesofisrael.com/knesset-votes-66-52-to-elect-yashars-matan-kahana-as-speaker-in-boost-to-eisenkot-bloc/",
+      "source": "Times of Israel (citing Ynet)"
+    },
+    {
       "at": "2026-11-17T21:18:00Z",
       "who": "Matan Kahana",
       "party": "דרך",
@@ -608,22 +624,6 @@
       "text": "Channel 13 reports Liberman opposed the meeting with Likud, calling it a trap, the Times of Israel reports.",
       "url": "https://www.timesofisrael.com/no-progress-reported-in-yashar-likud-unity-talks-netanyahu-said-open-to-excluding-ben-gvir/",
       "source": "Times of Israel (citing Channel 13)"
-    },
-    {
-      "at": "2026-11-15T21:56:00Z",
-      "who": "Naftali Bennett",
-      "party": "רק",
-      "text": "Channel 12 reports Bennett wants Eisenkot to serve first in any rotation and won't join Likud without his bloc partners, the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/no-progress-reported-in-yashar-likud-unity-talks-netanyahu-said-open-to-excluding-ben-gvir/",
-      "source": "Times of Israel (citing Channel 12)"
-    },
-    {
-      "at": "2026-11-15T21:56:00Z",
-      "who": "Likud",
-      "party": "מחל",
-      "text": "Israel Hayom reports, citing unnamed figures, that Netanyahu's associates told Eisenkot Likud would not insist on including Otzma Yehudit, the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/no-progress-reported-in-yashar-likud-unity-talks-netanyahu-said-open-to-excluding-ben-gvir/",
-      "source": "Times of Israel (citing Israel Hayom)"
     }
   ]
 }
