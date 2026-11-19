@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T06:23:21Z",
+  "updated": "2026-11-19T09:23:06Z",
   "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and on Nov 18 his bloc used its Knesset majority with the Arab parties to pass preliminary votes repealing the outgoing government's judicial selection, attorney-general and media laws. The same day Bennett met Netanyahu without telling Eisenkot and floated a unity government with Eisenkot rotating first, which Liberman and Golan rejected, before the five bloc leaders jointly called for a national emergency government headed by Eisenkot, Ynet reports. Likud–Yashar! unity talks remain stuck on who would lead, with Eisenkot-bloc sources describing Likud demands for a full Netanyahu term and Ben-Gvir's inclusion, which Likud partly disputes. UTJ's draft talks with the bloc have reportedly stalled over a proposed quota for Torah students, Shas still backs Netanyahu, and Ra'am's Abbas has warned a minority government without the Haredi parties would not survive.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
@@ -386,6 +386,14 @@
   },
   "timeline": [
     {
+      "at": "2026-11-19T08:38:00Z",
+      "who": "Naftali Bennett",
+      "party": "רק",
+      "text": "After his meeting with Netanyahu, Bennett reportedly warned his allies that relying on Arab parties would tear the country apart, the Times of Israel reports.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/bennett-fresh-from-netanyahu-parley-said-to-warn-allies-relying-on-arabs-will-tear-country-apart/",
+      "source": "Times of Israel"
+    },
+    {
       "at": "2026-11-18T18:54:00Z",
       "who": "UTJ",
       "party": "ג",
@@ -488,6 +496,14 @@
       "text": "Eisenkot-bloc sources told Ynet Likud sought a full Netanyahu term without rotation, while a Likud source disputed this, saying rotation had not been raised.",
       "url": "https://www.ynetnews.com/article/bj9l1morgg",
       "source": "Ynet"
+    },
+    {
+      "at": "2026-11-18T11:42:00Z",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Unnamed Eisenkot associates reportedly told Liberman that Yashar! would not back him for PM if Eisenkot and then Netanyahu fail, Zman Israel analyst Shalom Yerushalmi writes in the Times of Israel.",
+      "url": "https://www.timesofisrael.com/eisenkot-made-clear-to-liberman-yashar-wont-back-him-as-pm-down-the-line/",
+      "source": "Times of Israel (Zman Israel analysis)"
     },
     {
       "at": "2026-11-18T11:08:00Z",
@@ -608,22 +624,6 @@
       "text": "Shas said it will oppose Kahana's candidacy, and Arutz Sheva reports Shas and UTJ will back Likud's Ofir Katz.",
       "url": "https://www.israelnationalnews.com/news/436436",
       "source": "Arutz Sheva"
-    },
-    {
-      "at": "2026-11-17T13:45:00Z",
-      "who": "UTJ",
-      "party": "ג",
-      "text": "i24NEWS, citing Ynet, reports Rabbi Hirsch told Degel HaTorah's MKs to back Likud's Katz for speaker, and UTJ's other MKs also announced support.",
-      "url": "https://www.i24news.tv/en/news/israel/politics/artc-battle-for-knesset-speaker-pits-likud-against-eisenkot-s-bloc",
-      "source": "i24NEWS"
-    },
-    {
-      "at": "2026-11-17T13:19:00Z",
-      "who": "Likud",
-      "party": "מחל",
-      "text": "A Likud statement urged lawmakers to refrain from \"severe, unilateral measures\" as the speaker vote approached, AFP reports.",
-      "url": "https://www.arabnews.com/middle-east/israel-set-for-new-parliament-speaker-as-netanyahu-grip-loosens-3012498",
-      "source": "AFP via Arab News"
     }
   ]
 }
