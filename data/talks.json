@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T00:23:03Z",
+  "updated": "2026-11-19T03:22:59Z",
   "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and on Nov 18 his bloc used its Knesset majority with the Arab parties to pass preliminary votes repealing the outgoing government's judicial selection, attorney-general and media laws. The same day Bennett met Netanyahu for more than two hours without telling Eisenkot; at the bloc leaders' meeting that followed, Channel 13 reports, Bennett called it half security and half political and floated a unity government with Eisenkot rotating first, which Liberman and Golan rejected. The five leaders then issued a joint statement calling for a national emergency government headed by Eisenkot, Ynet reports. Likud–Yashar! unity talks remain stalled over who would lead, UTJ is keeping its options open with both blocs while Shas still backs Netanyahu, and Ra'am's Abbas has warned a minority government without the Haredi parties would not survive.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
@@ -442,6 +442,14 @@
       "source": "Times of Israel"
     },
     {
+      "at": "2026-11-18T15:12:00Z",
+      "who": "Roy Folkman",
+      "party": "דרך",
+      "text": "Eisenkot's bloc boycotted as a Likud bill barring MKs who won't call Hamas a terror group passed a preliminary reading 48–0, with Yashar! faction chair Folkman saying Likud no longer sets the agenda, the Jerusalem Post reports.",
+      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-915333",
+      "source": "Jerusalem Post"
+    },
+    {
       "at": "2026-11-18T15:05:00Z",
       "who": "Eisenkot bloc",
       "party": "דרך",
@@ -616,14 +624,6 @@
       "text": "After the vote Likud said Kahana was installed with the votes of those it calls terror supporters, and Smotrich and Ben-Gvir also condemned it, the Times of Israel reports.",
       "url": "https://www.timesofisrael.com/knesset-votes-66-52-to-elect-yashars-matan-kahana-as-speaker-in-boost-to-eisenkot-bloc/",
       "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-17",
-      "who": "Eisenkot bloc",
-      "party": "דרך",
-      "text": "Unnamed sources told Ynet the bloc agreed not to advance repealing the judicial overhaul until Monday in return for the Netanyahu bloc ending its filibuster, the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/knesset-votes-66-52-to-elect-yashars-matan-kahana-as-speaker-in-boost-to-eisenkot-bloc/",
-      "source": "Times of Israel (citing Ynet)"
     }
   ]
 }
