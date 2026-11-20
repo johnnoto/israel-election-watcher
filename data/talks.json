@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T12:45:00Z",
+  "updated": "2026-11-20T15:23:28Z",
   "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and Yashar officials told the Jerusalem Post on Nov 20 that the party will bring a minority government to a Knesset vote before then if talks fail, with Ra'am and the Joint List giving only outside support. Channel 13 reports Bennett told Eisenkot he would not support such a government at this stage, and the Times of Israel says Liberman would vote against it and prefers bringing in UTJ and Shas. Likud and Yashar! negotiators are due to meet again on Sunday, though Yashar officials rule out a rotation and Liberman and Golan refuse to sit with Netanyahu. UTJ's draft talks with the bloc have reportedly stalled over a proposed Torah-student quota, and Shas still backs Netanyahu.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
@@ -392,6 +392,14 @@
   },
   "timeline": [
     {
+      "at": "2026-11-20",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Eisenkot denounced a religious youth weekly's cover attacking new Speaker Matan Kahana, calling the outlet a Netanyahu mouthpiece waging a campaign to delegitimize elected officials, the Jerusalem Post reports.",
+      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-915487",
+      "source": "Jerusalem Post"
+    },
+    {
       "at": "2026-11-20T10:39:00Z",
       "who": "Yashar!",
       "party": "דרך",
@@ -622,14 +630,6 @@
       "text": "The Knesset advanced in a preliminary reading the repeal of the outgoing government's Judicial Selection Committee changes, with Democrats MK Rayten calling it the beginning of healing.",
       "url": "https://www.ynetnews.com/article/hjmw6xirgx",
       "source": "Ynet"
-    },
-    {
-      "at": "2026-11-18T08:56:00Z",
-      "who": "UTJ",
-      "party": "ג",
-      "text": "Unnamed Degel HaTorah officials told Kikar HaShabbat draft talks with Eisenkot's bloc are deadlocked over his proposed 3% quota for Torah students, which Rabbi Lando rejected, JFeed reports.",
-      "url": "https://www.jfeed.com/news-israel/utj-draft-law-negotiations-stall",
-      "source": "JFeed (citing Kikar HaShabbat)"
     }
   ]
 }
