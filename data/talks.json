@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-20T09:30:00Z",
-  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days) and, according to Haaretz and Ynet reports cited by the Times of Israel, plans to put a minority government to a Knesset vote before it expires even without a majority, with Ra'am backing it and the Joint List abstaining. Channel 13 reports Bennett told Eisenkot he would not support such a government at this stage, and the Times of Israel says Liberman would vote against it and prefers bringing in UTJ and Shas. Likud and Yashar! negotiators are due to meet again on Sunday, though they remain divided over who would lead and Liberman and Golan refuse to sit with Netanyahu. UTJ's draft talks with the bloc have reportedly stalled over a proposed Torah-student quota, and Shas still backs Netanyahu.",
+  "updated": "2026-11-20T12:45:00Z",
+  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and Yashar officials told the Jerusalem Post on Nov 20 that the party will bring a minority government to a Knesset vote before then if talks fail, with Ra'am and the Joint List giving only outside support. Channel 13 reports Bennett told Eisenkot he would not support such a government at this stage, and the Times of Israel says Liberman would vote against it and prefers bringing in UTJ and Shas. Likud and Yashar! negotiators are due to meet again on Sunday, though Yashar officials rule out a rotation and Liberman and Golan refuse to sit with Netanyahu. UTJ's draft talks with the bloc have reportedly stalled over a proposed Torah-student quota, and Shas still backs Netanyahu.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "Eisenkot's bloc continues talks, chiefly with UTJ over a Haredi draft arrangement, and is reported to be planning a Knesset confidence vote around Nov 28–29 even without a majority. If Eisenkot fails, Herzog can task another MK for 28 days with no extension.",
@@ -85,7 +85,7 @@
         "עם"
       ],
       "status": "short",
-      "note": "The 2021 Bennett–Lapid model. Ynet reports, citing unnamed sources, that Eisenkot authorized examining a minority government with Ra'am inside and UTJ abstaining, possibly as leverage in unity talks; Yashar says such reports are not issued on its behalf. It falls short of 61 and Liberman rejects any government dependent on Arab or Haredi parties. Unnamed sources tell Ynet that Liberman berated Eisenkot at a Saturday meeting, saying the minority-government push hurt the bloc. On Nov 8 ANI, citing Haaretz and an unnamed senior Ra'am member, reported that Ra'am will support an Eisenkot government. A senior bloc figure told Ynet on Nov 8 that Liberman has no intention of backing a narrower emergency government without a majority. Eisenkot formally received the mandate on Nov 8 with 28 days to form a government, the Jerusalem Post reports. On Nov 8 Liberman posted that he would not help establish a government dependent on Arab parties, Ynet reports. A Ynet analysis on Nov 8, citing people close to Eisenkot, says he sees unity with Netanyahu as a last resort and may bring a minority government to a confidence vote without full coalition agreement. On Nov 8 Golan said that if Liberman wants a government that won't draft the Haredim he can form one with Netanyahu, while Liberman called Golan's criticism stupid and malicious, Ynet reports. Ynet reports that at their Nov 9 meeting Liberman asked Eisenkot to drop the idea of a minority government backed by Arab parties. On Nov 10 Ynet reported, citing unnamed sources, that Abbas has agreed in principle to Eisenkot's condition of recognizing Hamas as a terrorist organization, and Golan confirmed talks with Ra'am are underway. On Nov 17 Ra'am's Abbas warned that a minority government without the Haredi parties would be very dangerous and could not survive, the Times of Israel reports. On Nov 19 the Times of Israel, citing Hebrew media and Haaretz, reported Eisenkot plans a Knesset vote on a minority government with Ra'am voting in favor without a deal and the Joint List abstaining; no statement from Eisenkot accompanied the reports. Later on Nov 19 Channel 13 reported that Bennett told Eisenkot he would not back such a government at this stage, and the Times of Israel says Liberman would vote against it.",
+      "note": "The 2021 Bennett–Lapid model. Ynet reports, citing unnamed sources, that Eisenkot authorized examining a minority government with Ra'am inside and UTJ abstaining, possibly as leverage in unity talks; Yashar says such reports are not issued on its behalf. It falls short of 61 and Liberman rejects any government dependent on Arab or Haredi parties. Unnamed sources tell Ynet that Liberman berated Eisenkot at a Saturday meeting, saying the minority-government push hurt the bloc. On Nov 8 ANI, citing Haaretz and an unnamed senior Ra'am member, reported that Ra'am will support an Eisenkot government. A senior bloc figure told Ynet on Nov 8 that Liberman has no intention of backing a narrower emergency government without a majority. Eisenkot formally received the mandate on Nov 8 with 28 days to form a government, the Jerusalem Post reports. On Nov 8 Liberman posted that he would not help establish a government dependent on Arab parties, Ynet reports. A Ynet analysis on Nov 8, citing people close to Eisenkot, says he sees unity with Netanyahu as a last resort and may bring a minority government to a confidence vote without full coalition agreement. On Nov 8 Golan said that if Liberman wants a government that won't draft the Haredim he can form one with Netanyahu, while Liberman called Golan's criticism stupid and malicious, Ynet reports. Ynet reports that at their Nov 9 meeting Liberman asked Eisenkot to drop the idea of a minority government backed by Arab parties. On Nov 10 Ynet reported, citing unnamed sources, that Abbas has agreed in principle to Eisenkot's condition of recognizing Hamas as a terrorist organization, and Golan confirmed talks with Ra'am are underway. On Nov 17 Ra'am's Abbas warned that a minority government without the Haredi parties would be very dangerous and could not survive, the Times of Israel reports. On Nov 19 the Times of Israel, citing Hebrew media and Haaretz, reported Eisenkot plans a Knesset vote on a minority government with Ra'am voting in favor without a deal and the Joint List abstaining; no statement from Eisenkot accompanied the reports. Later on Nov 19 Channel 13 reported that Bennett told Eisenkot he would not back such a government at this stage, and the Times of Israel says Liberman would vote against it. On Nov 20 Yashar officials told the Jerusalem Post the party will put a minority government to a vote before Dec 6 if talks fail, with Ra'am and the Joint List offering outside support but no ministers.",
       "blockers": [
         {
           "party": "ל",
@@ -275,15 +275,15 @@
     },
     "דרך": {
       "backs": "Recommended Eisenkot; holds the mandate",
-      "stance": "On Nov 19 Eisenkot backed his bloc's nomination of retired justice Yosef Elron as state comptroller, saying Netanyahu deliberately left the post empty, the Jerusalem Post reports.",
+      "stance": "On Nov 20 Yashar officials told the Jerusalem Post the party will hold a minority-government vote before Dec 6 if talks fail and won't accept a rotation with Likud.",
       "red_lines": [
         "National service for all",
         "Netanyahu out",
         "No rotation with Netanyahu",
         "Partners must accept his four principles"
       ],
-      "date": "2026-11-19",
-      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-915520",
+      "date": "2026-11-20",
+      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-915581",
       "source": "Jerusalem Post"
     },
     "רק": {
@@ -391,6 +391,14 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-20T10:39:00Z",
+      "who": "Yashar!",
+      "party": "דרך",
+      "text": "Yashar officials told the Jerusalem Post the party would put a minority government to a vote before Dec 6 if talks fail, saying \"we will bring the minority government to a vote in any case.\"",
+      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-915581",
+      "source": "Jerusalem Post"
+    },
     {
       "at": "2026-11-19T22:41:00Z",
       "who": "Naftali Bennett",
@@ -622,14 +630,6 @@
       "text": "Unnamed Degel HaTorah officials told Kikar HaShabbat draft talks with Eisenkot's bloc are deadlocked over his proposed 3% quota for Torah students, which Rabbi Lando rejected, JFeed reports.",
       "url": "https://www.jfeed.com/news-israel/utj-draft-law-negotiations-stall",
       "source": "JFeed (citing Kikar HaShabbat)"
-    },
-    {
-      "at": "2026-11-18T07:27:00Z",
-      "who": "United Torah Judaism",
-      "party": "ג",
-      "text": "An unnamed UTJ official told Ynet that draft understandings seem easier to reach with Liberman than with Eisenkot, and UTJ disputed reports of advanced talks with his bloc.",
-      "url": "https://www.ynetnews.com/article/sjeqz09czx",
-      "source": "Ynet"
     }
   ]
 }
