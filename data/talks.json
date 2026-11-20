@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T21:23:04Z",
+  "updated": "2026-11-20T00:23:39Z",
   "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and the Times of Israel, citing Hebrew media and Haaretz, reports he plans to put a government to a Knesset vote before it expires, possibly around Nov 28–29, even without a majority. Those reports say Ra'am would vote in favor without a coalition deal and the Joint List would abstain, while Yisrael Beiteinu might vote against, and Bennett has warned allies against relying on Arab parties. Likud says its negotiators will meet the Eisenkot bloc again on Sunday, though the sides remain divided over who would lead and Liberman and Golan refuse to sit with Netanyahu. UTJ's draft talks with the bloc have reportedly stalled over a proposed Torah-student quota, and Shas still backs Netanyahu.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
@@ -269,16 +269,16 @@
     },
     "דרך": {
       "backs": "Recommended Eisenkot; holds the mandate",
-      "stance": "On Nov 15 Eisenkot said Netanyahu cannot stay in office another minute and called for an investigation after a Channel 12 report on pre-election arrests of Ra'am members, Al Jazeera reports.",
+      "stance": "On Nov 19 Eisenkot backed his bloc's nomination of retired justice Yosef Elron as state comptroller, saying Netanyahu deliberately left the post empty, the Jerusalem Post reports.",
       "red_lines": [
         "National service for all",
         "Netanyahu out",
         "No rotation with Netanyahu",
         "Partners must accept his four principles"
       ],
-      "date": "2026-11-15",
-      "url": "https://www.aljazeera.com/news/2026/11/16/eisenkot-says-netanyahu-cant-remain-israel-pm-amid-alleged-vote-meddling",
-      "source": "Al Jazeera"
+      "date": "2026-11-19",
+      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-915520",
+      "source": "Jerusalem Post"
     },
     "רק": {
       "backs": "Recommended Eisenkot",
@@ -385,6 +385,14 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-19T17:07:00Z",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Eisenkot's bloc agreed to nominate retired Supreme Court justice Yosef Elron for state comptroller, with Eisenkot accusing Netanyahu of leaving the post vacant to weaken gatekeepers, the Jerusalem Post reports.",
+      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-915520",
+      "source": "Jerusalem Post"
+    },
     {
       "at": "2026-11-19T17:49:00Z",
       "who": "Likud",
@@ -615,14 +623,6 @@
       "party": "דרך",
       "text": "The Knesset elected Kahana speaker 66–52 over Likud's Katz after a six-hour Netanyahu-bloc filibuster, with Ra'am and the Joint List backing him and UTJ voting for Katz.",
       "url": "https://www.timesofisrael.com/liveblog_entry/knesset-votes-66-52-to-elect-yashars-matan-kahana-as-speaker-after-six-hour-filibuster-by-netanyahu-bloc/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-17T18:50:00Z",
-      "who": "Benjamin Netanyahu",
-      "party": "מחל",
-      "text": "Netanyahu renewed his call for a unity government including the Haredi parties, said the results are \"what the nation wants,\" and rejected relying on Ra'am.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/citing-unspecified-security-threats-netanyahu-calls-again-for-national-unity-government-with-haredim-without-arabs/",
       "source": "Times of Israel"
     }
   ]
