@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-21T15:22:57Z",
-  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and on Nov 20 he laid out three options: outside support from the Haredi parties, unity with Likud, or a minority emergency government relying on Arab-party votes, which Yashar officials say would go to a Knesset vote before the deadline if talks fail. Liberman said on Channel 12 that the Haredi-backed option is the only practical one and that he would vote against any government relying on Arab parties, while Channel 13 reports Bennett told Eisenkot he would not back such a government at this stage. Netanyahu has urged Eisenkot, Bennett and Liberman toward unity, and Likud and Yashar! negotiators are due to meet again on Sunday, though Yashar officials rule out a rotation and Liberman and Golan refuse to sit with Netanyahu. UTJ's draft talks with the bloc have reportedly stalled over a proposed Torah-student quota, and Shas still backs Netanyahu.",
+  "updated": "2026-11-21T18:22:57Z",
+  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and on Nov 20 he laid out three options: outside support from the Haredi parties, unity with Likud, or a minority emergency government relying on Arab-party votes, which Yashar officials say would go to a Knesset vote before the deadline if talks fail. Liberman, in a Channel 12 interview and again in a Nov 21 post, rejected a minority emergency government and called a coalition with Shas and UTJ the only way forward, while Channel 13 reports Bennett told Eisenkot he would not back such a government at this stage. Netanyahu has urged Eisenkot, Bennett and Liberman toward unity, and Likud and Yashar! negotiators are due to meet again on Sunday, though Yashar officials rule out a rotation and Liberman and Golan refuse to sit with Netanyahu. UTJ's draft talks with the bloc have reportedly stalled over a proposed Torah-student quota, and Shas still backs Netanyahu.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "Eisenkot's bloc continues talks, chiefly with UTJ over a Haredi draft arrangement, and is reported to be planning a Knesset confidence vote around Nov 28–29 even without a majority. If Eisenkot fails, Herzog can task another MK for 28 days with no extension.",
@@ -309,15 +309,15 @@
     },
     "ל": {
       "backs": "Recommended Eisenkot",
-      "stance": "In a Channel 12 interview on Nov 20, Liberman called a government backed by the Haredi parties the only practical option and said he would vote against one relying on Arab parties, JTA reports.",
+      "stance": "On Nov 21 Liberman posted that he rejects Eisenkot's minority emergency-government plan and that the only way forward is a coalition with Shas and UTJ, Ynet reports.",
       "red_lines": [
         "No Likud under Netanyahu",
         "No Ra'am or Joint List",
         "No minority government"
       ],
-      "date": "2026-11-20",
-      "url": "https://www.jta.org/2026/11/20/israel/citing-urgency-eisenkot-outlines-3-paths-to-government-signaling-openness-to-arab-party-backing",
-      "source": "JTA (citing Channel 12)",
+      "date": "2026-11-21",
+      "url": "https://www.ynetnews.com/article/rkgbwekj7x",
+      "source": "Ynet",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-911855",
       "lines_source": "Red lines: Jerusalem Post"
     },
@@ -391,6 +391,14 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-21T10:30:00Z",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Liberman posted that he rejects a minority emergency government, urging a coalition with Shas and UTJ despite its cost, and said \"Netanyahu can only be replaced from the right,\" Ynet reports.",
+      "url": "https://www.ynetnews.com/article/rkgbwekj7x",
+      "source": "Ynet"
+    },
     {
       "at": "2026-11-21T00:59:00Z",
       "who": "Likud",
@@ -622,14 +630,6 @@
       "text": "Eisenkot-bloc sources told Ynet Likud sought a full Netanyahu term without rotation, while a Likud source disputed this, saying rotation had not been raised.",
       "url": "https://www.ynetnews.com/article/bj9l1morgg",
       "source": "Ynet"
-    },
-    {
-      "at": "2026-11-18T11:42:00Z",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Unnamed Eisenkot associates reportedly told Liberman that Yashar! would not back him for PM if Eisenkot and then Netanyahu fail, Zman Israel analyst Shalom Yerushalmi writes in the Times of Israel.",
-      "url": "https://www.timesofisrael.com/eisenkot-made-clear-to-liberman-yashar-wont-back-him-as-pm-down-the-line/",
-      "source": "Times of Israel (Zman Israel analysis)"
     }
   ]
 }
