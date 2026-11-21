@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-20T21:25:00Z",
-  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and on Nov 20 he said he would form an emergency government if a broad coalition can't be built, while Yashar officials told the Jerusalem Post a minority government with only outside support from Ra'am and the Joint List would go to a Knesset vote before then. Channel 13 reports Bennett told Eisenkot he would not support such a government at this stage, and the Times of Israel says Liberman would vote against it and prefers bringing in UTJ and Shas. Netanyahu, warning on Nov 20 against a minority government, urged Eisenkot, Bennett and Liberman toward unity, and Likud and Yashar! negotiators are due to meet again on Sunday, though Yashar officials rule out a rotation and Liberman and Golan refuse to sit with Netanyahu. UTJ's draft talks with the bloc have reportedly stalled over a proposed Torah-student quota, and Shas still backs Netanyahu.",
+  "updated": "2026-11-21T00:30:00Z",
+  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and on Nov 20 he laid out three options: outside support from the Haredi parties, unity with Likud, or a minority emergency government relying on Arab-party votes, which Yashar officials say would go to a Knesset vote before the deadline if talks fail. Liberman said on Channel 12 that the Haredi-backed option is the only practical one and that he would vote against any government relying on Arab parties, while Channel 13 reports Bennett told Eisenkot he would not back such a government at this stage. Netanyahu has urged Eisenkot, Bennett and Liberman toward unity, and Likud and Yashar! negotiators are due to meet again on Sunday, though Yashar officials rule out a rotation and Liberman and Golan refuse to sit with Netanyahu. UTJ's draft talks with the bloc have reportedly stalled over a proposed Torah-student quota, and Shas still backs Netanyahu.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "Eisenkot's bloc continues talks, chiefly with UTJ over a Haredi draft arrangement, and is reported to be planning a Knesset confidence vote around Nov 28–29 even without a majority. If Eisenkot fails, Herzog can task another MK for 28 days with no extension.",
@@ -309,15 +309,15 @@
     },
     "ל": {
       "backs": "Recommended Eisenkot",
-      "stance": "After Bennett's Nov 18 meeting with Netanyahu, Liberman joined Golan in saying they will not sit with Netanyahu in any form, JFeed reports citing Channel 13.",
+      "stance": "In a Channel 12 interview on Nov 20, Liberman called a government backed by the Haredi parties the only practical option and said he would vote against one relying on Arab parties, JTA reports.",
       "red_lines": [
         "No Likud under Netanyahu",
         "No Ra'am or Joint List",
         "No minority government"
       ],
-      "date": "2026-11-18",
-      "url": "https://www.jfeed.com/news-israel/tophfj",
-      "source": "JFeed (citing Channel 13)",
+      "date": "2026-11-20",
+      "url": "https://www.jta.org/2026/11/20/israel/citing-urgency-eisenkot-outlines-3-paths-to-government-signaling-openness-to-arab-party-backing",
+      "source": "JTA (citing Channel 12)",
       "lines_url": "https://www.jpost.com/israel-election-2026/article-911855",
       "lines_source": "Red lines: Jerusalem Post"
     },
@@ -391,6 +391,22 @@
     }
   },
   "timeline": [
+    {
+      "at": "2026-11-20",
+      "who": "Avigdor Liberman",
+      "party": "ל",
+      "text": "Liberman told Channel 12 he would never sit with Netanyahu, called Haredi outside support the only practical path, and said he would vote against an Arab-backed government, JTA reports.",
+      "url": "https://www.jta.org/2026/11/20/israel/citing-urgency-eisenkot-outlines-3-paths-to-government-signaling-openness-to-arab-party-backing",
+      "source": "JTA (citing Channel 12)"
+    },
+    {
+      "at": "2026-11-20",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "In a long post, Eisenkot outlined three tracks — Haredi outside support, unity with Likud, or a minority emergency government relying on Arab-party votes — and said he would give the Likud track another chance, JTA reports.",
+      "url": "https://www.jta.org/2026/11/20/israel/citing-urgency-eisenkot-outlines-3-paths-to-government-signaling-openness-to-arab-party-backing",
+      "source": "JTA"
+    },
     {
       "at": "2026-11-20",
       "who": "Gadi Eisenkot",
@@ -614,22 +630,6 @@
       "text": "The Arrangements Committee voted 12–9 to waive the waiting period for bills repealing the judicial selection, attorney-general and media laws, letting the Eisenkot bloc advance them.",
       "url": "https://www.timesofisrael.com/liveblog_entry/knesset-panel-waives-waiting-period-allowing-eisenkot-bloc-to-advance-repeal-of-judicial-overhaul/",
       "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-18T10:48:00Z",
-      "who": "Gadi Eisenkot",
-      "party": "דרך",
-      "text": "Eisenkot's spokesperson told the Jerusalem Post he was unaware of Bennett's meeting with Netanyahu, and the bloc leaders' meeting was pushed from 1:30 to 3 p.m.",
-      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-915298",
-      "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-11-18T10:44:00Z",
-      "who": "Likud",
-      "party": "מחל",
-      "text": "Eisenkot-bloc sources told Ynet Likud's negotiators set five conditions, including a full Netanyahu term, Ben-Gvir's inclusion and no state Oct. 7 inquiry; a Likud source said the meeting was preliminary.",
-      "url": "https://www.ynetnews.com/article/hjd6jwjagl",
-      "source": "Ynet"
     }
   ]
 }
