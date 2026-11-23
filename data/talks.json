@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T00:25:00Z",
+  "updated": "2026-11-23T03:22:58Z",
   "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days) and is pursuing three tracks: outside support from the Haredi parties, unity with Likud, or a minority emergency government relying on Arab-party votes. Yashar! and Likud negotiators met for over four hours on Sunday without a deal, agreeing on a Jewish nation-state and no Palestinian state but still split over Ben-Gvir, an Oct 7 inquiry and judicial legislation, and plan to meet again this week. Bennett backs a unity government only under Eisenkot, while Liberman and Golan refuse to sit with Netanyahu; Liberman rejects a minority government and Golan calls it the only realistic alternative. Shas still backs Netanyahu, and UTJ officials say they will back whichever bloc offers the better draft-exemption law.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
@@ -438,6 +438,14 @@
       "source": "Ynet News"
     },
     {
+      "at": "2026-11-22",
+      "who": "Naftali Bennett",
+      "party": "רק",
+      "text": "Al Jazeera, citing Channel 12, reports Bennett proposed a Together–Yashar!–Likud–Yisrael Beiteinu coalition with Eisenkot as PM first and Netanyahu later.",
+      "url": "https://www.aljazeera.com/news/2026/11/22/netanyahus-likud-eisenkots-yashar-end-coalition-talks-without-deal",
+      "source": "Al Jazeera (citing Channel 12)"
+    },
+    {
       "at": "2026-11-22T17:04:00Z",
       "who": "Yashar! / Likud",
       "party": "דרך",
@@ -628,14 +636,6 @@
       "text": "Yashar! MK Tropper said Likud had repeatedly refused to schedule meetings and that Yashar! was ready to negotiate immediately, the Times of Israel reports.",
       "url": "https://www.timesofisrael.com/eisenkot-said-planning-vote-on-new-government-before-mandate-ends-even-without-majority/",
       "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-19T17:49:00Z",
-      "who": "Likud",
-      "party": "מחל",
-      "text": "Likud said its negotiating team will meet the Eisenkot bloc again on Sunday, stating, \"We extend our hand time and again in pursuit of national unity,\" the Jerusalem Post reports.",
-      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-915505",
-      "source": "Jerusalem Post"
     }
   ]
 }
