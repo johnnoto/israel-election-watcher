@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T03:22:58Z",
+  "updated": "2026-11-23T06:24:19Z",
   "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days) and is pursuing three tracks: outside support from the Haredi parties, unity with Likud, or a minority emergency government relying on Arab-party votes. Yashar! and Likud negotiators met for over four hours on Sunday without a deal, agreeing on a Jewish nation-state and no Palestinian state but still split over Ben-Gvir, an Oct 7 inquiry and judicial legislation, and plan to meet again this week. Bennett backs a unity government only under Eisenkot, while Liberman and Golan refuse to sit with Netanyahu; Liberman rejects a minority government and Golan calls it the only realistic alternative. Shas still backs Netanyahu, and UTJ officials say they will back whichever bloc offers the better draft-exemption law.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
@@ -355,13 +355,13 @@
     },
     "ב": {
       "backs": "Recommended Netanyahu",
-      "stance": "Otzma Yehudit recommended Netanyahu on Nov 5, and its delegation claimed without evidence that some votes were bought, Ynet reports.",
+      "stance": "On Nov 22 Ben-Gvir posted that Eisenkot's condemnation of settler violence amounted to capitulation to the Arab parties, SBS News reports.",
       "red_lines": [
         "No unity with Eisenkot"
       ],
-      "date": "2026-11-05",
-      "url": "https://www.ynetnews.com/article/rydawnytgl",
-      "source": "Ynet",
+      "date": "2026-11-22",
+      "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008858448",
+      "source": "SBS News",
       "lines_url": "https://www.ynetnews.com/article/skmg7jc2ml",
       "lines_source": "Red lines: Ynet"
     },
@@ -438,14 +438,6 @@
       "source": "Ynet News"
     },
     {
-      "at": "2026-11-22",
-      "who": "Naftali Bennett",
-      "party": "רק",
-      "text": "Al Jazeera, citing Channel 12, reports Bennett proposed a Together–Yashar!–Likud–Yisrael Beiteinu coalition with Eisenkot as PM first and Netanyahu later.",
-      "url": "https://www.aljazeera.com/news/2026/11/22/netanyahus-likud-eisenkots-yashar-end-coalition-talks-without-deal",
-      "source": "Al Jazeera (citing Channel 12)"
-    },
-    {
       "at": "2026-11-22T17:04:00Z",
       "who": "Yashar! / Likud",
       "party": "דרך",
@@ -460,6 +452,14 @@
       "text": "JFeed, citing briefings, reports Eisenkot demanded Likud commit to excluding Ben-Gvir from any joint government and Likud refused, while the question of who leads was not raised.",
       "url": "https://www.jfeed.com/news-israel/likud-yashar-coalition-talks-ben-gvir",
       "source": "JFeed"
+    },
+    {
+      "at": "2026-11-22T15:36:00Z",
+      "who": "Yashar! / Likud",
+      "party": "מחל",
+      "text": "Ynet reports the teams remain split over Ben-Gvir's inclusion and who would appoint an Oct 7 inquiry, with Netanyahu wanting to serve first in any rotation.",
+      "url": "https://www.ynetnews.com/article/hj11rtyeyql",
+      "source": "Ynet"
     },
     {
       "at": "2026-11-22T14:35:00Z",
@@ -492,6 +492,30 @@
       "text": "Yashar! and Likud negotiating teams met on Sunday for the 'marathon' unity talks, with Katz and Rabello for Likud and Tropper, Horowitz and Gutman for Yashar!, the Jerusalem Post reports.",
       "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-915687",
       "source": "Jerusalem Post"
+    },
+    {
+      "at": "2026-11-22",
+      "who": "Itamar Ben-Gvir",
+      "party": "ב",
+      "text": "Ben-Gvir posted that Eisenkot's condemnation of a settler arson attack amounted to capitulation to the Arab parties, SBS News reports.",
+      "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008858448",
+      "source": "SBS News"
+    },
+    {
+      "at": "2026-11-22",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Eisenkot called a settler arson attack on a village near Ramallah \"Jewish terrorism,\" SBS News reports, citing Reuters.",
+      "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008858448",
+      "source": "SBS News"
+    },
+    {
+      "at": "2026-11-22",
+      "who": "Naftali Bennett",
+      "party": "רק",
+      "text": "Al Jazeera, citing Channel 12, reports Bennett proposed a Together–Yashar!–Likud–Yisrael Beiteinu coalition with Eisenkot as PM first and Netanyahu later.",
+      "url": "https://www.aljazeera.com/news/2026/11/22/netanyahus-likud-eisenkots-yashar-end-coalition-talks-without-deal",
+      "source": "Al Jazeera (citing Channel 12)"
     },
     {
       "at": "2026-11-21T20:41:00Z",
@@ -612,30 +636,6 @@
       "text": "Eisenkot denounced a religious youth weekly's cover attacking new Speaker Matan Kahana, calling the outlet a Netanyahu mouthpiece waging a campaign to delegitimize elected officials, the Jerusalem Post reports.",
       "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-915487",
       "source": "Jerusalem Post"
-    },
-    {
-      "at": "2026-11-19T22:41:00Z",
-      "who": "Naftali Bennett",
-      "party": "רק",
-      "text": "Channel 13 reports Bennett told Eisenkot he would not back a minority government relying on Arab parties at this stage, though he has not said publicly he would vote against one, the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/eisenkot-said-planning-vote-on-new-government-before-mandate-ends-even-without-majority/",
-      "source": "Times of Israel (citing Channel 13)"
-    },
-    {
-      "at": "2026-11-19T22:41:00Z",
-      "who": "Yair Lapid",
-      "party": "רק",
-      "text": "Lapid posted that allowing Netanyahu to stay in power would be \"an act of madness,\" the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/eisenkot-said-planning-vote-on-new-government-before-mandate-ends-even-without-majority/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-19T22:41:00Z",
-      "who": "Chili Tropper",
-      "party": "דרך",
-      "text": "Yashar! MK Tropper said Likud had repeatedly refused to schedule meetings and that Yashar! was ready to negotiate immediately, the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/eisenkot-said-planning-vote-on-new-government-before-mandate-ends-even-without-majority/",
-      "source": "Times of Israel"
     }
   ]
 }
