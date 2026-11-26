@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T06:23:02Z",
+  "updated": "2026-11-26T09:22:50Z",
   "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and Yashar! and Yisrael Beiteinu have agreed to sign a coalition agreement, the first since the election. The Jerusalem Post reports UTJ and Eisenkot's bloc have agreed to freeze the religion-state status quo, and Kan reports UTJ's rabbis could approve formal talks as soon as Thursday, even as Netanyahu urged Asher not to rush into a deal. Eisenkot updated Herzog on Wednesday, while Hebrew media report the bloc's partners are still disputing ministries, including justice. Liberman says a Jewish-majority government could be presented by the end of next week; Yashar!–Likud unity talks have made little progress, and Channel 14 reports Shas will stay with Netanyahu.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
@@ -422,6 +422,14 @@
   },
   "timeline": [
     {
+      "at": "2026-11-26",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Reuters reports Eisenkot has resumed meetings with the left-wing Democrats as coalition talks gain momentum.",
+      "url": "https://www.933thedrive.com/2026/11/26/israels-eisenkot-resumes-meetings-with-left-wing-faction-as-coalition-talks-gain-steam/",
+      "source": "Reuters"
+    },
+    {
       "at": "2026-11-25",
       "who": "Benjamin Netanyahu",
       "party": "מחל",
@@ -652,14 +660,6 @@
       "text": "B'Chadrei Chareidim reports Rabbi Dov Landau approved UTJ's contacts with the Eisenkot bloc, with Rabbi Hirsch yet to be fully briefed, per Yeshiva World News.",
       "url": "https://www.theyeshivaworld.com/news/israel-news/2627157/dramatic-political-shift-united-torah-judaism-preparing-formal-coalition-talks-with-eisenkot-and-lieberman.html",
       "source": "Yeshiva World News (citing B'Chadrei Chareidim)"
-    },
-    {
-      "at": "2026-11-23",
-      "who": "Gadi Eisenkot / Naftali Bennett",
-      "party": "דרך",
-      "text": "Channel 13 reported Monday night that Eisenkot favors setting a deadline for the Likud talks while Bennett prefers to keep them open-ended, the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/yashar-likud-remain-split-on-key-issues-after-latest-unity-talks-address-the-judicial-issue/",
-      "source": "Times of Israel (citing Channel 13)"
     }
   ]
 }
