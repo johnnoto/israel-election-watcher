@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-26T03:22:15Z",
-  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and Yashar! and Yisrael Beiteinu agreed on Tuesday to sign a coalition agreement, the first since the election. The Jerusalem Post reports UTJ and Eisenkot's bloc have agreed to freeze the religion-state status quo, and that Netanyahu urged UTJ leader Asher on Wednesday not to rush into a deal, with Asher replying the party has no other option. Liberman says a Jewish-majority government could be presented by the end of next week, while Yashar! and Likud held a fourth round of unity talks that Golan's Democrats, who have suspended talks with Yashar!, want taken off the table. Channel 14 reports Shas will stay with Netanyahu.",
+  "updated": "2026-11-26T06:23:02Z",
+  "summary": "Eisenkot holds President Herzog's mandate until Dec 6 (extendable by up to 14 days), and Yashar! and Yisrael Beiteinu have agreed to sign a coalition agreement, the first since the election. The Jerusalem Post reports UTJ and Eisenkot's bloc have agreed to freeze the religion-state status quo, and Kan reports UTJ's rabbis could approve formal talks as soon as Thursday, even as Netanyahu urged Asher not to rush into a deal. Eisenkot updated Herzog on Wednesday, while Hebrew media report the bloc's partners are still disputing ministries, including justice. Liberman says a Jewish-majority government could be presented by the end of next week; Yashar!–Likud unity talks have made little progress, and Channel 14 reports Shas will stay with Netanyahu.",
   "phase": {
     "now": "Eisenkot has the mandate (deadline Dec 6, 2026, extendable by up to 14 days)",
     "next": "Liberman says a government could be presented by the end of next week, and Channel 12 reports Eisenkot hopes to swear one in as soon as next Wednesday. Ynet reports Eisenkot will likely need an extension. If Eisenkot fails, Herzog can task another MK for 28 days with no extension.",
@@ -423,6 +423,38 @@
   "timeline": [
     {
       "at": "2026-11-25",
+      "who": "Benjamin Netanyahu",
+      "party": "מחל",
+      "text": "Kan reports Netanyahu told aides he is not optimistic Eisenkot will fail, while Likud called the report fake news, the Times of Israel reports.",
+      "url": "https://www.timesofisrael.com/eisenkot-bloc-said-to-fight-over-ministries-as-pm-frets-only-a-miracle-will-save-him/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-25",
+      "who": "Gadi Eisenkot",
+      "party": "דרך",
+      "text": "Eisenkot met President Herzog on Wednesday to update him on the talks but did not tell him he had assembled a government, the Times of Israel reports.",
+      "url": "https://www.timesofisrael.com/eisenkot-bloc-said-to-fight-over-ministries-as-pm-frets-only-a-miracle-will-save-him/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-25",
+      "who": "Change bloc",
+      "party": "דרך",
+      "text": "Hebrew media report a draft portfolio split giving Liberman defense, Bennett finance and Lapid foreign affairs, with the justice ministry still disputed, per the Times of Israel.",
+      "url": "https://www.timesofisrael.com/eisenkot-bloc-said-to-fight-over-ministries-as-pm-frets-only-a-miracle-will-save-him/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-25",
+      "who": "UTJ",
+      "party": "ג",
+      "text": "Kan reports UTJ's rabbis could approve formal coalition talks with Eisenkot's bloc as soon as Thursday, the Times of Israel reports.",
+      "url": "https://www.timesofisrael.com/eisenkot-bloc-said-to-fight-over-ministries-as-pm-frets-only-a-miracle-will-save-him/",
+      "source": "Times of Israel"
+    },
+    {
+      "at": "2026-11-25",
       "who": "Yaakov Asher",
       "party": "ג",
       "text": "The Jerusalem Post reports Netanyahu asked Asher not to rush into a deal with Eisenkot's bloc, and Asher said UTJ had no other option.",
@@ -628,38 +660,6 @@
       "text": "Channel 13 reported Monday night that Eisenkot favors setting a deadline for the Likud talks while Bennett prefers to keep them open-ended, the Times of Israel reports.",
       "url": "https://www.timesofisrael.com/yashar-likud-remain-split-on-key-issues-after-latest-unity-talks-address-the-judicial-issue/",
       "source": "Times of Israel (citing Channel 13)"
-    },
-    {
-      "at": "2026-11-23",
-      "who": "Yashar! / Likud",
-      "party": "דרך",
-      "text": "Walla and Channel 12 report Yashar! sought to repeal the whole judicial overhaul and raised prime-ministerial term limits, while Likud rejected both and asked Yashar! to drop the repeal demand, per the Times of Israel.",
-      "url": "https://www.timesofisrael.com/yashar-likud-remain-split-on-key-issues-after-latest-unity-talks-address-the-judicial-issue/",
-      "source": "Times of Israel (citing Walla, Channel 12)"
-    },
-    {
-      "at": "2026-11-23",
-      "who": "Miki Zohar",
-      "party": "מחל",
-      "text": "Likud MK Miki Zohar called the talks a sham in the Knesset plenum, saying \"You cannot form a government if Netanyahu does not start,\" the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/yashar-likud-remain-split-on-key-issues-after-latest-unity-talks-address-the-judicial-issue/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-23",
-      "who": "Yashar!",
-      "party": "דרך",
-      "text": "Yashar! said it would not comment on reports about the talks because of their highly sensitive nature, the Times of Israel reports.",
-      "url": "https://www.timesofisrael.com/yashar-likud-remain-split-on-key-issues-after-latest-unity-talks-address-the-judicial-issue/",
-      "source": "Times of Israel"
-    },
-    {
-      "at": "2026-11-23T20:21:08Z",
-      "who": "Yashar! / Likud",
-      "party": "דרך",
-      "text": "Yashar! and Likud negotiators met for over two hours at Ofir Katz's Knesset office, focusing on the judicial overhaul, and agreed in a joint statement to meet again with no breakthrough, Ynet reports.",
-      "url": "https://www.ynetnews.com/article/bkbstgmk7x",
-      "source": "Ynet News"
     }
   ]
 }
